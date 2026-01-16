@@ -34,12 +34,12 @@
     <Filter Include="HookAsm\capstone">
       <UniqueIdentifier>{2c2f1c85-4952-42a6-972c-ef1387270c40}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\NewFilter">
+      <UniqueIdentifier>{630a3b53-1f3b-40c9-a41d-6129c0ae620f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="HookAsm\HookAsm.h">
@@ -393,6 +393,18 @@
     <ClInclude Include="HookAsm\capstone\xcore.h">
       <Filter>HookAsm\capstone</Filter>
     </ClInclude>
+    <ClInclude Include="HookAddr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVariable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -583,6 +595,15 @@
     </ClCompile>
     <ClCompile Include="HookAsm\asmtk\asmjit\x86\x86rapass.cpp">
       <Filter>HookAsm\asmtk\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaderData.cpp">
+      <Filter>源文件\NewFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>源文件\NewFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="GameString.cpp">
+      <Filter>源文件\NewFilter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
