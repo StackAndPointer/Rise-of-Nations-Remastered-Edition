@@ -97,3 +97,15 @@ BOOL __fastcall LeaderData__is_team(LeaderData* leaderData, int placeholder, int
  BOOL __fastcall LeaderData__is_ally(LeaderData* leaderData, int placeholder, int whom) {
      return Old_LeaderData__is_ally(leaderData, placeholder,whom);
  }
+
+ int __fastcall Leader__calc_pop_cap(Leader* leader, int placeholder) {
+
+	 int pop_cap = Old_Leader__calc_pop_cap(leader, placeholder);
+     if (leader->tribe == CHINESE) {
+         leader->pop_cap = pop_cap + leader->city_num * 3;
+         return leader->pop_cap;
+     }
+     else {
+		 return pop_cap;
+     }
+ }

@@ -273,6 +273,7 @@
     <ClCompile Include="LeaderData.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameString.cpp" />
+    <ClCompile Include="ScenarioFuncSet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="HookAsm\capstone\capstone.lib" />

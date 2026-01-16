@@ -605,6 +605,9 @@
     <ClCompile Include="GameString.cpp">
       <Filter>源文件\NewFilter</Filter>
     </ClCompile>
+    <ClCompile Include="ScenarioFuncSet.cpp">
+      <Filter>源文件\NewFilter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="HookAsm\capstone\capstone.lib">

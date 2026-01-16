@@ -54,8 +54,8 @@
     extern int __fastcall Leaders__best_human_age_stamp(Leaders* leaders, int placeholder);//0x2B81E0
     extern int(__fastcall* Old_Leaders__best_human_age_stamp)(Leaders* leaders, int placeholder);
     extern void* Leaders__max_enemy_ageAddr;
-    extern int __fastcall Leaders__max_enemy_age(Leaders* leaders, int placeholder, int);//0x2B8300
-    extern int(__fastcall* Old_Leaders__max_enemy_age)(Leaders* leaders, int placeholder, int);
+    extern int __fastcall Leaders__max_enemy_age(Leaders* leaders, int placeholder, int whom);//0x2B8300
+    extern int(__fastcall* Old_Leaders__max_enemy_age)(Leaders* leaders, int placeholder, int whom);
     extern void* Leaders__max_ageAddr;
     extern int __fastcall Leaders__max_age(Leaders* leaders, int placeholder);//0x2B8370
     extern int(__fastcall* Old_Leaders__max_age)(Leaders* leaders, int placeholder);
@@ -81,11 +81,11 @@
     extern void __fastcall Leader__process_taunts(Leader* leader, int placeholder);//0x2B8BA0
     extern void(__fastcall* Old_Leader__process_taunts)(Leader* leader, int placeholder);
     extern void* Leader__receive_tauntAddr;
-    extern void __fastcall Leader__receive_taunt(Leader* leader, int placeholder, TauntRequest, int);//0x2B8BF0
-    extern void(__fastcall* Old_Leader__receive_taunt)(Leader* leader, int placeholder, TauntRequest, int);
+    extern void __fastcall Leader__receive_taunt(Leader* leader, int placeholder, TauntRequest taunt, int play);//0x2B8BF0
+    extern void(__fastcall* Old_Leader__receive_taunt)(Leader* leader, int placeholder, TauntRequest taunt, int play);
     extern void* Leader__process_tauntAddr;
-    extern void __fastcall Leader__process_taunt(Leader* leader, int placeholder, int, int);//0x2B8CC0
-    extern void(__fastcall* Old_Leader__process_taunt)(Leader* leader, int placeholder, int, int);
+    extern void __fastcall Leader__process_taunt(Leader* leader, int placeholder, int taunt, int whom);//0x2B8CC0
+    extern void(__fastcall* Old_Leader__process_taunt)(Leader* leader, int placeholder, int taunt, int whom);
     extern void* Leader__receive_pingAddr;
     extern void __fastcall Leader__receive_ping(Leader* leader, int placeholder, Coord x, Coord y, unsigned __int8 whom, unsigned __int8 timer);//0x2B95F0
     extern void(__fastcall* Old_Leader__receive_ping)(Leader* leader, int placeholder, Coord x, Coord y, unsigned __int8 whom, unsigned __int8 timer);
@@ -189,8 +189,8 @@
     extern void __fastcall Leader__compute_site_stats(Leader* leader, int placeholder, WCoord wx, WCoord wy, int city, int* o, int reg, int* this_val, int* this_dist, int nearby, unsigned int new_x, WCoord* new_y);//0x2CD040
     extern void(__fastcall* Old_Leader__compute_site_stats)(Leader* leader, int placeholder, WCoord wx, WCoord wy, int city, int* o, int reg, int* this_val, int* this_dist, int nearby, unsigned int new_x, WCoord* new_y);
     extern void* Leader__get_needAddr;
-    extern int __fastcall Leader__get_need(Leader* leader, int placeholder, int, int);//0x2CDC80
-    extern int(__fastcall* Old_Leader__get_need)(Leader* leader, int placeholder, int, int);
+    extern int __fastcall Leader__get_need(Leader* leader, int placeholder, int good, int lowest);//0x2CDC80
+    extern int(__fastcall* Old_Leader__get_need)(Leader* leader, int placeholder, int good, int lowest);
     extern void* Leader__calc_anti_attritionAddr;
     extern void __fastcall Leader__calc_anti_attrition(Leader* leader, int placeholder);//0x2CDCC0
     extern void(__fastcall* Old_Leader__calc_anti_attrition)(Leader* leader, int placeholder);
@@ -237,11 +237,11 @@
     extern void __fastcall Leader__tell_embargo(Leader* leader, int placeholder);//0x2CFAF0
     extern void(__fastcall* Old_Leader__tell_embargo)(Leader* leader, int placeholder);
     extern void* Leader__do_buyAddr;
-    extern int __fastcall Leader__do_buy(Leader* leader, int placeholder, int);//0x2CFBD0
-    extern int(__fastcall* Old_Leader__do_buy)(Leader* leader, int placeholder, int);
+    extern int __fastcall Leader__do_buy(Leader* leader, int placeholder, int good);//0x2CFBD0
+    extern int(__fastcall* Old_Leader__do_buy)(Leader* leader, int placeholder, int good);
     extern void* Leader__do_sellAddr;
-    extern int __fastcall Leader__do_sell(Leader* leader, int placeholder, int);//0x2CFC60
-    extern int(__fastcall* Old_Leader__do_sell)(Leader* leader, int placeholder, int);
+    extern int __fastcall Leader__do_sell(Leader* leader, int placeholder, int good);//0x2CFC60
+    extern int(__fastcall* Old_Leader__do_sell)(Leader* leader, int placeholder, int good);
     extern void* Leader__random_personalityAddr;
     extern void __fastcall Leader__random_personality(Leader* leader, int placeholder);//0x2CFD00
     extern void(__fastcall* Old_Leader__random_personality)(Leader* leader, int placeholder);
@@ -249,8 +249,8 @@
     extern void __fastcall Leader__ally_diplo(Leader* leader, int placeholder, int whom, Armies* treaty);//0x2D0120
     extern void(__fastcall* Old_Leader__ally_diplo)(Leader* leader, int placeholder, int whom, Armies* treaty);
     extern void* Leader__eject_my_shit_from_his_assAddr;
-    extern void __fastcall Leader__eject_my_shit_from_his_ass(Leader* leader, int placeholder, int);//0x2D0220
-    extern void(__fastcall* Old_Leader__eject_my_shit_from_his_ass)(Leader* leader, int placeholder, int);
+    extern void __fastcall Leader__eject_my_shit_from_his_ass(Leader* leader, int placeholder, int whom);//0x2D0220
+    extern void(__fastcall* Old_Leader__eject_my_shit_from_his_ass)(Leader* leader, int placeholder, int whom);
     extern void* Leader__has_agendaAddr;
     extern int __fastcall Leader__has_agenda(Leader* leader, int placeholder, int whom, int agenda);//0x2D0330
     extern int(__fastcall* Old_Leader__has_agenda)(Leader* leader, int placeholder, int whom, int agenda);
@@ -267,8 +267,8 @@
     extern void __fastcall Leader__action_agree(Leader* leader, int placeholder, int whom);//0x2D03B0
     extern void(__fastcall* Old_Leader__action_agree)(Leader* leader, int placeholder, int whom);
     extern void* Leader__action_respondAddr;
-    extern void __fastcall Leader__action_respond(Leader* leader, int placeholder, int, int);//0x2D03C0
-    extern void(__fastcall* Old_Leader__action_respond)(Leader* leader, int placeholder, int, int);
+    extern void __fastcall Leader__action_respond(Leader* leader, int placeholder, int whom, int value);//0x2D03C0
+    extern void(__fastcall* Old_Leader__action_respond)(Leader* leader, int placeholder, int whom, int value);
     extern void* Leader__consider_tributeAddr;
     extern void __fastcall Leader__consider_tribute(Leader* leader, int placeholder, int whom, int value, int good);//0x2D1360
     extern void(__fastcall* Old_Leader__consider_tribute)(Leader* leader, int placeholder, int whom, int value, int good);
@@ -276,32 +276,32 @@
     extern void __fastcall Leader__notify_deal(Leader* leader, int placeholder, int whom, int treaty);//0x2D13F0
     extern void(__fastcall* Old_Leader__notify_deal)(Leader* leader, int placeholder, int whom, int treaty);
     extern void* Leader__action_attackAddr;
-    extern void __fastcall Leader__action_attack(Leader* leader, int placeholder, int, int, int);//0x2D14E0
-    extern void(__fastcall* Old_Leader__action_attack)(Leader* leader, int placeholder, int, int, int);
+    extern void __fastcall Leader__action_attack(Leader* leader, int placeholder, int whom, int whose, int onoff);//0x2D14E0
+    extern void(__fastcall* Old_Leader__action_attack)(Leader* leader, int placeholder, int whom, int whose, int onoff);
     extern void* Leader__action_treatyAddr;
-    extern void __fastcall Leader__action_treaty(Leader* leader, int placeholder, int, int);//0x2D1570
-    extern void(__fastcall* Old_Leader__action_treaty)(Leader* leader, int placeholder, int, int);
+    extern void __fastcall Leader__action_treaty(Leader* leader, int placeholder, int whom, int treaty);//0x2D1570
+    extern void(__fastcall* Old_Leader__action_treaty)(Leader* leader, int placeholder, int whom, int treaty);
     extern void* Leader__action_clear_allAddr;
-    extern void __fastcall Leader__action_clear_all(Leader* leader, int placeholder, int);//0x2D15E0
-    extern void(__fastcall* Old_Leader__action_clear_all)(Leader* leader, int placeholder, int);
+    extern void __fastcall Leader__action_clear_all(Leader* leader, int placeholder, int whom);//0x2D15E0
+    extern void(__fastcall* Old_Leader__action_clear_all)(Leader* leader, int placeholder, int whom);
     extern void* Leader__action_clear_tributesAddr;
-    extern void __fastcall Leader__action_clear_tributes(Leader* leader, int placeholder, int);//0x2D1690
-    extern void(__fastcall* Old_Leader__action_clear_tributes)(Leader* leader, int placeholder, int);
+    extern void __fastcall Leader__action_clear_tributes(Leader* leader, int placeholder, int whom);//0x2D1690
+    extern void(__fastcall* Old_Leader__action_clear_tributes)(Leader* leader, int placeholder, int whom);
     extern void* Leader__action_demand_tributeAddr;
     extern void __fastcall Leader__action_demand_tribute(Leader* leader, int placeholder, int whom, int good, int amount);//0x2D1750
     extern void(__fastcall* Old_Leader__action_demand_tribute)(Leader* leader, int placeholder, int whom, int good, int amount);
     extern void* Leader__action_offerAddr;
-    extern void __fastcall Leader__action_offer(Leader* leader, int placeholder, int, int, int);//0x2D1780
-    extern void(__fastcall* Old_Leader__action_offer)(Leader* leader, int placeholder, int, int, int);
+    extern void __fastcall Leader__action_offer(Leader* leader, int placeholder, int whom, int good, int amount);//0x2D1780
+    extern void(__fastcall* Old_Leader__action_offer)(Leader* leader, int placeholder, int whom, int good, int amount);
     extern void* Leader__action_splineAddr;
     extern void __fastcall Leader__action_spline(Leader* leader, int placeholder, SoundGlobal* packet, int whom);//0x2D1850
     extern void(__fastcall* Old_Leader__action_spline)(Leader* leader, int placeholder, SoundGlobal* packet, int whom);
     extern void* Leader__action_pingAddr;
-    extern void __fastcall Leader__action_ping(Leader* leader, int placeholder, Coord, Coord, int);//0x2D18A0
-    extern void(__fastcall* Old_Leader__action_ping)(Leader* leader, int placeholder, Coord, Coord, int);
+    extern void __fastcall Leader__action_ping(Leader* leader, int placeholder, Coord x, Coord y, int whom);//0x2D18A0
+    extern void(__fastcall* Old_Leader__action_ping)(Leader* leader, int placeholder, Coord x, Coord y, int whom);
     extern void* Leader__clear_agreeAddr;
-    extern void __fastcall Leader__clear_agree(Leader* leader, int placeholder, int);//0x2D1AF0
-    extern void(__fastcall* Old_Leader__clear_agree)(Leader* leader, int placeholder, int);
+    extern void __fastcall Leader__clear_agree(Leader* leader, int placeholder, int whom);//0x2D1AF0
+    extern void(__fastcall* Old_Leader__clear_agree)(Leader* leader, int placeholder, int whom);
     extern void* Leader__recapture_capitalAddr;
     extern void __fastcall Leader__recapture_capital(Leader* leader, int placeholder);//0x2D1BA0
     extern void(__fastcall* Old_Leader__recapture_capital)(Leader* leader, int placeholder);
@@ -990,3 +990,6 @@
     extern void __fastcall Game__init_tribes(Game* game, int placeholder);//0x18A600
     extern void(__fastcall* Old_Game__init_tribes)(Game* game, int placeholder);
 
+    extern void* ScenarioFuncSet__init_funcsAddr;
+    extern void __fastcall ScenarioFuncSet__init_funcs(ScenarioFuncSet* scenarioFuncSet, int placeholder);//0x5C7570
+    extern void(__fastcall* Old_ScenarioFuncSet__init_funcs)(ScenarioFuncSet* scenarioFuncSet, int placeholder);
