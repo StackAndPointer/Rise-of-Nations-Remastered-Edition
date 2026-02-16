@@ -614,6 +614,9 @@
     <ClCompile Include="MyScriptFunc.cpp">
       <Filter>源文件\HookGame</Filter>
     </ClCompile>
+    <ClCompile Include="CityData.cpp">
+      <Filter>源文件\HookGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="HookAsm\capstone\capstone.lib">

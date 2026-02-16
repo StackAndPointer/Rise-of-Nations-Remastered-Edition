@@ -5681,3 +5681,156 @@ struct  ScriptFunc : SymType, CallObj
 	unsigned __int8 params_pushed_expected;
 	ScriptFuncSet* func_set;
 };
+
+struct  CaravanLink
+{
+	int cara;
+	int who;
+};
+
+
+struct  __declspec(align(4)) ArrayBaseCaravanLink : ArrayBaseMaster
+{
+	int unk;//ArrayBase<CaravanLink>_vtbl* __vftable ;
+	CaravanLink* list;
+	unsigned __int8 flags;
+};
+
+
+struct  ArrayBaseSimpleCopyCaravanLink : ArrayBaseCaravanLink
+{
+};
+
+struct  ArrayCaravanLink : ArrayBaseSimpleCopyCaravanLink
+{
+	int cur_index;
+};
+
+
+struct  CityData : GameAccessConst
+{
+	int unk;//CityData_vtbl* __vftable;
+	__int16 city_flags;
+	__int16 city;
+	__int16 o;
+	__int16 reg;
+	Coord x;
+	Coord y;
+	int attack_stamp;
+	int raid_stamp;
+	int reduce_stamp;
+	int capture_stamp;
+	int assimilation_timer;
+	int capture_strength;
+	int traded_with[8];
+	__int16 scouted;
+	__int16 in_port;
+	__int16 peasant_dist;
+	__int16 trade_val;
+	__int16 conquest_node;
+	unsigned __int8 granary;
+	unsigned __int8 lumber_mill;
+	unsigned __int8 smelter;
+	unsigned __int8 refinery;
+	unsigned __int8 free;
+	unsigned __int8 busy;
+	unsigned __int8 gatherers;
+	unsigned __int8 pop;
+	char who;
+	char race;
+	char founder;
+	unsigned __int8 plundered;
+	unsigned __int8 ocean;
+	unsigned __int8 land;
+	unsigned __int8 filled;
+	unsigned __int8 bordering;
+	unsigned __int8 ocean_filled;
+	unsigned __int8 dock_tile;
+	unsigned __int8 was_capital_flags;
+	unsigned __int8 space[3];
+	unsigned __int8 ter[6];
+	ArrayCaravanLink vans;
+	String name;
+	String id;
+};
+
+struct  __declspec(align(4)) CityOut : CityData
+{
+	_BYTE gapB8[4];
+};
+
+typedef int category;
+
+typedef unsigned int _DWORD;
+
+struct  __declspec(align(4)) Category
+{
+	String name;
+	String key;
+	String desc;
+	int data[6];
+	unsigned __int8 alpha_order;
+};
+
+
+struct  __declspec(align(4)) ArrayBaseCategory : ArrayBaseMaster
+{
+	int unk;//ArrayBase<Category>_vtbl* __vftable ;
+	Category* list;
+	unsigned __int8 flags;
+};
+
+
+struct  ObjectArrayCategory : ArrayBaseCategory
+{
+};
+
+struct  Categories
+{
+	ObjectArrayCategory list;
+	int num;
+	String name;
+	String title;
+};
+
+
+
+struct  __declspec(align(8)) City : CityOut
+{
+};
+
+
+struct  __declspec(align(4)) ArrayBaseCityPtr : ArrayBaseMaster
+{
+	int unk;//ArrayBase<City*>_vtbl* __vftable ;
+	City** list;
+	unsigned __int8 flags;
+};
+
+struct ArrayBaseSimpleCopyCityPtr : ArrayBaseCityPtr
+{
+};
+
+struct  ArrayCityPtr : ArrayBaseSimpleCopyCityPtr
+{
+	int cur_index;
+};
+
+struct  PtrArrayCity : ArrayCityPtr
+{
+};
+
+struct  CitiesData : GameAccessConst
+{
+	PtrArrayCity lists[8];
+};
+
+struct  __declspec(align(4)) CitiesOut : CitiesData
+{
+	_BYTE gapE0[4];
+};
+
+
+const struct  __declspec(align(8)) Cities : CitiesOut
+{
+};
