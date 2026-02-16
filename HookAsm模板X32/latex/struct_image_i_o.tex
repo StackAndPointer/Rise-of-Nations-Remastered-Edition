@@ -1,0 +1,108 @@
+\doxysection{Image\+IO结构体 参考}
+\hypertarget{struct_image_i_o}{}\label{struct_image_i_o}\index{ImageIO@{ImageIO}}
+
+
+图像输入输出结构  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Image\+IO 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_image_i_o__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a60efc26796af349cf17fb5ff8fce752c}{unk}}
+\item 
+Color \doxymbox{\hyperlink{struct_image_i_o_a3ffe4490ee57f0a9eaa7ce3e21e25831}{tint\+\_\+color}}
+\item 
+unsigned \+\_\+\+\_\+int8 \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_image_i_o_a406315e9338849b29e4db5d71f1ffbb3}{tint\+\_\+color\+\_\+wide}}
+\item 
+unsigned \+\_\+\+\_\+int8 \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_image_i_o_acdaa5fea9131e90b090f2935687d4650}{tint\+\_\+color\+\_\+wide\+\_\+base}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_ac33ca91ebb919ebe5fe6459eece2c70b}{num\+\_\+16\+\_\+chunks}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a90f5e6771b5c950d80000565b220f6ce}{num\+\_\+8\+\_\+chunks}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a2be913b83925f401fdde61fe4e534aa6}{num\+\_\+extra\+\_\+16\+\_\+pix}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_ac6de9dbc6ba1ce7622220f1784e47238}{num\+\_\+extra\+\_\+8\+\_\+pix}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a9ff115acbf19814ad8fa91272f9da516}{use\+\_\+tint}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+图像输入输出结构 
+
+\label{doc-variable-members}
+\Hypertarget{struct_image_i_o_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_image_i_o_ac33ca91ebb919ebe5fe6459eece2c70b}\index{ImageIO@{ImageIO}!num\_16\_chunks@{num\_16\_chunks}}
+\index{num\_16\_chunks@{num\_16\_chunks}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{num\_16\_chunks}{num\_16\_chunks}}
+{\footnotesize\ttfamily \label{struct_image_i_o_ac33ca91ebb919ebe5fe6459eece2c70b} 
+int Image\+IO::\+num\+\_\+16\+\_\+chunks}
+
+16位色块数量 \Hypertarget{struct_image_i_o_a90f5e6771b5c950d80000565b220f6ce}\index{ImageIO@{ImageIO}!num\_8\_chunks@{num\_8\_chunks}}
+\index{num\_8\_chunks@{num\_8\_chunks}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{num\_8\_chunks}{num\_8\_chunks}}
+{\footnotesize\ttfamily \label{struct_image_i_o_a90f5e6771b5c950d80000565b220f6ce} 
+int Image\+IO::\+num\+\_\+8\+\_\+chunks}
+
+8位色块数量 \Hypertarget{struct_image_i_o_a2be913b83925f401fdde61fe4e534aa6}\index{ImageIO@{ImageIO}!num\_extra\_16\_pix@{num\_extra\_16\_pix}}
+\index{num\_extra\_16\_pix@{num\_extra\_16\_pix}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{num\_extra\_16\_pix}{num\_extra\_16\_pix}}
+{\footnotesize\ttfamily \label{struct_image_i_o_a2be913b83925f401fdde61fe4e534aa6} 
+int Image\+IO::\+num\+\_\+extra\+\_\+16\+\_\+pix}
+
+额外16位像素数 \Hypertarget{struct_image_i_o_ac6de9dbc6ba1ce7622220f1784e47238}\index{ImageIO@{ImageIO}!num\_extra\_8\_pix@{num\_extra\_8\_pix}}
+\index{num\_extra\_8\_pix@{num\_extra\_8\_pix}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{num\_extra\_8\_pix}{num\_extra\_8\_pix}}
+{\footnotesize\ttfamily \label{struct_image_i_o_ac6de9dbc6ba1ce7622220f1784e47238} 
+int Image\+IO::\+num\+\_\+extra\+\_\+8\+\_\+pix}
+
+额外8位像素数 \Hypertarget{struct_image_i_o_a3ffe4490ee57f0a9eaa7ce3e21e25831}\index{ImageIO@{ImageIO}!tint\_color@{tint\_color}}
+\index{tint\_color@{tint\_color}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{tint\_color}{tint\_color}}
+{\footnotesize\ttfamily \label{struct_image_i_o_a3ffe4490ee57f0a9eaa7ce3e21e25831} 
+Color Image\+IO::\+tint\+\_\+color}
+
+色调颜色 \Hypertarget{struct_image_i_o_a406315e9338849b29e4db5d71f1ffbb3}\index{ImageIO@{ImageIO}!tint\_color\_wide@{tint\_color\_wide}}
+\index{tint\_color\_wide@{tint\_color\_wide}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{tint\_color\_wide}{tint\_color\_wide}}
+{\footnotesize\ttfamily \label{struct_image_i_o_a406315e9338849b29e4db5d71f1ffbb3} 
+unsigned \+\_\+\+\_\+int8\texorpdfstring{$\ast$}{*} Image\+IO::\+tint\+\_\+color\+\_\+wide}
+
+宽色调颜色指针 \Hypertarget{struct_image_i_o_acdaa5fea9131e90b090f2935687d4650}\index{ImageIO@{ImageIO}!tint\_color\_wide\_base@{tint\_color\_wide\_base}}
+\index{tint\_color\_wide\_base@{tint\_color\_wide\_base}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{tint\_color\_wide\_base}{tint\_color\_wide\_base}}
+{\footnotesize\ttfamily \label{struct_image_i_o_acdaa5fea9131e90b090f2935687d4650} 
+unsigned \+\_\+\+\_\+int8\texorpdfstring{$\ast$}{*} Image\+IO::\+tint\+\_\+color\+\_\+wide\+\_\+base}
+
+宽色调颜色基指针 \Hypertarget{struct_image_i_o_a60efc26796af349cf17fb5ff8fce752c}\index{ImageIO@{ImageIO}!unk@{unk}}
+\index{unk@{unk}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{unk}{unk}}
+{\footnotesize\ttfamily \label{struct_image_i_o_a60efc26796af349cf17fb5ff8fce752c} 
+int Image\+IO::\+unk}
+
+虚函数表指针 \Hypertarget{struct_image_i_o_a9ff115acbf19814ad8fa91272f9da516}\index{ImageIO@{ImageIO}!use\_tint@{use\_tint}}
+\index{use\_tint@{use\_tint}!ImageIO@{ImageIO}}
+\doxysubsubsection{\texorpdfstring{use\_tint}{use\_tint}}
+{\footnotesize\ttfamily \label{struct_image_i_o_a9ff115acbf19814ad8fa91272f9da516} 
+int Image\+IO::\+use\+\_\+tint}
+
+是否使用色调 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

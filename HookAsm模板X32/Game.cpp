@@ -13,5 +13,6 @@ void __fastcall GameLog__say_checksum(GameLog* gameLog, int placeholder, int det
 
 void __fastcall Game__init_tribes(Game* game, int placeholder)
 {
+
 	Old_Game__init_tribes(game, placeholder);
 }

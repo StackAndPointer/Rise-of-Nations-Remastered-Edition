@@ -1,0 +1,75 @@
+\doxysection{Diplomacy结构体 参考}
+\hypertarget{struct_diplomacy}{}\label{struct_diplomacy}\index{Diplomacy@{Diplomacy}}
+
+
+外交关系结构体，存储玩家之间的外交状态  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_diplomacy_acd5873e90424a5af4fe03dad782646cb}{agree}}
+\item 
+int \doxymbox{\hyperlink{struct_diplomacy_aa2051e6d9eba94b9657a72f69ed42a51}{any\+\_\+offer}}
+\item 
+int \doxymbox{\hyperlink{struct_diplomacy_a02c84eea3ca96864df12ff548dd0ad5a}{treaty}}
+\item 
+int \doxymbox{\hyperlink{struct_diplomacy_a1906cb0f007e9b51947287ef7496ab8a}{offers}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_diplomacy_a53b10a4037db53b8c6f8584f47a3ffe0}{dows}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_diplomacy_a047b335dacbf79c812b98cc5c35e5cfd}{attacks}} \+[8]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+外交关系结构体，存储玩家之间的外交状态 
+
+\label{doc-variable-members}
+\Hypertarget{struct_diplomacy_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_diplomacy_acd5873e90424a5af4fe03dad782646cb}\index{Diplomacy@{Diplomacy}!agree@{agree}}
+\index{agree@{agree}!Diplomacy@{Diplomacy}}
+\doxysubsubsection{\texorpdfstring{agree}{agree}}
+{\footnotesize\ttfamily \label{struct_diplomacy_acd5873e90424a5af4fe03dad782646cb} 
+int Diplomacy::\+agree}
+
+同意状态，表示是否同意某项提议 \Hypertarget{struct_diplomacy_aa2051e6d9eba94b9657a72f69ed42a51}\index{Diplomacy@{Diplomacy}!any\_offer@{any\_offer}}
+\index{any\_offer@{any\_offer}!Diplomacy@{Diplomacy}}
+\doxysubsubsection{\texorpdfstring{any\_offer}{any\_offer}}
+{\footnotesize\ttfamily \label{struct_diplomacy_aa2051e6d9eba94b9657a72f69ed42a51} 
+int Diplomacy::\+any\+\_\+offer}
+
+是否有任何提议 \Hypertarget{struct_diplomacy_a047b335dacbf79c812b98cc5c35e5cfd}\index{Diplomacy@{Diplomacy}!attacks@{attacks}}
+\index{attacks@{attacks}!Diplomacy@{Diplomacy}}
+\doxysubsubsection{\texorpdfstring{attacks}{attacks}}
+{\footnotesize\ttfamily \label{struct_diplomacy_a047b335dacbf79c812b98cc5c35e5cfd} 
+int Diplomacy::\+attacks\+[8]\+}
+
+攻击记录数组，存储最近的8次攻击记录 \Hypertarget{struct_diplomacy_a53b10a4037db53b8c6f8584f47a3ffe0}\index{Diplomacy@{Diplomacy}!dows@{dows}}
+\index{dows@{dows}!Diplomacy@{Diplomacy}}
+\doxysubsubsection{\texorpdfstring{dows}{dows}}
+{\footnotesize\ttfamily \label{struct_diplomacy_a53b10a4037db53b8c6f8584f47a3ffe0} 
+int Diplomacy::\+dows\+[6]\+}
+
+宣战数组，存储最近的6次宣战记录 \Hypertarget{struct_diplomacy_a1906cb0f007e9b51947287ef7496ab8a}\index{Diplomacy@{Diplomacy}!offers@{offers}}
+\index{offers@{offers}!Diplomacy@{Diplomacy}}
+\doxysubsubsection{\texorpdfstring{offers}{offers}}
+{\footnotesize\ttfamily \label{struct_diplomacy_a1906cb0f007e9b51947287ef7496ab8a} 
+int Diplomacy::\+offers\+[6]\+}
+
+提议数组，存储最近的6个提议 \Hypertarget{struct_diplomacy_a02c84eea3ca96864df12ff548dd0ad5a}\index{Diplomacy@{Diplomacy}!treaty@{treaty}}
+\index{treaty@{treaty}!Diplomacy@{Diplomacy}}
+\doxysubsubsection{\texorpdfstring{treaty}{treaty}}
+{\footnotesize\ttfamily \label{struct_diplomacy_a02c84eea3ca96864df12ff548dd0ad5a} 
+int Diplomacy::\+treaty}
+
+条约状态，表示当前存在的条约类型 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

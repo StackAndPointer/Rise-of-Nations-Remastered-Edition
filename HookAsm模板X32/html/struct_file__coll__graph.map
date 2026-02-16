@@ -1,0 +1,9 @@
+<map id="File" name="File">
+<area shape="rect" id="Node000001" title="文件结构体 &#45; 封装文件操作" alt="" coords="45,203,87,229"/>
+<area shape="rect" id="Node000002" href="$struct_a__iobuf.html" title="游戏信息结构体 &#45; 存储整个游戏的基本信息" alt="" coords="5,104,71,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,143,56,178,64,202,58,202,50,179,43,148"/>
+<area shape="rect" id="Node000003" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="94,104,150,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,144,75,204,71,201,104,145"/>
+<area shape="rect" id="Node000004" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="80,5,164,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,45,125,104,119,103,121,50"/>
+</map>

@@ -1,0 +1,148 @@
+\doxysection{Mod\+Package结构体 参考}
+\hypertarget{struct_mod_package}{}\label{struct_mod_package}\index{ModPackage@{ModPackage}}
+
+
+MOD包结构体 -\/ 存储单个\+MOD的完整信息  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+Mod\+Package 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_mod_package__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \+\_\+\+\_\+int64 \doxymbox{\hyperlink{struct_mod_package_a7cae40460c991cde83854f50a9651253}{m\+\_\+author}}
+\item 
+unsigned \+\_\+\+\_\+int64 \doxymbox{\hyperlink{struct_mod_package_afc487f542f8954a0c54583f914fb9e4b}{m\+\_\+workshop\+ID}}
+\item 
+\doxymbox{\hyperlink{struct_mod_assets}{Mod\+Assets}} \doxymbox{\hyperlink{struct_mod_package_a5b4bbab62de77d1e022e8b697cce75b5}{m\+\_\+assets}}
+\item 
+\doxymbox{\hyperlink{struct_sky_string}{Sky\+String}} \doxymbox{\hyperlink{struct_mod_package_a6c6ce62bcf9eb13aee6051473d6c2b94}{m\+\_\+mod\+Title}}
+\item 
+\doxymbox{\hyperlink{struct_sky_string}{Sky\+String}} \doxymbox{\hyperlink{struct_mod_package_a8fa231993ae5cde16983c407e228688a}{m\+\_\+mod\+Install\+Directory}}
+\item 
+unsigned \+\_\+\+\_\+int64 \doxymbox{\hyperlink{struct_mod_package_ac1a9f68a04d49dff72a1b506d633611b}{m\+\_\+size\+In\+Bytes}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_a8e6264c27ebafab6540176ec5ca3b45e}{Storage\+Point\+\_\+\+Location}} \doxymbox{\hyperlink{struct_mod_package_afc47b0cd3856e0ac2c511dd85342944f}{m\+\_\+storage\+Point}}
+\item 
+int \doxymbox{\hyperlink{struct_mod_package_a184a355cd987891033ed0716fad906d7}{m\+\_\+priority}}
+\item 
+int \doxymbox{\hyperlink{struct_mod_package_a648def6c8ff9860b7890472e0b012fa4}{m\+\_\+num\+Conflicts}}
+\item 
+int \doxymbox{\hyperlink{struct_mod_package_a49182e3d94024cddb29f2c68f7386f2d}{m\+\_\+num\+Files}}
+\item 
+bool \doxymbox{\hyperlink{struct_mod_package_a646405342d8b5bf8dc8e1bed01eaa8e0}{m\+\_\+enabled}}
+\item 
+bool \doxymbox{\hyperlink{struct_mod_package_a38d86a0f7fd21bb6067fc6a9be52f2e0}{m\+\_\+active}}
+\item 
+int \doxymbox{\hyperlink{struct_mod_package_aadd4bd26205149e76168bd04afe4ae30}{unk}} \+[3]\+
+\item 
+\doxymbox{\hyperlink{struct_a___f_i_l_e_t_i_m_e}{A\+\_\+\+FILETIME}} \doxymbox{\hyperlink{struct_mod_package_ac00852b567fe66fc37af56f5a789049d}{m\+\_\+workshop\+Timestamp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+MOD包结构体 -\/ 存储单个\+MOD的完整信息 
+
+\label{doc-variable-members}
+\Hypertarget{struct_mod_package_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_mod_package_a38d86a0f7fd21bb6067fc6a9be52f2e0}\index{ModPackage@{ModPackage}!m\_active@{m\_active}}
+\index{m\_active@{m\_active}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_active}{m\_active}}
+{\footnotesize\ttfamily \label{struct_mod_package_a38d86a0f7fd21bb6067fc6a9be52f2e0} 
+bool Mod\+Package::\+m\+\_\+active}
+
+是否激活 \Hypertarget{struct_mod_package_a5b4bbab62de77d1e022e8b697cce75b5}\index{ModPackage@{ModPackage}!m\_assets@{m\_assets}}
+\index{m\_assets@{m\_assets}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_assets}{m\_assets}}
+{\footnotesize\ttfamily \label{struct_mod_package_a5b4bbab62de77d1e022e8b697cce75b5} 
+\doxymbox{\hyperlink{struct_mod_assets}{Mod\+Assets}} Mod\+Package::\+m\+\_\+assets}
+
+MOD资源 \Hypertarget{struct_mod_package_a7cae40460c991cde83854f50a9651253}\index{ModPackage@{ModPackage}!m\_author@{m\_author}}
+\index{m\_author@{m\_author}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_author}{m\_author}}
+{\footnotesize\ttfamily \label{struct_mod_package_a7cae40460c991cde83854f50a9651253} 
+unsigned \+\_\+\+\_\+int64 Mod\+Package::\+m\+\_\+author}
+
+MOD作者\+ID \Hypertarget{struct_mod_package_a646405342d8b5bf8dc8e1bed01eaa8e0}\index{ModPackage@{ModPackage}!m\_enabled@{m\_enabled}}
+\index{m\_enabled@{m\_enabled}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_enabled}{m\_enabled}}
+{\footnotesize\ttfamily \label{struct_mod_package_a646405342d8b5bf8dc8e1bed01eaa8e0} 
+bool Mod\+Package::\+m\+\_\+enabled}
+
+是否启用 \Hypertarget{struct_mod_package_a8fa231993ae5cde16983c407e228688a}\index{ModPackage@{ModPackage}!m\_modInstallDirectory@{m\_modInstallDirectory}}
+\index{m\_modInstallDirectory@{m\_modInstallDirectory}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_modInstallDirectory}{m\_modInstallDirectory}}
+{\footnotesize\ttfamily \label{struct_mod_package_a8fa231993ae5cde16983c407e228688a} 
+\doxymbox{\hyperlink{struct_sky_string}{Sky\+String}} Mod\+Package::\+m\+\_\+mod\+Install\+Directory}
+
+MOD安装目录 \Hypertarget{struct_mod_package_a6c6ce62bcf9eb13aee6051473d6c2b94}\index{ModPackage@{ModPackage}!m\_modTitle@{m\_modTitle}}
+\index{m\_modTitle@{m\_modTitle}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_modTitle}{m\_modTitle}}
+{\footnotesize\ttfamily \label{struct_mod_package_a6c6ce62bcf9eb13aee6051473d6c2b94} 
+\doxymbox{\hyperlink{struct_sky_string}{Sky\+String}} Mod\+Package::\+m\+\_\+mod\+Title}
+
+MOD标题 \Hypertarget{struct_mod_package_a648def6c8ff9860b7890472e0b012fa4}\index{ModPackage@{ModPackage}!m\_numConflicts@{m\_numConflicts}}
+\index{m\_numConflicts@{m\_numConflicts}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_numConflicts}{m\_numConflicts}}
+{\footnotesize\ttfamily \label{struct_mod_package_a648def6c8ff9860b7890472e0b012fa4} 
+int Mod\+Package::\+m\+\_\+num\+Conflicts}
+
+冲突数量 \Hypertarget{struct_mod_package_a49182e3d94024cddb29f2c68f7386f2d}\index{ModPackage@{ModPackage}!m\_numFiles@{m\_numFiles}}
+\index{m\_numFiles@{m\_numFiles}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_numFiles}{m\_numFiles}}
+{\footnotesize\ttfamily \label{struct_mod_package_a49182e3d94024cddb29f2c68f7386f2d} 
+int Mod\+Package::\+m\+\_\+num\+Files}
+
+文件数量 \Hypertarget{struct_mod_package_a184a355cd987891033ed0716fad906d7}\index{ModPackage@{ModPackage}!m\_priority@{m\_priority}}
+\index{m\_priority@{m\_priority}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_priority}{m\_priority}}
+{\footnotesize\ttfamily \label{struct_mod_package_a184a355cd987891033ed0716fad906d7} 
+int Mod\+Package::\+m\+\_\+priority}
+
+加载优先级 \Hypertarget{struct_mod_package_ac1a9f68a04d49dff72a1b506d633611b}\index{ModPackage@{ModPackage}!m\_sizeInBytes@{m\_sizeInBytes}}
+\index{m\_sizeInBytes@{m\_sizeInBytes}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_sizeInBytes}{m\_sizeInBytes}}
+{\footnotesize\ttfamily \label{struct_mod_package_ac1a9f68a04d49dff72a1b506d633611b} 
+unsigned \+\_\+\+\_\+int64 Mod\+Package::\+m\+\_\+size\+In\+Bytes}
+
+MOD文件大小（字节） \Hypertarget{struct_mod_package_afc47b0cd3856e0ac2c511dd85342944f}\index{ModPackage@{ModPackage}!m\_storagePoint@{m\_storagePoint}}
+\index{m\_storagePoint@{m\_storagePoint}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_storagePoint}{m\_storagePoint}}
+{\footnotesize\ttfamily \label{struct_mod_package_afc47b0cd3856e0ac2c511dd85342944f} 
+\doxymbox{\hyperlink{_enums_8h_a8e6264c27ebafab6540176ec5ca3b45e}{Storage\+Point\+\_\+\+Location}} Mod\+Package::\+m\+\_\+storage\+Point}
+
+存储位置 \Hypertarget{struct_mod_package_afc487f542f8954a0c54583f914fb9e4b}\index{ModPackage@{ModPackage}!m\_workshopID@{m\_workshopID}}
+\index{m\_workshopID@{m\_workshopID}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_workshopID}{m\_workshopID}}
+{\footnotesize\ttfamily \label{struct_mod_package_afc487f542f8954a0c54583f914fb9e4b} 
+unsigned \+\_\+\+\_\+int64 Mod\+Package::\+m\+\_\+workshop\+ID}
+
+创意工坊\+ID \Hypertarget{struct_mod_package_ac00852b567fe66fc37af56f5a789049d}\index{ModPackage@{ModPackage}!m\_workshopTimestamp@{m\_workshopTimestamp}}
+\index{m\_workshopTimestamp@{m\_workshopTimestamp}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{m\_workshopTimestamp}{m\_workshopTimestamp}}
+{\footnotesize\ttfamily \label{struct_mod_package_ac00852b567fe66fc37af56f5a789049d} 
+\doxymbox{\hyperlink{struct_a___f_i_l_e_t_i_m_e}{A\+\_\+\+FILETIME}} Mod\+Package::\+m\+\_\+workshop\+Timestamp}
+
+创意工坊时间戳 \Hypertarget{struct_mod_package_aadd4bd26205149e76168bd04afe4ae30}\index{ModPackage@{ModPackage}!unk@{unk}}
+\index{unk@{unk}!ModPackage@{ModPackage}}
+\doxysubsubsection{\texorpdfstring{unk}{unk}}
+{\footnotesize\ttfamily \label{struct_mod_package_aadd4bd26205149e76168bd04afe4ae30} 
+int Mod\+Package::\+unk\+[3]\+}
+
+Steam创意工坊标签向量 std::\+vector\texorpdfstring{$<$}{<}enum Steam\+Workshop\+Tags, std::\+allocator$<$enum Steam\+Workshop\+Tags$>$ \texorpdfstring{$>$}{>} m\+\_\+steam\+Tags; 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

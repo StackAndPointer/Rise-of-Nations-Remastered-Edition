@@ -1,0 +1,101 @@
+\doxysection{Game\+Mod结构体 参考}
+\hypertarget{struct_game_mod}{}\label{struct_game_mod}\index{GameMod@{GameMod}}
+
+
+游戏\+MOD结构体 -\/ 游戏中的\+MOD管理  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Game\+Mod 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{struct_game_mod__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Game\+Mod 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_game_mod__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_game_mod_ad5ff41fc656627dfe2799874c8519b55}{unk}}
+\item 
+\doxymbox{\hyperlink{struct_mod_package}{Mod\+Package}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_game_mod_ac3ee045745c4e53e7ee3c362d17c149c}{m\+Mod}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_game_mod_a1d201fe782337e3d8d9f8599adaa1f3b}{m\+Name}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_game_mod_a8488ebf1ab025b3a4427d1455de7631a}{m\+Description}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_game_mod_a5b4885f1dc4fbc7a9ff83f3ed8b7d6af}{m\+Version}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_game_mod_a811725cb7f1b336fe915d40f09b677af}{m\+Checksum}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_game_mod_a2a594f2b98095ae4b635ab02dfb0decf}{m\+Total\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+游戏\+MOD结构体 -\/ 游戏中的\+MOD管理 
+
+\label{doc-variable-members}
+\Hypertarget{struct_game_mod_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_game_mod_a811725cb7f1b336fe915d40f09b677af}\index{GameMod@{GameMod}!mChecksum@{mChecksum}}
+\index{mChecksum@{mChecksum}!GameMod@{GameMod}}
+\doxysubsubsection{\texorpdfstring{mChecksum}{mChecksum}}
+{\footnotesize\ttfamily \label{struct_game_mod_a811725cb7f1b336fe915d40f09b677af} 
+unsigned int Game\+Mod::\+m\+Checksum}
+
+校验和 \Hypertarget{struct_game_mod_a8488ebf1ab025b3a4427d1455de7631a}\index{GameMod@{GameMod}!mDescription@{mDescription}}
+\index{mDescription@{mDescription}!GameMod@{GameMod}}
+\doxysubsubsection{\texorpdfstring{mDescription}{mDescription}}
+{\footnotesize\ttfamily \label{struct_game_mod_a8488ebf1ab025b3a4427d1455de7631a} 
+\doxymbox{\hyperlink{struct_string}{String}} Game\+Mod::\+m\+Description}
+
+MOD描述 \Hypertarget{struct_game_mod_ac3ee045745c4e53e7ee3c362d17c149c}\index{GameMod@{GameMod}!mMod@{mMod}}
+\index{mMod@{mMod}!GameMod@{GameMod}}
+\doxysubsubsection{\texorpdfstring{mMod}{mMod}}
+{\footnotesize\ttfamily \label{struct_game_mod_ac3ee045745c4e53e7ee3c362d17c149c} 
+\doxymbox{\hyperlink{struct_mod_package}{Mod\+Package}}\texorpdfstring{$\ast$}{*} Game\+Mod::\+m\+Mod}
+
+MOD包指针 \Hypertarget{struct_game_mod_a1d201fe782337e3d8d9f8599adaa1f3b}\index{GameMod@{GameMod}!mName@{mName}}
+\index{mName@{mName}!GameMod@{GameMod}}
+\doxysubsubsection{\texorpdfstring{mName}{mName}}
+{\footnotesize\ttfamily \label{struct_game_mod_a1d201fe782337e3d8d9f8599adaa1f3b} 
+\doxymbox{\hyperlink{struct_string}{String}} Game\+Mod::\+m\+Name}
+
+MOD名称 \Hypertarget{struct_game_mod_a2a594f2b98095ae4b635ab02dfb0decf}\index{GameMod@{GameMod}!mTotalSize@{mTotalSize}}
+\index{mTotalSize@{mTotalSize}!GameMod@{GameMod}}
+\doxysubsubsection{\texorpdfstring{mTotalSize}{mTotalSize}}
+{\footnotesize\ttfamily \label{struct_game_mod_a2a594f2b98095ae4b635ab02dfb0decf} 
+unsigned int Game\+Mod::\+m\+Total\+Size}
+
+总大小 \Hypertarget{struct_game_mod_a5b4885f1dc4fbc7a9ff83f3ed8b7d6af}\index{GameMod@{GameMod}!mVersion@{mVersion}}
+\index{mVersion@{mVersion}!GameMod@{GameMod}}
+\doxysubsubsection{\texorpdfstring{mVersion}{mVersion}}
+{\footnotesize\ttfamily \label{struct_game_mod_a5b4885f1dc4fbc7a9ff83f3ed8b7d6af} 
+\doxymbox{\hyperlink{struct_string}{String}} Game\+Mod::\+m\+Version}
+
+MOD版本 \Hypertarget{struct_game_mod_ad5ff41fc656627dfe2799874c8519b55}\index{GameMod@{GameMod}!unk@{unk}}
+\index{unk@{unk}!GameMod@{GameMod}}
+\doxysubsubsection{\texorpdfstring{unk}{unk}}
+{\footnotesize\ttfamily \label{struct_game_mod_ad5ff41fc656627dfe2799874c8519b55} 
+int Game\+Mod::\+unk}
+
+虚函数表指针 Game\+Mod\+\_\+vtbl\texorpdfstring{$\ast$}{*} \+\_\+\+\_\+vftable 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

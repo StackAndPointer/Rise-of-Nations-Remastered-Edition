@@ -1,0 +1,7 @@
+<map id="PopupWave" name="PopupWave">
+<area shape="rect" id="Node000001" title="弹出窗口音效结构" alt="" coords="5,203,97,229"/>
+<area shape="rect" id="Node000002" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="23,104,79,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,145,54,203,48,202,49,148"/>
+<area shape="rect" id="Node000003" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="9,5,93,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,45,54,104,48,103,50,50"/>
+</map>

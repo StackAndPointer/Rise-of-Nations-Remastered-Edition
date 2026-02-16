@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rise-of-Nations-Remastered-Edition框架文档: LeaderData.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Rise-of-Nations-Remastered-Edition框架文档<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">注释</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">LeaderData.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>简介  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;HookAddr.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enums_8h_source.html">Enums.h</a>&quot;</code><br />
+<code>#include &quot;GlobalVariable.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+LeaderData.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_leader_data_8cpp__incl.png" border="0" usemap="#a_leader_data_8cpp" loading="lazy" alt=""/></div>
+<map name="a_leader_data_8cpp" id="a_leader_data_8cpp">
+<area shape="rect" title="简介" alt="" coords="77,5,190,32"/>
+<area shape="rect" href="_hook_addr_8h_source.html" title=" " alt="" coords="5,80,96,107"/>
+<area shape="poly" title=" " alt="" coords="117,35,78,71,74,68,120,30"/>
+<area shape="rect" href="_enums_8h.html" title="简介" alt="" coords="97,155,170,181"/>
+<area shape="poly" title=" " alt="" coords="135,31,136,140,131,139,131,34"/>
+<area shape="rect" href="_global_variable_8h_source.html" title=" " alt="" coords="170,80,286,107"/>
+<area shape="poly" title=" " alt="" coords="150,30,202,70,197,71,150,35"/>
+<area shape="poly" title=" " alt="" coords="65,105,110,143,105,145,65,110"/>
+<area shape="rect" title=" " alt="" coords="42,229,126,256"/>
+<area shape="poly" title=" " alt="" coords="127,181,103,218,99,215,122,183"/>
+<area shape="rect" title=" " alt="" coords="150,229,218,256"/>
+<area shape="poly" title=" " alt="" coords="143,179,169,217,164,217,141,184"/>
+<area shape="poly" title=" " alt="" coords="214,106,163,147,160,143,209,109"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad0138565b3425a74dfdd2a694f86acf0" id="r_ad0138565b3425a74dfdd2a694f86acf0"><td class="memItemLeft">BOOL __fastcall&#160;</td><td class="memItemRight"><a class="el" href="#ad0138565b3425a74dfdd2a694f86acf0">LeaderData__is_team</a> (<a class="el" href="struct_leader_data.html">LeaderData</a> *leaderData, int placeholder, int whom, int strict)</td></tr>
+<tr class="memdesc:ad0138565b3425a74dfdd2a694f86acf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断两个领导者是否在同一队伍中  <br /></td></tr>
+<tr class="memitem:a7d2e84f61803b0fbe10944c0f77af907" id="r_a7d2e84f61803b0fbe10944c0f77af907"><td class="memItemLeft"><a id="a7d2e84f61803b0fbe10944c0f77af907" name="a7d2e84f61803b0fbe10944c0f77af907"></a>
+int __fastcall&#160;</td><td class="memItemRight"><b>LeaderData__get_player</b> (<a class="el" href="struct_leader_data.html">LeaderData</a> *leaderData, int placeholder)</td></tr>
+<tr class="memitem:adda429729362bde0b21844264eda77b4" id="r_adda429729362bde0b21844264eda77b4"><td class="memItemLeft"><a id="adda429729362bde0b21844264eda77b4" name="adda429729362bde0b21844264eda77b4"></a>
+BOOL __fastcall&#160;</td><td class="memItemRight"><b>LeaderData__is_ally</b> (<a class="el" href="struct_leader_data.html">LeaderData</a> *leaderData, int placeholder, int whom)</td></tr>
+<tr class="memitem:ab23693a8f4e997997293b7a207b7ab0a" id="r_ab23693a8f4e997997293b7a207b7ab0a"><td class="memItemLeft"><a id="ab23693a8f4e997997293b7a207b7ab0a" name="ab23693a8f4e997997293b7a207b7ab0a"></a>
+int __fastcall&#160;</td><td class="memItemRight"><b>Leader__calc_pop_cap</b> (Leader *leader, int placeholder)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>简介 </p>
+<p>细节 </p><dl class="section author"><dt>作者</dt><dd>作者 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>版本号 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>年-月-日 </dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>版权 </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="ad0138565b3425a74dfdd2a694f86acf0" name="ad0138565b3425a74dfdd2a694f86acf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0138565b3425a74dfdd2a694f86acf0">&#9670;&#160;</a></span>LeaderData__is_team()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL __fastcall LeaderData__is_team </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_leader_data.html">LeaderData</a> *</td>          <td class="paramname"><span class="paramname"><em>leaderData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>placeholder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>whom</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>strict</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断两个领导者是否在同一队伍中 </p>
+<p>此函数用于检查游戏中的两个领导者是否属于同一队伍，支持多种队伍模式 和特殊规则。函数考虑了队伍样式、特殊标记、游戏帧数和严格模式等因素。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">leaderData</td><td>当前领导者对象 </td></tr>
+    <tr><td class="paramname">placeholder</td><td>占位符参数（可能是游戏索引或上下文标识） </td></tr>
+    <tr><td class="paramname">whom</td><td>要比较的领导者索引 </td></tr>
+    <tr><td class="paramname">strict</td><td>严格模式标志：0-宽松模式，1-严格模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>BOOL 返回TRUE表示在同一队伍，FALSE表示不在同一队伍 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

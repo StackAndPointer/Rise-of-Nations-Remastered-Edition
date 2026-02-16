@@ -1,0 +1,5 @@
+<map id="LeaderOptionData" name="LeaderOptionData">
+<area shape="rect" id="Node000001" title="Steam集成" alt="" coords="10,80,136,107"/>
+<area shape="rect" id="Node000002" href="$struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,46,76,80,70,79,71,50"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="GSTexture" name="GSTexture">
+<area shape="rect" id="Node000001" title="图形系统纹理对象" alt="" coords="5,80,89,107"/>
+<area shape="rect" id="Node000002" href="$struct_g_s_object.html" title="图形系统对象基类" alt="" coords="8,5,86,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,46,50,80,44,79,45,50"/>
+</map>

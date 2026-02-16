@@ -1,0 +1,109 @@
+\doxysection{Log结构体 参考}
+\hypertarget{struct_log}{}\label{struct_log}\index{Log@{Log}}
+
+
+日志结构 -\/ 用于游戏日志记录  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Log 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{struct_log__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Log 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{struct_log__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_log_a156ece2e15f8c60f196af1c60b540d68}{unk}}
+\item 
+int \doxymbox{\hyperlink{struct_log_aaa2571341b7182f4f6afd86731de892a}{flags}}
+\item 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_log_aa6d9fdbf76ea4ea9e6dd06950ffeb528}{handle\+\_\+aux}}
+\item 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_log_ad856f640df6a75bd186f239d3461e1b8}{handle}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_log_a5a6f6b73c546bddc14866010238cddd5}{file\+\_\+aux}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_log_aee75cf442caa8e5a3b0da88ac94ffcb4}{file}}
+\item 
+int \doxymbox{\hyperlink{struct_log_a37faca87a69124de7a25068955d65bf3}{indent}}
+\item 
+int \doxymbox{\hyperlink{struct_log_a8aec28f68e82d8e4bc7021d979c17beb}{indent\+\_\+aux}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+日志结构 -\/ 用于游戏日志记录 
+
+\label{doc-variable-members}
+\Hypertarget{struct_log_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_log_aee75cf442caa8e5a3b0da88ac94ffcb4}\index{Log@{Log}!file@{file}}
+\index{file@{file}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \label{struct_log_aee75cf442caa8e5a3b0da88ac94ffcb4} 
+\doxymbox{\hyperlink{struct_string}{String}} Log::\+file}
+
+主日志文件名 \Hypertarget{struct_log_a5a6f6b73c546bddc14866010238cddd5}\index{Log@{Log}!file\_aux@{file\_aux}}
+\index{file\_aux@{file\_aux}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{file\_aux}{file\_aux}}
+{\footnotesize\ttfamily \label{struct_log_a5a6f6b73c546bddc14866010238cddd5} 
+\doxymbox{\hyperlink{struct_string}{String}} Log::\+file\+\_\+aux}
+
+辅助日志文件名 \Hypertarget{struct_log_aaa2571341b7182f4f6afd86731de892a}\index{Log@{Log}!flags@{flags}}
+\index{flags@{flags}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{struct_log_aaa2571341b7182f4f6afd86731de892a} 
+int Log::\+flags}
+
+日志标志位 \Hypertarget{struct_log_ad856f640df6a75bd186f239d3461e1b8}\index{Log@{Log}!handle@{handle}}
+\index{handle@{handle}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{handle}{handle}}
+{\footnotesize\ttfamily \label{struct_log_ad856f640df6a75bd186f239d3461e1b8} 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}}\texorpdfstring{$\ast$}{*} Log::\+handle}
+
+主文件句柄 \Hypertarget{struct_log_aa6d9fdbf76ea4ea9e6dd06950ffeb528}\index{Log@{Log}!handle\_aux@{handle\_aux}}
+\index{handle\_aux@{handle\_aux}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{handle\_aux}{handle\_aux}}
+{\footnotesize\ttfamily \label{struct_log_aa6d9fdbf76ea4ea9e6dd06950ffeb528} 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}}\texorpdfstring{$\ast$}{*} Log::\+handle\+\_\+aux}
+
+辅助文件句柄 \Hypertarget{struct_log_a37faca87a69124de7a25068955d65bf3}\index{Log@{Log}!indent@{indent}}
+\index{indent@{indent}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{indent}{indent}}
+{\footnotesize\ttfamily \label{struct_log_a37faca87a69124de7a25068955d65bf3} 
+int Log::\+indent}
+
+当前缩进级别 \Hypertarget{struct_log_a8aec28f68e82d8e4bc7021d979c17beb}\index{Log@{Log}!indent\_aux@{indent\_aux}}
+\index{indent\_aux@{indent\_aux}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{indent\_aux}{indent\_aux}}
+{\footnotesize\ttfamily \label{struct_log_a8aec28f68e82d8e4bc7021d979c17beb} 
+int Log::\+indent\+\_\+aux}
+
+辅助缩进级别 \Hypertarget{struct_log_a156ece2e15f8c60f196af1c60b540d68}\index{Log@{Log}!unk@{unk}}
+\index{unk@{unk}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{unk}{unk}}
+{\footnotesize\ttfamily \label{struct_log_a156ece2e15f8c60f196af1c60b540d68} 
+int Log::\+unk}
+
+虚函数表指针 Log\+\_\+vtbl\texorpdfstring{$\ast$}{*} \+\_\+\+\_\+vftable 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

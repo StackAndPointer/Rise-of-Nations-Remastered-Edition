@@ -993,3 +993,8 @@
     extern void* ScenarioFuncSet__init_funcsAddr;
     extern void __fastcall ScenarioFuncSet__init_funcs(ScenarioFuncSet* scenarioFuncSet, int placeholder);//0x5C7570
     extern void(__fastcall* Old_ScenarioFuncSet__init_funcs)(ScenarioFuncSet* scenarioFuncSet, int placeholder);
+    extern void* ScriptFuncSet__add_new_funcAddr;
+    extern ScriptFunc* __fastcall ScriptFuncSet__add_new_func(ScriptFuncSet* scriptFuncSet, int placeholder, int ret_type, const wchar_t* name, int addr, unsigned __int8 num);//0x5D4DA0
+    extern ScriptFunc* (__fastcall* Old_ScriptFuncSet__add_new_func)(ScriptFuncSet* scriptFuncSet, int placeholder, int ret_type, const wchar_t* name, int addr, unsigned __int8 num);
+    extern void* ScriptFunc__add_paramAddr;
+    extern void (__fastcall* ScriptFunc__add_param)(ScriptFunc* scriptFuncSet, int placeholder, int type, wchar_t* name, StringGuts* validation, unsigned __int8 param_flags, const wchar_t* def_value);//0x5D4F20

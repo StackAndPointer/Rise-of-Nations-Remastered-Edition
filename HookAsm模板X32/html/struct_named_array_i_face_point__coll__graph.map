@@ -1,0 +1,9 @@
+<map id="NamedArrayIFacePoint" name="NamedArrayIFacePoint">
+<area shape="rect" id="Node000001" title="界面点数组基类" alt="" coords="41,203,198,229"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,151,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,143,117,202,111,202,88,147"/>
+<area shape="rect" id="Node000003" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="174,104,230,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,142,132,204,128,200,179,143"/>
+<area shape="rect" id="Node000004" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="160,5,244,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="204,46,205,105,199,103,200,50"/>
+</map>

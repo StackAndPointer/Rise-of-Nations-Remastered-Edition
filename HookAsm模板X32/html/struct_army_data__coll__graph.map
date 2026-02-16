@@ -1,0 +1,9 @@
+<map id="ArmyData" name="ArmyData">
+<area shape="rect" id="Node000001" title="军队数据结构 &#45; 存储军队的基本状态和信息" alt="" coords="153,125,233,152"/>
+<area shape="rect" id="Node000002" href="$struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,41,183,124,178,126,95,45"/>
+<area shape="rect" id="Node000003" href="$struct_coord.html" title="领导者选项命令 &#45; 特殊的命令结构，包含领导者选项数据" alt="" coords="165,5,221,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,46,195,126,191,124,191,50"/>
+<area shape="rect" id="Node000004" href="$struct_w_coord.html" title="世界坐标结构体，表示游戏世界中的一个坐标" alt="" coords="245,5,314,32"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="264,44,204,127,200,123,259,46"/>
+</map>

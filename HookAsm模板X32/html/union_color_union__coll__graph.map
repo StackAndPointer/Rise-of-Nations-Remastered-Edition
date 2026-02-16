@@ -1,0 +1,5 @@
+<map id="ColorUnion" name="ColorUnion">
+<area shape="rect" id="Node000001" title="颜色联合体 &#45; 支持多种颜色表示方式" alt="" coords="25,104,112,131"/>
+<area shape="rect" id="Node000002" href="$struct_r_g_b_a_component.html" title="RGB颜色分量结构" alt="" coords="5,5,132,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,46,71,104,66,103,66,49"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="Buffer" name="Buffer">
+<area shape="rect" id="Node000001" title="缓冲区类（继承自ImageIO和BufferBase）" alt="" coords="87,501,142,528"/>
+<area shape="rect" id="Node000002" href="$struct_image_i_o.html" title="图像输入输出结构" alt="" coords="5,403,77,429"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,440,108,500,102,502,58,444"/>
+<area shape="rect" id="Node000003" href="$struct_buffer_base.html" title="缓冲区基类" alt="" coords="68,352,153,379"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,393,117,501,111,500,109,396"/>
+<area shape="rect" id="Node000004" href="$struct_g_s_buffer.html" title="图形系统缓冲区对象" alt="" coords="59,203,133,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="100,243,112,352,106,351,97,247"/>
+<area shape="rect" id="Node000005" href="$struct_g_s_object.html" title="图形系统对象基类" alt="" coords="59,104,138,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="98,144,99,203,93,202,97,149"/>
+<area shape="rect" id="Node000008" href="$struct_g_s_font.html" title="图形系统字体对象" alt="" coords="157,203,224,229"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="121,139,181,202,176,203,121,145"/>
+<area shape="rect" id="Node000006" href="$struct_font.html" title="字体类" alt="" coords="152,403,199,429"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="162,441,124,503,120,499,157,443"/>
+<area shape="rect" id="Node000007" href="$struct_font_base.html" title="字体基类" alt="" coords="149,301,226,328"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="186,342,180,404,175,402,183,346"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="226,290,237,276,241,265,237,255,228,242,217,233,216,227,232,238,242,252,246,265,242,279,230,293"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="190,243,191,253,190,302,185,300,186,253,188,248"/>
+<area shape="rect" id="Node000009" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="163,104,218,131"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="191,144,193,203,188,202,190,149"/>
+<area shape="rect" id="Node000010" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="149,5,232,32"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="191,45,193,104,188,103,190,50"/>
+</map>

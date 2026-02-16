@@ -1,0 +1,408 @@
+  % Handle batch mode
+  % to overcome problems with too many open files
+  \let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}
+  \RequirePackage{iftex}
+  \ifLuaTeX
+    \directlua{pdf.setminorversion(7)}
+  \fi
+  \ifXeTeX
+    \special{pdf:minorversion 7}
+  \fi
+  \ifPDFTeX
+    \pdfminorversion=7
+  \fi
+  % Set document class depending on configuration
+  \documentclass[twoside]{book}
+  % Packages required by doxygen
+  \makeatletter
+  \providecommand\IfFormatAtLeastTF{\@ifl@t@r\fmtversion}
+  % suppress package identification of infwarerr as it contains the word "warning"
+  \let\@@protected@wlog\protected@wlog
+  \def\protected@wlog#1{\wlog{package info suppressed}}
+  \RequirePackage{infwarerr}
+  \let\protected@wlog\@@protected@wlog
+  \makeatother
+  \IfFormatAtLeastTF{2016/01/01}{}{\usepackage{fixltx2e}} % for \textsubscript
+  \ifPDFTeX
+    \IfFormatAtLeastTF{2015/01/01}{\pdfsuppresswarningpagegroup=1}{}
+  \fi
+  \usepackage{doxygen}
+  \usepackage{graphicx}
+  \iftutex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Ligatures={TeX}}
+    \usepackage{unicode-math}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+  \usepackage{makeidx}
+  \PassOptionsToPackage{warn}{textcomp}
+  \usepackage{textcomp}
+  \usepackage[nointegrals]{wasysym}
+  \usepackage{ifxetex}
+  % NLS support packages
+  \usepackage{CJKutf8}
+  % Define default fonts
+  % Font selection
+  % set main and monospaced font
+  \usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+  \doxyallsectionsfont{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \renewcommand{\DoxyLabelFont}{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+   % Arguments of doxygenemoji:
+   % 1) ':<text>:' form of the emoji, already LaTeX-escaped
+   % 2) file with the name of the emoji without the .png extension
+   % in case image exist use this otherwise use the ':<text>:' form
+   \newcommand{\doxygenemoji}[2]{%
+     \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+   }
+  % Page & text layout
+  \usepackage{geometry}
+  \geometry{%
+    a4paper,%
+    top=2.5cm,%
+    bottom=2.5cm,%
+    left=2.5cm,%
+    right=2.5cm%
+  }
+  \usepackage{changepage}
+  % Allow a bit of overflow to go unnoticed by other means
+  \tolerance=750
+  \hfuzz=15pt
+  \hbadness=750
+  \setlength{\emergencystretch}{15pt}
+  \setlength{\parindent}{0cm}
+  \newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+  \newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+  \doxynormalparskip
+  % Redefine paragraph/subparagraph environments, using sectsty fonts
+  \makeatletter
+  \renewcommand{\paragraph}{%
+    \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@parafont%
+    }%
+  }
+  \renewcommand{\subparagraph}{%
+    \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@subparafont%
+    }%
+  }
+  \makeatother
+  \makeatletter
+  \newcommand\hrulefilll{\leavevmode\leaders\hrule\hskip 0pt plus 1filll\kern\z@}
+  \makeatother
+  % Headers & footers
+  \usepackage{fancyhdr}
+  \pagestyle{fancyplain}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancypagestyle{fancyplain}{
+    \fancyhf{}
+    \fancyhead[LE, RO]{\bfseries\thepage}
+    \fancyhead[LO]{\bfseries\rightmark}
+    \fancyhead[RE]{\bfseries\leftmark}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+  }
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+    \renewcommand{\headrulewidth}{0pt}
+  }
+  \pagestyle{fancyplain}
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{#1}{}%
+  }
+  \renewcommand{\sectionmark}[1]{%
+    \markright{\thesection\ #1}%
+  }
+  % ToC, LoF, LoT, bibliography, and index
+  % Indices & bibliography
+  \usepackage[numbers]{natbib}
+  \usepackage[titles]{tocloft}
+  \setcounter{tocdepth}{3}
+  \setcounter{secnumdepth}{5}
+  % creating indexes
+  \makeindex
+  \ifPDFTeX
+\usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+\fi
+  % Hyperlinks
+    % Hyperlinks (required, but should be loaded last)
+    \ifPDFTeX
+      \usepackage[pdftex,pagebackref=true]{hyperref}
+    \else
+      \ifXeTeX
+        \usepackage[xetex,pagebackref=true]{hyperref}
+      \else
+        \ifLuaTeX
+          \usepackage[luatex,pagebackref=true]{hyperref}
+        \else
+          \usepackage[ps2pdf,pagebackref=true]{hyperref}
+        \fi
+      \fi
+    \fi
+    \hypersetup{%
+      colorlinks=true,%
+      linkcolor=blue,%
+      citecolor=blue,%
+      unicode,%
+      pdftitle={Rise-\/of-\/\+Nations-\/\+Remastered-\/\+Edition框架文档},%
+      pdfsubject={注释}%
+    }
+  % Custom commands used by the header
+  % Custom commands
+  \newcommand{\clearemptydoublepage}{%
+    \newpage{\pagestyle{empty}\cleardoublepage}%
+  }
+  % caption style definition
+  \usepackage{caption}
+  \captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+  % in page table of contents
+  \IfFormatAtLeastTF{2023/05/01}{\usepackage[deeplevels]{etoc}}{\usepackage[deeplevels]{etoc_doxygen}}
+  \etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+  \etocsetlevel{subsubsubsection}{4}
+  \etocsetlevel{subsubsubsubsection}{5}
+  \etocsetlevel{subsubsubsubsubsection}{6}
+  \etocsetlevel{subsubsubsubsubsubsection}{7}
+  \etocsetlevel{paragraph}{8}
+  \etocsetlevel{subparagraph}{9}
+  % prevent numbers overlap the titles in toc
+  \renewcommand{\numberline}[1]{#1~}
+% End of preamble, now comes the document contents
+%===== C O N T E N T S =====
+\begin{document}
+  \raggedbottom
+  \begin{CJK}{UTF8}{gbsn}
+  % Titlepage & ToC
+    % To avoid duplicate page anchors due to reuse of same numbers for
+    % the index (be it as roman numbers)
+    \hypersetup{pageanchor=false,
+                bookmarksnumbered=true,
+                pdfencoding=unicode
+               }
+  \pagenumbering{alph}
+  \begin{titlepage}
+  \vspace*{7cm}
+  \begin{center}%
+  {\Large Rise-\/of-\/\+Nations-\/\+Remastered-\/\+Edition框架文档}\\
+  [1ex]\large 1.\+0 \\
+  \vspace*{1cm}
+  {\large 制作者 Doxygen 1.16.1}\\
+  \end{center}
+  \end{titlepage}
+  \clearemptydoublepage
+  \pagenumbering{roman}
+  \tableofcontents
+  \clearemptydoublepage
+  \pagenumbering{arabic}
+  % re-enable anchors again
+  \hypersetup{pageanchor=true}
+%--- Begin generated contents ---
+\chapter{继承关系索引}
+\input{hierarchy}
+\chapter{类索引}
+\input{annotated}
+\chapter{文件索引}
+\input{files}
+\chapter{类说明}
+\input{struct_a___f_i_l_e_t_i_m_e}
+\input{struct_a__iobuf}
+\input{struct_armies_data}
+\input{struct_army_data}
+\input{struct_array_army_ptr}
+\input{struct_array_base_simple_copy_army_ptr}
+\input{struct_array_base_simple_copy_combo_box_entry}
+\input{struct_array_base_simple_copyfloat}
+\input{struct_array_base_simple_copy_int}
+\input{struct_array_base_simple_copyint}
+\input{struct_array_base_simple_copy_make_object}
+\input{struct_array_base_simple_copy_site}
+\input{struct_array_base_simple_copy_sprite_base}
+\input{struct_array_base_simple_copy_string_list_entry}
+\input{struct_array_base_simple_copyunsigned____int64}
+\input{struct_array_base_simple_copy_window}
+\input{struct_array_base_sprite_base}
+\input{struct_array_combo_box_entry}
+\input{struct_arrayfloat}
+\input{struct_array_int}
+\input{struct_array_make_object}
+\input{struct_array_site}
+\input{struct_array_sprite_base}
+\input{struct_array_string_list_entry}
+\input{struct_arrayunsigned____int64}
+\input{struct_array_window}
+\input{struct_base_pop}
+\input{struct_buffer}
+\input{struct_buffer_base}
+\input{struct_button}
+\input{struct_button_group}
+\input{union_color_union}
+\input{struct_combo_box_entry}
+\input{struct_command}
+\input{struct_constants}
+\input{struct_coord}
+\input{struct_cursor}
+\input{struct_cursor_base}
+\input{struct_data_walk}
+\input{struct_dialog}
+\input{struct_diplomacy}
+\input{struct_file}
+\input{struct_font}
+\input{struct_font_base}
+\input{struct_game}
+\input{struct_game_access}
+\input{struct_game_access_const}
+\input{struct_game_log}
+\input{struct_game_mod}
+\input{struct_game_settings_fields}
+\input{union_game_settings_union}
+\input{struct_game_spy_buddy_request}
+\input{struct_graphic_win}
+\input{struct_graphic_win_x_m_l}
+\input{struct_grav_window}
+\input{struct_g_s_buffer}
+\input{struct_g_s_cursor}
+\input{struct_g_s_font}
+\input{struct_g_s_object}
+\input{struct_g_s_sprite}
+\input{struct_g_s_texture}
+\input{struct_help_box}
+\input{struct_help_box_win}
+\input{struct_hot_spot}
+\input{struct_i_face_border}
+\input{struct_i_face_point}
+\input{struct_i_face_render_indexing}
+\input{struct_i_face_sprite}
+\input{struct_i_face_stretch_sprite}
+\input{struct_i_face_tex}
+\input{struct_i_leaderboards_for_e_l_o_listener}
+\input{struct_i_leaderboards_listener}
+\input{struct_image_i_o}
+\input{struct_leader_data}
+\input{struct_leader_data_encrypt}
+\input{struct_leader_option}
+\input{struct_leader_option_data}
+\input{struct_leader_option_out}
+\input{struct_leader_options}
+\input{struct_leaders}
+\input{struct_log}
+\input{struct_make_list}
+\input{struct_make_object}
+\input{struct_misc_access}
+\input{struct_mod_assets}
+\input{struct_mod_package}
+\input{struct_named_array_color}
+\input{struct_named_array_i_face_border}
+\input{struct_named_array_i_face_point}
+\input{struct_named_array_i_face_sprite}
+\input{struct_named_array_i_face_stretch_sprite}
+\input{struct_named_array_i_face_tex}
+\input{struct_named_array_rect_templateshort}
+\input{struct_named_array_window}
+\input{struct_named_object_array_string}
+\input{struct_net_player}
+\input{struct_object_array_game_mod}
+\input{struct_object_array_game_spy_buddy_request}
+\input{struct_object_array_hot_spot}
+\input{struct_object_array_i_face_render_indexing}
+\input{struct_object_array_pull_down_struct}
+\input{struct_object_array_random_log_entry}
+\input{struct_object_array_string}
+\input{struct_object_array_tribe}
+\input{struct_personality}
+\input{struct_player_prefs}
+\input{struct_player_prefs_fields}
+\input{union_player_prefs_union}
+\input{struct_player_profile}
+\input{struct_popup}
+\input{struct_popup_wave}
+\input{struct_ptr_array_army}
+\input{struct_ptr_array_sprite_base}
+\input{struct_ptr_array_string_list_entry}
+\input{struct_ptr_array_window}
+\input{struct_pull_down_struct}
+\input{struct_random}
+\input{struct_random_log_entry}
+\input{struct_rect_template_baseshort}
+\input{struct_rect_templateshort}
+\input{struct_recycler_string_list_entry}
+\input{struct_r_g_b_a_component}
+\input{struct_scenario_data}
+\input{struct_scenario_func_set}
+\input{struct_script_func_set}
+\input{struct_setup_win_child}
+\input{struct_setup_win_custom}
+\input{struct_setup_win_players}
+\input{struct_setup_win_rules}
+\input{struct_simple_array_int}
+\input{struct_simple_arrayint}
+\input{struct_site}
+\input{struct_sites}
+\input{struct_sky_string}
+\input{struct_sky_string_list}
+\input{struct_sound_global}
+\input{struct_spot}
+\input{struct_sprite}
+\input{struct_sprite_base}
+\input{struct_steam_leaderboards}
+\input{struct_string}
+\input{struct_string_box}
+\input{union_string_data}
+\input{struct_string_list}
+\input{struct_string_list_entry}
+\input{struct_string_table}
+\input{struct_texture}
+\input{struct_texture_base}
+\input{struct_tribe}
+\input{struct_tribes}
+\input{struct_type_data}
+\input{struct_type_out}
+\input{struct_unit_balance}
+\input{struct_w_coord}
+\input{struct_window}
+\input{struct_x_m_l_element}
+\input{struct_x_m_l_node}
+\chapter{文件说明}
+\input{_enums_8h}
+\input{_enums_8h_source}
+\input{framework_8h_source}
+\input{_global_variable_8h_source}
+\input{_hook_addr_8h_source}
+\input{_leader_data_8cpp}
+\input{main_8h_source}
+%--- End generated contents ---
+% Index
+  \backmatter
+  \newpage
+  \phantomsection
+  \clearemptydoublepage
+  \addcontentsline{toc}{chapter}{\indexname}
+  \printindex
+% Required for some languages (in combination with latexdocumentpre from the header)
+\end{CJK}
+\end{document}

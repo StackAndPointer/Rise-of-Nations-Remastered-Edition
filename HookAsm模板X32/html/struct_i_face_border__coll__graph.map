@@ -1,0 +1,9 @@
+<map id="IFaceBorder" name="IFaceBorder">
+<area shape="rect" id="Node000001" title="界面边框结构" alt="" coords="40,321,132,348"/>
+<area shape="rect" id="Node000002" href="$struct_i_face_tex.html" title="界面纹理结构" alt="" coords="48,180,124,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,221,89,321,83,320,84,223"/>
+<area shape="rect" id="Node000003" href="$struct_rect_templateshort.html" title="矩形模板类（short类型）" alt="" coords="20,81,152,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,121,89,180,83,179,85,126"/>
+<area shape="rect" id="Node000004" href="$struct_rect_template_baseshort.html" title="矩形模板基类（short类型）" alt="" coords="5,5,167,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="86,44,89,81,83,81,86,50"/>
+</map>

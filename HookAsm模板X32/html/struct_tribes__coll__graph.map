@@ -1,0 +1,7 @@
+<map id="Tribes" name="Tribes">
+<area shape="rect" id="Node000001" title="部落管理器" alt="" coords="36,180,94,207"/>
+<area shape="rect" id="Node000002" href="$struct_object_array_tribe.html" title="部落数组基类" alt="" coords="5,81,125,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,122,68,180,62,179,63,125"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="9,5,121,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,45,68,81,62,81,64,50"/>
+</map>

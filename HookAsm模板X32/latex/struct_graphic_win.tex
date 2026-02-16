@@ -1,0 +1,211 @@
+\doxysection{Graphic\+Win结构体 参考}
+\hypertarget{struct_graphic_win}{}\label{struct_graphic_win}\index{GraphicWin@{GraphicWin}}
+
+
+图形窗口（继承自\+Window和\+Buffer）  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Graphic\+Win 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_graphic_win__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphic\+Win 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_graphic_win__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Public 成员函数 继承自 \doxymbox{\hyperlink{struct_buffer}{Buffer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries int} (\+\_\+\+\_\+cdecl \texorpdfstring{$\ast$}{*}write\+\_\+func)(const \doxymbox{\hyperlink{struct_string}{String}} \texorpdfstring{$\ast$}{*}
+\item 
+{\bfseries void} (\+\_\+\+\_\+cdecl \texorpdfstring{$\ast$}{*}strings\+\_\+func)(\doxymbox{\hyperlink{struct_buffer_aac6f621aa0834f0c449a8cf05eaf325e}{int}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性 继承自 \doxymbox{\hyperlink{struct_window}{Window}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_window_af457f1debaa825578e8cd6741c3b9761}{unk}}
+\item 
+int \doxymbox{\hyperlink{struct_window_ac1db4b348945175fd3534da9df275a8b}{style}}
+\item 
+int \doxymbox{\hyperlink{struct_window_aa0f39396d037c411323af3b256fb72e6}{flags}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a262d90498de3ce0b3b6d8ea1c8919b24}{id}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_window_a6e4bf56b36015c6bd37fe00542535b76}{id\+\_\+string}}
+\item 
+int \doxymbox{\hyperlink{struct_window_aad315badca99e4c7211d47ba76574886}{unk1}} \+[3]\+
+\item 
+bool \doxymbox{\hyperlink{struct_window_a05d9724c75a7827fc7ea579bc2f6a9bf}{ignore\+Stack\+Conditions}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a1e969af577b665a0cafe8da1cdbcd822}{unk2}} \+[3]\+
+\item 
+bool \doxymbox{\hyperlink{struct_window_ab387d5eae6aebf8519f395d2a1c66b3b}{override\+\_\+on\+\_\+left\+\_\+click\+\_\+on\+\_\+combo\+\_\+boxes}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a0f1448a6c1af880235963e00ad879939}{orig\+\_\+xs}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a7ead6bd673d6bcb34464bdbe2ce848cf}{orig\+\_\+ys}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a9c87a80e687e6beeac9bd38b9f9c3bc9}{spot\+\_\+passover\+\_\+id}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a05c7cd1d08c4301111ad02f4783852a0}{spot\+\_\+passover\+\_\+type}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_ad51c3f1da127187ec18eaff49b18e86f}{spot\+\_\+passover\+\_\+rect}}
+\item 
+\doxymbox{\hyperlink{struct_spot}{Spot}} \doxymbox{\hyperlink{struct_window_a56358527a61a0fa17f39bfd575283c4d}{win\+\_\+spot}}
+\item 
+\doxymbox{\hyperlink{struct_window}{Window}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a2194476b8d1e938f195fafa9beee1b85}{parent}}
+\item 
+\doxymbox{\hyperlink{struct_window}{Window}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a5c6b94c283776c502b678aaddffabe4a}{prev\+\_\+focus}}
+\item 
+\doxymbox{\hyperlink{struct_window}{Window}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a8e25363025bd13ba6c7d11febed38cf1}{default\+\_\+focus}}
+\item 
+\doxymbox{\hyperlink{struct_ptr_array_window}{Ptr\+Array\+Window}} \doxymbox{\hyperlink{struct_window_ae7de4d37f6422c80824a98563aa8ab7b}{children\+\_\+order}}
+\item 
+\doxymbox{\hyperlink{struct_ptr_array_window}{Ptr\+Array\+Window}} \doxymbox{\hyperlink{struct_window_ae45a24ada5aefa74793d516aaf5aee08}{children}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_window_a853231669e28e75c39251c1eba8fede0}{caption}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a654e85dac11e683316f49a9766ac16c0}{back\+\_\+color}}
+\item 
+\doxymbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a425992d92dee26dce69c5178f6835758}{caption\+\_\+font}}
+\item 
+\doxymbox{\hyperlink{struct_buffer}{Buffer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a5563a64a22e0a87e6a741804083d48fa}{border\+\_\+tile}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_abe2659439cc4f0f8e1b3707cd2b62330}{nonclient\+\_\+color}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a46a8a2da4d948a3ebb7f7acc68d855d7}{caption\+\_\+color}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a0457a07bf3d84aba3150f7b4ccd58782}{caption\+\_\+shadow}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a8068b7ede99e59906cc1cfb38dc1b5af}{color\+\_\+bevel\+\_\+up}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a9139c9bf9578236e0f9beda775c74ab5}{color\+\_\+bevel\+\_\+down}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a2d3e9afda4fb9aff59c99d9ba76bdad1}{caption\+\_\+shadow\+\_\+x\+\_\+off}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a358fc001bccff4c5b57beff52277c2c7}{caption\+\_\+shadow\+\_\+y\+\_\+off}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a2cde6627b9c8803c32c2cd9944b3d51a}{caption\+\_\+height}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a7e0d2ef857117885b40e9a6498c13a6e}{border\+\_\+thickness}}
+\item 
+char \doxymbox{\hyperlink{struct_window_addbe1cc929bde10a8e42602257f5fa9c}{bottom\+\_\+border\+\_\+thickness}}
+\item 
+char \doxymbox{\hyperlink{struct_window_acac4078adcc68c9dfa19c547a4b367cb}{bevel\+\_\+thickness}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a3b964a14d8710842c84b509144230cf7}{min\+\_\+xs}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_aed9771513c1f89e616eaa79928ed7994}{min\+\_\+ys}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_afedcb0730d62d0e0399bc24bdb11927d}{rect\+\_\+client}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_a666e3d02c4c5212b11abb0f2f8128eeb}{rect\+\_\+nonclient}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_a28cdedc5ed917b45b05fa63bb816fc5a}{rect\+\_\+clip}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_ac86efbde8f802cb35489e73996e445d3}{rect\+\_\+screen\+\_\+clip}}
+\item 
+char \doxymbox{\hyperlink{struct_window_ab6a2a41f6df3a98f97d597103599a2da}{client\+\_\+drag}}
+\item 
+char \doxymbox{\hyperlink{struct_window_ad4d496ddfd4a59d3b8240ff2ce2f18e6}{client\+\_\+resize}}
+\item 
+\doxymbox{\hyperlink{struct_cursor}{Cursor}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a4142d849f90328581c5c232fb901a49a}{cursor}}
+\item 
+int \doxymbox{\hyperlink{struct_window_af7fa627188d3efe44a3eb2466dfa535b}{stock\+\_\+cursor}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_aaa90bc3dd69f4962c267fdd69fa874d8}{last\+\_\+mouse\+\_\+x}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a14845c29063a0870f832dabae35b8546}{last\+\_\+mouse\+\_\+y}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性 继承自 \doxymbox{\hyperlink{struct_buffer}{Buffer}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_buffer_aac6f621aa0834f0c449a8cf05eaf325e}{int}}
+\item 
+char \doxymbox{\hyperlink{struct_buffer_a0818fe061117da9a8b7ad282c536e9a5}{wrap\+\_\+indent\+\_\+start}}
+\item 
+char \doxymbox{\hyperlink{struct_buffer_a79d6aacce872e5a7653cf9945f5b5609}{wrap\+\_\+indent}}
+\item 
+char \doxymbox{\hyperlink{struct_buffer_a737ba5d58ecb3381d8d67efce9943715}{wrap\+\_\+count}}
+\item 
+Color \doxymbox{\hyperlink{struct_buffer_a22917da0755f45d379aa3b884d4bd62f}{internal\+\_\+text\+\_\+color}}
+\item 
+char \doxymbox{\hyperlink{struct_buffer_aafb5834d5d1706fd3d1c78ef5a7971e4}{text\+\_\+mode\+\_\+write}}
+\item 
+char \doxymbox{\hyperlink{struct_buffer_a773bb544e3dfad42dee33b8834b42a45}{text\+\_\+mode\+\_\+break}}
+\item 
+char \doxymbox{\hyperlink{struct_buffer_a5fdc959bb19a7c3655d834b7859c3fd8}{text\+\_\+mode\+\_\+width}}
+\item 
+char \doxymbox{\hyperlink{struct_buffer_a072ef3b7dced78781ad6a3b5cf172966}{multi\+\_\+font}}
+\item 
+\doxymbox{\hyperlink{struct_buffer_aac6f621aa0834f0c449a8cf05eaf325e}{int}} \doxymbox{\hyperlink{struct_buffer_aca655c96d89218ee05ce7d4d2e3af8be}{temp\+\_\+font\+\_\+size}} \+[5]\+
+\item 
+\doxymbox{\hyperlink{struct_buffer_aac6f621aa0834f0c449a8cf05eaf325e}{int}} \doxymbox{\hyperlink{struct_buffer_aa79befa6041b95faa02a43ee8b20f897}{temp\+\_\+font\+\_\+style}} \+[5]\+
+\item 
+const \doxymbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_buffer_a6aec8102ada76f4bc5f1d13192a75e5b}{font}} \+[5]\+
+\item 
+Color \doxymbox{\hyperlink{struct_buffer_a2d9bf9a84df47d7dfa056aaf450057e9}{text\+\_\+color}} \+[5]\+
+\item 
+Color \doxymbox{\hyperlink{struct_buffer_aecf2fc88555b7eed107e535b7093447b}{text\+\_\+shadow}} \+[5]\+
+\item 
+char \doxymbox{\hyperlink{struct_buffer_a6338e08c572f274e721cbb321b472cd7}{shadow\+\_\+x\+\_\+off}} \+[5]\+
+\item 
+char \doxymbox{\hyperlink{struct_buffer_abab1d53e8cac782cab9e192d6a0a60b6}{shadow\+\_\+y\+\_\+off}} \+[5]\+
+\item 
+\doxymbox{\hyperlink{struct_buffer_aac6f621aa0834f0c449a8cf05eaf325e}{int}} \doxymbox{\hyperlink{struct_buffer_a836247f940ab0a36c90c86b7f2c65439}{locked\+\_\+for\+\_\+reading}}
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_buffer_a364d62a710396a54fae792b372d35b22}{read\+\_\+buffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性 继承自 \doxymbox{\hyperlink{struct_image_i_o}{Image\+IO}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a60efc26796af349cf17fb5ff8fce752c}{unk}}
+\item 
+Color \doxymbox{\hyperlink{struct_image_i_o_a3ffe4490ee57f0a9eaa7ce3e21e25831}{tint\+\_\+color}}
+\item 
+unsigned \+\_\+\+\_\+int8 \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_image_i_o_a406315e9338849b29e4db5d71f1ffbb3}{tint\+\_\+color\+\_\+wide}}
+\item 
+unsigned \+\_\+\+\_\+int8 \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_image_i_o_acdaa5fea9131e90b090f2935687d4650}{tint\+\_\+color\+\_\+wide\+\_\+base}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_ac33ca91ebb919ebe5fe6459eece2c70b}{num\+\_\+16\+\_\+chunks}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a90f5e6771b5c950d80000565b220f6ce}{num\+\_\+8\+\_\+chunks}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a2be913b83925f401fdde61fe4e534aa6}{num\+\_\+extra\+\_\+16\+\_\+pix}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_ac6de9dbc6ba1ce7622220f1784e47238}{num\+\_\+extra\+\_\+8\+\_\+pix}}
+\item 
+int \doxymbox{\hyperlink{struct_image_i_o_a9ff115acbf19814ad8fa91272f9da516}{use\+\_\+tint}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性 继承自 \doxymbox{\hyperlink{struct_buffer_base}{Buffer\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_buffer_base_aaadb191381477e1cf75db2c325f9d52d}{unk}}
+\item 
+\doxymbox{\hyperlink{struct_g_s_buffer}{GSBuffer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_buffer_base_a8313143f2bc6d4c1adde21adcdd28b39}{gs\+\_\+buffer}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_a060dbd7d809add7854b6bc513cdc3b0c}{Mem\+Type}} \doxymbox{\hyperlink{struct_buffer_base_a557a3ac4524ed9878dbe510d6482b0ad}{mem\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+图形窗口（继承自\+Window和\+Buffer） 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

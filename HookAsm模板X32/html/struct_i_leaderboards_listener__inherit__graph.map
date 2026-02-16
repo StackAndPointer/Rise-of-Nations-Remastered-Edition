@@ -1,0 +1,5 @@
+<map id="ILeaderboardsListener" name="ILeaderboardsListener">
+<area shape="rect" id="Node000001" title="存储领导者AI行为脚本的文件路径" alt="" coords="5,5,155,32"/>
+<area shape="rect" id="Node000002" href="$struct_game.html" title="游戏主结构体 &#45; 继承自排行榜监听器和游戏访问接口，管理整个游戏状态" alt="" coords="52,80,108,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,46,83,81,77,79,78,50"/>
+</map>

@@ -1,0 +1,2493 @@
+\doxysection{Leader\+Data结构体 参考}
+\hypertarget{struct_leader_data}{}\label{struct_leader_data}\index{LeaderData@{LeaderData}}
+
+
+领导者数据结构体 -\/ 存储玩家的游戏状态和统计数据  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Leader\+Data 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{struct_leader_data__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Leader\+Data 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_leader_data__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a08422241cd4ca2d7acec27d5fae97103}{leader\+\_\+flags}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_adbff6ebf25bf6012741c129c00539242}{leader\+\_\+flags2}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad66fd7255f9460b7db5b53d3eb390916}{who}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a74a7e06181a5e2bcb2de317469a7f439}{tribe}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7469e8faeb7ecae74bf1e4fde45eba34}{defeated\+\_\+by}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_abae99b05f2a121ed16442f8cfab22c0a}{gov}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a95fef8d64a58f10e1b2009d4a21674a8}{score}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7b410a66f2ae697bf920f5b653774f33}{score\+\_\+explored}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ac964c77e010140f8243d4244d4c444dd}{score\+\_\+territory}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a8b826ada96165b5d6ceed35db1c19efa}{score\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a19252e3d759b816e5891030f38a22ee5}{score\+\_\+units\+\_\+2}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1a18841ca06eca73524c01bbc4a52bcb}{score\+\_\+buildings}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a52da096f14eecb851a7cd38b0774553d}{score\+\_\+economy}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7e42f8e45014d6c521a4c1ec6cdbb834}{score\+\_\+pop}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3aaf1bda2c06b75f46418a29e72ff7a4}{score\+\_\+unit\+\_\+upgrades}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a8e3590d2039037a7aa9b47c82c8d6473}{score\+\_\+research}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a26ab23aa844f47151682dee29f660ff8}{score\+\_\+wonders}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_add5799e090a38fcce57bb34a717a0acf}{score\+\_\+combat}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_leader_data_acefe8400c711ec21cb2b9dc5daf59b45}{cannon\+\_\+time}}
+\begin{DoxyCompactList}\small\item\em 分数系统 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab9198925892ea50fbe302497072fd10b}{handicap}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ada03f23101f7a34bedeb5398d0d971bd}{multi\+\_\+diff}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a0b62f3cf2dd55a24837895b73203ef5f}{chat\+\_\+status}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa5f93be36d5248ae225f203fe1872292}{diplos}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7dcd79f35566e24332931cfbee6bb7ce}{treaties}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aadf6c9d24084dd5fb8f34c2f1cbc2ded}{agendas}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4643c960e4e20fbbe29e4a6709f8ec53}{good\+\_\+deeds}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a973a934cb39f13475806d06b56ca4a10}{attack\+\_\+stamp}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_adc973e99904844e03762511050b46209}{raid\+\_\+stamp}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a92d024d903ef75f4c07e585681e6acbd}{capital\+\_\+stamp}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4bc6c1259147e9d429711f55facb9cc0}{ally\+\_\+stamp}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3acc83b734d52368b9af86c7d220f69f}{tribute\+\_\+stamp}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_adf5c591a9a87d2397f03a4f56d67b3d3}{gift\+\_\+stamp}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a79451c82953a698e91b2ad7dc7fa1e46}{hire\+\_\+stamp}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a2f95d0e88bbbd1c73cd6f6abd642f484}{hire\+\_\+who}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_af6be314ac14955a4e922a53912a00f53}{attrition\+\_\+stamp}}
+\begin{DoxyCompactList}\small\item\em 外交和通信系统 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_a15550264cfcafe119203e198768a3ca4}{attrition\+\_\+stamp2}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab17946d4d6ef064fce1ede407e8f475b}{attrition\+\_\+stamp3}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a926ced88059da11b156d9d626bdd6411}{ctw\+\_\+hero\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a6680c25b4aaeb9b7bb612385b705e6b2}{ctw\+\_\+hero\+\_\+retreat\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a611f8d506d69ba941cf6771a1ba2c7b8}{repair\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9c5176a85562098b073ddfdcf7fd416c}{blacken}}
+\begin{DoxyCompactList}\small\item\em attrition（损耗）系统 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_ade0cb4d3d4e32ddc3ff75e115fdd130c}{aggression}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9b47e3a9cb8675bb4d8bd741ccf8fa76}{strong}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1c59ec5cca469d304dce55faa073be37}{weak}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a068f7f71e7ced70e41ff0287ab500869}{dow}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad89f6ed3dd36e03e12cce53ad6491437}{invaders}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a07ba12828c86f029454180bc2c7c3670}{broke\+\_\+alliance}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a5e87f8fedcf2246c15581d6a88681f70}{made\+\_\+peace}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad73bc58f9f9f2a81946902e6bc6f9b58}{got\+\_\+diplo\+\_\+message}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a5018ce233d2b3da6aca3bd5a568f58a7}{last\+\_\+spoke}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a39915ca2644d40db2643c6335433a6a3}{counteroffer}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3fb022c469c73353498f4d93c3271d94}{tribute\+\_\+demanded}} \+[8]\+
+\item 
+\doxymbox{\hyperlink{_enums_8h_acc1881f44032c5b9990b6ee5fd9400a6}{Taunt\+Request}} \doxymbox{\hyperlink{struct_leader_data_a73d116ce4bca0235d248c01115a78351}{last\+\_\+taunt}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a96da9d4876b3caa1d6f6825503639528}{taunt\+\_\+frame}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a749f0affb9e207e8eba3ce295435bc6a}{incoming\+\_\+taunt}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a16afa915569c76201f2a9f2fb1be18b5}{incoming\+\_\+taunt\+\_\+who}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a27975a6e456e4a481dcd013e60be3c51}{incoming\+\_\+taunt\+\_\+frame}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a074e816fdd935ad3017f99726e91ac2d}{incoming}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7eb91b1fce0a42d0a750275b3da6ec0f}{city\+\_\+num}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aae0a8288f93179e445f61b5f61b8e1b8}{village\+\_\+num}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a64c3f97256b610a36ded89dff7852cce}{city\+\_\+mine}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a8b6873bb6e415dd72b71f5573e43ce42}{village\+\_\+mine}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4e10eed7ec689992441c967a5c19bc55}{city\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a0d0f44eadee6201fe2d2c2d03f931ced}{city\+\_\+name}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a226d8e60589bae318a7c76c06b20f1db}{lost\+\_\+city\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a45812b4cf82626e527761a8dcb111d82}{lost\+\_\+capital\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a100d526487c0295914afd471a5797ce3}{lost\+\_\+capital\+\_\+timer}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a802b54bf593a8ce4f62d7c5042f5224f}{lost\+\_\+capital\+\_\+modifier}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3293034a863a7c1b6f4cd36af692026e}{hero\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a78fdef4475a58a9e016e321954cd5053}{wonder\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa97203bd8c4cf5969a25d60a9ac855f4}{fort\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_affa7574553162cd06eb981df2f533d6c}{dock\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a53ace8440f0d458e1999e7957fe86f37}{oil\+\_\+well\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_af5f9c0eb9537771c97137598344af040}{supply\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_afd504eadc8deaedb09f705e78599d70b}{caravan\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a0f93961f70e6d9da23c86e5e31a13722}{special\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a6cc335916cfa2e0a9c74f17191d5783b}{popwin\+\_\+stamp}}
+\begin{DoxyCompactList}\small\item\em 各种标记和标识 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1a39a1b1da78233c66427d896fd0163f}{popwin\+\_\+timer}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_acedb08cd1d4055d1e8f0c3eec6f014bb}{wonderwin\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9fcd6cefac963ba3f01df4401d55c5fd}{wonderwin\+\_\+timer}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_adbf1141582321311a414ec135ee305f4}{econ}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa73967a99ac02a82b9e4aa56d3486dd7}{escrow}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1f9f8d0e595e3102e510314ca665dc87}{escrow\+\_\+rate}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a04a9b5fe2f3f510e5affd992ff46f2da}{tributes}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a52ac530cf27b70a8d1a84a3a02fd6f41}{base\+\_\+rate}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1462040e2410b6454f584684b590cd2a}{worst\+\_\+good}}
+\begin{DoxyCompactList}\small\item\em 经济系统数据 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_acc6e2b2b0b7cd4efb91c41c325aeb2c7}{best\+\_\+good}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a5934d97fb41baec52445435bc3626eb0}{shortages}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_acad109abc48e6fb78414f0f2cf584373}{reg\+\_\+known\+\_\+rares}} \+[64]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a45a5efdaa9c9985049f1efc3b74a1226}{reg\+\_\+unpack\+\_\+merch}} \+[64]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aacdc7775b694d838c68f9f72c80c5f5b}{known\+\_\+rares}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae53ae55c02528b5ceee94ef3dbcfc9df}{rares\+\_\+collected}} \+[44]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a78cf2f2f0718f4758502f783088a9792}{production\+\_\+step}}
+\begin{DoxyCompactList}\small\item\em 稀有资源系统 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_af6a5a51949b7f1b283bee8b619648fcf}{prod\+\_\+script\+\_\+run}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab19720a6f54e5e86462ace1c623ad37f}{script\+\_\+step}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae7cebc11966fcd5044ddb499642182ae}{wonder\+\_\+mod}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_add4e24ff95faeb924402253377acf26b}{ground\+\_\+mod}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab8f88014a91a1e36e7d86cd268e9da86}{air\+\_\+mod}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_abb628d1b371d72799a3e42acde115e04}{sea\+\_\+mod}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a17b51a1a7917ee3a8ebc4dd8cf6249cb}{infra\+\_\+mod}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa8c9be8c9bb21eeb04aae7f3a3ff22ae}{defense\+\_\+mod}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad983ca7d4b0c32746d6d2a743b393aa5}{gather\+\_\+stamp}}
+\begin{DoxyCompactList}\small\item\em 各种修正器 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab4094ce966e643a34897a18a1d3d78af}{support\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7bebd2c33fa740506277d823c2e25f62}{nuke\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a805a9d9116f5a790ba62209e0cacffc5}{flock\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab42a4b1725682c86bcf4803c4c590422}{nukes\+\_\+used}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a13b5ec48fa03a872eb916f2e7e912be5}{missiles\+\_\+used}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a21125788ce3bff9ffbf449e26822ddb9}{tech\+\_\+frame}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad057e84e6b766b0a5613c8571ff3efa5}{tech\+\_\+cat\+\_\+frame}} \+[4]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_af37c3dcb158936a8591978a337f5e555}{victory\+\_\+type}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a23084ce829def85690eacd6610be20ae}{defeat\+\_\+type}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_leader_data_a67749ac3452530fd7dd1eb3207bf8a2e}{site\+\_\+mark}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a6785e703227eeae299bc0cae02fae442}{pop\+\_\+cap}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a15c46b4b562f5708ca021d6ce004e65d}{pop\+\_\+issues}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1be1f81beefa9f4f8920f2fa51e4a1c2}{misery}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a569fff7b05ed24c04d16011552f0b88d}{att}}
+\item 
+float \doxymbox{\hyperlink{struct_leader_data_ac2cc620d253bf8f1f9359cc7359a51fb}{anti\+\_\+att}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_afe8ab3f2e4954f2869c11f67ebf19579}{give\+\_\+att\+\_\+disabled}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1e8e5d655839f7795cc9d8fccccb38c4}{take\+\_\+att\+\_\+disabled}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a97e60f8866e0ff18b4d85430e8dd3258}{neutral\+\_\+attrition}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4cf561264cd46f1b51c92dbfb2d2000d}{disable\+\_\+building\+\_\+attrition}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a479ec6963b530985f74c25e2aa94374f}{units\+\_\+built}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad397f4dd415e912a8ee7d06d22902395}{units\+\_\+killed}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a2c2c794ca3d9fe496d653635834650cb}{units\+\_\+lost}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_af549a34988a4444a406c428acabfb5d8}{buildings\+\_\+built}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa394520428d81c1c0ad47241df04605a}{buildings\+\_\+razed}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a48cf69b117c389aba2f34e2d14aa43eb}{buildings\+\_\+lost}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa708f84500c033361ca66631a32ecc67}{cities\+\_\+built}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7f9e890f4ac94669f38f54b29bf5138a}{cities\+\_\+captured}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4ceb3a00c1f1fbe984a80467caf3f614}{cities\+\_\+lost}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a0a7094f9f371b095e305dba75e58e37d}{army\+\_\+high}}
+\begin{DoxyCompactList}\small\item\em 统计信息 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4da771893acf9bd25d97463896bfb3a2}{peasant\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1b4c414a35c0c64243bc9e1b4f754f55}{scholar\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab893f85aad905745929f21f6cbdfafe7}{caravan\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae486987d5cd649ce24e7dbbbdf3dd447}{merchant\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab4d09d50d8ea1c1112b49281d8459d97}{city\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa3ac8d1f8d69b596dcfe760ca57eb88a}{village\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aedfaa44f2156ee07d1a9c676fbe1c81f}{population\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab1612ea8eafc52fafeaf0c87b04d7df1}{city\+\_\+pop\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aaa89abc992282b6e8638a4e253134114}{resources\+\_\+controlled}}
+\begin{DoxyCompactList}\small\item\em 最高记录值 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9ce097e47c72dbbf53e91295bc200ccb}{wonders\+\_\+built}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad04235de7005c4468ab72d1d648a926a}{wonders\+\_\+held}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a6a653e83c38376d411e9ee2989b46ede}{senates\+\_\+built}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_af4246e2670c2ff6c57b749d99777b9dc}{tribute\+\_\+sent}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a29e98e3d55290b9616a4cf4feb6aafc2}{tribute\+\_\+received}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab31d0413ae129cdc691708dfb2e195f9}{goody\+\_\+box\+\_\+techs}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a2355e4478633b603081c4ed565f27cda}{goody\+\_\+box\+\_\+resources}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_af6629774479504ec858b88948f7b9bc1}{goody\+\_\+box\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a25dfd9be7e9db4bc40ea3307840e3bd6}{collected}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad8d18d2080e157a415bbe003bf817967}{supported}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_abaf73b758c41b3121d7ab88ae26ce855}{gather\+\_\+slots}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_abcd10539a035c4693af4d1a659a51fce}{filled\+\_\+gather\+\_\+slots}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ade94afd2a4832805546f8454d4774280}{gather\+\_\+slots\+\_\+high}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a5dad090f907cc34857855e76f4e5b701}{trade\+\_\+profit}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a6995433381f85a6762983804b3e870d2}{forts\+\_\+built}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9691710ac879cef0c97b1ac84873441c}{units\+\_\+bribed}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7c9cf9bcae5e9270ea788922044f3190}{age\+\_\+stamp}} \+[7]\+
+\item 
+float \doxymbox{\hyperlink{struct_leader_data_af8f680eff802e237b2118ef5bb5b58ba}{plunder\+\_\+scale}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a61b787f1e5c6c3f553f8b218ab4c75cd}{bonus\+\_\+cap}} \+[7]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a13c3d62d3500dffc6122dbbe5c7c67cf}{move\+\_\+orders\+\_\+issued}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4c16bf6934d37c48eef18c1cda812e19}{column\+\_\+orders\+\_\+issued}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a671029b8cb15ece237c0a60ee96c6a43}{active}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9393b9d8030b5033d4f824deb351348e}{control}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a767dc5dd569b1c33dea441234d471342}{combat}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa486975eb4900b1abbe85e72878f32aa}{non\+\_\+siege}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1cbd6811bfeb7130e5a519846b7cf72a}{sea\+\_\+combat}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1a9ab2217662d37ea15f990ee94970c3}{siege}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a31c2310d51c2ab4fc2af1d31ffb26929}{defense}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7616a0c52ccdc75043861e7b46fcbdf9}{attack}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3fc1265ccd1382384e1ee2f7a910cd8c}{pop}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a210c4c41b13501db2dcbf8fe172a1a71}{naval}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a254bf5feb48ec02fde4747bd4cebec72}{air}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa6720540c7f71b7929210390517711c5}{missile}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ac725abb25f601a9c94fe1937d6eab079}{transports}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa37a59e751dca2d7763b1efed38d57e6}{fishermen}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a5641f27c07862e7155efc001be51d165}{idle\+\_\+fishermen}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7128a65ef896f50485d7de57cceffc5c}{peasants}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a351f8f5b2a2c62aa1b7b693815a8a066}{scholars}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae78b72b9a6b9df4fa4213dc390d0e0ed}{caras}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa9f4636f94a70409351347fabc313f4f}{merchants}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a7ebe1859187cab172ba462b50dca5886}{scouts}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9ec04883445f2b85000a03d7c6283ea0}{fighters}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a146b20d34c6a160a906e3db4580ad1bd}{bombers}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a98f83a671064b3fac35581c8dffe6210}{cruise}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_afa25d71efe1d4cb2d9c5144d0951f908}{nuke}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a044d8d7584113cb3bca80de6a87b5b56}{best\+\_\+pop}}
+\begin{DoxyCompactList}\small\item\em 各种状态标志 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad5ae282cc390bcd92ff059e4ec042cd4}{best\+\_\+attack}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a411eb9e2592df928d839c135c20ff6f3}{best\+\_\+armor}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae60f26bc8ec6806c86bd3ea89071eef7}{best\+\_\+move}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_acacec0dfdf1a951bbe5b019e513790df}{wars}}
+\begin{DoxyCompactList}\small\item\em 最佳属性记录 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_a64e6224266756e0aa1f92d090707d417}{allies}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad25793442ce7d8a8e9034e75e6bcbdcc}{active\+\_\+wars}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab2207f3363405c70bc20e66739393a48}{active\+\_\+wars\+\_\+with}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab00ebb5dd30e5ca5b8cbb7bc2bbb65fb}{free\+\_\+peasants}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3b98eda9205fa875aba270b89ae1bbf6}{xport\+\_\+peasants}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a0bed6da2619fd6e5796d9621c1701343}{gatherers}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a47b0f7366471044fa1d0324ee6ec565c}{home\+\_\+reg}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae098af3c4b36a661e5c57e5adb732470}{attacked}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a481aa1ac3f33aa5c744512c4e76a0e4d}{full\+\_\+cities}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9496ed57ca7f341966329e53c968bf2f}{explored}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a784a3e8a05692e82b658d37cc4623cfe}{territory}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a48aea2858ea1d63a78e1f3baf6211ff6}{territory\+\_\+high}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a6dbaa8609e56742798b789a3b29c6e1f}{effective\+\_\+pop}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ac6a1e27d991535a1f129ef2e8cc7e5f1}{other\+\_\+team\+\_\+terr}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3a1ef361f8c3ddb74b2bc27b8cce668a}{min\+\_\+other\+\_\+team\+\_\+terr}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9964b023d5513d30ac42022b3eab0ce4}{my\+\_\+team\+\_\+terr}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3d81c5bd0e2918c7e1c60916940beea2}{scholar\+\_\+militia}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aed1dc9072ba0677fad7e4def3c667f8d}{retargets}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a4d21d9ccaa9465d7d1123ceb23c780e7}{barracks\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae907fda5f3bf55032eff9059b38cf8f7}{stable\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a2bfbfd75ae975c28f6252437ef5b2079}{factory\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3a5a45a385e5e507a940f091944a84b5}{combat\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a211985970dd41b86b48fe4ceb6f87d38}{dock\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a53456fbd8cb13fd8a50d56da589d0700}{air\+\_\+units}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a9e9a0e553c67435cb7798f1645717cc2}{barracks\+\_\+queued}}
+\begin{DoxyCompactList}\small\item\em 单位队列统计 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_a635311ceccd38ed5559dd7a2110158bb}{stable\+\_\+queued}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae50c6a2ae6cdfcf86b3926f21a29b0cf}{factory\+\_\+queued}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a1c4ee592433b338c98dcd85e5bce735c}{combat\+\_\+queued}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_abc569082a0e8110f6e7e6347ae4aeee3}{dock\+\_\+queued}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a79621937ff307bf8b55c0c597955f804}{air\+\_\+queued}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aa8d913604fdcc73536951523fa550ecd}{peasants\+\_\+garr}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a54acde647cf535e174b87a3bb62fb01a}{stable\+\_\+garr}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_aff5e01264da00f5a8dee14dfa4b9159b}{scout\+\_\+garr}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a5a40422c9eda61e3e01306bb0b3c1879}{barracks\+\_\+garr}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a591ec8752e3f2061eed14ecb8e7f6afb}{nukes\+\_\+launched}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a803f0b731a64b79c1c3f4261b82e9ebd}{nukes\+\_\+in\+\_\+flight}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a096af1b21a1c4202f7a720e52848df3a}{frame\+\_\+attacked}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ae17b56cd5f8c0299c60e8054c62ed6df}{attacked\+\_\+by}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a3bdfcffc850838aef8891ce1ee2c1e90}{gov\+\_\+hero\+\_\+frame}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab770d8fa6d38b10b3b8afdc19adab92d}{frame\+\_\+battle}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a843f2b8b559a895607c0f63f04f317d3}{average\+\_\+death\+\_\+rate}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a703d2298cce7a6c62516688fce94604e}{average\+\_\+kill\+\_\+rate}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a303e43998d1a1cd20eab1ddee0bbc421}{average\+\_\+damage\+\_\+rate}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a8644648eba8b26a1f2af1d0efc869ed1}{average\+\_\+hit\+\_\+rate}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_aff0cea509273f3b2b87ccaeb65a2123b}{deaths\+\_\+current\+\_\+frame}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a08cb4d76153229b2220de104121935dc}{kills\+\_\+current\+\_\+frame}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a418e4b4bc3421392f1a46c1a42c6b06c}{hits\+\_\+current\+\_\+frame}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_ac34fb162e1204826f752abc3c384477f}{damage\+\_\+current\+\_\+frame}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a31865cf13115d7ae73f1bd666f09037f}{deaths\+\_\+fifteen\+\_\+seconds}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a82494e34bb764d1d8779bf3622e6a599}{kills\+\_\+fifteen\+\_\+seconds}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a765fc8e98319fb0d4219a790d7b364a4}{hits\+\_\+fifteen\+\_\+seconds}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a56cf30b98e48634a7c9d485fb18670a6}{damage\+\_\+fifteen\+\_\+seconds}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a14cab6c0de904390883aac17bb718c09}{strategy}} \+[64]\+
+\begin{DoxyCompactList}\small\item\em 战斗统计数组 \end{DoxyCompactList}\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_ab32d72cd48d2334734eae46117001740}{reg\+\_\+active}} \+[127]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_adef0c510e073396787d0592b4469efc6}{reg\+\_\+combat}} \+[127]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a9f08c8ced3a1aa302439c7a66254428c}{reg\+\_\+defense}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_ab96f452a99d601876ad5c8e717b3cc2c}{reg\+\_\+attack}} \+[127]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_aeac0e88ad9e4875c62f4eba2d7ad06d5}{reg\+\_\+pop}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a59a267bc0940b6f976c3a7edb1606f19}{reg\+\_\+naval}} \+[63]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a9c114ef441661175740142acbd860e8b}{reg\+\_\+transports}} \+[63]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a26e9a45fa0e24a38232a777291c85a07}{reg\+\_\+peasants}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a0d29d0701c9311413921b24e2b46a03e}{reg\+\_\+free\+\_\+peasants}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a2178d085b87edf9e56b8fec24b0058d2}{reg\+\_\+xport\+\_\+peasants}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a557e9a7b0c61bee1fab200f42ae00e1d}{reg\+\_\+gatherers}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a39de24c4a00f82627b997aa82d3ce64f}{reg\+\_\+gather\+\_\+slots}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_aa1c04ee15fed212984699cda5ab47ef6}{reg\+\_\+cities}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a09a2110eb4294eba8784f86910be617d}{reg\+\_\+forts}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_ae84b600097a41c6f5d7ce8437068e1b6}{reg\+\_\+docks}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a2f4874b2fbcd800a433e96c217099558}{reg\+\_\+land}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a45ac67c6cb4e107e37f81797d149236d}{reg\+\_\+terr}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_ae339c7d50b992def8397fda5d1e09efc}{reg\+\_\+buildings}} \+[64]\+\+[129]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a369c4f352971b2134b6f8637d12ff224}{num\+\_\+buildings}} \+[129]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_ae05676e42dbd9f7f80335dabb73335c0}{high\+\_\+buildings}} \+[129]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a4c725b96bd02570821847f5759ead375}{num\+\_\+units}} \+[352]\+
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_leader_data_a03538278fcc8a11fe8e72d50002060b5}{num\+\_\+queued}} \+[806]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a0ee0b3f0a6139e8bd2015492105cb8f1}{last\+\_\+building\+\_\+finished}} \+[129]\+
+\begin{DoxyCompactList}\small\item\em 区域统计数组 \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{struct_leader_data_ab74cc98f02dae5d64f764b5a0fb54cce}{last\+\_\+unit\+\_\+finished}} \+[352]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_ae24a1a8a7b77a9ebc10443fb4d0ac069}{ages\+\_\+queued}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_ac09adc6ef30829615e67d43ea51fde44}{epochs\+\_\+queued}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_ab05dab913b8be7316778e21e357a03d9}{reg\+\_\+attacked}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_a3c2e1535f17dcabef3d95e2c639fb75d}{reg\+\_\+wars}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_acc0c50b2a3af410669a326c78ed34426}{reg\+\_\+neutrals}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_a8c566e0af2eb08982decc4fdf0796032}{reg\+\_\+allies}} \+[64]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_afc5ac4fdd6d40743df78afc202239281}{num\+\_\+bonus\+\_\+cards}} \+[38]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_a5b40cc6bc8fd774435a5a103fdc8d8fd}{num\+\_\+ctw\+\_\+rate\+\_\+bonuses}} \+[6]\+
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a5024b42f38bd834190a87a56ed0bd785}{defeat\+\_\+stamp}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_a6753247001bd6a66886f5eb5d20ed1bb}{team\+\_\+color}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_leader_data_a0d2d389ab40a2721967875d70f202f50}{ally\+\_\+mask}}
+\item 
+\doxymbox{\hyperlink{struct_diplomacy}{Diplomacy}} \doxymbox{\hyperlink{struct_leader_data_a24048fe6a97b65174d3419725cd479b0}{dip}} \+[8]\+
+\item 
+Bit\+Mask\+\_\+806 \doxymbox{\hyperlink{struct_leader_data_a3872dfa0a9b866386c53af643f7d65ff}{tech}}
+\item 
+Bit\+Mask\+\_\+806 \doxymbox{\hyperlink{struct_leader_data_a66ec0ac6465cdde07c5390a93d726bce}{tech\+\_\+at\+\_\+start}}
+\item 
+Bit\+Mask\+\_\+806 \doxymbox{\hyperlink{struct_leader_data_a4647371e9008bd6210319eb5f5d73120}{obs\+\_\+flags}}
+\item 
+Bit\+Mask\+\_\+17 \doxymbox{\hyperlink{struct_leader_data_a7fd166cb3b01f27f114d97b9c0aee90a}{conquest\+\_\+wonders}}
+\item 
+Bit\+Mask\+\_\+17 \doxymbox{\hyperlink{struct_leader_data_ab0119bee735734c67bd8a686f74147be}{conquest\+\_\+wonders\+\_\+in\+\_\+game}}
+\item 
+Bit\+Mask\+\_\+24 \doxymbox{\hyperlink{struct_leader_data_a569100a589f42c1b230407bcf7f09b93}{conquest\+\_\+racial\+\_\+powers}}
+\item 
+Bit\+Mask\+\_\+44 \doxymbox{\hyperlink{struct_leader_data_aff55ea206c7f087ab284e4cb99efe829}{rare}}
+\item 
+Bit\+Mask\+\_\+44 \doxymbox{\hyperlink{struct_leader_data_abcca21d2c848d8ceee327bf837a95862}{rare\+\_\+owned}}
+\item 
+Bit\+Mask\+\_\+44 \doxymbox{\hyperlink{struct_leader_data_a383cfe33f0ea54263a0870aa04ea855f}{rare\+\_\+conquest}}
+\item 
+\doxymbox{\hyperlink{struct_personality}{Personality}} \doxymbox{\hyperlink{struct_leader_data_a1a7fc4734a7bca03412a94f50cfe8c10}{pers}}
+\item 
+\doxymbox{\hyperlink{struct_sites}{Sites}} \doxymbox{\hyperlink{struct_leader_data_a3288f41aabc389477ad30d0a04bff3bc}{sites}}
+\item 
+\doxymbox{\hyperlink{struct_simple_array_int}{Simple\+Array\+Int}} \doxymbox{\hyperlink{struct_leader_data_a71c2cbd0a98ce38c06a21f2c3c3bb5ac}{mil\+\_\+trainers}}
+\item 
+\doxymbox{\hyperlink{struct_simple_array_int}{Simple\+Array\+Int}} \doxymbox{\hyperlink{struct_leader_data_a7338c49984503961d052dae63ba501fa}{new\+\_\+rares}}
+\item 
+\doxymbox{\hyperlink{struct_simple_array_int}{Simple\+Array\+Int}} \doxymbox{\hyperlink{struct_leader_data_a6fb1d766a7da9c0b2f0e049573626fb4}{oil\+\_\+patches}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_leader_data_a720a3c532d78fd3d463a0b9f70e19cb9}{prod\+\_\+script}}
+\item 
+\doxymbox{\hyperlink{struct_leader_data_encrypt}{Leader\+Data\+Encrypt}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_leader_data_acfe80ad3b061c5bb44d09419b0192abf}{data\+\_\+encrypted}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_a24e31b248bcbeb6219f62b9eb176b969}{warn\+\_\+cities\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_ad4d22c54846f96f534e54b66b58d4bf9}{warn\+\_\+caravans\+\_\+stamp}}
+\item 
+int \doxymbox{\hyperlink{struct_leader_data_af8767c6ee27521c096b19b5ad306074a}{warn\+\_\+universities\+\_\+stamp}}
+\item 
+\doxymbox{\hyperlink{struct_make_list}{Make\+List}} \doxymbox{\hyperlink{struct_leader_data_abbd87260e412826a12ba8a5198bb6852}{make\+\_\+list}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+领导者数据结构体 -\/ 存储玩家的游戏状态和统计数据 
+
+\label{doc-variable-members}
+\Hypertarget{struct_leader_data_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_leader_data_a671029b8cb15ece237c0a60ee96c6a43}\index{LeaderData@{LeaderData}!active@{active}}
+\index{active@{active}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily \label{struct_leader_data_a671029b8cb15ece237c0a60ee96c6a43} 
+int Leader\+Data::\+active}
+
+活跃状态 \Hypertarget{struct_leader_data_ad25793442ce7d8a8e9034e75e6bcbdcc}\index{LeaderData@{LeaderData}!active\_wars@{active\_wars}}
+\index{active\_wars@{active\_wars}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{active\_wars}{active\_wars}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad25793442ce7d8a8e9034e75e6bcbdcc} 
+int Leader\+Data::\+active\+\_\+wars}
+
+活跃战争数量 \Hypertarget{struct_leader_data_ab2207f3363405c70bc20e66739393a48}\index{LeaderData@{LeaderData}!active\_wars\_with@{active\_wars\_with}}
+\index{active\_wars\_with@{active\_wars\_with}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{active\_wars\_with}{active\_wars\_with}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab2207f3363405c70bc20e66739393a48} 
+int Leader\+Data::\+active\+\_\+wars\+\_\+with}
+
+与谁进行活跃战争 \Hypertarget{struct_leader_data_a7c9cf9bcae5e9270ea788922044f3190}\index{LeaderData@{LeaderData}!age\_stamp@{age\_stamp}}
+\index{age\_stamp@{age\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{age\_stamp}{age\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7c9cf9bcae5e9270ea788922044f3190} 
+int Leader\+Data::\+age\+\_\+stamp\+[7]\+}
+
+时代解锁时间戳数组，记录7个时代（古典/\+中世纪/\+火药/\+启蒙/\+工业/\+现代/\+信息）的解锁时间 \Hypertarget{struct_leader_data_aadf6c9d24084dd5fb8f34c2f1cbc2ded}\index{LeaderData@{LeaderData}!agendas@{agendas}}
+\index{agendas@{agendas}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{agendas}{agendas}}
+{\footnotesize\ttfamily \label{struct_leader_data_aadf6c9d24084dd5fb8f34c2f1cbc2ded} 
+int Leader\+Data::\+agendas\+[8]\+}
+
+议程状态 \Hypertarget{struct_leader_data_ae24a1a8a7b77a9ebc10443fb4d0ac069}\index{LeaderData@{LeaderData}!ages\_queued@{ages\_queued}}
+\index{ages\_queued@{ages\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{ages\_queued}{ages\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae24a1a8a7b77a9ebc10443fb4d0ac069} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+ages\+\_\+queued}
+
+已排队时代数量 \Hypertarget{struct_leader_data_ade0cb4d3d4e32ddc3ff75e115fdd130c}\index{LeaderData@{LeaderData}!aggression@{aggression}}
+\index{aggression@{aggression}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{aggression}{aggression}}
+{\footnotesize\ttfamily \label{struct_leader_data_ade0cb4d3d4e32ddc3ff75e115fdd130c} 
+int Leader\+Data::\+aggression\+[8]\+}
+
+对其他玩家的侵略性 \Hypertarget{struct_leader_data_a254bf5feb48ec02fde4747bd4cebec72}\index{LeaderData@{LeaderData}!air@{air}}
+\index{air@{air}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{air}{air}}
+{\footnotesize\ttfamily \label{struct_leader_data_a254bf5feb48ec02fde4747bd4cebec72} 
+int Leader\+Data::\+air}
+
+空军状态 \Hypertarget{struct_leader_data_ab8f88014a91a1e36e7d86cd268e9da86}\index{LeaderData@{LeaderData}!air\_mod@{air\_mod}}
+\index{air\_mod@{air\_mod}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{air\_mod}{air\_mod}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab8f88014a91a1e36e7d86cd268e9da86} 
+int Leader\+Data::\+air\+\_\+mod}
+
+空军单位修正 \Hypertarget{struct_leader_data_a79621937ff307bf8b55c0c597955f804}\index{LeaderData@{LeaderData}!air\_queued@{air\_queued}}
+\index{air\_queued@{air\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{air\_queued}{air\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_a79621937ff307bf8b55c0c597955f804} 
+int Leader\+Data::\+air\+\_\+queued}
+
+空军队列数量 \Hypertarget{struct_leader_data_a53456fbd8cb13fd8a50d56da589d0700}\index{LeaderData@{LeaderData}!air\_units@{air\_units}}
+\index{air\_units@{air\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{air\_units}{air\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_a53456fbd8cb13fd8a50d56da589d0700} 
+int Leader\+Data::\+air\+\_\+units}
+
+空军单位数量 \Hypertarget{struct_leader_data_a64e6224266756e0aa1f92d090707d417}\index{LeaderData@{LeaderData}!allies@{allies}}
+\index{allies@{allies}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{allies}{allies}}
+{\footnotesize\ttfamily \label{struct_leader_data_a64e6224266756e0aa1f92d090707d417} 
+int Leader\+Data::\+allies}
+
+盟友数量 \Hypertarget{struct_leader_data_a0d2d389ab40a2721967875d70f202f50}\index{LeaderData@{LeaderData}!ally\_mask@{ally\_mask}}
+\index{ally\_mask@{ally\_mask}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{ally\_mask}{ally\_mask}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0d2d389ab40a2721967875d70f202f50} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+ally\+\_\+mask}
+
+盟友掩码 \Hypertarget{struct_leader_data_a4bc6c1259147e9d429711f55facb9cc0}\index{LeaderData@{LeaderData}!ally\_stamp@{ally\_stamp}}
+\index{ally\_stamp@{ally\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{ally\_stamp}{ally\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4bc6c1259147e9d429711f55facb9cc0} 
+int Leader\+Data::\+ally\+\_\+stamp\+[8]\+}
+
+盟友互动时间戳 \Hypertarget{struct_leader_data_ac2cc620d253bf8f1f9359cc7359a51fb}\index{LeaderData@{LeaderData}!anti\_att@{anti\_att}}
+\index{anti\_att@{anti\_att}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{anti\_att}{anti\_att}}
+{\footnotesize\ttfamily \label{struct_leader_data_ac2cc620d253bf8f1f9359cc7359a51fb} 
+float Leader\+Data::\+anti\+\_\+att}
+
+反attrition值 \Hypertarget{struct_leader_data_a0a7094f9f371b095e305dba75e58e37d}\index{LeaderData@{LeaderData}!army\_high@{army\_high}}
+\index{army\_high@{army\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{army\_high}{army\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0a7094f9f371b095e305dba75e58e37d} 
+int Leader\+Data::\+army\+\_\+high}
+
+
+
+统计信息 
+
+最高军队数量 \Hypertarget{struct_leader_data_a569fff7b05ed24c04d16011552f0b88d}\index{LeaderData@{LeaderData}!att@{att}}
+\index{att@{att}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{att}{att}}
+{\footnotesize\ttfamily \label{struct_leader_data_a569fff7b05ed24c04d16011552f0b88d} 
+int Leader\+Data::\+att}
+
+attrition值 \Hypertarget{struct_leader_data_a7616a0c52ccdc75043861e7b46fcbdf9}\index{LeaderData@{LeaderData}!attack@{attack}}
+\index{attack@{attack}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{attack}{attack}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7616a0c52ccdc75043861e7b46fcbdf9} 
+int Leader\+Data::\+attack}
+
+攻击状态 \Hypertarget{struct_leader_data_a973a934cb39f13475806d06b56ca4a10}\index{LeaderData@{LeaderData}!attack\_stamp@{attack\_stamp}}
+\index{attack\_stamp@{attack\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{attack\_stamp}{attack\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a973a934cb39f13475806d06b56ca4a10} 
+int Leader\+Data::\+attack\+\_\+stamp\+[8]\+}
+
+攻击时间戳 \Hypertarget{struct_leader_data_ae098af3c4b36a661e5c57e5adb732470}\index{LeaderData@{LeaderData}!attacked@{attacked}}
+\index{attacked@{attacked}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{attacked}{attacked}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae098af3c4b36a661e5c57e5adb732470} 
+int Leader\+Data::\+attacked}
+
+被攻击状态 \Hypertarget{struct_leader_data_ae17b56cd5f8c0299c60e8054c62ed6df}\index{LeaderData@{LeaderData}!attacked\_by@{attacked\_by}}
+\index{attacked\_by@{attacked\_by}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{attacked\_by}{attacked\_by}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae17b56cd5f8c0299c60e8054c62ed6df} 
+int Leader\+Data::\+attacked\+\_\+by}
+
+被谁攻击 \Hypertarget{struct_leader_data_af6be314ac14955a4e922a53912a00f53}\index{LeaderData@{LeaderData}!attrition\_stamp@{attrition\_stamp}}
+\index{attrition\_stamp@{attrition\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{attrition\_stamp}{attrition\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_af6be314ac14955a4e922a53912a00f53} 
+int Leader\+Data::\+attrition\+\_\+stamp}
+
+
+
+外交和通信系统 
+
+损耗计算时间戳 \Hypertarget{struct_leader_data_a15550264cfcafe119203e198768a3ca4}\index{LeaderData@{LeaderData}!attrition\_stamp2@{attrition\_stamp2}}
+\index{attrition\_stamp2@{attrition\_stamp2}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{attrition\_stamp2}{attrition\_stamp2}}
+{\footnotesize\ttfamily \label{struct_leader_data_a15550264cfcafe119203e198768a3ca4} 
+int Leader\+Data::\+attrition\+\_\+stamp2}
+
+损耗计算时间戳2 \Hypertarget{struct_leader_data_ab17946d4d6ef064fce1ede407e8f475b}\index{LeaderData@{LeaderData}!attrition\_stamp3@{attrition\_stamp3}}
+\index{attrition\_stamp3@{attrition\_stamp3}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{attrition\_stamp3}{attrition\_stamp3}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab17946d4d6ef064fce1ede407e8f475b} 
+int Leader\+Data::\+attrition\+\_\+stamp3}
+
+损耗计算时间戳3 \Hypertarget{struct_leader_data_a303e43998d1a1cd20eab1ddee0bbc421}\index{LeaderData@{LeaderData}!average\_damage\_rate@{average\_damage\_rate}}
+\index{average\_damage\_rate@{average\_damage\_rate}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{average\_damage\_rate}{average\_damage\_rate}}
+{\footnotesize\ttfamily \label{struct_leader_data_a303e43998d1a1cd20eab1ddee0bbc421} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+average\+\_\+damage\+\_\+rate}
+
+平均伤害率 \Hypertarget{struct_leader_data_a843f2b8b559a895607c0f63f04f317d3}\index{LeaderData@{LeaderData}!average\_death\_rate@{average\_death\_rate}}
+\index{average\_death\_rate@{average\_death\_rate}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{average\_death\_rate}{average\_death\_rate}}
+{\footnotesize\ttfamily \label{struct_leader_data_a843f2b8b559a895607c0f63f04f317d3} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+average\+\_\+death\+\_\+rate}
+
+平均死亡率 \Hypertarget{struct_leader_data_a8644648eba8b26a1f2af1d0efc869ed1}\index{LeaderData@{LeaderData}!average\_hit\_rate@{average\_hit\_rate}}
+\index{average\_hit\_rate@{average\_hit\_rate}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{average\_hit\_rate}{average\_hit\_rate}}
+{\footnotesize\ttfamily \label{struct_leader_data_a8644648eba8b26a1f2af1d0efc869ed1} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+average\+\_\+hit\+\_\+rate}
+
+平均命中率 \Hypertarget{struct_leader_data_a703d2298cce7a6c62516688fce94604e}\index{LeaderData@{LeaderData}!average\_kill\_rate@{average\_kill\_rate}}
+\index{average\_kill\_rate@{average\_kill\_rate}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{average\_kill\_rate}{average\_kill\_rate}}
+{\footnotesize\ttfamily \label{struct_leader_data_a703d2298cce7a6c62516688fce94604e} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+average\+\_\+kill\+\_\+rate}
+
+平均击杀率 \Hypertarget{struct_leader_data_a5a40422c9eda61e3e01306bb0b3c1879}\index{LeaderData@{LeaderData}!barracks\_garr@{barracks\_garr}}
+\index{barracks\_garr@{barracks\_garr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{barracks\_garr}{barracks\_garr}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5a40422c9eda61e3e01306bb0b3c1879} 
+int Leader\+Data::\+barracks\+\_\+garr}
+
+兵营驻军数量 \Hypertarget{struct_leader_data_a9e9a0e553c67435cb7798f1645717cc2}\index{LeaderData@{LeaderData}!barracks\_queued@{barracks\_queued}}
+\index{barracks\_queued@{barracks\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{barracks\_queued}{barracks\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9e9a0e553c67435cb7798f1645717cc2} 
+int Leader\+Data::\+barracks\+\_\+queued}
+
+
+
+单位队列统计 
+
+兵营队列数量 \Hypertarget{struct_leader_data_a4d21d9ccaa9465d7d1123ceb23c780e7}\index{LeaderData@{LeaderData}!barracks\_units@{barracks\_units}}
+\index{barracks\_units@{barracks\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{barracks\_units}{barracks\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4d21d9ccaa9465d7d1123ceb23c780e7} 
+int Leader\+Data::\+barracks\+\_\+units}
+
+兵营单位数量 \Hypertarget{struct_leader_data_a52ac530cf27b70a8d1a84a3a02fd6f41}\index{LeaderData@{LeaderData}!base\_rate@{base\_rate}}
+\index{base\_rate@{base\_rate}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{base\_rate}{base\_rate}}
+{\footnotesize\ttfamily \label{struct_leader_data_a52ac530cf27b70a8d1a84a3a02fd6f41} 
+int Leader\+Data::\+base\+\_\+rate\+[6]\+}
+
+基础生产率数组 \Hypertarget{struct_leader_data_a411eb9e2592df928d839c135c20ff6f3}\index{LeaderData@{LeaderData}!best\_armor@{best\_armor}}
+\index{best\_armor@{best\_armor}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{best\_armor}{best\_armor}}
+{\footnotesize\ttfamily \label{struct_leader_data_a411eb9e2592df928d839c135c20ff6f3} 
+int Leader\+Data::\+best\+\_\+armor}
+
+最佳装甲 \Hypertarget{struct_leader_data_ad5ae282cc390bcd92ff059e4ec042cd4}\index{LeaderData@{LeaderData}!best\_attack@{best\_attack}}
+\index{best\_attack@{best\_attack}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{best\_attack}{best\_attack}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad5ae282cc390bcd92ff059e4ec042cd4} 
+int Leader\+Data::\+best\+\_\+attack}
+
+最佳攻击力 \Hypertarget{struct_leader_data_acc6e2b2b0b7cd4efb91c41c325aeb2c7}\index{LeaderData@{LeaderData}!best\_good@{best\_good}}
+\index{best\_good@{best\_good}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{best\_good}{best\_good}}
+{\footnotesize\ttfamily \label{struct_leader_data_acc6e2b2b0b7cd4efb91c41c325aeb2c7} 
+int Leader\+Data::\+best\+\_\+good}
+
+最丰富的资源类型 \Hypertarget{struct_leader_data_ae60f26bc8ec6806c86bd3ea89071eef7}\index{LeaderData@{LeaderData}!best\_move@{best\_move}}
+\index{best\_move@{best\_move}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{best\_move}{best\_move}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae60f26bc8ec6806c86bd3ea89071eef7} 
+int Leader\+Data::\+best\+\_\+move}
+
+最佳移动力 \Hypertarget{struct_leader_data_a044d8d7584113cb3bca80de6a87b5b56}\index{LeaderData@{LeaderData}!best\_pop@{best\_pop}}
+\index{best\_pop@{best\_pop}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{best\_pop}{best\_pop}}
+{\footnotesize\ttfamily \label{struct_leader_data_a044d8d7584113cb3bca80de6a87b5b56} 
+int Leader\+Data::\+best\+\_\+pop}
+
+
+
+各种状态标志 
+
+最佳人口 \Hypertarget{struct_leader_data_a9c5176a85562098b073ddfdcf7fd416c}\index{LeaderData@{LeaderData}!blacken@{blacken}}
+\index{blacken@{blacken}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{blacken}{blacken}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9c5176a85562098b073ddfdcf7fd416c} 
+int Leader\+Data::\+blacken}
+
+
+
+attrition（损耗）系统 
+
+黑化状态（可能表示外交关系恶化） \Hypertarget{struct_leader_data_a146b20d34c6a160a906e3db4580ad1bd}\index{LeaderData@{LeaderData}!bombers@{bombers}}
+\index{bombers@{bombers}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{bombers}{bombers}}
+{\footnotesize\ttfamily \label{struct_leader_data_a146b20d34c6a160a906e3db4580ad1bd} 
+int Leader\+Data::\+bombers}
+
+轰炸机状态 \Hypertarget{struct_leader_data_a61b787f1e5c6c3f553f8b218ab4c75cd}\index{LeaderData@{LeaderData}!bonus\_cap@{bonus\_cap}}
+\index{bonus\_cap@{bonus\_cap}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{bonus\_cap}{bonus\_cap}}
+{\footnotesize\ttfamily \label{struct_leader_data_a61b787f1e5c6c3f553f8b218ab4c75cd} 
+int Leader\+Data::\+bonus\+\_\+cap\+[7]\+}
+
+时代奖励上限数组，记录每个时代可获得的特殊奖励或加成的最大数量限制 \Hypertarget{struct_leader_data_a07ba12828c86f029454180bc2c7c3670}\index{LeaderData@{LeaderData}!broke\_alliance@{broke\_alliance}}
+\index{broke\_alliance@{broke\_alliance}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{broke\_alliance}{broke\_alliance}}
+{\footnotesize\ttfamily \label{struct_leader_data_a07ba12828c86f029454180bc2c7c3670} 
+int Leader\+Data::\+broke\+\_\+alliance\+[8]\+}
+
+破坏联盟记录 \Hypertarget{struct_leader_data_af549a34988a4444a406c428acabfb5d8}\index{LeaderData@{LeaderData}!buildings\_built@{buildings\_built}}
+\index{buildings\_built@{buildings\_built}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{buildings\_built}{buildings\_built}}
+{\footnotesize\ttfamily \label{struct_leader_data_af549a34988a4444a406c428acabfb5d8} 
+int Leader\+Data::\+buildings\+\_\+built}
+
+建造的建筑总数 \Hypertarget{struct_leader_data_a48cf69b117c389aba2f34e2d14aa43eb}\index{LeaderData@{LeaderData}!buildings\_lost@{buildings\_lost}}
+\index{buildings\_lost@{buildings\_lost}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{buildings\_lost}{buildings\_lost}}
+{\footnotesize\ttfamily \label{struct_leader_data_a48cf69b117c389aba2f34e2d14aa43eb} 
+int Leader\+Data::\+buildings\+\_\+lost}
+
+损失的建筑总数 \Hypertarget{struct_leader_data_aa394520428d81c1c0ad47241df04605a}\index{LeaderData@{LeaderData}!buildings\_razed@{buildings\_razed}}
+\index{buildings\_razed@{buildings\_razed}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{buildings\_razed}{buildings\_razed}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa394520428d81c1c0ad47241df04605a} 
+int Leader\+Data::\+buildings\+\_\+razed}
+
+摧毁的建筑总数 \Hypertarget{struct_leader_data_acefe8400c711ec21cb2b9dc5daf59b45}\index{LeaderData@{LeaderData}!cannon\_time@{cannon\_time}}
+\index{cannon\_time@{cannon\_time}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{cannon\_time}{cannon\_time}}
+{\footnotesize\ttfamily \label{struct_leader_data_acefe8400c711ec21cb2b9dc5daf59b45} 
+unsigned int Leader\+Data::\+cannon\+\_\+time}
+
+
+
+分数系统 
+
+加农炮技术解锁时间 \Hypertarget{struct_leader_data_a92d024d903ef75f4c07e585681e6acbd}\index{LeaderData@{LeaderData}!capital\_stamp@{capital\_stamp}}
+\index{capital\_stamp@{capital\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{capital\_stamp}{capital\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a92d024d903ef75f4c07e585681e6acbd} 
+int Leader\+Data::\+capital\+\_\+stamp\+[8]\+}
+
+首都攻击时间戳 \Hypertarget{struct_leader_data_ae78b72b9a6b9df4fa4213dc390d0e0ed}\index{LeaderData@{LeaderData}!caras@{caras}}
+\index{caras@{caras}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{caras}{caras}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae78b72b9a6b9df4fa4213dc390d0e0ed} 
+int Leader\+Data::\+caras}
+
+商队状态 \Hypertarget{struct_leader_data_ab893f85aad905745929f21f6cbdfafe7}\index{LeaderData@{LeaderData}!caravan\_high@{caravan\_high}}
+\index{caravan\_high@{caravan\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{caravan\_high}{caravan\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab893f85aad905745929f21f6cbdfafe7} 
+int Leader\+Data::\+caravan\+\_\+high}
+
+最高商队数量 \Hypertarget{struct_leader_data_afd504eadc8deaedb09f705e78599d70b}\index{LeaderData@{LeaderData}!caravan\_mark@{caravan\_mark}}
+\index{caravan\_mark@{caravan\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{caravan\_mark}{caravan\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_afd504eadc8deaedb09f705e78599d70b} 
+int Leader\+Data::\+caravan\+\_\+mark}
+
+商队标记 \Hypertarget{struct_leader_data_a0b62f3cf2dd55a24837895b73203ef5f}\index{LeaderData@{LeaderData}!chat\_status@{chat\_status}}
+\index{chat\_status@{chat\_status}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{chat\_status}{chat\_status}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0b62f3cf2dd55a24837895b73203ef5f} 
+int Leader\+Data::\+chat\+\_\+status\+[8]\+}
+
+与其他玩家的聊天状态 \Hypertarget{struct_leader_data_aa708f84500c033361ca66631a32ecc67}\index{LeaderData@{LeaderData}!cities\_built@{cities\_built}}
+\index{cities\_built@{cities\_built}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{cities\_built}{cities\_built}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa708f84500c033361ca66631a32ecc67} 
+int Leader\+Data::\+cities\+\_\+built}
+
+建造的城市总数 \Hypertarget{struct_leader_data_a7f9e890f4ac94669f38f54b29bf5138a}\index{LeaderData@{LeaderData}!cities\_captured@{cities\_captured}}
+\index{cities\_captured@{cities\_captured}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{cities\_captured}{cities\_captured}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7f9e890f4ac94669f38f54b29bf5138a} 
+int Leader\+Data::\+cities\+\_\+captured}
+
+占领的城市总数 \Hypertarget{struct_leader_data_a4ceb3a00c1f1fbe984a80467caf3f614}\index{LeaderData@{LeaderData}!cities\_lost@{cities\_lost}}
+\index{cities\_lost@{cities\_lost}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{cities\_lost}{cities\_lost}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4ceb3a00c1f1fbe984a80467caf3f614} 
+int Leader\+Data::\+cities\+\_\+lost}
+
+损失的城市总数 \Hypertarget{struct_leader_data_ab4d09d50d8ea1c1112b49281d8459d97}\index{LeaderData@{LeaderData}!city\_high@{city\_high}}
+\index{city\_high@{city\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{city\_high}{city\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab4d09d50d8ea1c1112b49281d8459d97} 
+int Leader\+Data::\+city\+\_\+high}
+
+最高城市数量 \Hypertarget{struct_leader_data_a4e10eed7ec689992441c967a5c19bc55}\index{LeaderData@{LeaderData}!city\_mark@{city\_mark}}
+\index{city\_mark@{city\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{city\_mark}{city\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4e10eed7ec689992441c967a5c19bc55} 
+int Leader\+Data::\+city\+\_\+mark}
+
+城市标记 \Hypertarget{struct_leader_data_a64c3f97256b610a36ded89dff7852cce}\index{LeaderData@{LeaderData}!city\_mine@{city\_mine}}
+\index{city\_mine@{city\_mine}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{city\_mine}{city\_mine}}
+{\footnotesize\ttfamily \label{struct_leader_data_a64c3f97256b610a36ded89dff7852cce} 
+int Leader\+Data::\+city\+\_\+mine}
+
+我方城市数量 \Hypertarget{struct_leader_data_a0d0f44eadee6201fe2d2c2d03f931ced}\index{LeaderData@{LeaderData}!city\_name@{city\_name}}
+\index{city\_name@{city\_name}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{city\_name}{city\_name}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0d0f44eadee6201fe2d2c2d03f931ced} 
+int Leader\+Data::\+city\+\_\+name}
+
+城市名称\+ID \Hypertarget{struct_leader_data_a7eb91b1fce0a42d0a750275b3da6ec0f}\index{LeaderData@{LeaderData}!city\_num@{city\_num}}
+\index{city\_num@{city\_num}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{city\_num}{city\_num}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7eb91b1fce0a42d0a750275b3da6ec0f} 
+int Leader\+Data::\+city\+\_\+num}
+
+城市数量 \Hypertarget{struct_leader_data_ab1612ea8eafc52fafeaf0c87b04d7df1}\index{LeaderData@{LeaderData}!city\_pop\_high@{city\_pop\_high}}
+\index{city\_pop\_high@{city\_pop\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{city\_pop\_high}{city\_pop\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab1612ea8eafc52fafeaf0c87b04d7df1} 
+int Leader\+Data::\+city\+\_\+pop\+\_\+high}
+
+最高城市人口 \Hypertarget{struct_leader_data_a25dfd9be7e9db4bc40ea3307840e3bd6}\index{LeaderData@{LeaderData}!collected@{collected}}
+\index{collected@{collected}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{collected}{collected}}
+{\footnotesize\ttfamily \label{struct_leader_data_a25dfd9be7e9db4bc40ea3307840e3bd6} 
+int Leader\+Data::\+collected\+[6]\+}
+
+收集的资源数组 \Hypertarget{struct_leader_data_a4c16bf6934d37c48eef18c1cda812e19}\index{LeaderData@{LeaderData}!column\_orders\_issued@{column\_orders\_issued}}
+\index{column\_orders\_issued@{column\_orders\_issued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{column\_orders\_issued}{column\_orders\_issued}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4c16bf6934d37c48eef18c1cda812e19} 
+int Leader\+Data::\+column\+\_\+orders\+\_\+issued}
+
+发出的列队命令数量 \Hypertarget{struct_leader_data_a767dc5dd569b1c33dea441234d471342}\index{LeaderData@{LeaderData}!combat@{combat}}
+\index{combat@{combat}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{combat}{combat}}
+{\footnotesize\ttfamily \label{struct_leader_data_a767dc5dd569b1c33dea441234d471342} 
+int Leader\+Data::\+combat}
+
+战斗状态 \Hypertarget{struct_leader_data_a1c4ee592433b338c98dcd85e5bce735c}\index{LeaderData@{LeaderData}!combat\_queued@{combat\_queued}}
+\index{combat\_queued@{combat\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{combat\_queued}{combat\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1c4ee592433b338c98dcd85e5bce735c} 
+int Leader\+Data::\+combat\+\_\+queued}
+
+战斗队列数量 \Hypertarget{struct_leader_data_a3a5a45a385e5e507a940f091944a84b5}\index{LeaderData@{LeaderData}!combat\_units@{combat\_units}}
+\index{combat\_units@{combat\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{combat\_units}{combat\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3a5a45a385e5e507a940f091944a84b5} 
+int Leader\+Data::\+combat\+\_\+units}
+
+战斗单位数量 \Hypertarget{struct_leader_data_a569100a589f42c1b230407bcf7f09b93}\index{LeaderData@{LeaderData}!conquest\_racial\_powers@{conquest\_racial\_powers}}
+\index{conquest\_racial\_powers@{conquest\_racial\_powers}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{conquest\_racial\_powers}{conquest\_racial\_powers}}
+{\footnotesize\ttfamily \label{struct_leader_data_a569100a589f42c1b230407bcf7f09b93} 
+Bit\+Mask\+\_\+24 Leader\+Data::\+conquest\+\_\+racial\+\_\+powers}
+
+征服种族能力位掩码 \Hypertarget{struct_leader_data_a7fd166cb3b01f27f114d97b9c0aee90a}\index{LeaderData@{LeaderData}!conquest\_wonders@{conquest\_wonders}}
+\index{conquest\_wonders@{conquest\_wonders}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{conquest\_wonders}{conquest\_wonders}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7fd166cb3b01f27f114d97b9c0aee90a} 
+Bit\+Mask\+\_\+17 Leader\+Data::\+conquest\+\_\+wonders}
+
+征服奇观位掩码 \Hypertarget{struct_leader_data_ab0119bee735734c67bd8a686f74147be}\index{LeaderData@{LeaderData}!conquest\_wonders\_in\_game@{conquest\_wonders\_in\_game}}
+\index{conquest\_wonders\_in\_game@{conquest\_wonders\_in\_game}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{conquest\_wonders\_in\_game}{conquest\_wonders\_in\_game}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab0119bee735734c67bd8a686f74147be} 
+Bit\+Mask\+\_\+17 Leader\+Data::\+conquest\+\_\+wonders\+\_\+in\+\_\+game}
+
+游戏中征服奇观位掩码 \Hypertarget{struct_leader_data_a9393b9d8030b5033d4f824deb351348e}\index{LeaderData@{LeaderData}!control@{control}}
+\index{control@{control}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{control}{control}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9393b9d8030b5033d4f824deb351348e} 
+int Leader\+Data::\+control}
+
+控制状态 \Hypertarget{struct_leader_data_a39915ca2644d40db2643c6335433a6a3}\index{LeaderData@{LeaderData}!counteroffer@{counteroffer}}
+\index{counteroffer@{counteroffer}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{counteroffer}{counteroffer}}
+{\footnotesize\ttfamily \label{struct_leader_data_a39915ca2644d40db2643c6335433a6a3} 
+int Leader\+Data::\+counteroffer\+[8]\+}
+
+还价状态 \Hypertarget{struct_leader_data_a98f83a671064b3fac35581c8dffe6210}\index{LeaderData@{LeaderData}!cruise@{cruise}}
+\index{cruise@{cruise}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{cruise}{cruise}}
+{\footnotesize\ttfamily \label{struct_leader_data_a98f83a671064b3fac35581c8dffe6210} 
+int Leader\+Data::\+cruise}
+
+巡航导弹状态 \Hypertarget{struct_leader_data_a6680c25b4aaeb9b7bb612385b705e6b2}\index{LeaderData@{LeaderData}!ctw\_hero\_retreat\_stamp@{ctw\_hero\_retreat\_stamp}}
+\index{ctw\_hero\_retreat\_stamp@{ctw\_hero\_retreat\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{ctw\_hero\_retreat\_stamp}{ctw\_hero\_retreat\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6680c25b4aaeb9b7bb612385b705e6b2} 
+int Leader\+Data::\+ctw\+\_\+hero\+\_\+retreat\+\_\+stamp}
+
+CTW英雄撤退时间戳 \Hypertarget{struct_leader_data_a926ced88059da11b156d9d626bdd6411}\index{LeaderData@{LeaderData}!ctw\_hero\_stamp@{ctw\_hero\_stamp}}
+\index{ctw\_hero\_stamp@{ctw\_hero\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{ctw\_hero\_stamp}{ctw\_hero\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a926ced88059da11b156d9d626bdd6411} 
+int Leader\+Data::\+ctw\+\_\+hero\+\_\+stamp}
+
+CTW英雄出现时间戳 \Hypertarget{struct_leader_data_ac34fb162e1204826f752abc3c384477f}\index{LeaderData@{LeaderData}!damage\_current\_frame@{damage\_current\_frame}}
+\index{damage\_current\_frame@{damage\_current\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{damage\_current\_frame}{damage\_current\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_ac34fb162e1204826f752abc3c384477f} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+damage\+\_\+current\+\_\+frame}
+
+当前帧伤害数 \Hypertarget{struct_leader_data_a56cf30b98e48634a7c9d485fb18670a6}\index{LeaderData@{LeaderData}!damage\_fifteen\_seconds@{damage\_fifteen\_seconds}}
+\index{damage\_fifteen\_seconds@{damage\_fifteen\_seconds}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{damage\_fifteen\_seconds}{damage\_fifteen\_seconds}}
+{\footnotesize\ttfamily \label{struct_leader_data_a56cf30b98e48634a7c9d485fb18670a6} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+damage\+\_\+fifteen\+\_\+seconds}
+
+15秒内伤害数 \Hypertarget{struct_leader_data_acfe80ad3b061c5bb44d09419b0192abf}\index{LeaderData@{LeaderData}!data\_encrypted@{data\_encrypted}}
+\index{data\_encrypted@{data\_encrypted}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{data\_encrypted}{data\_encrypted}}
+{\footnotesize\ttfamily \label{struct_leader_data_acfe80ad3b061c5bb44d09419b0192abf} 
+\doxymbox{\hyperlink{struct_leader_data_encrypt}{Leader\+Data\+Encrypt}}\texorpdfstring{$\ast$}{*} Leader\+Data::\+data\+\_\+encrypted}
+
+加密的领导者数据指针 \Hypertarget{struct_leader_data_aff0cea509273f3b2b87ccaeb65a2123b}\index{LeaderData@{LeaderData}!deaths\_current\_frame@{deaths\_current\_frame}}
+\index{deaths\_current\_frame@{deaths\_current\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{deaths\_current\_frame}{deaths\_current\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_aff0cea509273f3b2b87ccaeb65a2123b} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+deaths\+\_\+current\+\_\+frame}
+
+当前帧死亡数 \Hypertarget{struct_leader_data_a31865cf13115d7ae73f1bd666f09037f}\index{LeaderData@{LeaderData}!deaths\_fifteen\_seconds@{deaths\_fifteen\_seconds}}
+\index{deaths\_fifteen\_seconds@{deaths\_fifteen\_seconds}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{deaths\_fifteen\_seconds}{deaths\_fifteen\_seconds}}
+{\footnotesize\ttfamily \label{struct_leader_data_a31865cf13115d7ae73f1bd666f09037f} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+deaths\+\_\+fifteen\+\_\+seconds}
+
+15秒内死亡数 \Hypertarget{struct_leader_data_a5024b42f38bd834190a87a56ed0bd785}\index{LeaderData@{LeaderData}!defeat\_stamp@{defeat\_stamp}}
+\index{defeat\_stamp@{defeat\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{defeat\_stamp}{defeat\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5024b42f38bd834190a87a56ed0bd785} 
+int Leader\+Data::\+defeat\+\_\+stamp}
+
+失败时间戳 \Hypertarget{struct_leader_data_a23084ce829def85690eacd6610be20ae}\index{LeaderData@{LeaderData}!defeat\_type@{defeat\_type}}
+\index{defeat\_type@{defeat\_type}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{defeat\_type}{defeat\_type}}
+{\footnotesize\ttfamily \label{struct_leader_data_a23084ce829def85690eacd6610be20ae} 
+int Leader\+Data::\+defeat\+\_\+type}
+
+失败类型 \Hypertarget{struct_leader_data_a7469e8faeb7ecae74bf1e4fde45eba34}\index{LeaderData@{LeaderData}!defeated\_by@{defeated\_by}}
+\index{defeated\_by@{defeated\_by}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{defeated\_by}{defeated\_by}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7469e8faeb7ecae74bf1e4fde45eba34} 
+int Leader\+Data::\+defeated\+\_\+by}
+
+被谁击败 \Hypertarget{struct_leader_data_a31c2310d51c2ab4fc2af1d31ffb26929}\index{LeaderData@{LeaderData}!defense@{defense}}
+\index{defense@{defense}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{defense}{defense}}
+{\footnotesize\ttfamily \label{struct_leader_data_a31c2310d51c2ab4fc2af1d31ffb26929} 
+int Leader\+Data::\+defense}
+
+防御状态 \Hypertarget{struct_leader_data_aa8c9be8c9bb21eeb04aae7f3a3ff22ae}\index{LeaderData@{LeaderData}!defense\_mod@{defense\_mod}}
+\index{defense\_mod@{defense\_mod}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{defense\_mod}{defense\_mod}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa8c9be8c9bb21eeb04aae7f3a3ff22ae} 
+int Leader\+Data::\+defense\+\_\+mod}
+
+防御修正 \Hypertarget{struct_leader_data_a24048fe6a97b65174d3419725cd479b0}\index{LeaderData@{LeaderData}!dip@{dip}}
+\index{dip@{dip}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{dip}{dip}}
+{\footnotesize\ttfamily \label{struct_leader_data_a24048fe6a97b65174d3419725cd479b0} 
+\doxymbox{\hyperlink{struct_diplomacy}{Diplomacy}} Leader\+Data::\+dip\+[8]\+}
+
+外交关系数组 \Hypertarget{struct_leader_data_aa5f93be36d5248ae225f203fe1872292}\index{LeaderData@{LeaderData}!diplos@{diplos}}
+\index{diplos@{diplos}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{diplos}{diplos}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa5f93be36d5248ae225f203fe1872292} 
+int Leader\+Data::\+diplos\+[8]\+}
+
+外交关系状态 \Hypertarget{struct_leader_data_a4cf561264cd46f1b51c92dbfb2d2000d}\index{LeaderData@{LeaderData}!disable\_building\_attrition@{disable\_building\_attrition}}
+\index{disable\_building\_attrition@{disable\_building\_attrition}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{disable\_building\_attrition}{disable\_building\_attrition}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4cf561264cd46f1b51c92dbfb2d2000d} 
+int Leader\+Data::\+disable\+\_\+building\+\_\+attrition}
+
+禁用建筑attrition \Hypertarget{struct_leader_data_affa7574553162cd06eb981df2f533d6c}\index{LeaderData@{LeaderData}!dock\_mark@{dock\_mark}}
+\index{dock\_mark@{dock\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{dock\_mark}{dock\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_affa7574553162cd06eb981df2f533d6c} 
+int Leader\+Data::\+dock\+\_\+mark}
+
+码头标记 \Hypertarget{struct_leader_data_abc569082a0e8110f6e7e6347ae4aeee3}\index{LeaderData@{LeaderData}!dock\_queued@{dock\_queued}}
+\index{dock\_queued@{dock\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{dock\_queued}{dock\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_abc569082a0e8110f6e7e6347ae4aeee3} 
+int Leader\+Data::\+dock\+\_\+queued}
+
+码头队列数量 \Hypertarget{struct_leader_data_a211985970dd41b86b48fe4ceb6f87d38}\index{LeaderData@{LeaderData}!dock\_units@{dock\_units}}
+\index{dock\_units@{dock\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{dock\_units}{dock\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_a211985970dd41b86b48fe4ceb6f87d38} 
+int Leader\+Data::\+dock\+\_\+units}
+
+码头单位数量 \Hypertarget{struct_leader_data_a068f7f71e7ced70e41ff0287ab500869}\index{LeaderData@{LeaderData}!dow@{dow}}
+\index{dow@{dow}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{dow}{dow}}
+{\footnotesize\ttfamily \label{struct_leader_data_a068f7f71e7ced70e41ff0287ab500869} 
+int Leader\+Data::\+dow\+[8]\+}
+
+宣战状态 \Hypertarget{struct_leader_data_adbf1141582321311a414ec135ee305f4}\index{LeaderData@{LeaderData}!econ@{econ}}
+\index{econ@{econ}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{econ}{econ}}
+{\footnotesize\ttfamily \label{struct_leader_data_adbf1141582321311a414ec135ee305f4} 
+int Leader\+Data::\+econ\+[6]\+}
+
+经济状况数组 \Hypertarget{struct_leader_data_a6dbaa8609e56742798b789a3b29c6e1f}\index{LeaderData@{LeaderData}!effective\_pop@{effective\_pop}}
+\index{effective\_pop@{effective\_pop}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{effective\_pop}{effective\_pop}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6dbaa8609e56742798b789a3b29c6e1f} 
+int Leader\+Data::\+effective\+\_\+pop}
+
+有效人口 \Hypertarget{struct_leader_data_ac09adc6ef30829615e67d43ea51fde44}\index{LeaderData@{LeaderData}!epochs\_queued@{epochs\_queued}}
+\index{epochs\_queued@{epochs\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{epochs\_queued}{epochs\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_ac09adc6ef30829615e67d43ea51fde44} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+epochs\+\_\+queued}
+
+已排队纪元数量 \Hypertarget{struct_leader_data_aa73967a99ac02a82b9e4aa56d3486dd7}\index{LeaderData@{LeaderData}!escrow@{escrow}}
+\index{escrow@{escrow}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{escrow}{escrow}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa73967a99ac02a82b9e4aa56d3486dd7} 
+int Leader\+Data::\+escrow\+[6]\+}
+
+托管资源数组 \Hypertarget{struct_leader_data_a1f9f8d0e595e3102e510314ca665dc87}\index{LeaderData@{LeaderData}!escrow\_rate@{escrow\_rate}}
+\index{escrow\_rate@{escrow\_rate}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{escrow\_rate}{escrow\_rate}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1f9f8d0e595e3102e510314ca665dc87} 
+int Leader\+Data::\+escrow\+\_\+rate\+[6]\+}
+
+托管率数组 \Hypertarget{struct_leader_data_a9496ed57ca7f341966329e53c968bf2f}\index{LeaderData@{LeaderData}!explored@{explored}}
+\index{explored@{explored}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{explored}{explored}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9496ed57ca7f341966329e53c968bf2f} 
+int Leader\+Data::\+explored}
+
+已探索区域 \Hypertarget{struct_leader_data_ae50c6a2ae6cdfcf86b3926f21a29b0cf}\index{LeaderData@{LeaderData}!factory\_queued@{factory\_queued}}
+\index{factory\_queued@{factory\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{factory\_queued}{factory\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae50c6a2ae6cdfcf86b3926f21a29b0cf} 
+int Leader\+Data::\+factory\+\_\+queued}
+
+工厂队列数量 \Hypertarget{struct_leader_data_a2bfbfd75ae975c28f6252437ef5b2079}\index{LeaderData@{LeaderData}!factory\_units@{factory\_units}}
+\index{factory\_units@{factory\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{factory\_units}{factory\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_a2bfbfd75ae975c28f6252437ef5b2079} 
+int Leader\+Data::\+factory\+\_\+units}
+
+工厂单位数量 \Hypertarget{struct_leader_data_a9ec04883445f2b85000a03d7c6283ea0}\index{LeaderData@{LeaderData}!fighters@{fighters}}
+\index{fighters@{fighters}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{fighters}{fighters}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9ec04883445f2b85000a03d7c6283ea0} 
+int Leader\+Data::\+fighters}
+
+战斗机状态 \Hypertarget{struct_leader_data_abcd10539a035c4693af4d1a659a51fce}\index{LeaderData@{LeaderData}!filled\_gather\_slots@{filled\_gather\_slots}}
+\index{filled\_gather\_slots@{filled\_gather\_slots}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{filled\_gather\_slots}{filled\_gather\_slots}}
+{\footnotesize\ttfamily \label{struct_leader_data_abcd10539a035c4693af4d1a659a51fce} 
+int Leader\+Data::\+filled\+\_\+gather\+\_\+slots\+[6]\+}
+
+已填充的收集槽位 \Hypertarget{struct_leader_data_aa37a59e751dca2d7763b1efed38d57e6}\index{LeaderData@{LeaderData}!fishermen@{fishermen}}
+\index{fishermen@{fishermen}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{fishermen}{fishermen}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa37a59e751dca2d7763b1efed38d57e6} 
+int Leader\+Data::\+fishermen}
+
+渔民状态 \Hypertarget{struct_leader_data_a805a9d9116f5a790ba62209e0cacffc5}\index{LeaderData@{LeaderData}!flock\_stamp@{flock\_stamp}}
+\index{flock\_stamp@{flock\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{flock\_stamp}{flock\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a805a9d9116f5a790ba62209e0cacffc5} 
+int Leader\+Data::\+flock\+\_\+stamp}
+
+群组时间戳 \Hypertarget{struct_leader_data_aa97203bd8c4cf5969a25d60a9ac855f4}\index{LeaderData@{LeaderData}!fort\_mark@{fort\_mark}}
+\index{fort\_mark@{fort\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{fort\_mark}{fort\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa97203bd8c4cf5969a25d60a9ac855f4} 
+int Leader\+Data::\+fort\+\_\+mark}
+
+堡垒标记 \Hypertarget{struct_leader_data_a6995433381f85a6762983804b3e870d2}\index{LeaderData@{LeaderData}!forts\_built@{forts\_built}}
+\index{forts\_built@{forts\_built}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{forts\_built}{forts\_built}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6995433381f85a6762983804b3e870d2} 
+int Leader\+Data::\+forts\+\_\+built}
+
+建造的堡垒数量 \Hypertarget{struct_leader_data_a096af1b21a1c4202f7a720e52848df3a}\index{LeaderData@{LeaderData}!frame\_attacked@{frame\_attacked}}
+\index{frame\_attacked@{frame\_attacked}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{frame\_attacked}{frame\_attacked}}
+{\footnotesize\ttfamily \label{struct_leader_data_a096af1b21a1c4202f7a720e52848df3a} 
+int Leader\+Data::\+frame\+\_\+attacked}
+
+被攻击的帧数 \Hypertarget{struct_leader_data_ab770d8fa6d38b10b3b8afdc19adab92d}\index{LeaderData@{LeaderData}!frame\_battle@{frame\_battle}}
+\index{frame\_battle@{frame\_battle}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{frame\_battle}{frame\_battle}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab770d8fa6d38b10b3b8afdc19adab92d} 
+int Leader\+Data::\+frame\+\_\+battle}
+
+战斗发生帧数 \Hypertarget{struct_leader_data_ab00ebb5dd30e5ca5b8cbb7bc2bbb65fb}\index{LeaderData@{LeaderData}!free\_peasants@{free\_peasants}}
+\index{free\_peasants@{free\_peasants}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{free\_peasants}{free\_peasants}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab00ebb5dd30e5ca5b8cbb7bc2bbb65fb} 
+int Leader\+Data::\+free\+\_\+peasants}
+
+自由农民数量 \Hypertarget{struct_leader_data_a481aa1ac3f33aa5c744512c4e76a0e4d}\index{LeaderData@{LeaderData}!full\_cities@{full\_cities}}
+\index{full\_cities@{full\_cities}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{full\_cities}{full\_cities}}
+{\footnotesize\ttfamily \label{struct_leader_data_a481aa1ac3f33aa5c744512c4e76a0e4d} 
+int Leader\+Data::\+full\+\_\+cities}
+
+满人口城市数量 \Hypertarget{struct_leader_data_abaf73b758c41b3121d7ab88ae26ce855}\index{LeaderData@{LeaderData}!gather\_slots@{gather\_slots}}
+\index{gather\_slots@{gather\_slots}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{gather\_slots}{gather\_slots}}
+{\footnotesize\ttfamily \label{struct_leader_data_abaf73b758c41b3121d7ab88ae26ce855} 
+int Leader\+Data::\+gather\+\_\+slots\+[6]\+}
+
+收集槽位数组 \Hypertarget{struct_leader_data_ade94afd2a4832805546f8454d4774280}\index{LeaderData@{LeaderData}!gather\_slots\_high@{gather\_slots\_high}}
+\index{gather\_slots\_high@{gather\_slots\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{gather\_slots\_high}{gather\_slots\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_ade94afd2a4832805546f8454d4774280} 
+int Leader\+Data::\+gather\+\_\+slots\+\_\+high\+[6]\+}
+
+最高收集槽位记录 \Hypertarget{struct_leader_data_ad983ca7d4b0c32746d6d2a743b393aa5}\index{LeaderData@{LeaderData}!gather\_stamp@{gather\_stamp}}
+\index{gather\_stamp@{gather\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{gather\_stamp}{gather\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad983ca7d4b0c32746d6d2a743b393aa5} 
+int Leader\+Data::\+gather\+\_\+stamp}
+
+
+
+各种修正器 
+
+收集时间戳 \Hypertarget{struct_leader_data_a0bed6da2619fd6e5796d9621c1701343}\index{LeaderData@{LeaderData}!gatherers@{gatherers}}
+\index{gatherers@{gatherers}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{gatherers}{gatherers}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0bed6da2619fd6e5796d9621c1701343} 
+int Leader\+Data::\+gatherers}
+
+收集者数量 \Hypertarget{struct_leader_data_adf5c591a9a87d2397f03a4f56d67b3d3}\index{LeaderData@{LeaderData}!gift\_stamp@{gift\_stamp}}
+\index{gift\_stamp@{gift\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{gift\_stamp}{gift\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_adf5c591a9a87d2397f03a4f56d67b3d3} 
+int Leader\+Data::\+gift\+\_\+stamp\+[8]\+}
+
+礼物时间戳 \Hypertarget{struct_leader_data_afe8ab3f2e4954f2869c11f67ebf19579}\index{LeaderData@{LeaderData}!give\_att\_disabled@{give\_att\_disabled}}
+\index{give\_att\_disabled@{give\_att\_disabled}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{give\_att\_disabled}{give\_att\_disabled}}
+{\footnotesize\ttfamily \label{struct_leader_data_afe8ab3f2e4954f2869c11f67ebf19579} 
+int Leader\+Data::\+give\+\_\+att\+\_\+disabled}
+
+禁用给予attrition \Hypertarget{struct_leader_data_a4643c960e4e20fbbe29e4a6709f8ec53}\index{LeaderData@{LeaderData}!good\_deeds@{good\_deeds}}
+\index{good\_deeds@{good\_deeds}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{good\_deeds}{good\_deeds}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4643c960e4e20fbbe29e4a6709f8ec53} 
+int Leader\+Data::\+good\+\_\+deeds\+[8]\+}
+
+友好行为记录 \Hypertarget{struct_leader_data_a2355e4478633b603081c4ed565f27cda}\index{LeaderData@{LeaderData}!goody\_box\_resources@{goody\_box\_resources}}
+\index{goody\_box\_resources@{goody\_box\_resources}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{goody\_box\_resources}{goody\_box\_resources}}
+{\footnotesize\ttfamily \label{struct_leader_data_a2355e4478633b603081c4ed565f27cda} 
+int Leader\+Data::\+goody\+\_\+box\+\_\+resources}
+
+宝箱获得的资源数量 \Hypertarget{struct_leader_data_ab31d0413ae129cdc691708dfb2e195f9}\index{LeaderData@{LeaderData}!goody\_box\_techs@{goody\_box\_techs}}
+\index{goody\_box\_techs@{goody\_box\_techs}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{goody\_box\_techs}{goody\_box\_techs}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab31d0413ae129cdc691708dfb2e195f9} 
+int Leader\+Data::\+goody\+\_\+box\+\_\+techs}
+
+宝箱获得的科技数量 \Hypertarget{struct_leader_data_af6629774479504ec858b88948f7b9bc1}\index{LeaderData@{LeaderData}!goody\_box\_units@{goody\_box\_units}}
+\index{goody\_box\_units@{goody\_box\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{goody\_box\_units}{goody\_box\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_af6629774479504ec858b88948f7b9bc1} 
+int Leader\+Data::\+goody\+\_\+box\+\_\+units}
+
+宝箱获得的单位数量 \Hypertarget{struct_leader_data_ad73bc58f9f9f2a81946902e6bc6f9b58}\index{LeaderData@{LeaderData}!got\_diplo\_message@{got\_diplo\_message}}
+\index{got\_diplo\_message@{got\_diplo\_message}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{got\_diplo\_message}{got\_diplo\_message}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad73bc58f9f9f2a81946902e6bc6f9b58} 
+int Leader\+Data::\+got\+\_\+diplo\+\_\+message}
+
+收到外交消息标志 \Hypertarget{struct_leader_data_abae99b05f2a121ed16442f8cfab22c0a}\index{LeaderData@{LeaderData}!gov@{gov}}
+\index{gov@{gov}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{gov}{gov}}
+{\footnotesize\ttfamily \label{struct_leader_data_abae99b05f2a121ed16442f8cfab22c0a} 
+int Leader\+Data::\+gov}
+
+政府类型 \Hypertarget{struct_leader_data_a3bdfcffc850838aef8891ce1ee2c1e90}\index{LeaderData@{LeaderData}!gov\_hero\_frame@{gov\_hero\_frame}}
+\index{gov\_hero\_frame@{gov\_hero\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{gov\_hero\_frame}{gov\_hero\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3bdfcffc850838aef8891ce1ee2c1e90} 
+int Leader\+Data::\+gov\+\_\+hero\+\_\+frame}
+
+政府英雄出现帧数 \Hypertarget{struct_leader_data_add4e24ff95faeb924402253377acf26b}\index{LeaderData@{LeaderData}!ground\_mod@{ground\_mod}}
+\index{ground\_mod@{ground\_mod}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{ground\_mod}{ground\_mod}}
+{\footnotesize\ttfamily \label{struct_leader_data_add4e24ff95faeb924402253377acf26b} 
+int Leader\+Data::\+ground\+\_\+mod}
+
+地面单位修正 \Hypertarget{struct_leader_data_ab9198925892ea50fbe302497072fd10b}\index{LeaderData@{LeaderData}!handicap@{handicap}}
+\index{handicap@{handicap}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{handicap}{handicap}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab9198925892ea50fbe302497072fd10b} 
+int Leader\+Data::\+handicap}
+
+让分技巧 \Hypertarget{struct_leader_data_a3293034a863a7c1b6f4cd36af692026e}\index{LeaderData@{LeaderData}!hero\_mark@{hero\_mark}}
+\index{hero\_mark@{hero\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{hero\_mark}{hero\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3293034a863a7c1b6f4cd36af692026e} 
+int Leader\+Data::\+hero\+\_\+mark}
+
+英雄标记 \Hypertarget{struct_leader_data_ae05676e42dbd9f7f80335dabb73335c0}\index{LeaderData@{LeaderData}!high\_buildings@{high\_buildings}}
+\index{high\_buildings@{high\_buildings}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{high\_buildings}{high\_buildings}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae05676e42dbd9f7f80335dabb73335c0} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+high\+\_\+buildings\+[129]\+}
+
+最高建筑记录数组 \Hypertarget{struct_leader_data_a79451c82953a698e91b2ad7dc7fa1e46}\index{LeaderData@{LeaderData}!hire\_stamp@{hire\_stamp}}
+\index{hire\_stamp@{hire\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{hire\_stamp}{hire\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a79451c82953a698e91b2ad7dc7fa1e46} 
+int Leader\+Data::\+hire\+\_\+stamp\+[8]\+}
+
+雇佣时间戳 \Hypertarget{struct_leader_data_a2f95d0e88bbbd1c73cd6f6abd642f484}\index{LeaderData@{LeaderData}!hire\_who@{hire\_who}}
+\index{hire\_who@{hire\_who}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{hire\_who}{hire\_who}}
+{\footnotesize\ttfamily \label{struct_leader_data_a2f95d0e88bbbd1c73cd6f6abd642f484} 
+int Leader\+Data::\+hire\+\_\+who\+[8]\+}
+
+雇佣对象\+ID \Hypertarget{struct_leader_data_a418e4b4bc3421392f1a46c1a42c6b06c}\index{LeaderData@{LeaderData}!hits\_current\_frame@{hits\_current\_frame}}
+\index{hits\_current\_frame@{hits\_current\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{hits\_current\_frame}{hits\_current\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_a418e4b4bc3421392f1a46c1a42c6b06c} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+hits\+\_\+current\+\_\+frame}
+
+当前帧命中数 \Hypertarget{struct_leader_data_a765fc8e98319fb0d4219a790d7b364a4}\index{LeaderData@{LeaderData}!hits\_fifteen\_seconds@{hits\_fifteen\_seconds}}
+\index{hits\_fifteen\_seconds@{hits\_fifteen\_seconds}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{hits\_fifteen\_seconds}{hits\_fifteen\_seconds}}
+{\footnotesize\ttfamily \label{struct_leader_data_a765fc8e98319fb0d4219a790d7b364a4} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+hits\+\_\+fifteen\+\_\+seconds}
+
+15秒内命中数 \Hypertarget{struct_leader_data_a47b0f7366471044fa1d0324ee6ec565c}\index{LeaderData@{LeaderData}!home\_reg@{home\_reg}}
+\index{home\_reg@{home\_reg}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{home\_reg}{home\_reg}}
+{\footnotesize\ttfamily \label{struct_leader_data_a47b0f7366471044fa1d0324ee6ec565c} 
+int Leader\+Data::\+home\+\_\+reg}
+
+家乡区域 \Hypertarget{struct_leader_data_a5641f27c07862e7155efc001be51d165}\index{LeaderData@{LeaderData}!idle\_fishermen@{idle\_fishermen}}
+\index{idle\_fishermen@{idle\_fishermen}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{idle\_fishermen}{idle\_fishermen}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5641f27c07862e7155efc001be51d165} 
+int Leader\+Data::\+idle\+\_\+fishermen}
+
+闲置渔民数量 \Hypertarget{struct_leader_data_a074e816fdd935ad3017f99726e91ac2d}\index{LeaderData@{LeaderData}!incoming@{incoming}}
+\index{incoming@{incoming}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{incoming}{incoming}}
+{\footnotesize\ttfamily \label{struct_leader_data_a074e816fdd935ad3017f99726e91ac2d} 
+int Leader\+Data::\+incoming}
+
+传入消息标志 \Hypertarget{struct_leader_data_a749f0affb9e207e8eba3ce295435bc6a}\index{LeaderData@{LeaderData}!incoming\_taunt@{incoming\_taunt}}
+\index{incoming\_taunt@{incoming\_taunt}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{incoming\_taunt}{incoming\_taunt}}
+{\footnotesize\ttfamily \label{struct_leader_data_a749f0affb9e207e8eba3ce295435bc6a} 
+int Leader\+Data::\+incoming\+\_\+taunt\+[8]\+}
+
+收到的嘲讽 \Hypertarget{struct_leader_data_a27975a6e456e4a481dcd013e60be3c51}\index{LeaderData@{LeaderData}!incoming\_taunt\_frame@{incoming\_taunt\_frame}}
+\index{incoming\_taunt\_frame@{incoming\_taunt\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{incoming\_taunt\_frame}{incoming\_taunt\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_a27975a6e456e4a481dcd013e60be3c51} 
+int Leader\+Data::\+incoming\+\_\+taunt\+\_\+frame\+[8]\+}
+
+收到嘲讽的时间帧 \Hypertarget{struct_leader_data_a16afa915569c76201f2a9f2fb1be18b5}\index{LeaderData@{LeaderData}!incoming\_taunt\_who@{incoming\_taunt\_who}}
+\index{incoming\_taunt\_who@{incoming\_taunt\_who}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{incoming\_taunt\_who}{incoming\_taunt\_who}}
+{\footnotesize\ttfamily \label{struct_leader_data_a16afa915569c76201f2a9f2fb1be18b5} 
+int Leader\+Data::\+incoming\+\_\+taunt\+\_\+who\+[8]\+}
+
+嘲讽来源玩家 \Hypertarget{struct_leader_data_a17b51a1a7917ee3a8ebc4dd8cf6249cb}\index{LeaderData@{LeaderData}!infra\_mod@{infra\_mod}}
+\index{infra\_mod@{infra\_mod}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{infra\_mod}{infra\_mod}}
+{\footnotesize\ttfamily \label{struct_leader_data_a17b51a1a7917ee3a8ebc4dd8cf6249cb} 
+int Leader\+Data::\+infra\+\_\+mod}
+
+基础设施修正 \Hypertarget{struct_leader_data_ad89f6ed3dd36e03e12cce53ad6491437}\index{LeaderData@{LeaderData}!invaders@{invaders}}
+\index{invaders@{invaders}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{invaders}{invaders}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad89f6ed3dd36e03e12cce53ad6491437} 
+int Leader\+Data::\+invaders\+[8]\+}
+
+入侵者记录 \Hypertarget{struct_leader_data_a08cb4d76153229b2220de104121935dc}\index{LeaderData@{LeaderData}!kills\_current\_frame@{kills\_current\_frame}}
+\index{kills\_current\_frame@{kills\_current\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{kills\_current\_frame}{kills\_current\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_a08cb4d76153229b2220de104121935dc} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+kills\+\_\+current\+\_\+frame}
+
+当前帧击杀数 \Hypertarget{struct_leader_data_a82494e34bb764d1d8779bf3622e6a599}\index{LeaderData@{LeaderData}!kills\_fifteen\_seconds@{kills\_fifteen\_seconds}}
+\index{kills\_fifteen\_seconds@{kills\_fifteen\_seconds}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{kills\_fifteen\_seconds}{kills\_fifteen\_seconds}}
+{\footnotesize\ttfamily \label{struct_leader_data_a82494e34bb764d1d8779bf3622e6a599} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+kills\+\_\+fifteen\+\_\+seconds}
+
+15秒内击杀数 \Hypertarget{struct_leader_data_aacdc7775b694d838c68f9f72c80c5f5b}\index{LeaderData@{LeaderData}!known\_rares@{known\_rares}}
+\index{known\_rares@{known\_rares}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{known\_rares}{known\_rares}}
+{\footnotesize\ttfamily \label{struct_leader_data_aacdc7775b694d838c68f9f72c80c5f5b} 
+int Leader\+Data::\+known\+\_\+rares}
+
+已知稀有资源数量 \Hypertarget{struct_leader_data_a0ee0b3f0a6139e8bd2015492105cb8f1}\index{LeaderData@{LeaderData}!last\_building\_finished@{last\_building\_finished}}
+\index{last\_building\_finished@{last\_building\_finished}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{last\_building\_finished}{last\_building\_finished}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0ee0b3f0a6139e8bd2015492105cb8f1} 
+int Leader\+Data::\+last\+\_\+building\+\_\+finished\+[129]\+}
+
+
+
+区域统计数组 
+
+最后完成的建筑时间 \Hypertarget{struct_leader_data_a5018ce233d2b3da6aca3bd5a568f58a7}\index{LeaderData@{LeaderData}!last\_spoke@{last\_spoke}}
+\index{last\_spoke@{last\_spoke}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{last\_spoke}{last\_spoke}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5018ce233d2b3da6aca3bd5a568f58a7} 
+int Leader\+Data::\+last\+\_\+spoke\+[8]\+}
+
+最后交谈时间 \Hypertarget{struct_leader_data_a73d116ce4bca0235d248c01115a78351}\index{LeaderData@{LeaderData}!last\_taunt@{last\_taunt}}
+\index{last\_taunt@{last\_taunt}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{last\_taunt}{last\_taunt}}
+{\footnotesize\ttfamily \label{struct_leader_data_a73d116ce4bca0235d248c01115a78351} 
+\doxymbox{\hyperlink{_enums_8h_acc1881f44032c5b9990b6ee5fd9400a6}{Taunt\+Request}} Leader\+Data::\+last\+\_\+taunt\+[8]\+}
+
+最后发送的嘲讽类型 \Hypertarget{struct_leader_data_ab74cc98f02dae5d64f764b5a0fb54cce}\index{LeaderData@{LeaderData}!last\_unit\_finished@{last\_unit\_finished}}
+\index{last\_unit\_finished@{last\_unit\_finished}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{last\_unit\_finished}{last\_unit\_finished}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab74cc98f02dae5d64f764b5a0fb54cce} 
+int Leader\+Data::\+last\+\_\+unit\+\_\+finished\+[352]\+}
+
+最后完成的单位时间 \Hypertarget{struct_leader_data_a08422241cd4ca2d7acec27d5fae97103}\index{LeaderData@{LeaderData}!leader\_flags@{leader\_flags}}
+\index{leader\_flags@{leader\_flags}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{leader\_flags}{leader\_flags}}
+{\footnotesize\ttfamily \label{struct_leader_data_a08422241cd4ca2d7acec27d5fae97103} 
+int Leader\+Data::\+leader\+\_\+flags}
+
+领导者标志位 \Hypertarget{struct_leader_data_adbff6ebf25bf6012741c129c00539242}\index{LeaderData@{LeaderData}!leader\_flags2@{leader\_flags2}}
+\index{leader\_flags2@{leader\_flags2}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{leader\_flags2}{leader\_flags2}}
+{\footnotesize\ttfamily \label{struct_leader_data_adbff6ebf25bf6012741c129c00539242} 
+int Leader\+Data::\+leader\+\_\+flags2}
+
+领导者标志位2 \Hypertarget{struct_leader_data_a802b54bf593a8ce4f62d7c5042f5224f}\index{LeaderData@{LeaderData}!lost\_capital\_modifier@{lost\_capital\_modifier}}
+\index{lost\_capital\_modifier@{lost\_capital\_modifier}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{lost\_capital\_modifier}{lost\_capital\_modifier}}
+{\footnotesize\ttfamily \label{struct_leader_data_a802b54bf593a8ce4f62d7c5042f5224f} 
+int Leader\+Data::\+lost\+\_\+capital\+\_\+modifier}
+
+失去首都修正值 \Hypertarget{struct_leader_data_a45812b4cf82626e527761a8dcb111d82}\index{LeaderData@{LeaderData}!lost\_capital\_stamp@{lost\_capital\_stamp}}
+\index{lost\_capital\_stamp@{lost\_capital\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{lost\_capital\_stamp}{lost\_capital\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a45812b4cf82626e527761a8dcb111d82} 
+int Leader\+Data::\+lost\+\_\+capital\+\_\+stamp}
+
+失去首都时间戳 \Hypertarget{struct_leader_data_a100d526487c0295914afd471a5797ce3}\index{LeaderData@{LeaderData}!lost\_capital\_timer@{lost\_capital\_timer}}
+\index{lost\_capital\_timer@{lost\_capital\_timer}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{lost\_capital\_timer}{lost\_capital\_timer}}
+{\footnotesize\ttfamily \label{struct_leader_data_a100d526487c0295914afd471a5797ce3} 
+int Leader\+Data::\+lost\+\_\+capital\+\_\+timer}
+
+失去首都计时器 \Hypertarget{struct_leader_data_a226d8e60589bae318a7c76c06b20f1db}\index{LeaderData@{LeaderData}!lost\_city\_stamp@{lost\_city\_stamp}}
+\index{lost\_city\_stamp@{lost\_city\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{lost\_city\_stamp}{lost\_city\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a226d8e60589bae318a7c76c06b20f1db} 
+int Leader\+Data::\+lost\+\_\+city\+\_\+stamp}
+
+失去城市时间戳 \Hypertarget{struct_leader_data_a5e87f8fedcf2246c15581d6a88681f70}\index{LeaderData@{LeaderData}!made\_peace@{made\_peace}}
+\index{made\_peace@{made\_peace}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{made\_peace}{made\_peace}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5e87f8fedcf2246c15581d6a88681f70} 
+int Leader\+Data::\+made\+\_\+peace\+[8]\+}
+
+达成和平记录 \Hypertarget{struct_leader_data_abbd87260e412826a12ba8a5198bb6852}\index{LeaderData@{LeaderData}!make\_list@{make\_list}}
+\index{make\_list@{make\_list}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{make\_list}{make\_list}}
+{\footnotesize\ttfamily \label{struct_leader_data_abbd87260e412826a12ba8a5198bb6852} 
+\doxymbox{\hyperlink{struct_make_list}{Make\+List}} Leader\+Data::\+make\+\_\+list}
+
+制造列表 \Hypertarget{struct_leader_data_ae486987d5cd649ce24e7dbbbdf3dd447}\index{LeaderData@{LeaderData}!merchant\_high@{merchant\_high}}
+\index{merchant\_high@{merchant\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{merchant\_high}{merchant\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae486987d5cd649ce24e7dbbbdf3dd447} 
+int Leader\+Data::\+merchant\+\_\+high}
+
+最高商人数量 \Hypertarget{struct_leader_data_aa9f4636f94a70409351347fabc313f4f}\index{LeaderData@{LeaderData}!merchants@{merchants}}
+\index{merchants@{merchants}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{merchants}{merchants}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa9f4636f94a70409351347fabc313f4f} 
+int Leader\+Data::\+merchants}
+
+商人状态 \Hypertarget{struct_leader_data_a71c2cbd0a98ce38c06a21f2c3c3bb5ac}\index{LeaderData@{LeaderData}!mil\_trainers@{mil\_trainers}}
+\index{mil\_trainers@{mil\_trainers}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{mil\_trainers}{mil\_trainers}}
+{\footnotesize\ttfamily \label{struct_leader_data_a71c2cbd0a98ce38c06a21f2c3c3bb5ac} 
+\doxymbox{\hyperlink{struct_simple_array_int}{Simple\+Array\+Int}} Leader\+Data::\+mil\+\_\+trainers}
+
+军事训练者数组 \Hypertarget{struct_leader_data_a3a1ef361f8c3ddb74b2bc27b8cce668a}\index{LeaderData@{LeaderData}!min\_other\_team\_terr@{min\_other\_team\_terr}}
+\index{min\_other\_team\_terr@{min\_other\_team\_terr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{min\_other\_team\_terr}{min\_other\_team\_terr}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3a1ef361f8c3ddb74b2bc27b8cce668a} 
+int Leader\+Data::\+min\+\_\+other\+\_\+team\+\_\+terr}
+
+最小其他队伍领土 \Hypertarget{struct_leader_data_a1be1f81beefa9f4f8920f2fa51e4a1c2}\index{LeaderData@{LeaderData}!misery@{misery}}
+\index{misery@{misery}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{misery}{misery}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1be1f81beefa9f4f8920f2fa51e4a1c2} 
+int Leader\+Data::\+misery}
+
+苦难值 \Hypertarget{struct_leader_data_aa6720540c7f71b7929210390517711c5}\index{LeaderData@{LeaderData}!missile@{missile}}
+\index{missile@{missile}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{missile}{missile}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa6720540c7f71b7929210390517711c5} 
+int Leader\+Data::\+missile}
+
+导弹状态 \Hypertarget{struct_leader_data_a13b5ec48fa03a872eb916f2e7e912be5}\index{LeaderData@{LeaderData}!missiles\_used@{missiles\_used}}
+\index{missiles\_used@{missiles\_used}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{missiles\_used}{missiles\_used}}
+{\footnotesize\ttfamily \label{struct_leader_data_a13b5ec48fa03a872eb916f2e7e912be5} 
+int Leader\+Data::\+missiles\+\_\+used}
+
+使用的导弹数量 \Hypertarget{struct_leader_data_a13c3d62d3500dffc6122dbbe5c7c67cf}\index{LeaderData@{LeaderData}!move\_orders\_issued@{move\_orders\_issued}}
+\index{move\_orders\_issued@{move\_orders\_issued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{move\_orders\_issued}{move\_orders\_issued}}
+{\footnotesize\ttfamily \label{struct_leader_data_a13c3d62d3500dffc6122dbbe5c7c67cf} 
+int Leader\+Data::\+move\+\_\+orders\+\_\+issued}
+
+发出的移动命令数量 \Hypertarget{struct_leader_data_ada03f23101f7a34bedeb5398d0d971bd}\index{LeaderData@{LeaderData}!multi\_diff@{multi\_diff}}
+\index{multi\_diff@{multi\_diff}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{multi\_diff}{multi\_diff}}
+{\footnotesize\ttfamily \label{struct_leader_data_ada03f23101f7a34bedeb5398d0d971bd} 
+int Leader\+Data::\+multi\+\_\+diff}
+
+多人游戏难度 \Hypertarget{struct_leader_data_a9964b023d5513d30ac42022b3eab0ce4}\index{LeaderData@{LeaderData}!my\_team\_terr@{my\_team\_terr}}
+\index{my\_team\_terr@{my\_team\_terr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{my\_team\_terr}{my\_team\_terr}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9964b023d5513d30ac42022b3eab0ce4} 
+int Leader\+Data::\+my\+\_\+team\+\_\+terr}
+
+我方队伍领土 \Hypertarget{struct_leader_data_a210c4c41b13501db2dcbf8fe172a1a71}\index{LeaderData@{LeaderData}!naval@{naval}}
+\index{naval@{naval}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{naval}{naval}}
+{\footnotesize\ttfamily \label{struct_leader_data_a210c4c41b13501db2dcbf8fe172a1a71} 
+int Leader\+Data::\+naval}
+
+海军状态 \Hypertarget{struct_leader_data_a97e60f8866e0ff18b4d85430e8dd3258}\index{LeaderData@{LeaderData}!neutral\_attrition@{neutral\_attrition}}
+\index{neutral\_attrition@{neutral\_attrition}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{neutral\_attrition}{neutral\_attrition}}
+{\footnotesize\ttfamily \label{struct_leader_data_a97e60f8866e0ff18b4d85430e8dd3258} 
+int Leader\+Data::\+neutral\+\_\+attrition}
+
+中立attrition \Hypertarget{struct_leader_data_a7338c49984503961d052dae63ba501fa}\index{LeaderData@{LeaderData}!new\_rares@{new\_rares}}
+\index{new\_rares@{new\_rares}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{new\_rares}{new\_rares}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7338c49984503961d052dae63ba501fa} 
+\doxymbox{\hyperlink{struct_simple_array_int}{Simple\+Array\+Int}} Leader\+Data::\+new\+\_\+rares}
+
+新稀有资源数组 \Hypertarget{struct_leader_data_aa486975eb4900b1abbe85e72878f32aa}\index{LeaderData@{LeaderData}!non\_siege@{non\_siege}}
+\index{non\_siege@{non\_siege}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{non\_siege}{non\_siege}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa486975eb4900b1abbe85e72878f32aa} 
+int Leader\+Data::\+non\+\_\+siege}
+
+非围攻状态 \Hypertarget{struct_leader_data_afa25d71efe1d4cb2d9c5144d0951f908}\index{LeaderData@{LeaderData}!nuke@{nuke}}
+\index{nuke@{nuke}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{nuke}{nuke}}
+{\footnotesize\ttfamily \label{struct_leader_data_afa25d71efe1d4cb2d9c5144d0951f908} 
+int Leader\+Data::\+nuke}
+
+核武器状态 \Hypertarget{struct_leader_data_a7bebd2c33fa740506277d823c2e25f62}\index{LeaderData@{LeaderData}!nuke\_stamp@{nuke\_stamp}}
+\index{nuke\_stamp@{nuke\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{nuke\_stamp}{nuke\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7bebd2c33fa740506277d823c2e25f62} 
+int Leader\+Data::\+nuke\+\_\+stamp}
+
+核武器使用时间戳 \Hypertarget{struct_leader_data_a803f0b731a64b79c1c3f4261b82e9ebd}\index{LeaderData@{LeaderData}!nukes\_in\_flight@{nukes\_in\_flight}}
+\index{nukes\_in\_flight@{nukes\_in\_flight}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{nukes\_in\_flight}{nukes\_in\_flight}}
+{\footnotesize\ttfamily \label{struct_leader_data_a803f0b731a64b79c1c3f4261b82e9ebd} 
+int Leader\+Data::\+nukes\+\_\+in\+\_\+flight}
+
+飞行中的核弹数量 \Hypertarget{struct_leader_data_a591ec8752e3f2061eed14ecb8e7f6afb}\index{LeaderData@{LeaderData}!nukes\_launched@{nukes\_launched}}
+\index{nukes\_launched@{nukes\_launched}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{nukes\_launched}{nukes\_launched}}
+{\footnotesize\ttfamily \label{struct_leader_data_a591ec8752e3f2061eed14ecb8e7f6afb} 
+int Leader\+Data::\+nukes\+\_\+launched}
+
+发射的核弹数量 \Hypertarget{struct_leader_data_ab42a4b1725682c86bcf4803c4c590422}\index{LeaderData@{LeaderData}!nukes\_used@{nukes\_used}}
+\index{nukes\_used@{nukes\_used}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{nukes\_used}{nukes\_used}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab42a4b1725682c86bcf4803c4c590422} 
+int Leader\+Data::\+nukes\+\_\+used}
+
+使用的核武器数量 \Hypertarget{struct_leader_data_afc5ac4fdd6d40743df78afc202239281}\index{LeaderData@{LeaderData}!num\_bonus\_cards@{num\_bonus\_cards}}
+\index{num\_bonus\_cards@{num\_bonus\_cards}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{num\_bonus\_cards}{num\_bonus\_cards}}
+{\footnotesize\ttfamily \label{struct_leader_data_afc5ac4fdd6d40743df78afc202239281} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+num\+\_\+bonus\+\_\+cards\+[38]\+}
+
+奖励卡数量数组 \Hypertarget{struct_leader_data_a369c4f352971b2134b6f8637d12ff224}\index{LeaderData@{LeaderData}!num\_buildings@{num\_buildings}}
+\index{num\_buildings@{num\_buildings}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{num\_buildings}{num\_buildings}}
+{\footnotesize\ttfamily \label{struct_leader_data_a369c4f352971b2134b6f8637d12ff224} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+num\+\_\+buildings\+[129]\+}
+
+建筑数量数组 \Hypertarget{struct_leader_data_a5b40cc6bc8fd774435a5a103fdc8d8fd}\index{LeaderData@{LeaderData}!num\_ctw\_rate\_bonuses@{num\_ctw\_rate\_bonuses}}
+\index{num\_ctw\_rate\_bonuses@{num\_ctw\_rate\_bonuses}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{num\_ctw\_rate\_bonuses}{num\_ctw\_rate\_bonuses}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5b40cc6bc8fd774435a5a103fdc8d8fd} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+num\+\_\+ctw\+\_\+rate\+\_\+bonuses\+[6]\+}
+
+CTW比率奖励数量 \Hypertarget{struct_leader_data_a03538278fcc8a11fe8e72d50002060b5}\index{LeaderData@{LeaderData}!num\_queued@{num\_queued}}
+\index{num\_queued@{num\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{num\_queued}{num\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_a03538278fcc8a11fe8e72d50002060b5} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+num\+\_\+queued\+[806]\+}
+
+队列数量数组 \Hypertarget{struct_leader_data_a4c725b96bd02570821847f5759ead375}\index{LeaderData@{LeaderData}!num\_units@{num\_units}}
+\index{num\_units@{num\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{num\_units}{num\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4c725b96bd02570821847f5759ead375} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+num\+\_\+units\+[352]\+}
+
+单位数量数组 \Hypertarget{struct_leader_data_a4647371e9008bd6210319eb5f5d73120}\index{LeaderData@{LeaderData}!obs\_flags@{obs\_flags}}
+\index{obs\_flags@{obs\_flags}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{obs\_flags}{obs\_flags}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4647371e9008bd6210319eb5f5d73120} 
+Bit\+Mask\+\_\+806 Leader\+Data::\+obs\+\_\+flags}
+
+观察标志位掩码 \Hypertarget{struct_leader_data_a6fb1d766a7da9c0b2f0e049573626fb4}\index{LeaderData@{LeaderData}!oil\_patches@{oil\_patches}}
+\index{oil\_patches@{oil\_patches}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{oil\_patches}{oil\_patches}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6fb1d766a7da9c0b2f0e049573626fb4} 
+\doxymbox{\hyperlink{struct_simple_array_int}{Simple\+Array\+Int}} Leader\+Data::\+oil\+\_\+patches}
+
+油田数组 \Hypertarget{struct_leader_data_a53ace8440f0d458e1999e7957fe86f37}\index{LeaderData@{LeaderData}!oil\_well\_mark@{oil\_well\_mark}}
+\index{oil\_well\_mark@{oil\_well\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{oil\_well\_mark}{oil\_well\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_a53ace8440f0d458e1999e7957fe86f37} 
+int Leader\+Data::\+oil\+\_\+well\+\_\+mark}
+
+油井标记 \Hypertarget{struct_leader_data_ac6a1e27d991535a1f129ef2e8cc7e5f1}\index{LeaderData@{LeaderData}!other\_team\_terr@{other\_team\_terr}}
+\index{other\_team\_terr@{other\_team\_terr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{other\_team\_terr}{other\_team\_terr}}
+{\footnotesize\ttfamily \label{struct_leader_data_ac6a1e27d991535a1f129ef2e8cc7e5f1} 
+int Leader\+Data::\+other\+\_\+team\+\_\+terr}
+
+其他队伍领土 \Hypertarget{struct_leader_data_a4da771893acf9bd25d97463896bfb3a2}\index{LeaderData@{LeaderData}!peasant\_high@{peasant\_high}}
+\index{peasant\_high@{peasant\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{peasant\_high}{peasant\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_a4da771893acf9bd25d97463896bfb3a2} 
+int Leader\+Data::\+peasant\+\_\+high}
+
+最高农民数量 \Hypertarget{struct_leader_data_a7128a65ef896f50485d7de57cceffc5c}\index{LeaderData@{LeaderData}!peasants@{peasants}}
+\index{peasants@{peasants}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{peasants}{peasants}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7128a65ef896f50485d7de57cceffc5c} 
+int Leader\+Data::\+peasants}
+
+农民状态 \Hypertarget{struct_leader_data_aa8d913604fdcc73536951523fa550ecd}\index{LeaderData@{LeaderData}!peasants\_garr@{peasants\_garr}}
+\index{peasants\_garr@{peasants\_garr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{peasants\_garr}{peasants\_garr}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa8d913604fdcc73536951523fa550ecd} 
+int Leader\+Data::\+peasants\+\_\+garr}
+
+农民驻军数量 \Hypertarget{struct_leader_data_a1a7fc4734a7bca03412a94f50cfe8c10}\index{LeaderData@{LeaderData}!pers@{pers}}
+\index{pers@{pers}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{pers}{pers}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1a7fc4734a7bca03412a94f50cfe8c10} 
+\doxymbox{\hyperlink{struct_personality}{Personality}} Leader\+Data::\+pers}
+
+AI个性设置 \Hypertarget{struct_leader_data_af8f680eff802e237b2118ef5bb5b58ba}\index{LeaderData@{LeaderData}!plunder\_scale@{plunder\_scale}}
+\index{plunder\_scale@{plunder\_scale}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{plunder\_scale}{plunder\_scale}}
+{\footnotesize\ttfamily \label{struct_leader_data_af8f680eff802e237b2118ef5bb5b58ba} 
+float Leader\+Data::\+plunder\+\_\+scale}
+
+掠夺规模系数，影响从战斗中获得的战利品和资源掠夺比例 \Hypertarget{struct_leader_data_a3fc1265ccd1382384e1ee2f7a910cd8c}\index{LeaderData@{LeaderData}!pop@{pop}}
+\index{pop@{pop}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{pop}{pop}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3fc1265ccd1382384e1ee2f7a910cd8c} 
+int Leader\+Data::\+pop}
+
+人口状态 \Hypertarget{struct_leader_data_a6785e703227eeae299bc0cae02fae442}\index{LeaderData@{LeaderData}!pop\_cap@{pop\_cap}}
+\index{pop\_cap@{pop\_cap}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{pop\_cap}{pop\_cap}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6785e703227eeae299bc0cae02fae442} 
+int Leader\+Data::\+pop\+\_\+cap}
+
+人口上限 \Hypertarget{struct_leader_data_a15c46b4b562f5708ca021d6ce004e65d}\index{LeaderData@{LeaderData}!pop\_issues@{pop\_issues}}
+\index{pop\_issues@{pop\_issues}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{pop\_issues}{pop\_issues}}
+{\footnotesize\ttfamily \label{struct_leader_data_a15c46b4b562f5708ca021d6ce004e65d} 
+int Leader\+Data::\+pop\+\_\+issues}
+
+人口问题 \Hypertarget{struct_leader_data_aedfaa44f2156ee07d1a9c676fbe1c81f}\index{LeaderData@{LeaderData}!population\_high@{population\_high}}
+\index{population\_high@{population\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{population\_high}{population\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_aedfaa44f2156ee07d1a9c676fbe1c81f} 
+int Leader\+Data::\+population\+\_\+high}
+
+最高人口数量 \Hypertarget{struct_leader_data_a6cc335916cfa2e0a9c74f17191d5783b}\index{LeaderData@{LeaderData}!popwin\_stamp@{popwin\_stamp}}
+\index{popwin\_stamp@{popwin\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{popwin\_stamp}{popwin\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6cc335916cfa2e0a9c74f17191d5783b} 
+int Leader\+Data::\+popwin\+\_\+stamp}
+
+
+
+各种标记和标识 
+
+人口胜利时间戳 \Hypertarget{struct_leader_data_a1a39a1b1da78233c66427d896fd0163f}\index{LeaderData@{LeaderData}!popwin\_timer@{popwin\_timer}}
+\index{popwin\_timer@{popwin\_timer}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{popwin\_timer}{popwin\_timer}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1a39a1b1da78233c66427d896fd0163f} 
+int Leader\+Data::\+popwin\+\_\+timer}
+
+人口胜利计时器 \Hypertarget{struct_leader_data_a720a3c532d78fd3d463a0b9f70e19cb9}\index{LeaderData@{LeaderData}!prod\_script@{prod\_script}}
+\index{prod\_script@{prod\_script}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{prod\_script}{prod\_script}}
+{\footnotesize\ttfamily \label{struct_leader_data_a720a3c532d78fd3d463a0b9f70e19cb9} 
+\doxymbox{\hyperlink{struct_string}{String}} Leader\+Data::\+prod\+\_\+script}
+
+生产脚本 \Hypertarget{struct_leader_data_af6a5a51949b7f1b283bee8b619648fcf}\index{LeaderData@{LeaderData}!prod\_script\_run@{prod\_script\_run}}
+\index{prod\_script\_run@{prod\_script\_run}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{prod\_script\_run}{prod\_script\_run}}
+{\footnotesize\ttfamily \label{struct_leader_data_af6a5a51949b7f1b283bee8b619648fcf} 
+int Leader\+Data::\+prod\+\_\+script\+\_\+run}
+
+生产脚本运行状态 \Hypertarget{struct_leader_data_a78cf2f2f0718f4758502f783088a9792}\index{LeaderData@{LeaderData}!production\_step@{production\_step}}
+\index{production\_step@{production\_step}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{production\_step}{production\_step}}
+{\footnotesize\ttfamily \label{struct_leader_data_a78cf2f2f0718f4758502f783088a9792} 
+int Leader\+Data::\+production\+\_\+step}
+
+
+
+稀有资源系统 
+
+生产步骤 \Hypertarget{struct_leader_data_adc973e99904844e03762511050b46209}\index{LeaderData@{LeaderData}!raid\_stamp@{raid\_stamp}}
+\index{raid\_stamp@{raid\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{raid\_stamp}{raid\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_adc973e99904844e03762511050b46209} 
+int Leader\+Data::\+raid\+\_\+stamp\+[8]\+}
+
+袭击时间戳 \Hypertarget{struct_leader_data_aff55ea206c7f087ab284e4cb99efe829}\index{LeaderData@{LeaderData}!rare@{rare}}
+\index{rare@{rare}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{rare}{rare}}
+{\footnotesize\ttfamily \label{struct_leader_data_aff55ea206c7f087ab284e4cb99efe829} 
+Bit\+Mask\+\_\+44 Leader\+Data::\+rare}
+
+稀有资源位掩码 \Hypertarget{struct_leader_data_a383cfe33f0ea54263a0870aa04ea855f}\index{LeaderData@{LeaderData}!rare\_conquest@{rare\_conquest}}
+\index{rare\_conquest@{rare\_conquest}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{rare\_conquest}{rare\_conquest}}
+{\footnotesize\ttfamily \label{struct_leader_data_a383cfe33f0ea54263a0870aa04ea855f} 
+Bit\+Mask\+\_\+44 Leader\+Data::\+rare\+\_\+conquest}
+
+征服稀有资源位掩码 \Hypertarget{struct_leader_data_abcca21d2c848d8ceee327bf837a95862}\index{LeaderData@{LeaderData}!rare\_owned@{rare\_owned}}
+\index{rare\_owned@{rare\_owned}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{rare\_owned}{rare\_owned}}
+{\footnotesize\ttfamily \label{struct_leader_data_abcca21d2c848d8ceee327bf837a95862} 
+Bit\+Mask\+\_\+44 Leader\+Data::\+rare\+\_\+owned}
+
+拥有稀有资源位掩码 \Hypertarget{struct_leader_data_ae53ae55c02528b5ceee94ef3dbcfc9df}\index{LeaderData@{LeaderData}!rares\_collected@{rares\_collected}}
+\index{rares\_collected@{rares\_collected}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{rares\_collected}{rares\_collected}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae53ae55c02528b5ceee94ef3dbcfc9df} 
+int Leader\+Data::\+rares\+\_\+collected\+[44]\+}
+
+收集的稀有资源数组 \Hypertarget{struct_leader_data_ab32d72cd48d2334734eae46117001740}\index{LeaderData@{LeaderData}!reg\_active@{reg\_active}}
+\index{reg\_active@{reg\_active}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_active}{reg\_active}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab32d72cd48d2334734eae46117001740} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+active\+[127]\+}
+
+区域活跃度数组 \Hypertarget{struct_leader_data_a8c566e0af2eb08982decc4fdf0796032}\index{LeaderData@{LeaderData}!reg\_allies@{reg\_allies}}
+\index{reg\_allies@{reg\_allies}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_allies}{reg\_allies}}
+{\footnotesize\ttfamily \label{struct_leader_data_a8c566e0af2eb08982decc4fdf0796032} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+reg\+\_\+allies\+[64]\+}
+
+区域盟友状态 \Hypertarget{struct_leader_data_ab96f452a99d601876ad5c8e717b3cc2c}\index{LeaderData@{LeaderData}!reg\_attack@{reg\_attack}}
+\index{reg\_attack@{reg\_attack}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_attack}{reg\_attack}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab96f452a99d601876ad5c8e717b3cc2c} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+attack\+[127]\+}
+
+区域攻击强度数组 \Hypertarget{struct_leader_data_ab05dab913b8be7316778e21e357a03d9}\index{LeaderData@{LeaderData}!reg\_attacked@{reg\_attacked}}
+\index{reg\_attacked@{reg\_attacked}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_attacked}{reg\_attacked}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab05dab913b8be7316778e21e357a03d9} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+reg\+\_\+attacked\+[64]\+}
+
+区域被攻击状态 \Hypertarget{struct_leader_data_ae339c7d50b992def8397fda5d1e09efc}\index{LeaderData@{LeaderData}!reg\_buildings@{reg\_buildings}}
+\index{reg\_buildings@{reg\_buildings}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_buildings}{reg\_buildings}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae339c7d50b992def8397fda5d1e09efc} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+buildings\+[64]\+\+[129]\+}
+
+区域建筑数组（二维） \Hypertarget{struct_leader_data_aa1c04ee15fed212984699cda5ab47ef6}\index{LeaderData@{LeaderData}!reg\_cities@{reg\_cities}}
+\index{reg\_cities@{reg\_cities}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_cities}{reg\_cities}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa1c04ee15fed212984699cda5ab47ef6} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+cities\+[64]\+}
+
+区域城市数组 \Hypertarget{struct_leader_data_adef0c510e073396787d0592b4469efc6}\index{LeaderData@{LeaderData}!reg\_combat@{reg\_combat}}
+\index{reg\_combat@{reg\_combat}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_combat}{reg\_combat}}
+{\footnotesize\ttfamily \label{struct_leader_data_adef0c510e073396787d0592b4469efc6} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+combat\+[127]\+}
+
+区域战斗强度数组 \Hypertarget{struct_leader_data_a9f08c8ced3a1aa302439c7a66254428c}\index{LeaderData@{LeaderData}!reg\_defense@{reg\_defense}}
+\index{reg\_defense@{reg\_defense}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_defense}{reg\_defense}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9f08c8ced3a1aa302439c7a66254428c} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+defense\+[64]\+}
+
+区域防御强度数组 \Hypertarget{struct_leader_data_ae84b600097a41c6f5d7ce8437068e1b6}\index{LeaderData@{LeaderData}!reg\_docks@{reg\_docks}}
+\index{reg\_docks@{reg\_docks}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_docks}{reg\_docks}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae84b600097a41c6f5d7ce8437068e1b6} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+docks\+[64]\+}
+
+区域码头数组 \Hypertarget{struct_leader_data_a09a2110eb4294eba8784f86910be617d}\index{LeaderData@{LeaderData}!reg\_forts@{reg\_forts}}
+\index{reg\_forts@{reg\_forts}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_forts}{reg\_forts}}
+{\footnotesize\ttfamily \label{struct_leader_data_a09a2110eb4294eba8784f86910be617d} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+forts\+[64]\+}
+
+区域堡垒数组 \Hypertarget{struct_leader_data_a0d29d0701c9311413921b24e2b46a03e}\index{LeaderData@{LeaderData}!reg\_free\_peasants@{reg\_free\_peasants}}
+\index{reg\_free\_peasants@{reg\_free\_peasants}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_free\_peasants}{reg\_free\_peasants}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0d29d0701c9311413921b24e2b46a03e} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+free\+\_\+peasants\+[64]\+}
+
+区域自由农民数组 \Hypertarget{struct_leader_data_a39de24c4a00f82627b997aa82d3ce64f}\index{LeaderData@{LeaderData}!reg\_gather\_slots@{reg\_gather\_slots}}
+\index{reg\_gather\_slots@{reg\_gather\_slots}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_gather\_slots}{reg\_gather\_slots}}
+{\footnotesize\ttfamily \label{struct_leader_data_a39de24c4a00f82627b997aa82d3ce64f} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+gather\+\_\+slots\+[64]\+}
+
+区域收集槽位数组 \Hypertarget{struct_leader_data_a557e9a7b0c61bee1fab200f42ae00e1d}\index{LeaderData@{LeaderData}!reg\_gatherers@{reg\_gatherers}}
+\index{reg\_gatherers@{reg\_gatherers}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_gatherers}{reg\_gatherers}}
+{\footnotesize\ttfamily \label{struct_leader_data_a557e9a7b0c61bee1fab200f42ae00e1d} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+gatherers\+[64]\+}
+
+区域收集者数组 \Hypertarget{struct_leader_data_acad109abc48e6fb78414f0f2cf584373}\index{LeaderData@{LeaderData}!reg\_known\_rares@{reg\_known\_rares}}
+\index{reg\_known\_rares@{reg\_known\_rares}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_known\_rares}{reg\_known\_rares}}
+{\footnotesize\ttfamily \label{struct_leader_data_acad109abc48e6fb78414f0f2cf584373} 
+int Leader\+Data::\+reg\+\_\+known\+\_\+rares\+[64]\+}
+
+区域已知稀有资源 \Hypertarget{struct_leader_data_a2f4874b2fbcd800a433e96c217099558}\index{LeaderData@{LeaderData}!reg\_land@{reg\_land}}
+\index{reg\_land@{reg\_land}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_land}{reg\_land}}
+{\footnotesize\ttfamily \label{struct_leader_data_a2f4874b2fbcd800a433e96c217099558} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+land\+[64]\+}
+
+区域陆地数组 \Hypertarget{struct_leader_data_a59a267bc0940b6f976c3a7edb1606f19}\index{LeaderData@{LeaderData}!reg\_naval@{reg\_naval}}
+\index{reg\_naval@{reg\_naval}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_naval}{reg\_naval}}
+{\footnotesize\ttfamily \label{struct_leader_data_a59a267bc0940b6f976c3a7edb1606f19} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+naval\+[63]\+}
+
+区域海军强度数组 \Hypertarget{struct_leader_data_acc0c50b2a3af410669a326c78ed34426}\index{LeaderData@{LeaderData}!reg\_neutrals@{reg\_neutrals}}
+\index{reg\_neutrals@{reg\_neutrals}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_neutrals}{reg\_neutrals}}
+{\footnotesize\ttfamily \label{struct_leader_data_acc0c50b2a3af410669a326c78ed34426} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+reg\+\_\+neutrals\+[64]\+}
+
+区域中立状态 \Hypertarget{struct_leader_data_a26e9a45fa0e24a38232a777291c85a07}\index{LeaderData@{LeaderData}!reg\_peasants@{reg\_peasants}}
+\index{reg\_peasants@{reg\_peasants}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_peasants}{reg\_peasants}}
+{\footnotesize\ttfamily \label{struct_leader_data_a26e9a45fa0e24a38232a777291c85a07} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+peasants\+[64]\+}
+
+区域农民数量数组 \Hypertarget{struct_leader_data_aeac0e88ad9e4875c62f4eba2d7ad06d5}\index{LeaderData@{LeaderData}!reg\_pop@{reg\_pop}}
+\index{reg\_pop@{reg\_pop}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_pop}{reg\_pop}}
+{\footnotesize\ttfamily \label{struct_leader_data_aeac0e88ad9e4875c62f4eba2d7ad06d5} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+pop\+[64]\+}
+
+区域人口数组 \Hypertarget{struct_leader_data_a45ac67c6cb4e107e37f81797d149236d}\index{LeaderData@{LeaderData}!reg\_terr@{reg\_terr}}
+\index{reg\_terr@{reg\_terr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_terr}{reg\_terr}}
+{\footnotesize\ttfamily \label{struct_leader_data_a45ac67c6cb4e107e37f81797d149236d} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+terr\+[64]\+}
+
+区域领土数组 \Hypertarget{struct_leader_data_a9c114ef441661175740142acbd860e8b}\index{LeaderData@{LeaderData}!reg\_transports@{reg\_transports}}
+\index{reg\_transports@{reg\_transports}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_transports}{reg\_transports}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9c114ef441661175740142acbd860e8b} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+transports\+[63]\+}
+
+区域运输能力数组 \Hypertarget{struct_leader_data_a45a5efdaa9c9985049f1efc3b74a1226}\index{LeaderData@{LeaderData}!reg\_unpack\_merch@{reg\_unpack\_merch}}
+\index{reg\_unpack\_merch@{reg\_unpack\_merch}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_unpack\_merch}{reg\_unpack\_merch}}
+{\footnotesize\ttfamily \label{struct_leader_data_a45a5efdaa9c9985049f1efc3b74a1226} 
+int Leader\+Data::\+reg\+\_\+unpack\+\_\+merch\+[64]\+}
+
+区域商人解包状态 \Hypertarget{struct_leader_data_a3c2e1535f17dcabef3d95e2c639fb75d}\index{LeaderData@{LeaderData}!reg\_wars@{reg\_wars}}
+\index{reg\_wars@{reg\_wars}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_wars}{reg\_wars}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3c2e1535f17dcabef3d95e2c639fb75d} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+reg\+\_\+wars\+[64]\+}
+
+区域战争状态 \Hypertarget{struct_leader_data_a2178d085b87edf9e56b8fec24b0058d2}\index{LeaderData@{LeaderData}!reg\_xport\_peasants@{reg\_xport\_peasants}}
+\index{reg\_xport\_peasants@{reg\_xport\_peasants}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{reg\_xport\_peasants}{reg\_xport\_peasants}}
+{\footnotesize\ttfamily \label{struct_leader_data_a2178d085b87edf9e56b8fec24b0058d2} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+reg\+\_\+xport\+\_\+peasants\+[64]\+}
+
+区域运输农民数组 \Hypertarget{struct_leader_data_a611f8d506d69ba941cf6771a1ba2c7b8}\index{LeaderData@{LeaderData}!repair\_stamp@{repair\_stamp}}
+\index{repair\_stamp@{repair\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{repair\_stamp}{repair\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a611f8d506d69ba941cf6771a1ba2c7b8} 
+int Leader\+Data::\+repair\+\_\+stamp}
+
+修复时间戳 \Hypertarget{struct_leader_data_aaa89abc992282b6e8638a4e253134114}\index{LeaderData@{LeaderData}!resources\_controlled@{resources\_controlled}}
+\index{resources\_controlled@{resources\_controlled}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{resources\_controlled}{resources\_controlled}}
+{\footnotesize\ttfamily \label{struct_leader_data_aaa89abc992282b6e8638a4e253134114} 
+int Leader\+Data::\+resources\+\_\+controlled}
+
+
+
+最高记录值 
+
+控制的资源数量 \Hypertarget{struct_leader_data_aed1dc9072ba0677fad7e4def3c667f8d}\index{LeaderData@{LeaderData}!retargets@{retargets}}
+\index{retargets@{retargets}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{retargets}{retargets}}
+{\footnotesize\ttfamily \label{struct_leader_data_aed1dc9072ba0677fad7e4def3c667f8d} 
+int Leader\+Data::\+retargets}
+
+重新目标次数 \Hypertarget{struct_leader_data_a1b4c414a35c0c64243bc9e1b4f754f55}\index{LeaderData@{LeaderData}!scholar\_high@{scholar\_high}}
+\index{scholar\_high@{scholar\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{scholar\_high}{scholar\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1b4c414a35c0c64243bc9e1b4f754f55} 
+int Leader\+Data::\+scholar\+\_\+high}
+
+最高学者数量 \Hypertarget{struct_leader_data_a3d81c5bd0e2918c7e1c60916940beea2}\index{LeaderData@{LeaderData}!scholar\_militia@{scholar\_militia}}
+\index{scholar\_militia@{scholar\_militia}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{scholar\_militia}{scholar\_militia}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3d81c5bd0e2918c7e1c60916940beea2} 
+int Leader\+Data::\+scholar\+\_\+militia}
+
+学者民兵数量 \Hypertarget{struct_leader_data_a351f8f5b2a2c62aa1b7b693815a8a066}\index{LeaderData@{LeaderData}!scholars@{scholars}}
+\index{scholars@{scholars}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{scholars}{scholars}}
+{\footnotesize\ttfamily \label{struct_leader_data_a351f8f5b2a2c62aa1b7b693815a8a066} 
+int Leader\+Data::\+scholars}
+
+学者状态 \Hypertarget{struct_leader_data_a95fef8d64a58f10e1b2009d4a21674a8}\index{LeaderData@{LeaderData}!score@{score}}
+\index{score@{score}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily \label{struct_leader_data_a95fef8d64a58f10e1b2009d4a21674a8} 
+int Leader\+Data::\+score}
+
+总分数 \Hypertarget{struct_leader_data_a1a18841ca06eca73524c01bbc4a52bcb}\index{LeaderData@{LeaderData}!score\_buildings@{score\_buildings}}
+\index{score\_buildings@{score\_buildings}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_buildings}{score\_buildings}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1a18841ca06eca73524c01bbc4a52bcb} 
+int Leader\+Data::\+score\+\_\+buildings}
+
+建筑分数 \Hypertarget{struct_leader_data_add5799e090a38fcce57bb34a717a0acf}\index{LeaderData@{LeaderData}!score\_combat@{score\_combat}}
+\index{score\_combat@{score\_combat}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_combat}{score\_combat}}
+{\footnotesize\ttfamily \label{struct_leader_data_add5799e090a38fcce57bb34a717a0acf} 
+int Leader\+Data::\+score\+\_\+combat}
+
+战斗分数 \Hypertarget{struct_leader_data_a52da096f14eecb851a7cd38b0774553d}\index{LeaderData@{LeaderData}!score\_economy@{score\_economy}}
+\index{score\_economy@{score\_economy}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_economy}{score\_economy}}
+{\footnotesize\ttfamily \label{struct_leader_data_a52da096f14eecb851a7cd38b0774553d} 
+int Leader\+Data::\+score\+\_\+economy}
+
+经济分数 \Hypertarget{struct_leader_data_a7b410a66f2ae697bf920f5b653774f33}\index{LeaderData@{LeaderData}!score\_explored@{score\_explored}}
+\index{score\_explored@{score\_explored}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_explored}{score\_explored}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7b410a66f2ae697bf920f5b653774f33} 
+int Leader\+Data::\+score\+\_\+explored}
+
+探索分数 \Hypertarget{struct_leader_data_a7e42f8e45014d6c521a4c1ec6cdbb834}\index{LeaderData@{LeaderData}!score\_pop@{score\_pop}}
+\index{score\_pop@{score\_pop}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_pop}{score\_pop}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7e42f8e45014d6c521a4c1ec6cdbb834} 
+int Leader\+Data::\+score\+\_\+pop}
+
+人口分数 \Hypertarget{struct_leader_data_a8e3590d2039037a7aa9b47c82c8d6473}\index{LeaderData@{LeaderData}!score\_research@{score\_research}}
+\index{score\_research@{score\_research}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_research}{score\_research}}
+{\footnotesize\ttfamily \label{struct_leader_data_a8e3590d2039037a7aa9b47c82c8d6473} 
+int Leader\+Data::\+score\+\_\+research}
+
+研究分数 \Hypertarget{struct_leader_data_ac964c77e010140f8243d4244d4c444dd}\index{LeaderData@{LeaderData}!score\_territory@{score\_territory}}
+\index{score\_territory@{score\_territory}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_territory}{score\_territory}}
+{\footnotesize\ttfamily \label{struct_leader_data_ac964c77e010140f8243d4244d4c444dd} 
+int Leader\+Data::\+score\+\_\+territory}
+
+领土分数 \Hypertarget{struct_leader_data_a3aaf1bda2c06b75f46418a29e72ff7a4}\index{LeaderData@{LeaderData}!score\_unit\_upgrades@{score\_unit\_upgrades}}
+\index{score\_unit\_upgrades@{score\_unit\_upgrades}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_unit\_upgrades}{score\_unit\_upgrades}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3aaf1bda2c06b75f46418a29e72ff7a4} 
+int Leader\+Data::\+score\+\_\+unit\+\_\+upgrades}
+
+单位升级分数 \Hypertarget{struct_leader_data_a8b826ada96165b5d6ceed35db1c19efa}\index{LeaderData@{LeaderData}!score\_units@{score\_units}}
+\index{score\_units@{score\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_units}{score\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_a8b826ada96165b5d6ceed35db1c19efa} 
+int Leader\+Data::\+score\+\_\+units}
+
+单位分数 \Hypertarget{struct_leader_data_a19252e3d759b816e5891030f38a22ee5}\index{LeaderData@{LeaderData}!score\_units\_2@{score\_units\_2}}
+\index{score\_units\_2@{score\_units\_2}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_units\_2}{score\_units\_2}}
+{\footnotesize\ttfamily \label{struct_leader_data_a19252e3d759b816e5891030f38a22ee5} 
+int Leader\+Data::\+score\+\_\+units\+\_\+2}
+
+单位分数2 \Hypertarget{struct_leader_data_a26ab23aa844f47151682dee29f660ff8}\index{LeaderData@{LeaderData}!score\_wonders@{score\_wonders}}
+\index{score\_wonders@{score\_wonders}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{score\_wonders}{score\_wonders}}
+{\footnotesize\ttfamily \label{struct_leader_data_a26ab23aa844f47151682dee29f660ff8} 
+int Leader\+Data::\+score\+\_\+wonders}
+
+奇观分数 \Hypertarget{struct_leader_data_aff5e01264da00f5a8dee14dfa4b9159b}\index{LeaderData@{LeaderData}!scout\_garr@{scout\_garr}}
+\index{scout\_garr@{scout\_garr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{scout\_garr}{scout\_garr}}
+{\footnotesize\ttfamily \label{struct_leader_data_aff5e01264da00f5a8dee14dfa4b9159b} 
+int Leader\+Data::\+scout\+\_\+garr}
+
+侦察兵驻军数量 \Hypertarget{struct_leader_data_a7ebe1859187cab172ba462b50dca5886}\index{LeaderData@{LeaderData}!scouts@{scouts}}
+\index{scouts@{scouts}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{scouts}{scouts}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7ebe1859187cab172ba462b50dca5886} 
+int Leader\+Data::\+scouts}
+
+侦察兵状态 \Hypertarget{struct_leader_data_ab19720a6f54e5e86462ace1c623ad37f}\index{LeaderData@{LeaderData}!script\_step@{script\_step}}
+\index{script\_step@{script\_step}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{script\_step}{script\_step}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab19720a6f54e5e86462ace1c623ad37f} 
+int Leader\+Data::\+script\+\_\+step}
+
+脚本步骤 \Hypertarget{struct_leader_data_a1cbd6811bfeb7130e5a519846b7cf72a}\index{LeaderData@{LeaderData}!sea\_combat@{sea\_combat}}
+\index{sea\_combat@{sea\_combat}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{sea\_combat}{sea\_combat}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1cbd6811bfeb7130e5a519846b7cf72a} 
+int Leader\+Data::\+sea\+\_\+combat}
+
+海战状态 \Hypertarget{struct_leader_data_abb628d1b371d72799a3e42acde115e04}\index{LeaderData@{LeaderData}!sea\_mod@{sea\_mod}}
+\index{sea\_mod@{sea\_mod}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{sea\_mod}{sea\_mod}}
+{\footnotesize\ttfamily \label{struct_leader_data_abb628d1b371d72799a3e42acde115e04} 
+int Leader\+Data::\+sea\+\_\+mod}
+
+海军单位修正 \Hypertarget{struct_leader_data_a6a653e83c38376d411e9ee2989b46ede}\index{LeaderData@{LeaderData}!senates\_built@{senates\_built}}
+\index{senates\_built@{senates\_built}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{senates\_built}{senates\_built}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6a653e83c38376d411e9ee2989b46ede} 
+int Leader\+Data::\+senates\+\_\+built}
+
+建造的议院数量 \Hypertarget{struct_leader_data_a5934d97fb41baec52445435bc3626eb0}\index{LeaderData@{LeaderData}!shortages@{shortages}}
+\index{shortages@{shortages}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{shortages}{shortages}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5934d97fb41baec52445435bc3626eb0} 
+int Leader\+Data::\+shortages}
+
+短缺资源数量 \Hypertarget{struct_leader_data_a1a9ab2217662d37ea15f990ee94970c3}\index{LeaderData@{LeaderData}!siege@{siege}}
+\index{siege@{siege}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{siege}{siege}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1a9ab2217662d37ea15f990ee94970c3} 
+int Leader\+Data::\+siege}
+
+围攻状态 \Hypertarget{struct_leader_data_a67749ac3452530fd7dd1eb3207bf8a2e}\index{LeaderData@{LeaderData}!site\_mark@{site\_mark}}
+\index{site\_mark@{site\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{site\_mark}{site\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_a67749ac3452530fd7dd1eb3207bf8a2e} 
+unsigned int Leader\+Data::\+site\+\_\+mark}
+
+站点标记 \Hypertarget{struct_leader_data_a3288f41aabc389477ad30d0a04bff3bc}\index{LeaderData@{LeaderData}!sites@{sites}}
+\index{sites@{sites}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{sites}{sites}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3288f41aabc389477ad30d0a04bff3bc} 
+\doxymbox{\hyperlink{struct_sites}{Sites}} Leader\+Data::\+sites}
+
+站点集合 \Hypertarget{struct_leader_data_a0f93961f70e6d9da23c86e5e31a13722}\index{LeaderData@{LeaderData}!special\_mark@{special\_mark}}
+\index{special\_mark@{special\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{special\_mark}{special\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_a0f93961f70e6d9da23c86e5e31a13722} 
+int Leader\+Data::\+special\+\_\+mark}
+
+特殊标记 \Hypertarget{struct_leader_data_a54acde647cf535e174b87a3bb62fb01a}\index{LeaderData@{LeaderData}!stable\_garr@{stable\_garr}}
+\index{stable\_garr@{stable\_garr}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{stable\_garr}{stable\_garr}}
+{\footnotesize\ttfamily \label{struct_leader_data_a54acde647cf535e174b87a3bb62fb01a} 
+int Leader\+Data::\+stable\+\_\+garr}
+
+马厩驻军数量 \Hypertarget{struct_leader_data_a635311ceccd38ed5559dd7a2110158bb}\index{LeaderData@{LeaderData}!stable\_queued@{stable\_queued}}
+\index{stable\_queued@{stable\_queued}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{stable\_queued}{stable\_queued}}
+{\footnotesize\ttfamily \label{struct_leader_data_a635311ceccd38ed5559dd7a2110158bb} 
+int Leader\+Data::\+stable\+\_\+queued}
+
+马厩队列数量 \Hypertarget{struct_leader_data_ae907fda5f3bf55032eff9059b38cf8f7}\index{LeaderData@{LeaderData}!stable\_units@{stable\_units}}
+\index{stable\_units@{stable\_units}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{stable\_units}{stable\_units}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae907fda5f3bf55032eff9059b38cf8f7} 
+int Leader\+Data::\+stable\+\_\+units}
+
+马厩单位数量 \Hypertarget{struct_leader_data_a14cab6c0de904390883aac17bb718c09}\index{LeaderData@{LeaderData}!strategy@{strategy}}
+\index{strategy@{strategy}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{strategy}{strategy}}
+{\footnotesize\ttfamily \label{struct_leader_data_a14cab6c0de904390883aac17bb718c09} 
+unsigned \+\_\+\+\_\+int16 Leader\+Data::\+strategy\+[64]\+}
+
+
+
+战斗统计数组 
+
+战略数组 \Hypertarget{struct_leader_data_a9b47e3a9cb8675bb4d8bd741ccf8fa76}\index{LeaderData@{LeaderData}!strong@{strong}}
+\index{strong@{strong}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{strong}{strong}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9b47e3a9cb8675bb4d8bd741ccf8fa76} 
+int Leader\+Data::\+strong\+[8]\+}
+
+对其他玩家的优势 \Hypertarget{struct_leader_data_af5f9c0eb9537771c97137598344af040}\index{LeaderData@{LeaderData}!supply\_mark@{supply\_mark}}
+\index{supply\_mark@{supply\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{supply\_mark}{supply\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_af5f9c0eb9537771c97137598344af040} 
+int Leader\+Data::\+supply\+\_\+mark}
+
+补给标记 \Hypertarget{struct_leader_data_ab4094ce966e643a34897a18a1d3d78af}\index{LeaderData@{LeaderData}!support\_stamp@{support\_stamp}}
+\index{support\_stamp@{support\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{support\_stamp}{support\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_ab4094ce966e643a34897a18a1d3d78af} 
+int Leader\+Data::\+support\+\_\+stamp}
+
+支持时间戳 \Hypertarget{struct_leader_data_ad8d18d2080e157a415bbe003bf817967}\index{LeaderData@{LeaderData}!supported@{supported}}
+\index{supported@{supported}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{supported}{supported}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad8d18d2080e157a415bbe003bf817967} 
+int Leader\+Data::\+supported\+[6]\+}
+
+支持的资源数组 \Hypertarget{struct_leader_data_a1e8e5d655839f7795cc9d8fccccb38c4}\index{LeaderData@{LeaderData}!take\_att\_disabled@{take\_att\_disabled}}
+\index{take\_att\_disabled@{take\_att\_disabled}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{take\_att\_disabled}{take\_att\_disabled}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1e8e5d655839f7795cc9d8fccccb38c4} 
+int Leader\+Data::\+take\+\_\+att\+\_\+disabled}
+
+禁用接受attrition \Hypertarget{struct_leader_data_a96da9d4876b3caa1d6f6825503639528}\index{LeaderData@{LeaderData}!taunt\_frame@{taunt\_frame}}
+\index{taunt\_frame@{taunt\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{taunt\_frame}{taunt\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_a96da9d4876b3caa1d6f6825503639528} 
+int Leader\+Data::\+taunt\+\_\+frame\+[8]\+}
+
+嘲讽发送时间帧 \Hypertarget{struct_leader_data_a6753247001bd6a66886f5eb5d20ed1bb}\index{LeaderData@{LeaderData}!team\_color@{team\_color}}
+\index{team\_color@{team\_color}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{team\_color}{team\_color}}
+{\footnotesize\ttfamily \label{struct_leader_data_a6753247001bd6a66886f5eb5d20ed1bb} 
+unsigned \+\_\+\+\_\+int8 Leader\+Data::\+team\+\_\+color}
+
+队伍颜色 \Hypertarget{struct_leader_data_a3872dfa0a9b866386c53af643f7d65ff}\index{LeaderData@{LeaderData}!tech@{tech}}
+\index{tech@{tech}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tech}{tech}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3872dfa0a9b866386c53af643f7d65ff} 
+Bit\+Mask\+\_\+806 Leader\+Data::\+tech}
+
+科技位掩码 \Hypertarget{struct_leader_data_a66ec0ac6465cdde07c5390a93d726bce}\index{LeaderData@{LeaderData}!tech\_at\_start@{tech\_at\_start}}
+\index{tech\_at\_start@{tech\_at\_start}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tech\_at\_start}{tech\_at\_start}}
+{\footnotesize\ttfamily \label{struct_leader_data_a66ec0ac6465cdde07c5390a93d726bce} 
+Bit\+Mask\+\_\+806 Leader\+Data::\+tech\+\_\+at\+\_\+start}
+
+起始科技位掩码 \Hypertarget{struct_leader_data_ad057e84e6b766b0a5613c8571ff3efa5}\index{LeaderData@{LeaderData}!tech\_cat\_frame@{tech\_cat\_frame}}
+\index{tech\_cat\_frame@{tech\_cat\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tech\_cat\_frame}{tech\_cat\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad057e84e6b766b0a5613c8571ff3efa5} 
+int Leader\+Data::\+tech\+\_\+cat\+\_\+frame\+[4]\+}
+
+科技分类研究时间帧 \Hypertarget{struct_leader_data_a21125788ce3bff9ffbf449e26822ddb9}\index{LeaderData@{LeaderData}!tech\_frame@{tech\_frame}}
+\index{tech\_frame@{tech\_frame}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tech\_frame}{tech\_frame}}
+{\footnotesize\ttfamily \label{struct_leader_data_a21125788ce3bff9ffbf449e26822ddb9} 
+int Leader\+Data::\+tech\+\_\+frame}
+
+科技研究时间帧 \Hypertarget{struct_leader_data_a784a3e8a05692e82b658d37cc4623cfe}\index{LeaderData@{LeaderData}!territory@{territory}}
+\index{territory@{territory}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{territory}{territory}}
+{\footnotesize\ttfamily \label{struct_leader_data_a784a3e8a05692e82b658d37cc4623cfe} 
+int Leader\+Data::\+territory}
+
+领土面积 \Hypertarget{struct_leader_data_a48aea2858ea1d63a78e1f3baf6211ff6}\index{LeaderData@{LeaderData}!territory\_high@{territory\_high}}
+\index{territory\_high@{territory\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{territory\_high}{territory\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_a48aea2858ea1d63a78e1f3baf6211ff6} 
+int Leader\+Data::\+territory\+\_\+high}
+
+最高领土记录 \Hypertarget{struct_leader_data_a5dad090f907cc34857855e76f4e5b701}\index{LeaderData@{LeaderData}!trade\_profit@{trade\_profit}}
+\index{trade\_profit@{trade\_profit}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{trade\_profit}{trade\_profit}}
+{\footnotesize\ttfamily \label{struct_leader_data_a5dad090f907cc34857855e76f4e5b701} 
+int Leader\+Data::\+trade\+\_\+profit}
+
+贸易利润 \Hypertarget{struct_leader_data_ac725abb25f601a9c94fe1937d6eab079}\index{LeaderData@{LeaderData}!transports@{transports}}
+\index{transports@{transports}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{transports}{transports}}
+{\footnotesize\ttfamily \label{struct_leader_data_ac725abb25f601a9c94fe1937d6eab079} 
+int Leader\+Data::\+transports}
+
+运输状态 \Hypertarget{struct_leader_data_a7dcd79f35566e24332931cfbee6bb7ce}\index{LeaderData@{LeaderData}!treaties@{treaties}}
+\index{treaties@{treaties}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{treaties}{treaties}}
+{\footnotesize\ttfamily \label{struct_leader_data_a7dcd79f35566e24332931cfbee6bb7ce} 
+int Leader\+Data::\+treaties\+[8]\+}
+
+条约状态 \Hypertarget{struct_leader_data_a74a7e06181a5e2bcb2de317469a7f439}\index{LeaderData@{LeaderData}!tribe@{tribe}}
+\index{tribe@{tribe}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tribe}{tribe}}
+{\footnotesize\ttfamily \label{struct_leader_data_a74a7e06181a5e2bcb2de317469a7f439} 
+int Leader\+Data::\+tribe}
+
+部落/\+文明类型 \Hypertarget{struct_leader_data_a3fb022c469c73353498f4d93c3271d94}\index{LeaderData@{LeaderData}!tribute\_demanded@{tribute\_demanded}}
+\index{tribute\_demanded@{tribute\_demanded}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tribute\_demanded}{tribute\_demanded}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3fb022c469c73353498f4d93c3271d94} 
+int Leader\+Data::\+tribute\+\_\+demanded\+[8]\+}
+
+要求的进贡 \Hypertarget{struct_leader_data_a29e98e3d55290b9616a4cf4feb6aafc2}\index{LeaderData@{LeaderData}!tribute\_received@{tribute\_received}}
+\index{tribute\_received@{tribute\_received}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tribute\_received}{tribute\_received}}
+{\footnotesize\ttfamily \label{struct_leader_data_a29e98e3d55290b9616a4cf4feb6aafc2} 
+int Leader\+Data::\+tribute\+\_\+received}
+
+接收的进贡数量 \Hypertarget{struct_leader_data_af4246e2670c2ff6c57b749d99777b9dc}\index{LeaderData@{LeaderData}!tribute\_sent@{tribute\_sent}}
+\index{tribute\_sent@{tribute\_sent}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tribute\_sent}{tribute\_sent}}
+{\footnotesize\ttfamily \label{struct_leader_data_af4246e2670c2ff6c57b749d99777b9dc} 
+int Leader\+Data::\+tribute\+\_\+sent}
+
+发送的进贡数量 \Hypertarget{struct_leader_data_a3acc83b734d52368b9af86c7d220f69f}\index{LeaderData@{LeaderData}!tribute\_stamp@{tribute\_stamp}}
+\index{tribute\_stamp@{tribute\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tribute\_stamp}{tribute\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3acc83b734d52368b9af86c7d220f69f} 
+int Leader\+Data::\+tribute\+\_\+stamp\+[8]\+}
+
+进贡时间戳 \Hypertarget{struct_leader_data_a04a9b5fe2f3f510e5affd992ff46f2da}\index{LeaderData@{LeaderData}!tributes@{tributes}}
+\index{tributes@{tributes}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{tributes}{tributes}}
+{\footnotesize\ttfamily \label{struct_leader_data_a04a9b5fe2f3f510e5affd992ff46f2da} 
+int Leader\+Data::\+tributes\+[6]\+}
+
+进贡记录数组 \Hypertarget{struct_leader_data_a9691710ac879cef0c97b1ac84873441c}\index{LeaderData@{LeaderData}!units\_bribed@{units\_bribed}}
+\index{units\_bribed@{units\_bribed}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{units\_bribed}{units\_bribed}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9691710ac879cef0c97b1ac84873441c} 
+int Leader\+Data::\+units\+\_\+bribed}
+
+贿赂的单位数量 \Hypertarget{struct_leader_data_a479ec6963b530985f74c25e2aa94374f}\index{LeaderData@{LeaderData}!units\_built@{units\_built}}
+\index{units\_built@{units\_built}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{units\_built}{units\_built}}
+{\footnotesize\ttfamily \label{struct_leader_data_a479ec6963b530985f74c25e2aa94374f} 
+int Leader\+Data::\+units\+\_\+built}
+
+建造的单位总数 \Hypertarget{struct_leader_data_ad397f4dd415e912a8ee7d06d22902395}\index{LeaderData@{LeaderData}!units\_killed@{units\_killed}}
+\index{units\_killed@{units\_killed}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{units\_killed}{units\_killed}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad397f4dd415e912a8ee7d06d22902395} 
+int Leader\+Data::\+units\+\_\+killed}
+
+杀死的单位总数 \Hypertarget{struct_leader_data_a2c2c794ca3d9fe496d653635834650cb}\index{LeaderData@{LeaderData}!units\_lost@{units\_lost}}
+\index{units\_lost@{units\_lost}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{units\_lost}{units\_lost}}
+{\footnotesize\ttfamily \label{struct_leader_data_a2c2c794ca3d9fe496d653635834650cb} 
+int Leader\+Data::\+units\+\_\+lost}
+
+损失的单位总数 \Hypertarget{struct_leader_data_af37c3dcb158936a8591978a337f5e555}\index{LeaderData@{LeaderData}!victory\_type@{victory\_type}}
+\index{victory\_type@{victory\_type}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{victory\_type}{victory\_type}}
+{\footnotesize\ttfamily \label{struct_leader_data_af37c3dcb158936a8591978a337f5e555} 
+int Leader\+Data::\+victory\+\_\+type}
+
+胜利类型 \Hypertarget{struct_leader_data_aa3ac8d1f8d69b596dcfe760ca57eb88a}\index{LeaderData@{LeaderData}!village\_high@{village\_high}}
+\index{village\_high@{village\_high}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{village\_high}{village\_high}}
+{\footnotesize\ttfamily \label{struct_leader_data_aa3ac8d1f8d69b596dcfe760ca57eb88a} 
+int Leader\+Data::\+village\+\_\+high}
+
+最高村庄数量 \Hypertarget{struct_leader_data_a8b6873bb6e415dd72b71f5573e43ce42}\index{LeaderData@{LeaderData}!village\_mine@{village\_mine}}
+\index{village\_mine@{village\_mine}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{village\_mine}{village\_mine}}
+{\footnotesize\ttfamily \label{struct_leader_data_a8b6873bb6e415dd72b71f5573e43ce42} 
+int Leader\+Data::\+village\+\_\+mine}
+
+我方村庄数量 \Hypertarget{struct_leader_data_aae0a8288f93179e445f61b5f61b8e1b8}\index{LeaderData@{LeaderData}!village\_num@{village\_num}}
+\index{village\_num@{village\_num}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{village\_num}{village\_num}}
+{\footnotesize\ttfamily \label{struct_leader_data_aae0a8288f93179e445f61b5f61b8e1b8} 
+int Leader\+Data::\+village\+\_\+num}
+
+村庄数量 \Hypertarget{struct_leader_data_ad4d22c54846f96f534e54b66b58d4bf9}\index{LeaderData@{LeaderData}!warn\_caravans\_stamp@{warn\_caravans\_stamp}}
+\index{warn\_caravans\_stamp@{warn\_caravans\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{warn\_caravans\_stamp}{warn\_caravans\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad4d22c54846f96f534e54b66b58d4bf9} 
+int Leader\+Data::\+warn\+\_\+caravans\+\_\+stamp}
+
+商队警告时间戳 \Hypertarget{struct_leader_data_a24e31b248bcbeb6219f62b9eb176b969}\index{LeaderData@{LeaderData}!warn\_cities\_stamp@{warn\_cities\_stamp}}
+\index{warn\_cities\_stamp@{warn\_cities\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{warn\_cities\_stamp}{warn\_cities\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_a24e31b248bcbeb6219f62b9eb176b969} 
+int Leader\+Data::\+warn\+\_\+cities\+\_\+stamp}
+
+城市警告时间戳 \Hypertarget{struct_leader_data_af8767c6ee27521c096b19b5ad306074a}\index{LeaderData@{LeaderData}!warn\_universities\_stamp@{warn\_universities\_stamp}}
+\index{warn\_universities\_stamp@{warn\_universities\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{warn\_universities\_stamp}{warn\_universities\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_af8767c6ee27521c096b19b5ad306074a} 
+int Leader\+Data::\+warn\+\_\+universities\+\_\+stamp}
+
+大学警告时间戳 \Hypertarget{struct_leader_data_acacec0dfdf1a951bbe5b019e513790df}\index{LeaderData@{LeaderData}!wars@{wars}}
+\index{wars@{wars}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{wars}{wars}}
+{\footnotesize\ttfamily \label{struct_leader_data_acacec0dfdf1a951bbe5b019e513790df} 
+int Leader\+Data::\+wars}
+
+
+
+最佳属性记录 
+
+战争数量 \Hypertarget{struct_leader_data_a1c59ec5cca469d304dce55faa073be37}\index{LeaderData@{LeaderData}!weak@{weak}}
+\index{weak@{weak}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{weak}{weak}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1c59ec5cca469d304dce55faa073be37} 
+int Leader\+Data::\+weak\+[8]\+}
+
+对其他玩家的劣势 \Hypertarget{struct_leader_data_ad66fd7255f9460b7db5b53d3eb390916}\index{LeaderData@{LeaderData}!who@{who}}
+\index{who@{who}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{who}{who}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad66fd7255f9460b7db5b53d3eb390916} 
+int Leader\+Data::\+who}
+
+玩家\+ID \Hypertarget{struct_leader_data_a78fdef4475a58a9e016e321954cd5053}\index{LeaderData@{LeaderData}!wonder\_mark@{wonder\_mark}}
+\index{wonder\_mark@{wonder\_mark}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{wonder\_mark}{wonder\_mark}}
+{\footnotesize\ttfamily \label{struct_leader_data_a78fdef4475a58a9e016e321954cd5053} 
+int Leader\+Data::\+wonder\+\_\+mark}
+
+奇观标记 \Hypertarget{struct_leader_data_ae7cebc11966fcd5044ddb499642182ae}\index{LeaderData@{LeaderData}!wonder\_mod@{wonder\_mod}}
+\index{wonder\_mod@{wonder\_mod}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{wonder\_mod}{wonder\_mod}}
+{\footnotesize\ttfamily \label{struct_leader_data_ae7cebc11966fcd5044ddb499642182ae} 
+int Leader\+Data::\+wonder\+\_\+mod}
+
+奇观建造修正 \Hypertarget{struct_leader_data_a9ce097e47c72dbbf53e91295bc200ccb}\index{LeaderData@{LeaderData}!wonders\_built@{wonders\_built}}
+\index{wonders\_built@{wonders\_built}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{wonders\_built}{wonders\_built}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9ce097e47c72dbbf53e91295bc200ccb} 
+int Leader\+Data::\+wonders\+\_\+built}
+
+建造的奇观数量 \Hypertarget{struct_leader_data_ad04235de7005c4468ab72d1d648a926a}\index{LeaderData@{LeaderData}!wonders\_held@{wonders\_held}}
+\index{wonders\_held@{wonders\_held}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{wonders\_held}{wonders\_held}}
+{\footnotesize\ttfamily \label{struct_leader_data_ad04235de7005c4468ab72d1d648a926a} 
+int Leader\+Data::\+wonders\+\_\+held}
+
+持有的奇观数量 \Hypertarget{struct_leader_data_acedb08cd1d4055d1e8f0c3eec6f014bb}\index{LeaderData@{LeaderData}!wonderwin\_stamp@{wonderwin\_stamp}}
+\index{wonderwin\_stamp@{wonderwin\_stamp}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{wonderwin\_stamp}{wonderwin\_stamp}}
+{\footnotesize\ttfamily \label{struct_leader_data_acedb08cd1d4055d1e8f0c3eec6f014bb} 
+int Leader\+Data::\+wonderwin\+\_\+stamp}
+
+奇观胜利时间戳 \Hypertarget{struct_leader_data_a9fcd6cefac963ba3f01df4401d55c5fd}\index{LeaderData@{LeaderData}!wonderwin\_timer@{wonderwin\_timer}}
+\index{wonderwin\_timer@{wonderwin\_timer}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{wonderwin\_timer}{wonderwin\_timer}}
+{\footnotesize\ttfamily \label{struct_leader_data_a9fcd6cefac963ba3f01df4401d55c5fd} 
+int Leader\+Data::\+wonderwin\+\_\+timer}
+
+奇观胜利计时器 \Hypertarget{struct_leader_data_a1462040e2410b6454f584684b590cd2a}\index{LeaderData@{LeaderData}!worst\_good@{worst\_good}}
+\index{worst\_good@{worst\_good}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{worst\_good}{worst\_good}}
+{\footnotesize\ttfamily \label{struct_leader_data_a1462040e2410b6454f584684b590cd2a} 
+int Leader\+Data::\+worst\+\_\+good}
+
+
+
+经济系统数据 
+
+最缺乏的资源类型 \Hypertarget{struct_leader_data_a3b98eda9205fa875aba270b89ae1bbf6}\index{LeaderData@{LeaderData}!xport\_peasants@{xport\_peasants}}
+\index{xport\_peasants@{xport\_peasants}!LeaderData@{LeaderData}}
+\doxysubsubsection{\texorpdfstring{xport\_peasants}{xport\_peasants}}
+{\footnotesize\ttfamily \label{struct_leader_data_a3b98eda9205fa875aba270b89ae1bbf6} 
+int Leader\+Data::\+xport\+\_\+peasants}
+
+运输农民数量 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

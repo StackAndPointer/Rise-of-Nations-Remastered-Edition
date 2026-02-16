@@ -1,0 +1,10 @@
+digraph "Log"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="Log",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="日志结构 - 用于游戏日志记录"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GameLog",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_game_log.html",tooltip="游戏日志结构体，用于记录游戏运行时的各种信息"];
+}

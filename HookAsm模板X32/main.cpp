@@ -997,7 +997,11 @@ void(__fastcall* Old_LeaderOptions__LeaderOptions)(LeaderOptions* leaderOptions,
   void* ScenarioFuncSet__init_funcsAddr;
   void __fastcall ScenarioFuncSet__init_funcs(ScenarioFuncSet* scenarioFuncSet, int placeholder);//0x5C7570
   void(__fastcall* Old_ScenarioFuncSet__init_funcs)(ScenarioFuncSet* scenarioFuncSet, int placeholder);
-
+  void* ScriptFuncSet__add_new_funcAddr;
+  ScriptFunc* __fastcall ScriptFuncSet__add_new_func(ScriptFuncSet* scriptFuncSet, int placeholder, int ret_type, const wchar_t* name, int addr, unsigned __int8 num);//0x5D4DA0
+  ScriptFunc* (__fastcall* Old_ScriptFuncSet__add_new_func)(ScriptFuncSet* scriptFuncSet, int placeholder, int ret_type, const wchar_t* name, int addr, unsigned __int8 num);
+  void* ScriptFunc__add_paramAddr;
+  void (__fastcall* ScriptFunc__add_param)(ScriptFunc* scriptFuncSet, int placeholder, int type, wchar_t* name, StringGuts* validation, unsigned __int8 param_flags, const wchar_t* def_value);//0x5D4F20
 
  template<typename T>
  T& gameaddr(int addr) {
@@ -1046,7 +1050,8 @@ namespace Main
 
 
 		ScenarioFuncSet__init_funcsAddr = (BYTE*)hExeBase + 0x5C7570;
-
+		ScriptFuncSet__add_new_funcAddr = (BYTE*)hExeBase + 0x5D4DA0;
+		ScriptFunc__add_paramAddr = (BYTE*)hExeBase + 0x5D4F20;
 
 
         GameAccessConst__gamec = *(reinterpret_cast<Game**>(reinterpret_cast<BYTE*>(hExeBase) + 0x8061E8));
@@ -1072,6 +1077,8 @@ namespace Main
 
 
         HookFunctionBegin(ScenarioFuncSet__init_funcs, &ScenarioFuncSet__init_funcsAddr);
+		HookFunctionBegin(ScriptFuncSet__add_new_func, &ScriptFuncSet__add_new_funcAddr);
+
 
         
         Old_LeaderData__is_team = (decltype(Old_LeaderData__is_team))LeaderData__is_teamAddr;
@@ -1088,6 +1095,8 @@ namespace Main
 
 
 		Old_ScenarioFuncSet__init_funcs = (decltype(Old_ScenarioFuncSet__init_funcs))ScenarioFuncSet__init_funcsAddr;
+        Old_ScriptFuncSet__add_new_func = (decltype(Old_ScriptFuncSet__add_new_func))ScriptFuncSet__add_new_funcAddr;
+		ScriptFunc__add_param = (decltype(ScriptFunc__add_param))ScriptFunc__add_paramAddr;
 
         //这里写初始化Hook的代码
         //例如：HookBegin((LPVOID)0x114514,Hookcallback);

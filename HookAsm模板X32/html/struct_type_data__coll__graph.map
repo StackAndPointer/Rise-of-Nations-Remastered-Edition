@@ -1,0 +1,9 @@
+<map id="TypeData" name="TypeData">
+<area shape="rect" id="Node000001" title="类型数据基类 &#45; 存储游戏对象类型的通用属性" alt="" coords="56,331,133,357"/>
+<area shape="rect" id="Node000002" href="$struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="5,104,141,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,145,96,330,90,330,73,146"/>
+<area shape="rect" id="Node000003" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="165,104,221,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,145,102,331,98,329,179,144"/>
+<area shape="rect" id="Node000004" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="151,5,235,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,45,196,104,190,103,192,50"/>
+</map>

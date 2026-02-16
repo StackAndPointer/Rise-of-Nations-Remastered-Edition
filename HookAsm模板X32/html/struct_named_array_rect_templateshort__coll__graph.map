@@ -1,0 +1,9 @@
+<map id="NamedArrayRectTemplateshort" name="NamedArrayRectTemplateshort">
+<area shape="rect" id="Node000001" title="矩形数组基类" alt="" coords="21,203,225,229"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,198,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,144,123,203,117,202,106,148"/>
+<area shape="rect" id="Node000003" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="222,104,277,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,140,141,204,138,200,218,140"/>
+<area shape="rect" id="Node000004" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="208,5,291,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,46,252,105,247,103,248,50"/>
+</map>

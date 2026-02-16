@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rise-of-Nations-Remastered-Edition框架文档: GameLog结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Rise-of-Nations-Remastered-Edition框架文档<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">注释</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_game_log-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GameLog结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>游戏日志结构体，用于记录游戏运行时的各种信息  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enums_8h_source.html">Enums.h</a>&gt;</code></p>
+<div class="dynheader">
+类 GameLog 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_game_log__inherit__graph.png" border="0" usemap="#a_game_log_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_game_log_inherit__map" id="a_game_log_inherit__map">
+<area shape="rect" title="游戏日志结构体，用于记录游戏运行时的各种信息" alt="" coords="101,80,179,107"/>
+<area shape="rect" href="struct_log.html" title="日志结构 &#45; 用于游戏日志记录" alt="" coords="5,5,48,32"/>
+<area shape="poly" title=" " alt="" coords="60,38,122,78,118,81,58,43"/>
+<area shape="rect" href="struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="72,5,208,32"/>
+<area shape="poly" title=" " alt="" coords="142,46,142,81,137,78,138,50"/>
+<area shape="rect" href="struct_misc_access.html" title="组合框控件（继承自GraphicWin）" alt="" coords="232,5,325,32"/>
+<area shape="poly" title=" " alt="" coords="244,39,165,82,163,77,238,40"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+GameLog 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_game_log__coll__graph.png" border="0" usemap="#a_game_log_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_log_coll__map" id="a_game_log_coll__map">
+<area shape="rect" title="游戏日志结构体，用于记录游戏运行时的各种信息" alt="" coords="349,341,426,368"/>
+<area shape="rect" href="struct_log.html" title="日志结构 &#45; 用于游戏日志记录" alt="" coords="122,233,165,260"/>
+<area shape="poly" title=" " alt="" coords="158,271,177,295,199,315,236,332,276,343,351,354,346,354,275,348,234,337,197,320,173,299,156,276"/>
+<area shape="rect" href="struct_a__iobuf.html" title="游戏信息结构体 &#45; 存储整个游戏的基本信息" alt="" coords="5,104,71,131"/>
+<area shape="poly" title=" " alt="" coords="40,144,48,173,61,198,74,212,90,222,124,238,119,240,88,227,71,216,57,202,43,175,39,149"/>
+<area shape="rect" href="struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="152,104,207,131"/>
+<area shape="poly" title=" " alt="" coords="194,142,201,154,209,187,211,215,215,240,230,268,256,293,287,314,351,343,345,342,285,318,253,297,226,271,210,242,205,215,204,188,195,156,193,147"/>
+<area shape="poly" title=" " alt="" coords="154,140,147,156,142,176,140,197,143,234,138,232,135,197,137,175,143,154,151,144"/>
+<area shape="rect" href="union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="138,5,221,32"/>
+<area shape="poly" title=" " alt="" coords="180,45,182,104,177,103,178,50"/>
+<area shape="rect" href="struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="320,233,455,260"/>
+<area shape="poly" title=" " alt="" coords="389,274,390,342,385,339,385,277"/>
+<area shape="rect" href="struct_misc_access.html" title="组合框控件（继承自GraphicWin）" alt="" coords="479,233,573,260"/>
+<area shape="poly" title=" " alt="" coords="500,269,405,343,403,338,495,270"/>
+<area shape="rect" href="struct_object_array_random_log_entry.html" title="随机日志条目数组基类" alt="" coords="597,233,788,260"/>
+<area shape="poly" title=" " alt="" coords="645,265,425,343,423,338,639,266"/>
+<area shape="rect" title=" " alt="" coords="601,104,784,131"/>
+<area shape="poly" title=" " alt="" coords="694,144,695,234,690,231,691,148"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ae0a9d1ff41d937448e4d7730b41fb937" id="r_ae0a9d1ff41d937448e4d7730b41fb937"><td class="memItemLeft"><a class="el" href="_enums_8h.html#ab8507246f53c4bbefc76b43ff5bd8812">_BYTE</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae0a9d1ff41d937448e4d7730b41fb937">gap40</a></td></tr>
+<tr class="memitem:afb60b084f54f920eacc2a6d6bddba7e8" id="r_afb60b084f54f920eacc2a6d6bddba7e8"><td class="memItemLeft"><a class="el" href="_enums_8h.html#ae9049b014504c2e8db1d9ec6bf9a8864">GameLogMode</a>&#160;</td><td class="memItemRight"><a class="el" href="#afb60b084f54f920eacc2a6d6bddba7e8">current_mode</a></td></tr>
+<tr class="memitem:a6864aff2fad0f34dab16425a19111f50" id="r_a6864aff2fad0f34dab16425a19111f50"><td class="memItemLeft"><a class="el" href="_enums_8h.html#a02ab489f9b328d5480f8ef378a0aa9bc">GameLogType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6864aff2fad0f34dab16425a19111f50">current_type</a></td></tr>
+<tr class="memitem:af6af68526eb4d468dce53c3fd43ab62b" id="r_af6af68526eb4d468dce53c3fd43ab62b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af6af68526eb4d468dce53c3fd43ab62b">current_detail</a></td></tr>
+<tr class="memitem:a6fc50f4af5f600611e4495bb23c95149" id="r_a6fc50f4af5f600611e4495bb23c95149"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6fc50f4af5f600611e4495bb23c95149">detail_override</a></td></tr>
+<tr class="memitem:a0b70ed8eaa483bde8237c718f0623273" id="r_a0b70ed8eaa483bde8237c718f0623273"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0b70ed8eaa483bde8237c718f0623273">do_dump_all</a></td></tr>
+<tr class="memitem:ad28f59c5f71c28ee441650d96bcf0375" id="r_ad28f59c5f71c28ee441650d96bcf0375"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad28f59c5f71c28ee441650d96bcf0375">last_frame_logged</a></td></tr>
+<tr class="memitem:a5e2c3193b38c47f2e8562aaf9d7b6253" id="r_a5e2c3193b38c47f2e8562aaf9d7b6253"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5e2c3193b38c47f2e8562aaf9d7b6253">logging_game_frame</a></td></tr>
+<tr class="memitem:ad0f2711d79961fedea55f25121c12de1" id="r_ad0f2711d79961fedea55f25121c12de1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad0f2711d79961fedea55f25121c12de1">last_frame_logged_aux</a></td></tr>
+<tr class="memitem:adea82b54f55c54be4b480fbbf3c8be80" id="r_adea82b54f55c54be4b480fbbf3c8be80"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adea82b54f55c54be4b480fbbf3c8be80">logging_game_frame_aux</a></td></tr>
+<tr class="memitem:a933f2c1be91f2abd888e19e15e3b0b40" id="r_a933f2c1be91f2abd888e19e15e3b0b40"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a933f2c1be91f2abd888e19e15e3b0b40">checksum_count</a></td></tr>
+<tr class="memitem:a02dd7422593c8e5259414d1976f9f325" id="r_a02dd7422593c8e5259414d1976f9f325"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a02dd7422593c8e5259414d1976f9f325">checksum_dump</a></td></tr>
+<tr class="memitem:a7f37118a0e9e6319b41b83f491ddda57" id="r_a7f37118a0e9e6319b41b83f491ddda57"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7f37118a0e9e6319b41b83f491ddda57">checksum_break</a></td></tr>
+<tr class="memitem:abbe8d0d430ad7b1636e09751cdd7c1d5" id="r_abbe8d0d430ad7b1636e09751cdd7c1d5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#abbe8d0d430ad7b1636e09751cdd7c1d5">log_start_frame</a></td></tr>
+<tr class="memitem:af2e83262f58ecf83044ebb4d2e017a77" id="r_af2e83262f58ecf83044ebb4d2e017a77"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af2e83262f58ecf83044ebb4d2e017a77">log_end_frame</a></td></tr>
+<tr class="memitem:ab3a206f9cd62130fb34034373d5720c1" id="r_ab3a206f9cd62130fb34034373d5720c1"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab3a206f9cd62130fb34034373d5720c1">file_name</a></td></tr>
+<tr class="memitem:afd5213fb4aaac2485228748354849d04" id="r_afd5213fb4aaac2485228748354849d04"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="#afd5213fb4aaac2485228748354849d04">dump_name</a></td></tr>
+<tr class="memitem:a3eef25deab17aab88735d483af085dcd" id="r_a3eef25deab17aab88735d483af085dcd"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3eef25deab17aab88735d483af085dcd">random_log_pos</a></td></tr>
+<tr class="memitem:ac550fe6c80f8a33211985b7366c5ca92" id="r_ac550fe6c80f8a33211985b7366c5ca92"><td class="memItemLeft"><a class="el" href="struct_object_array_random_log_entry.html">ObjectArrayRandomLogEntry</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac550fe6c80f8a33211985b7366c5ca92">random_log_entries</a></td></tr>
+<tr class="memitem:aae11fde34e8260f4f7f344ace1068b5d" id="r_aae11fde34e8260f4f7f344ace1068b5d"><td class="memItemLeft">unsigned __int8&#160;</td><td class="memItemRight"><a class="el" href="#aae11fde34e8260f4f7f344ace1068b5d">details</a> [5][36]</td></tr>
+<tr class="inherit_header pub_attribs_struct_log"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_struct_log')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="struct_log.html">Log</a></td></tr>
+<tr class="memitem:a156ece2e15f8c60f196af1c60b540d68 inherit pub_attribs_struct_log" id="r_a156ece2e15f8c60f196af1c60b540d68"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#a156ece2e15f8c60f196af1c60b540d68">unk</a></td></tr>
+<tr class="memitem:aaa2571341b7182f4f6afd86731de892a inherit pub_attribs_struct_log" id="r_aaa2571341b7182f4f6afd86731de892a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#aaa2571341b7182f4f6afd86731de892a">flags</a></td></tr>
+<tr class="memitem:aa6d9fdbf76ea4ea9e6dd06950ffeb528 inherit pub_attribs_struct_log" id="r_aa6d9fdbf76ea4ea9e6dd06950ffeb528"><td class="memItemLeft"><a class="el" href="struct_a__iobuf.html">A_iobuf</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#aa6d9fdbf76ea4ea9e6dd06950ffeb528">handle_aux</a></td></tr>
+<tr class="memitem:ad856f640df6a75bd186f239d3461e1b8 inherit pub_attribs_struct_log" id="r_ad856f640df6a75bd186f239d3461e1b8"><td class="memItemLeft"><a class="el" href="struct_a__iobuf.html">A_iobuf</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#ad856f640df6a75bd186f239d3461e1b8">handle</a></td></tr>
+<tr class="memitem:a5a6f6b73c546bddc14866010238cddd5 inherit pub_attribs_struct_log" id="r_a5a6f6b73c546bddc14866010238cddd5"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#a5a6f6b73c546bddc14866010238cddd5">file_aux</a></td></tr>
+<tr class="memitem:aee75cf442caa8e5a3b0da88ac94ffcb4 inherit pub_attribs_struct_log" id="r_aee75cf442caa8e5a3b0da88ac94ffcb4"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#aee75cf442caa8e5a3b0da88ac94ffcb4">file</a></td></tr>
+<tr class="memitem:a37faca87a69124de7a25068955d65bf3 inherit pub_attribs_struct_log" id="r_a37faca87a69124de7a25068955d65bf3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#a37faca87a69124de7a25068955d65bf3">indent</a></td></tr>
+<tr class="memitem:a8aec28f68e82d8e4bc7021d979c17beb inherit pub_attribs_struct_log" id="r_a8aec28f68e82d8e4bc7021d979c17beb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_log.html#a8aec28f68e82d8e4bc7021d979c17beb">indent_aux</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>游戏日志结构体，用于记录游戏运行时的各种信息 </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a7f37118a0e9e6319b41b83f491ddda57" name="a7f37118a0e9e6319b41b83f491ddda57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f37118a0e9e6319b41b83f491ddda57">&#9670;&#160;</a></span>checksum_break</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::checksum_break</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>校验和中断 </p>
+
+</div>
+</div>
+<a id="a933f2c1be91f2abd888e19e15e3b0b40" name="a933f2c1be91f2abd888e19e15e3b0b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933f2c1be91f2abd888e19e15e3b0b40">&#9670;&#160;</a></span>checksum_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::checksum_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>校验和计数 </p>
+
+</div>
+</div>
+<a id="a02dd7422593c8e5259414d1976f9f325" name="a02dd7422593c8e5259414d1976f9f325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02dd7422593c8e5259414d1976f9f325">&#9670;&#160;</a></span>checksum_dump</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::checksum_dump</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>校验和转储 </p>
+
+</div>
+</div>
+<a id="af6af68526eb4d468dce53c3fd43ab62b" name="af6af68526eb4d468dce53c3fd43ab62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6af68526eb4d468dce53c3fd43ab62b">&#9670;&#160;</a></span>current_detail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::current_detail</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前详细程度 </p>
+
+</div>
+</div>
+<a id="afb60b084f54f920eacc2a6d6bddba7e8" name="afb60b084f54f920eacc2a6d6bddba7e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb60b084f54f920eacc2a6d6bddba7e8">&#9670;&#160;</a></span>current_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#ae9049b014504c2e8db1d9ec6bf9a8864">GameLogMode</a> GameLog::current_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前日志模式 </p>
+
+</div>
+</div>
+<a id="a6864aff2fad0f34dab16425a19111f50" name="a6864aff2fad0f34dab16425a19111f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6864aff2fad0f34dab16425a19111f50">&#9670;&#160;</a></span>current_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#a02ab489f9b328d5480f8ef378a0aa9bc">GameLogType</a> GameLog::current_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前日志类型 </p>
+
+</div>
+</div>
+<a id="a6fc50f4af5f600611e4495bb23c95149" name="a6fc50f4af5f600611e4495bb23c95149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc50f4af5f600611e4495bb23c95149">&#9670;&#160;</a></span>detail_override</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::detail_override</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>详细程度覆盖 </p>
+
+</div>
+</div>
+<a id="aae11fde34e8260f4f7f344ace1068b5d" name="aae11fde34e8260f4f7f344ace1068b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae11fde34e8260f4f7f344ace1068b5d">&#9670;&#160;</a></span>details</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned __int8 GameLog::details[5][36]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>详细设置数组 </p>
+
+</div>
+</div>
+<a id="a0b70ed8eaa483bde8237c718f0623273" name="a0b70ed8eaa483bde8237c718f0623273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b70ed8eaa483bde8237c718f0623273">&#9670;&#160;</a></span>do_dump_all</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::do_dump_all</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>是否转储所有日志 </p>
+
+</div>
+</div>
+<a id="afd5213fb4aaac2485228748354849d04" name="afd5213fb4aaac2485228748354849d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5213fb4aaac2485228748354849d04">&#9670;&#160;</a></span>dump_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_string.html">String</a> GameLog::dump_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>转储文件名 </p>
+
+</div>
+</div>
+<a id="ab3a206f9cd62130fb34034373d5720c1" name="ab3a206f9cd62130fb34034373d5720c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a206f9cd62130fb34034373d5720c1">&#9670;&#160;</a></span>file_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_string.html">String</a> GameLog::file_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>日志文件名 </p>
+
+</div>
+</div>
+<a id="ae0a9d1ff41d937448e4d7730b41fb937" name="ae0a9d1ff41d937448e4d7730b41fb937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a9d1ff41d937448e4d7730b41fb937">&#9670;&#160;</a></span>gap40</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#ab8507246f53c4bbefc76b43ff5bd8812">_BYTE</a> GameLog::gap40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对齐填充 </p>
+
+</div>
+</div>
+<a id="ad28f59c5f71c28ee441650d96bcf0375" name="ad28f59c5f71c28ee441650d96bcf0375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28f59c5f71c28ee441650d96bcf0375">&#9670;&#160;</a></span>last_frame_logged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::last_frame_logged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>最后记录的帧 </p>
+
+</div>
+</div>
+<a id="ad0f2711d79961fedea55f25121c12de1" name="ad0f2711d79961fedea55f25121c12de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f2711d79961fedea55f25121c12de1">&#9670;&#160;</a></span>last_frame_logged_aux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::last_frame_logged_aux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>辅助最后记录帧 </p>
+
+</div>
+</div>
+<a id="af2e83262f58ecf83044ebb4d2e017a77" name="af2e83262f58ecf83044ebb4d2e017a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e83262f58ecf83044ebb4d2e017a77">&#9670;&#160;</a></span>log_end_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::log_end_frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>日志结束帧 </p>
+
+</div>
+</div>
+<a id="abbe8d0d430ad7b1636e09751cdd7c1d5" name="abbe8d0d430ad7b1636e09751cdd7c1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe8d0d430ad7b1636e09751cdd7c1d5">&#9670;&#160;</a></span>log_start_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::log_start_frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>日志开始帧 </p>
+
+</div>
+</div>
+<a id="a5e2c3193b38c47f2e8562aaf9d7b6253" name="a5e2c3193b38c47f2e8562aaf9d7b6253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2c3193b38c47f2e8562aaf9d7b6253">&#9670;&#160;</a></span>logging_game_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::logging_game_frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>正在记录的游戏帧 </p>
+
+</div>
+</div>
+<a id="adea82b54f55c54be4b480fbbf3c8be80" name="adea82b54f55c54be4b480fbbf3c8be80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea82b54f55c54be4b480fbbf3c8be80">&#9670;&#160;</a></span>logging_game_frame_aux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::logging_game_frame_aux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>辅助记录游戏帧 </p>
+
+</div>
+</div>
+<a id="ac550fe6c80f8a33211985b7366c5ca92" name="ac550fe6c80f8a33211985b7366c5ca92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac550fe6c80f8a33211985b7366c5ca92">&#9670;&#160;</a></span>random_log_entries</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_object_array_random_log_entry.html">ObjectArrayRandomLogEntry</a> GameLog::random_log_entries</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>随机日志条目 </p>
+
+</div>
+</div>
+<a id="a3eef25deab17aab88735d483af085dcd" name="a3eef25deab17aab88735d483af085dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eef25deab17aab88735d483af085dcd">&#9670;&#160;</a></span>random_log_pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLog::random_log_pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>随机日志位置 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="_enums_8h_source.html">Enums.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

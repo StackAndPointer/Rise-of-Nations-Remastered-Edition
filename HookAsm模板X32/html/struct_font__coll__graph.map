@@ -1,0 +1,14 @@
+<map id="Font" name="Font">
+<area shape="rect" id="Node000001" title="字体类" alt="" coords="5,203,53,229"/>
+<area shape="rect" id="Node000002" href="$struct_font_base.html" title="字体基类" alt="" coords="34,104,112,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,146,50,156,34,203,29,201,45,154,56,141"/>
+<area shape="rect" id="Node000003" href="$struct_g_s_font.html" title="图形系统字体对象" alt="" coords="136,203,202,229"/>
+<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="67,143,69,162,75,177,87,190,102,199,138,211,133,212,100,204,83,194,70,180,64,163,65,148"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,192,128,181,84,134,86,129,132,177,147,192"/>
+<area shape="rect" id="Node000004" href="$struct_g_s_object.html" title="图形系统对象基类" alt="" coords="166,104,244,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="200,144,189,180,177,204,174,200,184,178,195,148"/>
+<area shape="rect" id="Node000005" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="268,104,323,131"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="270,140,187,204,184,200,264,141"/>
+<area shape="rect" id="Node000006" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="254,5,337,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="297,46,298,105,293,103,294,50"/>
+</map>

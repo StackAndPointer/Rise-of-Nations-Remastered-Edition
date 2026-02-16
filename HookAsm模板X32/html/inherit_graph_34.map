@@ -1,0 +1,5 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$struct_cursor_base.html" title="光标基类" alt="" coords="5,5,96,32"/>
+<area shape="rect" id="Node000001" href="$struct_cursor.html" title="光标类" alt="" coords="144,5,204,32"/>
+<area shape="poly" id="edge95_Node000000_Node000001" title=" " alt="" coords="111,16,146,18,141,19,111,21"/>
+</map>

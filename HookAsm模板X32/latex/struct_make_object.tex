@@ -1,0 +1,118 @@
+\doxysection{Make\+Object结构体 参考}
+\hypertarget{struct_make_object}{}\label{struct_make_object}\index{MakeObject@{MakeObject}}
+
+
+基础资源类型  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+Make\+Object 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{struct_make_object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_make_object_a5987edd512bad7058434a18051a85122}{t}}
+\item 
+int \doxymbox{\hyperlink{struct_make_object_aca2a62cb2834be244cba94dbbd2a0d7f}{val}}
+\item 
+int \doxymbox{\hyperlink{struct_make_object_a5ad98281481b22dd6e5597ad231285ff}{escrow}}
+\item 
+int \doxymbox{\hyperlink{struct_make_object_a30a4ae4c1cef94d7e8f2116904acc43d}{city}}
+\item 
+int \doxymbox{\hyperlink{struct_make_object_a1d22e98cd6c3ca40c914751e07dc1fbc}{up}}
+\item 
+int \doxymbox{\hyperlink{struct_make_object_ad7e70f3c8013ffb4d37857dfe9cdbabb}{o}}
+\item 
+int \doxymbox{\hyperlink{struct_make_object_ace8b72c08208f124ba09c5fd92b946d3}{num}}
+\item 
+int \doxymbox{\hyperlink{struct_make_object_a7856ab9c04facad0321c4d016a09195a}{cat}}
+\item 
+\doxymbox{\hyperlink{struct_w_coord}{WCoord}} \doxymbox{\hyperlink{struct_make_object_ac377a9a95a39830ebf5efc5c9b523ec5}{wx}}
+\item 
+\doxymbox{\hyperlink{struct_w_coord}{WCoord}} \doxymbox{\hyperlink{struct_make_object_a50385cd7796b304111181e0e4c8da16e}{wy}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+基础资源类型 
+
+制造对象结构体，表示游戏中的生产或建造任务 
+
+\label{doc-variable-members}
+\Hypertarget{struct_make_object_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_make_object_a7856ab9c04facad0321c4d016a09195a}\index{MakeObject@{MakeObject}!cat@{cat}}
+\index{cat@{cat}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{cat}{cat}}
+{\footnotesize\ttfamily \label{struct_make_object_a7856ab9c04facad0321c4d016a09195a} 
+int Make\+Object::\+cat}
+
+类别 \Hypertarget{struct_make_object_a30a4ae4c1cef94d7e8f2116904acc43d}\index{MakeObject@{MakeObject}!city@{city}}
+\index{city@{city}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{city}{city}}
+{\footnotesize\ttfamily \label{struct_make_object_a30a4ae4c1cef94d7e8f2116904acc43d} 
+int Make\+Object::\+city}
+
+城市\+ID，指定制造任务所在的城市 \Hypertarget{struct_make_object_a5ad98281481b22dd6e5597ad231285ff}\index{MakeObject@{MakeObject}!escrow@{escrow}}
+\index{escrow@{escrow}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{escrow}{escrow}}
+{\footnotesize\ttfamily \label{struct_make_object_a5ad98281481b22dd6e5597ad231285ff} 
+int Make\+Object::\+escrow}
+
+托管资源，为制造任务预留的资源 \Hypertarget{struct_make_object_ace8b72c08208f124ba09c5fd92b946d3}\index{MakeObject@{MakeObject}!num@{num}}
+\index{num@{num}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily \label{struct_make_object_ace8b72c08208f124ba09c5fd92b946d3} 
+int Make\+Object::\+num}
+
+数量 \Hypertarget{struct_make_object_ad7e70f3c8013ffb4d37857dfe9cdbabb}\index{MakeObject@{MakeObject}!o@{o}}
+\index{o@{o}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{o}{o}}
+{\footnotesize\ttfamily \label{struct_make_object_ad7e70f3c8013ffb4d37857dfe9cdbabb} 
+int Make\+Object::\+o}
+
+所有者或方向 \Hypertarget{struct_make_object_a5987edd512bad7058434a18051a85122}\index{MakeObject@{MakeObject}!t@{t}}
+\index{t@{t}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{struct_make_object_a5987edd512bad7058434a18051a85122} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Make\+Object::\+t}
+
+类型索引，指定要制造的对象类型 \Hypertarget{struct_make_object_a1d22e98cd6c3ca40c914751e07dc1fbc}\index{MakeObject@{MakeObject}!up@{up}}
+\index{up@{up}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily \label{struct_make_object_a1d22e98cd6c3ca40c914751e07dc1fbc} 
+int Make\+Object::\+up}
+
+升级标志，表示是否需要升级 \Hypertarget{struct_make_object_aca2a62cb2834be244cba94dbbd2a0d7f}\index{MakeObject@{MakeObject}!val@{val}}
+\index{val@{val}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{val}{val}}
+{\footnotesize\ttfamily \label{struct_make_object_aca2a62cb2834be244cba94dbbd2a0d7f} 
+int Make\+Object::\+val}
+
+值，可能表示数量或其他数值 \Hypertarget{struct_make_object_ac377a9a95a39830ebf5efc5c9b523ec5}\index{MakeObject@{MakeObject}!wx@{wx}}
+\index{wx@{wx}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{wx}{wx}}
+{\footnotesize\ttfamily \label{struct_make_object_ac377a9a95a39830ebf5efc5c9b523ec5} 
+\doxymbox{\hyperlink{struct_w_coord}{WCoord}} Make\+Object::\+wx}
+
+世界\+X坐标 \Hypertarget{struct_make_object_a50385cd7796b304111181e0e4c8da16e}\index{MakeObject@{MakeObject}!wy@{wy}}
+\index{wy@{wy}!MakeObject@{MakeObject}}
+\doxysubsubsection{\texorpdfstring{wy}{wy}}
+{\footnotesize\ttfamily \label{struct_make_object_a50385cd7796b304111181e0e4c8da16e} 
+\doxymbox{\hyperlink{struct_w_coord}{WCoord}} Make\+Object::\+wy}
+
+世界\+Y坐标 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

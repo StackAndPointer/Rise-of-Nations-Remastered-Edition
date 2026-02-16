@@ -1,0 +1,9 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,158,32"/>
+<area shape="rect" id="Node000001" href="$struct_array_base_simple_copy_make_object.html" title="制造对象数组基类" alt="" coords="206,5,429,32"/>
+<area shape="poly" id="edge23_Node000000_Node000001" title=" " alt="" coords="173,16,208,19,202,19,173,21"/>
+<area shape="rect" id="Node000002" href="$struct_array_make_object.html" title="无额外成员，继承基类的功能" alt="" coords="477,5,599,32"/>
+<area shape="poly" id="edge24_Node000001_Node000002" title=" " alt="" coords="444,16,480,19,474,19,444,21"/>
+<area shape="rect" id="Node000003" href="$struct_make_list.html" title="制造列表结构" alt="" coords="647,5,722,32"/>
+<area shape="poly" id="edge25_Node000002_Node000003" title=" " alt="" coords="615,16,649,19,644,19,615,21"/>
+</map>

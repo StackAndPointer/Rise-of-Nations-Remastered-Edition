@@ -1,0 +1,9 @@
+<map id="ArrayArmyPtr" name="ArrayArmyPtr">
+<area shape="rect" id="Node000001" title="支持简单复制操作的军队指针数组" alt="" coords="56,155,156,181"/>
+<area shape="rect" id="Node000004" href="$struct_ptr_array_army.html" title="军队指针数组常量版本" alt="" coords="56,229,156,256"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,195,108,230,104,228,104,199"/>
+<area shape="rect" id="Node000002" href="$struct_array_base_simple_copy_army_ptr.html" title="军队输出结构 &#45; 扩展军队数据，用于渲染和显示" alt="" coords="5,80,207,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,120,109,155,103,154,105,125"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="41,5,171,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,45,109,80,103,79,105,50"/>
+</map>

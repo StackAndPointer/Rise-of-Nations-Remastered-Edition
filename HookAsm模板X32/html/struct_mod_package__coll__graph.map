@@ -1,0 +1,12 @@
+<map id="ModPackage" name="ModPackage">
+<area shape="rect" id="Node000001" title="MOD包结构体 &#45; 存储单个MOD的完整信息" alt="" coords="110,536,208,563"/>
+<area shape="rect" id="Node000002" href="$struct_mod_assets.html" title="MOD资源结构体 &#45; 存储MOD的各种资源路径" alt="" coords="115,437,203,464"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,478,161,537,157,535,157,481"/>
+<area shape="rect" id="Node000003" href="$struct_sky_string_list.html" title="字符串列表结构体 &#45; 管理字符串集合" alt="" coords="112,125,211,152"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,164,176,176,186,242,190,295,187,348,176,414,168,438,163,436,171,413,182,347,185,295,181,243,171,176,171,169"/>
+<area shape="rect" id="Node000004" href="$struct_sky_string.html" title="玩家数据结构体 &#45; 存储单个玩家的所有游戏数据" alt="" coords="16,5,94,32"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="45,49,29,114,13,206,9,258,10,310,17,363,32,412,54,451,83,486,115,513,142,535,137,536,111,517,80,489,50,455,27,414,12,364,4,311,3,257,7,205,24,112,46,44"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="76,41,153,124,148,126,77,46"/>
+<area shape="rect" id="Node000005" href="$struct_a___f_i_l_e_t_i_m_e.html" title="Windows文件时间结构体" alt="" coords="226,437,324,464"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="262,476,231,514,192,538,190,533,228,510,258,478"/>
+</map>

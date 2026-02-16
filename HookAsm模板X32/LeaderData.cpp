@@ -3,91 +3,101 @@
 #include "Enums.h"
 #include "GlobalVariable.h"
 
+/**
+ * @file LeaderData.cpp
+ * @brief ç®€ä»‹
+ * @details ç»†èŠ‚
+ * @author ä½œè€…
+ * @version ç‰ˆæœ¬å·
+ * @date å¹´-æœˆ-æ—¥
+ * @copyright ç‰ˆæƒ
+ */
+
 
 /**
- * @brief ÅĞ¶ÏÁ½¸öÁìµ¼ÕßÊÇ·ñÔÚÍ¬Ò»¶ÓÎéÖĞ
+ * @brief åˆ¤æ–­ä¸¤ä¸ªé¢†å¯¼è€…æ˜¯å¦åœ¨åŒä¸€é˜Ÿä¼ä¸­
  *
- * ´Ëº¯ÊıÓÃÓÚ¼ì²éÓÎÏ·ÖĞµÄÁ½¸öÁìµ¼ÕßÊÇ·ñÊôÓÚÍ¬Ò»¶ÓÎé£¬Ö§³Ö¶àÖÖ¶ÓÎéÄ£Ê½
- * ºÍÌØÊâ¹æÔò¡£º¯Êı¿¼ÂÇÁË¶ÓÎéÑùÊ½¡¢ÌØÊâ±ê¼Ç¡¢ÓÎÏ·Ö¡ÊıºÍÑÏ¸ñÄ£Ê½µÈÒòËØ¡£
+ * æ­¤å‡½æ•°ç”¨äºæ£€æŸ¥æ¸¸æˆä¸­çš„ä¸¤ä¸ªé¢†å¯¼è€…æ˜¯å¦å±äºåŒä¸€é˜Ÿä¼ï¼Œæ”¯æŒå¤šç§é˜Ÿä¼æ¨¡å¼
+ * å’Œç‰¹æ®Šè§„åˆ™ã€‚å‡½æ•°è€ƒè™‘äº†é˜Ÿä¼æ ·å¼ã€ç‰¹æ®Šæ ‡è®°ã€æ¸¸æˆå¸§æ•°å’Œä¸¥æ ¼æ¨¡å¼ç­‰å› ç´ ã€‚
  *
- * @param leaderData µ±Ç°Áìµ¼Õß¶ÔÏó
- * @param placeholder Õ¼Î»·û²ÎÊı£¨¿ÉÄÜÊÇÓÎÏ·Ë÷Òı»òÉÏÏÂÎÄ±êÊ¶£©
- * @param whom Òª±È½ÏµÄÁìµ¼ÕßË÷Òı
- * @param strict ÑÏ¸ñÄ£Ê½±êÖ¾£º0-¿íËÉÄ£Ê½£¬1-ÑÏ¸ñÄ£Ê½
- * @return BOOL ·µ»ØTRUE±íÊ¾ÔÚÍ¬Ò»¶ÓÎé£¬FALSE±íÊ¾²»ÔÚÍ¬Ò»¶ÓÎé
+ * @param leaderData å½“å‰é¢†å¯¼è€…å¯¹è±¡
+ * @param placeholder å ä½ç¬¦å‚æ•°ï¼ˆå¯èƒ½æ˜¯æ¸¸æˆç´¢å¼•æˆ–ä¸Šä¸‹æ–‡æ ‡è¯†ï¼‰
+ * @param whom è¦æ¯”è¾ƒçš„é¢†å¯¼è€…ç´¢å¼•
+ * @param strict ä¸¥æ ¼æ¨¡å¼æ ‡å¿—ï¼š0-å®½æ¾æ¨¡å¼ï¼Œ1-ä¸¥æ ¼æ¨¡å¼
+ * @return BOOL è¿”å›TRUEè¡¨ç¤ºåœ¨åŒä¸€é˜Ÿä¼ï¼ŒFALSEè¡¨ç¤ºä¸åœ¨åŒä¸€é˜Ÿä¼
  */
 BOOL __fastcall LeaderData__is_team(LeaderData* leaderData, int placeholder, int whom, int strict)
 {
-    // ¾Ö²¿±äÁ¿ÉùÃ÷
-    const Game* game;                 // Ö¸ÏòÓÎÏ·È«¾ÖÊı¾İµÄÖ¸Õë
-    unsigned __int8 team_style;       // ¶ÓÎéÑùÊ½ÅäÖÃ
-    int player_index;                 // Íæ¼ÒË÷Òı
-    int target_player_index;          // Ä¿±êÍæ¼ÒË÷Òı
-    unsigned char team;               // ¶ÓÎé±àºÅ
+    // å±€éƒ¨å˜é‡å£°æ˜
+    const Game* game;                 // æŒ‡å‘æ¸¸æˆå…¨å±€æ•°æ®çš„æŒ‡é’ˆ
+    unsigned __int8 team_style;       // é˜Ÿä¼æ ·å¼é…ç½®
+    int player_index;                 // ç©å®¶ç´¢å¼•
+    int target_player_index;          // ç›®æ ‡ç©å®¶ç´¢å¼•
+    unsigned char team;               // é˜Ÿä¼ç¼–å·
 
-    // 1. ¼ì²éÊÇ·ñÊÇÍ¬Ò»¸öÁìµ¼Õß£¨×ÔÉíÅĞ¶Ï£©
+    // 1. æ£€æŸ¥æ˜¯å¦æ˜¯åŒä¸€ä¸ªé¢†å¯¼è€…ï¼ˆè‡ªèº«åˆ¤æ–­ï¼‰
     if (whom == leaderData->who) {
-        return TRUE;  // ×ÔÉí×ÜÊÇÓë×Ô¼ºÔÚÍ¬Ò»¶ÓÎé
+        return TRUE;  // è‡ªèº«æ€»æ˜¯ä¸è‡ªå·±åœ¨åŒä¸€é˜Ÿä¼
     }
 
-    // 2. »ñÈ¡ÓÎÏ·È«¾ÖÊı¾İºÍ¶ÓÎéÑùÊ½
-    game = GameAccessConst__gamec;  // È«¾ÖÓÎÏ·Êı¾İ
-    team_style = game->info.gameSettings.fields.team_style;  // ¶ÓÎéÑùÊ½ÅäÖÃ
+    // 2. è·å–æ¸¸æˆå…¨å±€æ•°æ®å’Œé˜Ÿä¼æ ·å¼
+    game = GameAccessConst__gamec;  // å…¨å±€æ¸¸æˆæ•°æ®
+    team_style = game->info.gameSettings.fields.team_style;  // é˜Ÿä¼æ ·å¼é…ç½®
 
-    // 3. ÌØÊâ¶ÓÎéÑùÊ½7µÄ´¦ÀíÂß¼­
+    // 3. ç‰¹æ®Šé˜Ÿä¼æ ·å¼7çš„å¤„ç†é€»è¾‘
     if (team_style == 7) {
-        // 3.1 ¼ì²éµ±Ç°Áìµ¼ÕßÊÇ·ñÓĞÌØÊâ±ê¼ÇÇÒ¶ÓÎéÎª8
+        // 3.1 æ£€æŸ¥å½“å‰é¢†å¯¼è€…æ˜¯å¦æœ‰ç‰¹æ®Šæ ‡è®°ä¸”é˜Ÿä¼ä¸º8
         player_index = LeaderData__get_player(leaderData, placeholder);
-        if ((game->info.player[player_index].flags & 1) != 0 &&  // ÌØÊâ±êÖ¾Î»1
-            game->info.player[player_index].team == 8) {         // ¶ÓÎé±àºÅÎª8
-            return FALSE;  // ÌØÊâ±ê¼ÇµÄÍæ¼Ò²»ÔÚÈÎºÎ¶ÓÎé
+        if ((game->info.player[player_index].flags & 1) != 0 &&  // ç‰¹æ®Šæ ‡å¿—ä½1
+            game->info.player[player_index].team == 8) {         // é˜Ÿä¼ç¼–å·ä¸º8
+            return FALSE;  // ç‰¹æ®Šæ ‡è®°çš„ç©å®¶ä¸åœ¨ä»»ä½•é˜Ÿä¼
         }
 
-        // 3.2 ¼ì²éÄ¿±êÁìµ¼ÕßÊÇ·ñÓĞÌØÊâ±ê¼ÇÇÒ¶ÓÎéÎª8
+        // 3.2 æ£€æŸ¥ç›®æ ‡é¢†å¯¼è€…æ˜¯å¦æœ‰ç‰¹æ®Šæ ‡è®°ä¸”é˜Ÿä¼ä¸º8
         target_player_index = LeaderData__get_player(
             &GameAccessConst__leadersc->list[whom],
             placeholder
         );
-        if ((game->info.player[target_player_index].flags & 1) != 0 &&  // ÌØÊâ±êÖ¾Î»1
-            game->info.player[target_player_index].team == 8) {         // ¶ÓÎé±àºÅÎª8
-            return FALSE;  // ÌØÊâ±ê¼ÇµÄÍæ¼Ò²»ÔÚÈÎºÎ¶ÓÎé
+        if ((game->info.player[target_player_index].flags & 1) != 0 &&  // ç‰¹æ®Šæ ‡å¿—ä½1
+            game->info.player[target_player_index].team == 8) {         // é˜Ÿä¼ç¼–å·ä¸º8
+            return FALSE;  // ç‰¹æ®Šæ ‡è®°çš„ç©å®¶ä¸åœ¨ä»»ä½•é˜Ÿä¼
         }
     }
 
-    // 4. ·ÇÑÏ¸ñÄ£Ê½ÏÂµÄÃËÓÑ¼ì²é
+    // 4. éä¸¥æ ¼æ¨¡å¼ä¸‹çš„ç›Ÿå‹æ£€æŸ¥
     if (game->frame && !strict) {
-        // ÓÎÏ·Ö¡Êı²»Îª0ÇÒ·ÇÑÏ¸ñÄ£Ê½Ê±£¬¼ì²éÊÇ·ñÎªÃËÓÑ
+        // æ¸¸æˆå¸§æ•°ä¸ä¸º0ä¸”éä¸¥æ ¼æ¨¡å¼æ—¶ï¼Œæ£€æŸ¥æ˜¯å¦ä¸ºç›Ÿå‹
         return LeaderData__is_ally(leaderData, placeholder, whom);
     }
 
-    // 5. »ù´¡¶ÓÎé±àºÅ±È½Ï
-    // 5.1 »ñÈ¡µ±Ç°Áìµ¼ÕßµÄ¶ÓÎé±àºÅ
+    // 5. åŸºç¡€é˜Ÿä¼ç¼–å·æ¯”è¾ƒ
+    // 5.1 è·å–å½“å‰é¢†å¯¼è€…çš„é˜Ÿä¼ç¼–å·
     player_index = LeaderData__get_player(leaderData, placeholder);
     team = game->info.player[player_index].team;
 
-    // 5.2 »ñÈ¡Ä¿±êÁìµ¼ÕßµÄ¶ÓÎé±àºÅ
+    // 5.2 è·å–ç›®æ ‡é¢†å¯¼è€…çš„é˜Ÿä¼ç¼–å·
     target_player_index = LeaderData__get_player(
        &GameAccessConst__leadersc->list[whom],
         placeholder
     );
     unsigned char target_team = game->info.player[target_player_index].team;
 
-    // 5.3 ¼ì²é¶ÓÎé±àºÅ
-    if ((team > 3) ||              // ¶ÓÎé±àºÅ±ØĞëÓĞĞ§£¨0-3£©
-        (team != target_team)) {   // ¶ÓÎé±àºÅ±ØĞëÏàÍ¬
-        return FALSE;  // ²»ÔÚÍ¬Ò»¶ÓÎé
+    // 5.3 æ£€æŸ¥é˜Ÿä¼ç¼–å·
+    if ((team > 3) ||              // é˜Ÿä¼ç¼–å·å¿…é¡»æœ‰æ•ˆï¼ˆ0-3ï¼‰
+        (team != target_team)) {   // é˜Ÿä¼ç¼–å·å¿…é¡»ç›¸åŒ
+        return FALSE;  // ä¸åœ¨åŒä¸€é˜Ÿä¼
     }
 
-    // 6. ÑÏ¸ñÄ£Ê½ÏÂµÄ¶îÍâ¼ì²é
-    if (game->frame && strict &&  // ÓÎÏ·Ö¡Êı²»Îª0ÇÒÑÏ¸ñÄ£Ê½
-        (!team_style ||           // ¶ÓÎéÑùÊ½Îª0
-            team_style == 11 ||      // ¶ÓÎéÑùÊ½Îª11
-            team_style == 8)) {      // ¶ÓÎéÑùÊ½Îª8
-        // ÔÚÕâĞ©ÌØ¶¨¶ÓÎéÑùÊ½ÏÂ£¬»¹Ğè¼ì²éÊÇ·ñÎªÃËÓÑ
+    // 6. ä¸¥æ ¼æ¨¡å¼ä¸‹çš„é¢å¤–æ£€æŸ¥
+    if (game->frame && strict &&  // æ¸¸æˆå¸§æ•°ä¸ä¸º0ä¸”ä¸¥æ ¼æ¨¡å¼
+        (!team_style ||           // é˜Ÿä¼æ ·å¼ä¸º0
+            team_style == 11 ||      // é˜Ÿä¼æ ·å¼ä¸º11
+            team_style == 8)) {      // é˜Ÿä¼æ ·å¼ä¸º8
+        // åœ¨è¿™äº›ç‰¹å®šé˜Ÿä¼æ ·å¼ä¸‹ï¼Œè¿˜éœ€æ£€æŸ¥æ˜¯å¦ä¸ºç›Ÿå‹
         return LeaderData__is_ally(leaderData, placeholder, whom);
     }
 
-    // 7. ËùÓĞ¼ì²éÍ¨¹ı£¬·µ»ØTRUE
+    // 7. æ‰€æœ‰æ£€æŸ¥é€šè¿‡ï¼Œè¿”å›TRUE
     return TRUE;
 }
 

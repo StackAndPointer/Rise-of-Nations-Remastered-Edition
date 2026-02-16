@@ -1,0 +1,25 @@
+<map id="ImageIO" name="ImageIO">
+<area shape="rect" id="Node000001" title="图像输入输出结构" alt="" coords="316,5,388,32"/>
+<area shape="rect" id="Node000002" href="$struct_buffer.html" title="缓冲区类（继承自ImageIO和BufferBase）" alt="" coords="244,80,300,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="329,41,287,82,284,78,325,44"/>
+<area shape="rect" id="Node000011" href="$struct_sprite.html" title="精灵类（继承自ImageIO和SpriteBase）" alt="" coords="324,80,380,107"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="353,45,354,81,349,79,351,50"/>
+<area shape="rect" id="Node000012" href="$struct_texture.html" title="纹理类（继承自ImageIO和TextureBase）" alt="" coords="404,80,468,107"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="378,40,424,80,419,80,378,45"/>
+<area shape="rect" id="Node000003" href="$struct_graphic_win.html" title="图形窗口（继承自Window和Buffer）" alt="" coords="227,155,317,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,120,274,155,269,153,270,125"/>
+<area shape="rect" id="Node000004" href="$struct_base_pop.html" title="基础弹出窗口（继承自GraphicWin）" alt="" coords="5,229,80,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="217,189,81,232,79,227,218,184"/>
+<area shape="rect" id="Node000006" href="$struct_button.html" title="按钮控件（继承自GraphicWin）" alt="" coords="104,229,163,256"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="232,190,159,231,156,226,236,187"/>
+<area shape="rect" id="Node000007" href="$struct_dialog.html" title="对话框控件（继承自GraphicWin）" alt="" coords="187,229,245,256"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="255,192,227,231,224,227,251,195"/>
+<area shape="rect" id="Node000008" href="$struct_graphic_win_x_m_l.html" title="XML图形窗口（继承自GraphicWin）" alt="" coords="270,229,386,256"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="292,191,321,229,316,229,290,196"/>
+<area shape="rect" id="Node000009" href="$struct_help_box.html" title="帮助框（继承自GraphicWin和MiscAccess）" alt="" coords="410,229,481,256"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="316,185,417,228,412,229,316,190"/>
+<area shape="rect" id="Node000010" href="$struct_string_box.html" title="字符串框控件（继承自GraphicWin）" alt="" coords="505,229,583,256"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="332,182,507,230,502,232,331,188"/>
+<area shape="rect" id="Node000005" href="$struct_popup.html" title="弹出窗口（继承自BasePop和GameAccessConst）" alt="" coords="13,304,72,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="45,270,45,304,40,303,40,274"/>
+</map>

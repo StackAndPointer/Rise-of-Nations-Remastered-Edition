@@ -1,0 +1,76 @@
+\doxysection{File结构体 参考}
+\hypertarget{struct_file}{}\label{struct_file}\index{File@{File}}
+
+
+文件结构体 -\/ 封装文件操作  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+File 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{struct_file__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_file_ad11f9a88a60bc4a7b7c42119e3827183}{gzfile}}
+\item 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_file_a5234d926e0030715c78d6ec9b21fd11f}{file}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_file_a6fea8f334b71e35f682aa195ed15ef94}{name}}
+\item 
+int \doxymbox{\hyperlink{struct_file_a6be947ce74b2bb31871b6e99c98c75d3}{flags}}
+\item 
+int \doxymbox{\hyperlink{struct_file_abec73ae2a96ee8136ba14a49fec88b25}{size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+文件结构体 -\/ 封装文件操作 
+
+\label{doc-variable-members}
+\Hypertarget{struct_file_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_file_a5234d926e0030715c78d6ec9b21fd11f}\index{File@{File}!file@{file}}
+\index{file@{file}!File@{File}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \label{struct_file_a5234d926e0030715c78d6ec9b21fd11f} 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}}\texorpdfstring{$\ast$}{*} File::\+file}
+
+标准文件指针 \Hypertarget{struct_file_a6be947ce74b2bb31871b6e99c98c75d3}\index{File@{File}!flags@{flags}}
+\index{flags@{flags}!File@{File}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{struct_file_a6be947ce74b2bb31871b6e99c98c75d3} 
+int File::\+flags}
+
+文件标志（读写模式等） \Hypertarget{struct_file_ad11f9a88a60bc4a7b7c42119e3827183}\index{File@{File}!gzfile@{gzfile}}
+\index{gzfile@{gzfile}!File@{File}}
+\doxysubsubsection{\texorpdfstring{gzfile}{gzfile}}
+{\footnotesize\ttfamily \label{struct_file_ad11f9a88a60bc4a7b7c42119e3827183} 
+void\texorpdfstring{$\ast$}{*} File::\+gzfile}
+
+gzip文件指针（压缩文件） \Hypertarget{struct_file_a6fea8f334b71e35f682aa195ed15ef94}\index{File@{File}!name@{name}}
+\index{name@{name}!File@{File}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{struct_file_a6fea8f334b71e35f682aa195ed15ef94} 
+\doxymbox{\hyperlink{struct_string}{String}} File::\+name}
+
+文件名 \Hypertarget{struct_file_abec73ae2a96ee8136ba14a49fec88b25}\index{File@{File}!size@{size}}
+\index{size@{size}!File@{File}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{struct_file_abec73ae2a96ee8136ba14a49fec88b25} 
+int File::\+size}
+
+文件大小 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

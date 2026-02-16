@@ -1,0 +1,5 @@
+<map id="PlayerPrefsUnion" name="PlayerPrefsUnion">
+<area shape="rect" id="Node000001" title="玩家偏好设置联合体" alt="" coords="6,104,129,131"/>
+<area shape="rect" id="Node000002" href="$struct_player_prefs_fields.html" title="玩家偏好设置字段结构体" alt="" coords="5,5,130,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,46,70,104,65,103,65,49"/>
+</map>

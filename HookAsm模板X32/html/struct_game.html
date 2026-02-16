@@ -1,0 +1,1400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rise-of-Nations-Remastered-Edition框架文档: Game结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Rise-of-Nations-Remastered-Edition框架文档<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">注释</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_game-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Game结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>游戏主结构体 - 继承自排行榜监听器和游戏访问接口，管理整个游戏状态  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enums_8h_source.html">Enums.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Game 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_game__inherit__graph.png" border="0" usemap="#a_game_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_game_inherit__map" id="a_game_inherit__map">
+<area shape="rect" title="游戏主结构体 &#45; 继承自排行榜监听器和游戏访问接口，管理整个游戏状态" alt="" coords="127,80,183,107"/>
+<area shape="rect" href="struct_i_leaderboards_listener.html" title="存储领导者AI行为脚本的文件路径" alt="" coords="5,5,155,32"/>
+<area shape="poly" title=" " alt="" coords="105,40,144,79,139,80,103,45"/>
+<area shape="rect" href="struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="179,5,280,32"/>
+<area shape="poly" title=" " alt="" coords="208,42,169,82,166,77,203,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Game 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_game__coll__graph.png" border="0" usemap="#a_game_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_coll__map" id="a_game_coll__map">
+<area shape="rect" title="游戏主结构体 &#45; 继承自排行榜监听器和游戏访问接口，管理整个游戏状态" alt="" coords="261,421,318,448"/>
+<area shape="rect" href="struct_i_leaderboards_listener.html" title="存储领导者AI行为脚本的文件路径" alt="" coords="5,203,155,229"/>
+<area shape="poly" title=" " alt="" coords="68,241,56,294,55,322,62,348,79,372,100,391,126,406,154,416,212,428,263,434,258,434,211,433,153,422,124,411,97,396,75,376,58,350,50,323,51,294,67,246"/>
+<area shape="rect" href="struct_steam_leaderboards.html" title="Steam排行榜管理结构体" alt="" coords="73,323,210,349"/>
+<area shape="poly" title=" " alt="" coords="90,242,116,297,133,322,128,323,111,300,88,247"/>
+<area shape="rect" href="struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="239,203,340,229"/>
+<area shape="poly" title=" " alt="" coords="292,243,292,422,287,420,287,246"/>
+<area shape="rect" href="struct_unit_balance.html" title="单位平衡结构体 &#45; 管理单位数据平衡性" alt="" coords="327,323,420,349"/>
+<area shape="poly" title=" " alt="" coords="308,240,367,322,362,322,306,245"/>
+<area shape="poly" title=" " alt="" coords="355,360,302,423,299,419,350,362"/>
+<area shape="rect" href="struct_file.html" title="文件结构体 &#45; 封装文件操作" alt="" coords="364,203,407,229"/>
+<area shape="poly" title=" " alt="" coords="384,243,377,324,372,321,381,247"/>
+<area shape="rect" href="struct_a__iobuf.html" title="游戏信息结构体 &#45; 存储整个游戏的基本信息" alt="" coords="309,104,374,131"/>
+<area shape="poly" title=" " alt="" coords="339,144,341,162,345,178,354,190,367,202,362,202,350,194,341,180,336,163,336,149"/>
+<area shape="rect" href="struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="414,104,469,131"/>
+<area shape="poly" title=" " alt="" coords="446,144,451,238,447,295,435,350,423,378,402,399,360,421,319,432,318,427,358,416,398,395,418,375,429,349,442,294,446,238,443,148"/>
+<area shape="poly" title=" " alt="" coords="412,139,401,156,392,180,388,204,383,201,387,179,396,153,408,143"/>
+<area shape="rect" href="union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="400,5,483,32"/>
+<area shape="poly" title=" " alt="" coords="443,45,444,105,439,103,440,50"/>
+<area shape="poly" title=" " alt="" coords="130,362,128,381,133,396,153,408,187,418,263,431,258,431,186,423,151,413,129,399,123,382,126,366"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a61dc18f59fc45a5247c6a111b6d81606" id="r_a61dc18f59fc45a5247c6a111b6d81606"><td class="memItemLeft"><a class="el" href="_enums_8h.html#ab8507246f53c4bbefc76b43ff5bd8812">_BYTE</a>&#160;</td><td class="memItemRight"><a class="el" href="#a61dc18f59fc45a5247c6a111b6d81606">gap4</a> [8]</td></tr>
+<tr class="memitem:a598e159d85507bca3e8c66f36a0b3bc5" id="r_a598e159d85507bca3e8c66f36a0b3bc5"><td class="memItemLeft">GameInfo&#160;</td><td class="memItemRight"><a class="el" href="#a598e159d85507bca3e8c66f36a0b3bc5">info</a></td></tr>
+<tr class="memitem:a52fde0301dd0e7870bb06b343f3a9208" id="r_a52fde0301dd0e7870bb06b343f3a9208"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a52fde0301dd0e7870bb06b343f3a9208">frame</a></td></tr>
+<tr class="memitem:aa2ea015372890cb2a7be1b8ccd11fdcd" id="r_aa2ea015372890cb2a7be1b8ccd11fdcd"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa2ea015372890cb2a7be1b8ccd11fdcd">frame_to_break</a></td></tr>
+<tr class="memitem:a7475407f5489d2b43faa540c6435c170" id="r_a7475407f5489d2b43faa540c6435c170"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7475407f5489d2b43faa540c6435c170">playing</a></td></tr>
+<tr class="memitem:aa1d645cbf0fa80fa00a894f070346a5a" id="r_aa1d645cbf0fa80fa00a894f070346a5a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa1d645cbf0fa80fa00a894f070346a5a">loading</a></td></tr>
+<tr class="memitem:a16eaef541afd8c21e7ef46bcb2b8cdcb" id="r_a16eaef541afd8c21e7ef46bcb2b8cdcb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a16eaef541afd8c21e7ef46bcb2b8cdcb">tick</a></td></tr>
+<tr class="memitem:a344e48e04f89898086174698f338b322" id="r_a344e48e04f89898086174698f338b322"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a344e48e04f89898086174698f338b322">market_tick</a></td></tr>
+<tr class="memdesc:a344e48e04f89898086174698f338b322"><td class="mdescLeft">&#160;</td><td class="mdescRight">时间与帧数控制  <br /></td></tr>
+<tr class="memitem:a11afde8ac5c3e7b9cf029954851f7edd" id="r_a11afde8ac5c3e7b9cf029954851f7edd"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a11afde8ac5c3e7b9cf029954851f7edd">market</a> [6]</td></tr>
+<tr class="memitem:a10a97f94584d014b4b2557f9bdc419a5" id="r_a10a97f94584d014b4b2557f9bdc419a5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a10a97f94584d014b4b2557f9bdc419a5">market_flux</a> [6]</td></tr>
+<tr class="memitem:a624a2832bbb497e74c9e52793d68696f" id="r_a624a2832bbb497e74c9e52793d68696f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a624a2832bbb497e74c9e52793d68696f">next_flux</a> [6]</td></tr>
+<tr class="memitem:a21c75b72fe65e50d136a186f45771733" id="r_a21c75b72fe65e50d136a186f45771733"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a21c75b72fe65e50d136a186f45771733">delta_flux</a> [6]</td></tr>
+<tr class="memitem:a20faa34c1c3295de30838e9b721da5ac" id="r_a20faa34c1c3295de30838e9b721da5ac"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a20faa34c1c3295de30838e9b721da5ac">flux_length</a> [6]</td></tr>
+<tr class="memitem:ac754db6af239f63e4c7934db7066396f" id="r_ac754db6af239f63e4c7934db7066396f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac754db6af239f63e4c7934db7066396f">on_team</a> [8]</td></tr>
+<tr class="memdesc:ac754db6af239f63e4c7934db7066396f"><td class="mdescLeft">&#160;</td><td class="mdescRight">经济市场系统  <br /></td></tr>
+<tr class="memitem:af00d624fa962259af97812423342f6f4" id="r_af00d624fa962259af97812423342f6f4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af00d624fa962259af97812423342f6f4">starting</a> [6]</td></tr>
+<tr class="memitem:a627231d75f0a4a7777e9e78b0ca60e6e" id="r_a627231d75f0a4a7777e9e78b0ca60e6e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a627231d75f0a4a7777e9e78b0ca60e6e">wonders</a> [17]</td></tr>
+<tr class="memitem:a5a3d57a41090166ace358baba480e185" id="r_a5a3d57a41090166ace358baba480e185"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5a3d57a41090166ace358baba480e185">start_list</a> [8]</td></tr>
+<tr class="memitem:a488c8b7f6a527049cc90ac7ede3f44b8" id="r_a488c8b7f6a527049cc90ac7ede3f44b8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a488c8b7f6a527049cc90ac7ede3f44b8">start_index</a> [8]</td></tr>
+<tr class="memitem:aad13089970d079fb79d7cb94937993cd" id="r_aad13089970d079fb79d7cb94937993cd"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aad13089970d079fb79d7cb94937993cd">num_players</a></td></tr>
+<tr class="memdesc:aad13089970d079fb79d7cb94937993cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏状态管理  <br /></td></tr>
+<tr class="memitem:afde01062616de6ad44f882aa8cbfae8f" id="r_afde01062616de6ad44f882aa8cbfae8f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#afde01062616de6ad44f882aa8cbfae8f">num_nations</a></td></tr>
+<tr class="memitem:acf7bded50aed70b0cde51c668763d3e9" id="r_acf7bded50aed70b0cde51c668763d3e9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#acf7bded50aed70b0cde51c668763d3e9">num_teams</a></td></tr>
+<tr class="memitem:af6413e6b66383064e50f41bde658c021" id="r_af6413e6b66383064e50f41bde658c021"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af6413e6b66383064e50f41bde658c021">num_sides</a></td></tr>
+<tr class="memitem:a11c8259baff9193b24053a84a5e89d36" id="r_a11c8259baff9193b24053a84a5e89d36"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a11c8259baff9193b24053a84a5e89d36">num_def_units</a></td></tr>
+<tr class="memitem:a69bd59cedbdfdb7a62bc357df2d42d2f" id="r_a69bd59cedbdfdb7a62bc357df2d42d2f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a69bd59cedbdfdb7a62bc357df2d42d2f">num_def_builds</a></td></tr>
+<tr class="memitem:a8b80a14d24ce72a8a08a97a9ca8f8ab1" id="r_a8b80a14d24ce72a8a08a97a9ca8f8ab1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8b80a14d24ce72a8a08a97a9ca8f8ab1">num_def_walls</a></td></tr>
+<tr class="memitem:a6c870cb6390bb7fc984d19c3fb2fcd73" id="r_a6c870cb6390bb7fc984d19c3fb2fcd73"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6c870cb6390bb7fc984d19c3fb2fcd73">num_goods</a></td></tr>
+<tr class="memitem:aa84302093f8373fdd37ef2b07efcfef1" id="r_aa84302093f8373fdd37ef2b07efcfef1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa84302093f8373fdd37ef2b07efcfef1">num_items</a></td></tr>
+<tr class="memitem:ade148364474cbe5de85202601b21a19a" id="r_ade148364474cbe5de85202601b21a19a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ade148364474cbe5de85202601b21a19a">num_objects</a></td></tr>
+<tr class="memitem:a576fda77a3711bc2abf78b40f9121068" id="r_a576fda77a3711bc2abf78b40f9121068"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a576fda77a3711bc2abf78b40f9121068">musical_chairs</a></td></tr>
+<tr class="memdesc:a576fda77a3711bc2abf78b40f9121068"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏规模统计  <br /></td></tr>
+<tr class="memitem:ad78c1a24d71d7adc157d890318d352fd" id="r_ad78c1a24d71d7adc157d890318d352fd"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad78c1a24d71d7adc157d890318d352fd">terra_cotta_total</a></td></tr>
+<tr class="memitem:adee542d132693cc5fb8ac50bd6e5a217" id="r_adee542d132693cc5fb8ac50bd6e5a217"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adee542d132693cc5fb8ac50bd6e5a217">world_pop</a></td></tr>
+<tr class="memdesc:adee542d132693cc5fb8ac50bd6e5a217"><td class="mdescLeft">&#160;</td><td class="mdescRight">特殊游戏模式  <br /></td></tr>
+<tr class="memitem:a0ee300517e804852b6c95f576208fcd5" id="r_a0ee300517e804852b6c95f576208fcd5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0ee300517e804852b6c95f576208fcd5">world_cities</a></td></tr>
+<tr class="memitem:a0bd887602d3922efa3ef4727c242d95c" id="r_a0bd887602d3922efa3ef4727c242d95c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0bd887602d3922efa3ef4727c242d95c">world_villages</a></td></tr>
+<tr class="memitem:aa3e32c15071c26d2dd28f4326011285a" id="r_aa3e32c15071c26d2dd28f4326011285a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa3e32c15071c26d2dd28f4326011285a">total_units</a></td></tr>
+<tr class="memitem:af247bc759162d62b40e9ce3de7f4b113" id="r_af247bc759162d62b40e9ce3de7f4b113"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af247bc759162d62b40e9ce3de7f4b113">everyone_mask</a></td></tr>
+<tr class="memitem:a5025cada635d2716ebd05883810ce803" id="r_a5025cada635d2716ebd05883810ce803"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5025cada635d2716ebd05883810ce803">armageddon</a></td></tr>
+<tr class="memitem:a1309236b49505c114c3204367f0937ff" id="r_a1309236b49505c114c3204367f0937ff"><td class="memItemLeft"><a class="el" href="struct_unit_balance.html">UnitBalance</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1309236b49505c114c3204367f0937ff">balance</a></td></tr>
+<tr class="memdesc:a1309236b49505c114c3204367f0937ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">世界统计  <br /></td></tr>
+<tr class="memitem:acf1c3158c34edaa415423fe050a8e327" id="r_acf1c3158c34edaa415423fe050a8e327"><td class="memItemLeft">BitMask_256&#160;</td><td class="memItemRight"><a class="el" href="#acf1c3158c34edaa415423fe050a8e327">semaphore</a></td></tr>
+<tr class="memdesc:acf1c3158c34edaa415423fe050a8e327"><td class="mdescLeft">&#160;</td><td class="mdescRight">单位平衡系统  <br /></td></tr>
+<tr class="memitem:af21a304934b937ee6c819ac5c9910d67" id="r_af21a304934b937ee6c819ac5c9910d67"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af21a304934b937ee6c819ac5c9910d67">graphic_clock</a></td></tr>
+<tr class="memdesc:af21a304934b937ee6c819ac5c9910d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号量控制  <br /></td></tr>
+<tr class="memitem:a760394dc9f1fafc528e720f567131f79" id="r_a760394dc9f1fafc528e720f567131f79"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a760394dc9f1fafc528e720f567131f79">graphic_tick</a></td></tr>
+<tr class="memitem:ad903a1ccc5e4506e0b52db0fab8521a9" id="r_ad903a1ccc5e4506e0b52db0fab8521a9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad903a1ccc5e4506e0b52db0fab8521a9">graphic_loop</a></td></tr>
+<tr class="memitem:ae6a4ed98f42ee745b29ac0ecbb329c97" id="r_ae6a4ed98f42ee745b29ac0ecbb329c97"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#ae6a4ed98f42ee745b29ac0ecbb329c97">graphic_dt</a></td></tr>
+<tr class="memitem:a56ecbbe2b5855ca5ac650ba24fbd2f27" id="r_a56ecbbe2b5855ca5ac650ba24fbd2f27"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a56ecbbe2b5855ca5ac650ba24fbd2f27">graphic_error</a></td></tr>
+<tr class="memitem:ad63c19d69ef12a8496b42c60a9b6fb36" id="r_ad63c19d69ef12a8496b42c60a9b6fb36"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad63c19d69ef12a8496b42c60a9b6fb36">graphic_percent</a></td></tr>
+<tr class="memitem:a3e1ebcd0eeb1306225fbd2222da372c1" id="r_a3e1ebcd0eeb1306225fbd2222da372c1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3e1ebcd0eeb1306225fbd2222da372c1">graphic_last_frame</a></td></tr>
+<tr class="memitem:a6ebd9aaa086acb1aec6703a00143a18b" id="r_a6ebd9aaa086acb1aec6703a00143a18b"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6ebd9aaa086acb1aec6703a00143a18b">screen_shot_name</a></td></tr>
+<tr class="memdesc:a6ebd9aaa086acb1aec6703a00143a18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">图形渲染系统  <br /></td></tr>
+<tr class="memitem:adec615385166f4f412fdb8f15a04e376" id="r_adec615385166f4f412fdb8f15a04e376"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="#adec615385166f4f412fdb8f15a04e376">screen_shot_dir</a></td></tr>
+<tr class="memitem:a4386c18a7d7ca8866a05967207189e86" id="r_a4386c18a7d7ca8866a05967207189e86"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a4386c18a7d7ca8866a05967207189e86">predicted_render_time</a></td></tr>
+<tr class="memdesc:a4386c18a7d7ca8866a05967207189e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">截图系统  <br /></td></tr>
+<tr class="memitem:afb101bf8cead18c9cb157f0edef45d83" id="r_afb101bf8cead18c9cb157f0edef45d83"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#afb101bf8cead18c9cb157f0edef45d83">predicted_render_time_accum</a></td></tr>
+<tr class="memitem:a81524bcdba73e39c1f3fff6868dff283" id="r_a81524bcdba73e39c1f3fff6868dff283"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a81524bcdba73e39c1f3fff6868dff283">predicted_frame_time</a></td></tr>
+<tr class="memitem:a6d8b26d7192949d2bee49471f0594117" id="r_a6d8b26d7192949d2bee49471f0594117"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a6d8b26d7192949d2bee49471f0594117">average_predicted_render_time_accum</a></td></tr>
+<tr class="memitem:a905e4423f2130a39e5ea09bd52286904" id="r_a905e4423f2130a39e5ea09bd52286904"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a905e4423f2130a39e5ea09bd52286904">average_predicted_frame_time_accum</a></td></tr>
+<tr class="memitem:a6f881145647f63d480e75ff99563c0c7" id="r_a6f881145647f63d480e75ff99563c0c7"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a6f881145647f63d480e75ff99563c0c7">last_frame_time</a></td></tr>
+<tr class="memitem:acf27521f672732581cdb1acfa7bf470a" id="r_acf27521f672732581cdb1acfa7bf470a"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#acf27521f672732581cdb1acfa7bf470a">game_frame_time</a></td></tr>
+<tr class="memitem:a1228313501c0f631a34fdfd4bce4589a" id="r_a1228313501c0f631a34fdfd4bce4589a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1228313501c0f631a34fdfd4bce4589a">modal_is_open</a></td></tr>
+<tr class="memdesc:a1228313501c0f631a34fdfd4bce4589a"><td class="mdescLeft">&#160;</td><td class="mdescRight">性能预测与计时  <br /></td></tr>
+<tr class="memitem:add8ca11b7b81722adb95d7926756f22c" id="r_add8ca11b7b81722adb95d7926756f22c"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#add8ca11b7b81722adb95d7926756f22c">auto_save_load</a></td></tr>
+<tr class="memdesc:add8ca11b7b81722adb95d7926756f22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI状态  <br /></td></tr>
+<tr class="memitem:a2890230b8cb29d9aec53825b65cfec5e" id="r_a2890230b8cb29d9aec53825b65cfec5e"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a2890230b8cb29d9aec53825b65cfec5e">game_fps_timing</a> [30]</td></tr>
+<tr class="memdesc:a2890230b8cb29d9aec53825b65cfec5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动保存/加载  <br /></td></tr>
+<tr class="memitem:a4e7b17ad3e22bbcd6b13e09f6c7712e7" id="r_a4e7b17ad3e22bbcd6b13e09f6c7712e7"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4e7b17ad3e22bbcd6b13e09f6c7712e7">game_fps_pos</a></td></tr>
+<tr class="memitem:a51b29758fee86545087dacd79396df0a" id="r_a51b29758fee86545087dacd79396df0a"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a51b29758fee86545087dacd79396df0a">game_fps_timing_accum</a></td></tr>
+<tr class="memitem:a8374b2ae64139b9de3af3605aac698f3" id="r_a8374b2ae64139b9de3af3605aac698f3"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a8374b2ae64139b9de3af3605aac698f3">game_sprite_scale</a></td></tr>
+<tr class="memitem:a19e40cb446e6fda00c06b7c02985678a" id="r_a19e40cb446e6fda00c06b7c02985678a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a19e40cb446e6fda00c06b7c02985678a">game_frames_to_render_frames</a></td></tr>
+<tr class="memdesc:a19e40cb446e6fda00c06b7c02985678a"><td class="mdescLeft">&#160;</td><td class="mdescRight">帧率统计  <br /></td></tr>
+<tr class="memitem:ac67fc6408dac8ef9bd34af979e94d541" id="r_ac67fc6408dac8ef9bd34af979e94d541"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac67fc6408dac8ef9bd34af979e94d541">fast_forward_frame</a></td></tr>
+<tr class="memitem:ae81c0837b75789512c1f036996614ed4" id="r_ae81c0837b75789512c1f036996614ed4"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#ae81c0837b75789512c1f036996614ed4">average_render_time</a> [20]</td></tr>
+<tr class="memdesc:ae81c0837b75789512c1f036996614ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染控制  <br /></td></tr>
+<tr class="memitem:a95fef098b64ea4e210100750b18e0057" id="r_a95fef098b64ea4e210100750b18e0057"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a95fef098b64ea4e210100750b18e0057">average_game_time</a> [20]</td></tr>
+<tr class="memitem:a3b76c0b62bccdd3700d94a0012ad754b" id="r_a3b76c0b62bccdd3700d94a0012ad754b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3b76c0b62bccdd3700d94a0012ad754b">avg_render_index</a></td></tr>
+<tr class="memitem:abfbeeb93f7812f255fba0c216676c9b1" id="r_abfbeeb93f7812f255fba0c216676c9b1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#abfbeeb93f7812f255fba0c216676c9b1">avg_game_index</a></td></tr>
+<tr class="memitem:a4762c1562e98b09b0612d41a33c58896" id="r_a4762c1562e98b09b0612d41a33c58896"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4762c1562e98b09b0612d41a33c58896">test_delay_min</a></td></tr>
+<tr class="memdesc:a4762c1562e98b09b0612d41a33c58896"><td class="mdescLeft">&#160;</td><td class="mdescRight">性能监控数组  <br /></td></tr>
+<tr class="memitem:a54771c3f4a87dff5722befaf619928a3" id="r_a54771c3f4a87dff5722befaf619928a3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a54771c3f4a87dff5722befaf619928a3">test_delay_max</a></td></tr>
+<tr class="memitem:a27c3fbc63eb1867a379a5070531d2ea3" id="r_a27c3fbc63eb1867a379a5070531d2ea3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a27c3fbc63eb1867a379a5070531d2ea3">mem_log_frames</a></td></tr>
+<tr class="memitem:a142d23d2bec2dc0f0a59bb9ffa4f020f" id="r_a142d23d2bec2dc0f0a59bb9ffa4f020f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a142d23d2bec2dc0f0a59bb9ffa4f020f">reload_rules</a></td></tr>
+<tr class="memitem:a5ea873ac31f8dd92de2733a40855b12e" id="r_a5ea873ac31f8dd92de2733a40855b12e"><td class="memItemLeft"><a class="el" href="_enums_8h.html#a0c5befeea133d4f007b3d59d1c903686">GameIndex</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5ea873ac31f8dd92de2733a40855b12e">auto_game_type</a></td></tr>
+<tr class="memdesc:a5ea873ac31f8dd92de2733a40855b12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">测试与调试  <br /></td></tr>
+<tr class="memitem:a3019494c775eeafa25d77f339381175d" id="r_a3019494c775eeafa25d77f339381175d"><td class="memItemLeft">unsigned __int8&#160;</td><td class="memItemRight"><a class="el" href="#a3019494c775eeafa25d77f339381175d">prevFrameKeystate</a> [256]</td></tr>
+<tr class="memdesc:a3019494c775eeafa25d77f339381175d"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏模式管理  <br /></td></tr>
+<tr class="memitem:af4d72213da28de820bbab9b6530196d7" id="r_af4d72213da28de820bbab9b6530196d7"><td class="memItemLeft">unsigned __int8&#160;</td><td class="memItemRight"><a class="el" href="#af4d72213da28de820bbab9b6530196d7">keystate</a> [256]</td></tr>
+<tr class="memitem:a6d81524d4b4d8690df5dcabb81f35574" id="r_a6d81524d4b4d8690df5dcabb81f35574"><td class="memItemLeft"><a class="el" href="_enums_8h.html#a452c041d030b937f8f50c59e2f74a74a">Game_eNetLibType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d81524d4b4d8690df5dcabb81f35574">m_netlib_type</a></td></tr>
+<tr class="memdesc:a6d81524d4b4d8690df5dcabb81f35574"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入系统  <br /></td></tr>
+<tr class="memitem:a826bf7ffb52489d2554b34321548261a" id="r_a826bf7ffb52489d2554b34321548261a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a826bf7ffb52489d2554b34321548261a">mDataChannelTimeout</a></td></tr>
+<tr class="memitem:af14bc000beeeed44eb7267d270f312e7" id="r_af14bc000beeeed44eb7267d270f312e7"><td class="memItemLeft"><a class="el" href="struct_steam_leaderboards.html">SteamLeaderboards</a>&#160;</td><td class="memItemRight"><a class="el" href="#af14bc000beeeed44eb7267d270f312e7">m_steamLeaderboards</a></td></tr>
+<tr class="memdesc:af14bc000beeeed44eb7267d270f312e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">网络系统  <br /></td></tr>
+<tr class="inherit_header pub_attribs_struct_i_leaderboards_listener"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_struct_i_leaderboards_listener')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="struct_i_leaderboards_listener.html">ILeaderboardsListener</a></td></tr>
+<tr class="memitem:a8eec7b3e2d4e84cb68fa3d66966a4c39 inherit pub_attribs_struct_i_leaderboards_listener" id="r_a8eec7b3e2d4e84cb68fa3d66966a4c39"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_i_leaderboards_listener.html#a8eec7b3e2d4e84cb68fa3d66966a4c39">unk</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>游戏主结构体 - 继承自排行榜监听器和游戏访问接口，管理整个游戏状态 </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a5025cada635d2716ebd05883810ce803" name="a5025cada635d2716ebd05883810ce803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5025cada635d2716ebd05883810ce803">&#9670;&#160;</a></span>armageddon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::armageddon</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>末日模式标志 </p>
+
+</div>
+</div>
+<a id="a5ea873ac31f8dd92de2733a40855b12e" name="a5ea873ac31f8dd92de2733a40855b12e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea873ac31f8dd92de2733a40855b12e">&#9670;&#160;</a></span>auto_game_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#a0c5befeea133d4f007b3d59d1c903686">GameIndex</a> Game::auto_game_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>测试与调试 </p>
+<p>自动游戏类型 </p>
+
+</div>
+</div>
+<a id="add8ca11b7b81722adb95d7926756f22c" name="add8ca11b7b81722adb95d7926756f22c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add8ca11b7b81722adb95d7926756f22c">&#9670;&#160;</a></span>auto_save_load</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::auto_save_load</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UI状态 </p>
+<p>自动保存加载标志 </p>
+
+</div>
+</div>
+<a id="a95fef098b64ea4e210100750b18e0057" name="a95fef098b64ea4e210100750b18e0057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95fef098b64ea4e210100750b18e0057">&#9670;&#160;</a></span>average_game_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::average_game_time[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>平均游戏时间数组（20个样本） </p>
+
+</div>
+</div>
+<a id="a905e4423f2130a39e5ea09bd52286904" name="a905e4423f2130a39e5ea09bd52286904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905e4423f2130a39e5ea09bd52286904">&#9670;&#160;</a></span>average_predicted_frame_time_accum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::average_predicted_frame_time_accum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>平均预测帧时间累计 </p>
+
+</div>
+</div>
+<a id="a6d8b26d7192949d2bee49471f0594117" name="a6d8b26d7192949d2bee49471f0594117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8b26d7192949d2bee49471f0594117">&#9670;&#160;</a></span>average_predicted_render_time_accum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::average_predicted_render_time_accum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>平均预测渲染时间累计 </p>
+
+</div>
+</div>
+<a id="ae81c0837b75789512c1f036996614ed4" name="ae81c0837b75789512c1f036996614ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81c0837b75789512c1f036996614ed4">&#9670;&#160;</a></span>average_render_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::average_render_time[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染控制 </p>
+<p>平均渲染时间数组（20个样本） </p>
+
+</div>
+</div>
+<a id="abfbeeb93f7812f255fba0c216676c9b1" name="abfbeeb93f7812f255fba0c216676c9b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfbeeb93f7812f255fba0c216676c9b1">&#9670;&#160;</a></span>avg_game_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::avg_game_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>游戏时间数组索引 </p>
+
+</div>
+</div>
+<a id="a3b76c0b62bccdd3700d94a0012ad754b" name="a3b76c0b62bccdd3700d94a0012ad754b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b76c0b62bccdd3700d94a0012ad754b">&#9670;&#160;</a></span>avg_render_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::avg_render_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>渲染时间数组索引 </p>
+
+</div>
+</div>
+<a id="a1309236b49505c114c3204367f0937ff" name="a1309236b49505c114c3204367f0937ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1309236b49505c114c3204367f0937ff">&#9670;&#160;</a></span>balance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_unit_balance.html">UnitBalance</a> Game::balance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>世界统计 </p>
+<p>单位平衡数据 </p>
+
+</div>
+</div>
+<a id="a21c75b72fe65e50d136a186f45771733" name="a21c75b72fe65e50d136a186f45771733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c75b72fe65e50d136a186f45771733">&#9670;&#160;</a></span>delta_flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::delta_flux[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>波动变化量 </p>
+
+</div>
+</div>
+<a id="af247bc759162d62b40e9ce3de7f4b113" name="af247bc759162d62b40e9ce3de7f4b113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af247bc759162d62b40e9ce3de7f4b113">&#9670;&#160;</a></span>everyone_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::everyone_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>全员掩码（位运算用） </p>
+
+</div>
+</div>
+<a id="ac67fc6408dac8ef9bd34af979e94d541" name="ac67fc6408dac8ef9bd34af979e94d541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67fc6408dac8ef9bd34af979e94d541">&#9670;&#160;</a></span>fast_forward_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::fast_forward_frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>快进帧数 </p>
+
+</div>
+</div>
+<a id="a20faa34c1c3295de30838e9b721da5ac" name="a20faa34c1c3295de30838e9b721da5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20faa34c1c3295de30838e9b721da5ac">&#9670;&#160;</a></span>flux_length</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::flux_length[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>波动持续时间 </p>
+
+</div>
+</div>
+<a id="a52fde0301dd0e7870bb06b343f3a9208" name="a52fde0301dd0e7870bb06b343f3a9208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52fde0301dd0e7870bb06b343f3a9208">&#9670;&#160;</a></span>frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前游戏帧数 </p>
+
+</div>
+</div>
+<a id="aa2ea015372890cb2a7be1b8ccd11fdcd" name="aa2ea015372890cb2a7be1b8ccd11fdcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ea015372890cb2a7be1b8ccd11fdcd">&#9670;&#160;</a></span>frame_to_break</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::frame_to_break</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>断点帧数（用于调试） </p>
+
+</div>
+</div>
+<a id="a4e7b17ad3e22bbcd6b13e09f6c7712e7" name="a4e7b17ad3e22bbcd6b13e09f6c7712e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7b17ad3e22bbcd6b13e09f6c7712e7">&#9670;&#160;</a></span>game_fps_pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::game_fps_pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>帧时间数组当前位置 </p>
+
+</div>
+</div>
+<a id="a2890230b8cb29d9aec53825b65cfec5e" name="a2890230b8cb29d9aec53825b65cfec5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2890230b8cb29d9aec53825b65cfec5e">&#9670;&#160;</a></span>game_fps_timing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::game_fps_timing[30]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>自动保存/加载 </p>
+<p>30帧时间记录数组 </p>
+
+</div>
+</div>
+<a id="a51b29758fee86545087dacd79396df0a" name="a51b29758fee86545087dacd79396df0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b29758fee86545087dacd79396df0a">&#9670;&#160;</a></span>game_fps_timing_accum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::game_fps_timing_accum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>帧时间累计 </p>
+
+</div>
+</div>
+<a id="acf27521f672732581cdb1acfa7bf470a" name="acf27521f672732581cdb1acfa7bf470a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf27521f672732581cdb1acfa7bf470a">&#9670;&#160;</a></span>game_frame_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::game_frame_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>游戏帧时间 </p>
+
+</div>
+</div>
+<a id="a19e40cb446e6fda00c06b7c02985678a" name="a19e40cb446e6fda00c06b7c02985678a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e40cb446e6fda00c06b7c02985678a">&#9670;&#160;</a></span>game_frames_to_render_frames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::game_frames_to_render_frames</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>帧率统计 </p>
+<p>游戏帧到渲染帧比例 </p>
+
+</div>
+</div>
+<a id="a8374b2ae64139b9de3af3605aac698f3" name="a8374b2ae64139b9de3af3605aac698f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8374b2ae64139b9de3af3605aac698f3">&#9670;&#160;</a></span>game_sprite_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game::game_sprite_scale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>游戏精灵缩放比例 </p>
+
+</div>
+</div>
+<a id="a61dc18f59fc45a5247c6a111b6d81606" name="a61dc18f59fc45a5247c6a111b6d81606"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61dc18f59fc45a5247c6a111b6d81606">&#9670;&#160;</a></span>gap4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#ab8507246f53c4bbefc76b43ff5bd8812">_BYTE</a> Game::gap4[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对齐填充（8字节） </p>
+
+</div>
+</div>
+<a id="af21a304934b937ee6c819ac5c9910d67" name="af21a304934b937ee6c819ac5c9910d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21a304934b937ee6c819ac5c9910d67">&#9670;&#160;</a></span>graphic_clock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::graphic_clock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>信号量控制 </p>
+<p>图形时钟 </p>
+
+</div>
+</div>
+<a id="ae6a4ed98f42ee745b29ac0ecbb329c97" name="ae6a4ed98f42ee745b29ac0ecbb329c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a4ed98f42ee745b29ac0ecbb329c97">&#9670;&#160;</a></span>graphic_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::graphic_dt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>图形帧间隔时间 </p>
+
+</div>
+</div>
+<a id="a56ecbbe2b5855ca5ac650ba24fbd2f27" name="a56ecbbe2b5855ca5ac650ba24fbd2f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ecbbe2b5855ca5ac650ba24fbd2f27">&#9670;&#160;</a></span>graphic_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::graphic_error</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>图形误差累计 </p>
+
+</div>
+</div>
+<a id="a3e1ebcd0eeb1306225fbd2222da372c1" name="a3e1ebcd0eeb1306225fbd2222da372c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1ebcd0eeb1306225fbd2222da372c1">&#9670;&#160;</a></span>graphic_last_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::graphic_last_frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上一图形帧数 </p>
+
+</div>
+</div>
+<a id="ad903a1ccc5e4506e0b52db0fab8521a9" name="ad903a1ccc5e4506e0b52db0fab8521a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad903a1ccc5e4506e0b52db0fab8521a9">&#9670;&#160;</a></span>graphic_loop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::graphic_loop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>图形循环计数器 </p>
+
+</div>
+</div>
+<a id="ad63c19d69ef12a8496b42c60a9b6fb36" name="ad63c19d69ef12a8496b42c60a9b6fb36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad63c19d69ef12a8496b42c60a9b6fb36">&#9670;&#160;</a></span>graphic_percent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game::graphic_percent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>图形渲染完成百分比 </p>
+
+</div>
+</div>
+<a id="a760394dc9f1fafc528e720f567131f79" name="a760394dc9f1fafc528e720f567131f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760394dc9f1fafc528e720f567131f79">&#9670;&#160;</a></span>graphic_tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::graphic_tick</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>图形刻 </p>
+
+</div>
+</div>
+<a id="a598e159d85507bca3e8c66f36a0b3bc5" name="a598e159d85507bca3e8c66f36a0b3bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598e159d85507bca3e8c66f36a0b3bc5">&#9670;&#160;</a></span>info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameInfo Game::info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>游戏基本信息 </p>
+
+</div>
+</div>
+<a id="af4d72213da28de820bbab9b6530196d7" name="af4d72213da28de820bbab9b6530196d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d72213da28de820bbab9b6530196d7">&#9670;&#160;</a></span>keystate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned __int8 Game::keystate[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前帧键盘状态（256键） </p>
+
+</div>
+</div>
+<a id="a6f881145647f63d480e75ff99563c0c7" name="a6f881145647f63d480e75ff99563c0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f881145647f63d480e75ff99563c0c7">&#9670;&#160;</a></span>last_frame_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::last_frame_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上一帧时间 </p>
+
+</div>
+</div>
+<a id="aa1d645cbf0fa80fa00a894f070346a5a" name="aa1d645cbf0fa80fa00a894f070346a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d645cbf0fa80fa00a894f070346a5a">&#9670;&#160;</a></span>loading</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::loading</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>游戏加载状态标志 </p>
+
+</div>
+</div>
+<a id="a6d81524d4b4d8690df5dcabb81f35574" name="a6d81524d4b4d8690df5dcabb81f35574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d81524d4b4d8690df5dcabb81f35574">&#9670;&#160;</a></span>m_netlib_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#a452c041d030b937f8f50c59e2f74a74a">Game_eNetLibType</a> Game::m_netlib_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输入系统 </p>
+<p>网络库类型（Steam/Local） </p>
+
+</div>
+</div>
+<a id="af14bc000beeeed44eb7267d270f312e7" name="af14bc000beeeed44eb7267d270f312e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af14bc000beeeed44eb7267d270f312e7">&#9670;&#160;</a></span>m_steamLeaderboards</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_steam_leaderboards.html">SteamLeaderboards</a> Game::m_steamLeaderboards</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网络系统 </p>
+<p>Steam排行榜系统 </p>
+
+</div>
+</div>
+<a id="a11afde8ac5c3e7b9cf029954851f7edd" name="a11afde8ac5c3e7b9cf029954851f7edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11afde8ac5c3e7b9cf029954851f7edd">&#9670;&#160;</a></span>market</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::market[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>6种资源市场价格数组 </p>
+
+</div>
+</div>
+<a id="a10a97f94584d014b4b2557f9bdc419a5" name="a10a97f94584d014b4b2557f9bdc419a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a97f94584d014b4b2557f9bdc419a5">&#9670;&#160;</a></span>market_flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::market_flux[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>市场价格波动值 </p>
+
+</div>
+</div>
+<a id="a344e48e04f89898086174698f338b322" name="a344e48e04f89898086174698f338b322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344e48e04f89898086174698f338b322">&#9670;&#160;</a></span>market_tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::market_tick</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>时间与帧数控制 </p>
+<p>市场更新计时器 </p>
+
+</div>
+</div>
+<a id="a826bf7ffb52489d2554b34321548261a" name="a826bf7ffb52489d2554b34321548261a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826bf7ffb52489d2554b34321548261a">&#9670;&#160;</a></span>mDataChannelTimeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::mDataChannelTimeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>数据通道超时标志 </p>
+
+</div>
+</div>
+<a id="a27c3fbc63eb1867a379a5070531d2ea3" name="a27c3fbc63eb1867a379a5070531d2ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c3fbc63eb1867a379a5070531d2ea3">&#9670;&#160;</a></span>mem_log_frames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::mem_log_frames</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>内存日志记录帧间隔 </p>
+
+</div>
+</div>
+<a id="a1228313501c0f631a34fdfd4bce4589a" name="a1228313501c0f631a34fdfd4bce4589a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1228313501c0f631a34fdfd4bce4589a">&#9670;&#160;</a></span>modal_is_open</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::modal_is_open</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>性能预测与计时 </p>
+<p>模态窗口是否打开 </p>
+
+</div>
+</div>
+<a id="a576fda77a3711bc2abf78b40f9121068" name="a576fda77a3711bc2abf78b40f9121068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576fda77a3711bc2abf78b40f9121068">&#9670;&#160;</a></span>musical_chairs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::musical_chairs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>游戏规模统计 </p>
+<p>抢椅子模式标志 </p>
+
+</div>
+</div>
+<a id="a624a2832bbb497e74c9e52793d68696f" name="a624a2832bbb497e74c9e52793d68696f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624a2832bbb497e74c9e52793d68696f">&#9670;&#160;</a></span>next_flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::next_flux[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>下次波动时间 </p>
+
+</div>
+</div>
+<a id="a69bd59cedbdfdb7a62bc357df2d42d2f" name="a69bd59cedbdfdb7a62bc357df2d42d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69bd59cedbdfdb7a62bc357df2d42d2f">&#9670;&#160;</a></span>num_def_builds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_def_builds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>默认建筑类型数量 </p>
+
+</div>
+</div>
+<a id="a11c8259baff9193b24053a84a5e89d36" name="a11c8259baff9193b24053a84a5e89d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c8259baff9193b24053a84a5e89d36">&#9670;&#160;</a></span>num_def_units</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_def_units</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>默认单位类型数量 </p>
+
+</div>
+</div>
+<a id="a8b80a14d24ce72a8a08a97a9ca8f8ab1" name="a8b80a14d24ce72a8a08a97a9ca8f8ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b80a14d24ce72a8a08a97a9ca8f8ab1">&#9670;&#160;</a></span>num_def_walls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_def_walls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>默认城墙类型数量 </p>
+
+</div>
+</div>
+<a id="a6c870cb6390bb7fc984d19c3fb2fcd73" name="a6c870cb6390bb7fc984d19c3fb2fcd73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c870cb6390bb7fc984d19c3fb2fcd73">&#9670;&#160;</a></span>num_goods</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_goods</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>资源类型数量 </p>
+
+</div>
+</div>
+<a id="aa84302093f8373fdd37ef2b07efcfef1" name="aa84302093f8373fdd37ef2b07efcfef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84302093f8373fdd37ef2b07efcfef1">&#9670;&#160;</a></span>num_items</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_items</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>物品类型数量 </p>
+
+</div>
+</div>
+<a id="afde01062616de6ad44f882aa8cbfae8f" name="afde01062616de6ad44f882aa8cbfae8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde01062616de6ad44f882aa8cbfae8f">&#9670;&#160;</a></span>num_nations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_nations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>国家/文明总数 </p>
+
+</div>
+</div>
+<a id="ade148364474cbe5de85202601b21a19a" name="ade148364474cbe5de85202601b21a19a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade148364474cbe5de85202601b21a19a">&#9670;&#160;</a></span>num_objects</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_objects</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对象类型数量 </p>
+
+</div>
+</div>
+<a id="aad13089970d079fb79d7cb94937993cd" name="aad13089970d079fb79d7cb94937993cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad13089970d079fb79d7cb94937993cd">&#9670;&#160;</a></span>num_players</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_players</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>游戏状态管理 </p>
+<p>玩家总数 </p>
+
+</div>
+</div>
+<a id="af6413e6b66383064e50f41bde658c021" name="af6413e6b66383064e50f41bde658c021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6413e6b66383064e50f41bde658c021">&#9670;&#160;</a></span>num_sides</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_sides</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>阵营总数 </p>
+
+</div>
+</div>
+<a id="acf7bded50aed70b0cde51c668763d3e9" name="acf7bded50aed70b0cde51c668763d3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7bded50aed70b0cde51c668763d3e9">&#9670;&#160;</a></span>num_teams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::num_teams</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>队伍总数 </p>
+
+</div>
+</div>
+<a id="ac754db6af239f63e4c7934db7066396f" name="ac754db6af239f63e4c7934db7066396f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac754db6af239f63e4c7934db7066396f">&#9670;&#160;</a></span>on_team</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::on_team[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>经济市场系统 </p>
+<p>队伍成员状态数组 </p>
+
+</div>
+</div>
+<a id="a7475407f5489d2b43faa540c6435c170" name="a7475407f5489d2b43faa540c6435c170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7475407f5489d2b43faa540c6435c170">&#9670;&#160;</a></span>playing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::playing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>游戏进行状态标志 </p>
+
+</div>
+</div>
+<a id="a81524bcdba73e39c1f3fff6868dff283" name="a81524bcdba73e39c1f3fff6868dff283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81524bcdba73e39c1f3fff6868dff283">&#9670;&#160;</a></span>predicted_frame_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::predicted_frame_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>预测帧时间 </p>
+
+</div>
+</div>
+<a id="a4386c18a7d7ca8866a05967207189e86" name="a4386c18a7d7ca8866a05967207189e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4386c18a7d7ca8866a05967207189e86">&#9670;&#160;</a></span>predicted_render_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::predicted_render_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>截图系统 </p>
+<p>预测渲染时间 </p>
+
+</div>
+</div>
+<a id="afb101bf8cead18c9cb157f0edef45d83" name="afb101bf8cead18c9cb157f0edef45d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb101bf8cead18c9cb157f0edef45d83">&#9670;&#160;</a></span>predicted_render_time_accum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Game::predicted_render_time_accum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>累计预测渲染时间 </p>
+
+</div>
+</div>
+<a id="a3019494c775eeafa25d77f339381175d" name="a3019494c775eeafa25d77f339381175d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3019494c775eeafa25d77f339381175d">&#9670;&#160;</a></span>prevFrameKeystate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned __int8 Game::prevFrameKeystate[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>游戏模式管理 </p>
+<p>上一帧键盘状态（256键） </p>
+
+</div>
+</div>
+<a id="a142d23d2bec2dc0f0a59bb9ffa4f020f" name="a142d23d2bec2dc0f0a59bb9ffa4f020f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142d23d2bec2dc0f0a59bb9ffa4f020f">&#9670;&#160;</a></span>reload_rules</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::reload_rules</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>重新加载规则标志 </p>
+
+</div>
+</div>
+<a id="adec615385166f4f412fdb8f15a04e376" name="adec615385166f4f412fdb8f15a04e376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec615385166f4f412fdb8f15a04e376">&#9670;&#160;</a></span>screen_shot_dir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_string.html">String</a> Game::screen_shot_dir</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>截图目录 </p>
+
+</div>
+</div>
+<a id="a6ebd9aaa086acb1aec6703a00143a18b" name="a6ebd9aaa086acb1aec6703a00143a18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebd9aaa086acb1aec6703a00143a18b">&#9670;&#160;</a></span>screen_shot_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_string.html">String</a> Game::screen_shot_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>图形渲染系统 </p>
+<p>截图文件名 </p>
+
+</div>
+</div>
+<a id="acf1c3158c34edaa415423fe050a8e327" name="acf1c3158c34edaa415423fe050a8e327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1c3158c34edaa415423fe050a8e327">&#9670;&#160;</a></span>semaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BitMask_256 Game::semaphore</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>单位平衡系统 </p>
+<p>256位信号量掩码（线程同步） </p>
+
+</div>
+</div>
+<a id="a488c8b7f6a527049cc90ac7ede3f44b8" name="a488c8b7f6a527049cc90ac7ede3f44b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488c8b7f6a527049cc90ac7ede3f44b8">&#9670;&#160;</a></span>start_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::start_index[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>玩家起始索引 </p>
+
+</div>
+</div>
+<a id="a5a3d57a41090166ace358baba480e185" name="a5a3d57a41090166ace358baba480e185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3d57a41090166ace358baba480e185">&#9670;&#160;</a></span>start_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::start_list[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>玩家起始位置列表 </p>
+
+</div>
+</div>
+<a id="af00d624fa962259af97812423342f6f4" name="af00d624fa962259af97812423342f6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00d624fa962259af97812423342f6f4">&#9670;&#160;</a></span>starting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::starting[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>起始资源状态 </p>
+
+</div>
+</div>
+<a id="ad78c1a24d71d7adc157d890318d352fd" name="ad78c1a24d71d7adc157d890318d352fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78c1a24d71d7adc157d890318d352fd">&#9670;&#160;</a></span>terra_cotta_total</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::terra_cotta_total</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>兵马俑总数（特殊胜利条件） </p>
+
+</div>
+</div>
+<a id="a54771c3f4a87dff5722befaf619928a3" name="a54771c3f4a87dff5722befaf619928a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54771c3f4a87dff5722befaf619928a3">&#9670;&#160;</a></span>test_delay_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::test_delay_max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>测试最大延迟 </p>
+
+</div>
+</div>
+<a id="a4762c1562e98b09b0612d41a33c58896" name="a4762c1562e98b09b0612d41a33c58896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4762c1562e98b09b0612d41a33c58896">&#9670;&#160;</a></span>test_delay_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::test_delay_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>性能监控数组 </p>
+<p>测试最小延迟 </p>
+
+</div>
+</div>
+<a id="a16eaef541afd8c21e7ef46bcb2b8cdcb" name="a16eaef541afd8c21e7ef46bcb2b8cdcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16eaef541afd8c21e7ef46bcb2b8cdcb">&#9670;&#160;</a></span>tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::tick</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>游戏逻辑刻计数器 </p>
+
+</div>
+</div>
+<a id="aa3e32c15071c26d2dd28f4326011285a" name="aa3e32c15071c26d2dd28f4326011285a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e32c15071c26d2dd28f4326011285a">&#9670;&#160;</a></span>total_units</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::total_units</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>世界总单位数 </p>
+
+</div>
+</div>
+<a id="a627231d75f0a4a7777e9e78b0ca60e6e" name="a627231d75f0a4a7777e9e78b0ca60e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627231d75f0a4a7777e9e78b0ca60e6e">&#9670;&#160;</a></span>wonders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::wonders[17]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>奇观建造状态数组（17个奇观） </p>
+
+</div>
+</div>
+<a id="a0ee300517e804852b6c95f576208fcd5" name="a0ee300517e804852b6c95f576208fcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee300517e804852b6c95f576208fcd5">&#9670;&#160;</a></span>world_cities</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::world_cities</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>世界总城市数 </p>
+
+</div>
+</div>
+<a id="adee542d132693cc5fb8ac50bd6e5a217" name="adee542d132693cc5fb8ac50bd6e5a217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee542d132693cc5fb8ac50bd6e5a217">&#9670;&#160;</a></span>world_pop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::world_pop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>特殊游戏模式 </p>
+<p>世界总人口 </p>
+
+</div>
+</div>
+<a id="a0bd887602d3922efa3ef4727c242d95c" name="a0bd887602d3922efa3ef4727c242d95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd887602d3922efa3ef4727c242d95c">&#9670;&#160;</a></span>world_villages</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::world_villages</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>世界总村庄数 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="_enums_8h_source.html">Enums.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

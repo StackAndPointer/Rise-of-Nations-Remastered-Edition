@@ -1,0 +1,7 @@
+<map id="IFaceRenderIndexing" name="IFaceRenderIndexing">
+<area shape="rect" id="Node000001" title="界面渲染索引结构" alt="" coords="5,203,151,229"/>
+<area shape="rect" id="Node000002" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="50,104,106,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,145,81,203,75,202,76,148"/>
+<area shape="rect" id="Node000003" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="36,5,120,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,45,81,104,75,103,77,50"/>
+</map>

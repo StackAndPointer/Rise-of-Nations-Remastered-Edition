@@ -1,0 +1,30 @@
+digraph "GameAccess"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="GameAccess",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="无额外成员，直接使用ArrayMakeObject的功能"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Game",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_game.html",tooltip="游戏主结构体 - 继承自排行榜监听器和游戏访问接口，管理整个游戏状态"];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="GameMod",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_game_mod.html",tooltip="游戏MOD结构体 - 游戏中的MOD管理"];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="LeaderOption",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_leader_option.html",tooltip="无新增成员，纯数据传递接口"];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="LeaderOptions",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_leader_options.html",tooltip="继承两个基类的所有功能"];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Leaders",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_leaders.html",tooltip="领导者输出类 - 继承自LeaderData，8字节对齐"];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="PlayerProfile",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_player_profile.html",tooltip="玩家档案结构体，包含游戏设置和个人偏好"];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="SetupWinChild",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_setup_win_child.html",tooltip="设置窗口子窗口（继承自GravWindow和GameAccess）"];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="SetupWinCustom",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_setup_win_custom.html",tooltip="自定义设置窗口（继承自SetupWinChild）"];
+  Node8 -> Node10 [id="edge9_Node000008_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="SetupWinPlayers",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_setup_win_players.html",tooltip="玩家设置窗口（继承自SetupWinChild）"];
+  Node8 -> Node11 [id="edge10_Node000008_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="SetupWinRules",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_setup_win_rules.html",tooltip="规则设置窗口（继承自SetupWinChild）"];
+  Node1 -> Node12 [id="edge11_Node000001_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="UnitBalance",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_unit_balance.html",tooltip="单位平衡结构体 - 管理单位数据平衡性"];
+}

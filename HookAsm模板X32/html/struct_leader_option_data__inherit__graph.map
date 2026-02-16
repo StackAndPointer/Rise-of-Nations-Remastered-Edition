@@ -1,0 +1,9 @@
+<map id="LeaderOptionData" name="LeaderOptionData">
+<area shape="rect" id="Node000001" title="Steam集成" alt="" coords="10,80,136,107"/>
+<area shape="rect" id="Node000003" href="$struct_leader_option_out.html" title="领导者选项输出结构 &#45; 继承自LeaderOptionData，用于数据输出" alt="" coords="13,155,133,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,120,76,155,70,154,72,125"/>
+<area shape="rect" id="Node000002" href="$struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,45,76,80,70,79,72,50"/>
+<area shape="rect" id="Node000004" href="$struct_leader_option.html" title="无新增成员，纯数据传递接口" alt="" coords="24,229,122,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,195,76,230,70,228,71,199"/>
+</map>

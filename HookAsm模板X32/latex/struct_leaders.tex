@@ -1,0 +1,83 @@
+\doxysection{Leaders结构体 参考}
+\hypertarget{struct_leaders}{}\label{struct_leaders}\index{Leaders@{Leaders}}
+
+
+领导者输出类 -\/ 继承自\+Leader\+Data，8字节对齐  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Leaders 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{struct_leaders__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Leaders 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{struct_leaders__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+Leader \doxymbox{\hyperlink{struct_leaders_ae5864ef8b882312206d2dbaa6bfb07f7}{list}} \+[10]\+
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_leaders_ad47de0e82cb04e5934572cdc1b5c9cd4}{prod\+\_\+script\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em 索引0-\/9分别对应不同的领导者实例 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+领导者输出类 -\/ 继承自\+Leader\+Data，8字节对齐 
+
+继承\+Leader\+Data的所有成员
+
+8字节对齐确保在内存中的高效访问 可能用于存储领导者的输出数据或状态信息
+
+领导者类 -\/ 多重继承自\+Leader\+Out和\+Game\+Access，4字节对齐
+
+用途可能包括：
+
+
+\begin{DoxyEnumerate}
+\item 内存对齐填充，确保结构体满足4字节对齐
+\item 布尔标志位，如 is\+\_\+active, is\+\_\+initialized 等
+\item 状态标志，记录领导者特定状态
+\item 占位符，为未来扩展预留空间
+\end{DoxyEnumerate}
+
+领导者集合类 -\/ 管理多个领导者 
+
+\label{doc-variable-members}
+\Hypertarget{struct_leaders_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_leaders_ae5864ef8b882312206d2dbaa6bfb07f7}\index{Leaders@{Leaders}!list@{list}}
+\index{list@{list}!Leaders@{Leaders}}
+\doxysubsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily \label{struct_leaders_ae5864ef8b882312206d2dbaa6bfb07f7} 
+Leader Leaders::\+list\+[10]\+}
+
+领导者数组，最多10个领导者 \Hypertarget{struct_leaders_ad47de0e82cb04e5934572cdc1b5c9cd4}\index{Leaders@{Leaders}!prod\_script\_path@{prod\_script\_path}}
+\index{prod\_script\_path@{prod\_script\_path}!Leaders@{Leaders}}
+\doxysubsubsection{\texorpdfstring{prod\_script\_path}{prod\_script\_path}}
+{\footnotesize\ttfamily \label{struct_leaders_ad47de0e82cb04e5934572cdc1b5c9cd4} 
+\doxymbox{\hyperlink{struct_string}{String}} Leaders::\+prod\+\_\+script\+\_\+path}
+
+
+
+索引0-\/9分别对应不同的领导者实例 
+
+每个\+Leader对象包含完整的领导者数据和状态 生产脚本路径字符串 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

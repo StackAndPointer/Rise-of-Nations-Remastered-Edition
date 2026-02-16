@@ -1,0 +1,421 @@
+\doxysection{Window结构体 参考}
+\hypertarget{struct_window}{}\label{struct_window}\index{Window@{Window}}
+
+
+窗口基类  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Window 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Window 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_window_af457f1debaa825578e8cd6741c3b9761}{unk}}
+\item 
+int \doxymbox{\hyperlink{struct_window_ac1db4b348945175fd3534da9df275a8b}{style}}
+\item 
+int \doxymbox{\hyperlink{struct_window_aa0f39396d037c411323af3b256fb72e6}{flags}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a262d90498de3ce0b3b6d8ea1c8919b24}{id}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_window_a6e4bf56b36015c6bd37fe00542535b76}{id\+\_\+string}}
+\item 
+int \doxymbox{\hyperlink{struct_window_aad315badca99e4c7211d47ba76574886}{unk1}} \+[3]\+
+\item 
+bool \doxymbox{\hyperlink{struct_window_a05d9724c75a7827fc7ea579bc2f6a9bf}{ignore\+Stack\+Conditions}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a1e969af577b665a0cafe8da1cdbcd822}{unk2}} \+[3]\+
+\item 
+bool \doxymbox{\hyperlink{struct_window_ab387d5eae6aebf8519f395d2a1c66b3b}{override\+\_\+on\+\_\+left\+\_\+click\+\_\+on\+\_\+combo\+\_\+boxes}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a0f1448a6c1af880235963e00ad879939}{orig\+\_\+xs}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a7ead6bd673d6bcb34464bdbe2ce848cf}{orig\+\_\+ys}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a9c87a80e687e6beeac9bd38b9f9c3bc9}{spot\+\_\+passover\+\_\+id}}
+\item 
+int \doxymbox{\hyperlink{struct_window_a05c7cd1d08c4301111ad02f4783852a0}{spot\+\_\+passover\+\_\+type}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_ad51c3f1da127187ec18eaff49b18e86f}{spot\+\_\+passover\+\_\+rect}}
+\item 
+\doxymbox{\hyperlink{struct_spot}{Spot}} \doxymbox{\hyperlink{struct_window_a56358527a61a0fa17f39bfd575283c4d}{win\+\_\+spot}}
+\item 
+\doxymbox{\hyperlink{struct_window}{Window}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a2194476b8d1e938f195fafa9beee1b85}{parent}}
+\item 
+\doxymbox{\hyperlink{struct_window}{Window}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a5c6b94c283776c502b678aaddffabe4a}{prev\+\_\+focus}}
+\item 
+\doxymbox{\hyperlink{struct_window}{Window}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a8e25363025bd13ba6c7d11febed38cf1}{default\+\_\+focus}}
+\item 
+\doxymbox{\hyperlink{struct_ptr_array_window}{Ptr\+Array\+Window}} \doxymbox{\hyperlink{struct_window_ae7de4d37f6422c80824a98563aa8ab7b}{children\+\_\+order}}
+\item 
+\doxymbox{\hyperlink{struct_ptr_array_window}{Ptr\+Array\+Window}} \doxymbox{\hyperlink{struct_window_ae45a24ada5aefa74793d516aaf5aee08}{children}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_window_a853231669e28e75c39251c1eba8fede0}{caption}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a654e85dac11e683316f49a9766ac16c0}{back\+\_\+color}}
+\item 
+\doxymbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a425992d92dee26dce69c5178f6835758}{caption\+\_\+font}}
+\item 
+\doxymbox{\hyperlink{struct_buffer}{Buffer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a5563a64a22e0a87e6a741804083d48fa}{border\+\_\+tile}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_abe2659439cc4f0f8e1b3707cd2b62330}{nonclient\+\_\+color}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a46a8a2da4d948a3ebb7f7acc68d855d7}{caption\+\_\+color}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a0457a07bf3d84aba3150f7b4ccd58782}{caption\+\_\+shadow}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a8068b7ede99e59906cc1cfb38dc1b5af}{color\+\_\+bevel\+\_\+up}}
+\item 
+Color \doxymbox{\hyperlink{struct_window_a9139c9bf9578236e0f9beda775c74ab5}{color\+\_\+bevel\+\_\+down}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a2d3e9afda4fb9aff59c99d9ba76bdad1}{caption\+\_\+shadow\+\_\+x\+\_\+off}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a358fc001bccff4c5b57beff52277c2c7}{caption\+\_\+shadow\+\_\+y\+\_\+off}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a2cde6627b9c8803c32c2cd9944b3d51a}{caption\+\_\+height}}
+\item 
+char \doxymbox{\hyperlink{struct_window_a7e0d2ef857117885b40e9a6498c13a6e}{border\+\_\+thickness}}
+\item 
+char \doxymbox{\hyperlink{struct_window_addbe1cc929bde10a8e42602257f5fa9c}{bottom\+\_\+border\+\_\+thickness}}
+\item 
+char \doxymbox{\hyperlink{struct_window_acac4078adcc68c9dfa19c547a4b367cb}{bevel\+\_\+thickness}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a3b964a14d8710842c84b509144230cf7}{min\+\_\+xs}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_aed9771513c1f89e616eaa79928ed7994}{min\+\_\+ys}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_afedcb0730d62d0e0399bc24bdb11927d}{rect\+\_\+client}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_a666e3d02c4c5212b11abb0f2f8128eeb}{rect\+\_\+nonclient}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_a28cdedc5ed917b45b05fa63bb816fc5a}{rect\+\_\+clip}}
+\item 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} \doxymbox{\hyperlink{struct_window_ac86efbde8f802cb35489e73996e445d3}{rect\+\_\+screen\+\_\+clip}}
+\item 
+char \doxymbox{\hyperlink{struct_window_ab6a2a41f6df3a98f97d597103599a2da}{client\+\_\+drag}}
+\item 
+char \doxymbox{\hyperlink{struct_window_ad4d496ddfd4a59d3b8240ff2ce2f18e6}{client\+\_\+resize}}
+\item 
+\doxymbox{\hyperlink{struct_cursor}{Cursor}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_window_a4142d849f90328581c5c232fb901a49a}{cursor}}
+\item 
+int \doxymbox{\hyperlink{struct_window_af7fa627188d3efe44a3eb2466dfa535b}{stock\+\_\+cursor}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_aaa90bc3dd69f4962c267fdd69fa874d8}{last\+\_\+mouse\+\_\+x}}
+\item 
+\+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_window_a14845c29063a0870f832dabae35b8546}{last\+\_\+mouse\+\_\+y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+窗口基类 
+
+\label{doc-variable-members}
+\Hypertarget{struct_window_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_window_a654e85dac11e683316f49a9766ac16c0}\index{Window@{Window}!back\_color@{back\_color}}
+\index{back\_color@{back\_color}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{back\_color}{back\_color}}
+{\footnotesize\ttfamily \label{struct_window_a654e85dac11e683316f49a9766ac16c0} 
+Color Window::\+back\+\_\+color}
+
+背景颜色 \Hypertarget{struct_window_acac4078adcc68c9dfa19c547a4b367cb}\index{Window@{Window}!bevel\_thickness@{bevel\_thickness}}
+\index{bevel\_thickness@{bevel\_thickness}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{bevel\_thickness}{bevel\_thickness}}
+{\footnotesize\ttfamily \label{struct_window_acac4078adcc68c9dfa19c547a4b367cb} 
+char Window::\+bevel\+\_\+thickness}
+
+斜面厚度 \Hypertarget{struct_window_a7e0d2ef857117885b40e9a6498c13a6e}\index{Window@{Window}!border\_thickness@{border\_thickness}}
+\index{border\_thickness@{border\_thickness}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{border\_thickness}{border\_thickness}}
+{\footnotesize\ttfamily \label{struct_window_a7e0d2ef857117885b40e9a6498c13a6e} 
+char Window::\+border\+\_\+thickness}
+
+边框厚度 \Hypertarget{struct_window_a5563a64a22e0a87e6a741804083d48fa}\index{Window@{Window}!border\_tile@{border\_tile}}
+\index{border\_tile@{border\_tile}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{border\_tile}{border\_tile}}
+{\footnotesize\ttfamily \label{struct_window_a5563a64a22e0a87e6a741804083d48fa} 
+\doxymbox{\hyperlink{struct_buffer}{Buffer}}\texorpdfstring{$\ast$}{*} Window::\+border\+\_\+tile}
+
+边框贴图 \Hypertarget{struct_window_addbe1cc929bde10a8e42602257f5fa9c}\index{Window@{Window}!bottom\_border\_thickness@{bottom\_border\_thickness}}
+\index{bottom\_border\_thickness@{bottom\_border\_thickness}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{bottom\_border\_thickness}{bottom\_border\_thickness}}
+{\footnotesize\ttfamily \label{struct_window_addbe1cc929bde10a8e42602257f5fa9c} 
+char Window::\+bottom\+\_\+border\+\_\+thickness}
+
+底部边框厚度 \Hypertarget{struct_window_a853231669e28e75c39251c1eba8fede0}\index{Window@{Window}!caption@{caption}}
+\index{caption@{caption}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{caption}{caption}}
+{\footnotesize\ttfamily \label{struct_window_a853231669e28e75c39251c1eba8fede0} 
+\doxymbox{\hyperlink{struct_string}{String}} Window::\+caption}
+
+窗口标题 \Hypertarget{struct_window_a46a8a2da4d948a3ebb7f7acc68d855d7}\index{Window@{Window}!caption\_color@{caption\_color}}
+\index{caption\_color@{caption\_color}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{caption\_color}{caption\_color}}
+{\footnotesize\ttfamily \label{struct_window_a46a8a2da4d948a3ebb7f7acc68d855d7} 
+Color Window::\+caption\+\_\+color}
+
+标题颜色 \Hypertarget{struct_window_a425992d92dee26dce69c5178f6835758}\index{Window@{Window}!caption\_font@{caption\_font}}
+\index{caption\_font@{caption\_font}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{caption\_font}{caption\_font}}
+{\footnotesize\ttfamily \label{struct_window_a425992d92dee26dce69c5178f6835758} 
+\doxymbox{\hyperlink{struct_font}{Font}}\texorpdfstring{$\ast$}{*} Window::\+caption\+\_\+font}
+
+标题字体 \Hypertarget{struct_window_a2cde6627b9c8803c32c2cd9944b3d51a}\index{Window@{Window}!caption\_height@{caption\_height}}
+\index{caption\_height@{caption\_height}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{caption\_height}{caption\_height}}
+{\footnotesize\ttfamily \label{struct_window_a2cde6627b9c8803c32c2cd9944b3d51a} 
+char Window::\+caption\+\_\+height}
+
+标题高度 \Hypertarget{struct_window_a0457a07bf3d84aba3150f7b4ccd58782}\index{Window@{Window}!caption\_shadow@{caption\_shadow}}
+\index{caption\_shadow@{caption\_shadow}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{caption\_shadow}{caption\_shadow}}
+{\footnotesize\ttfamily \label{struct_window_a0457a07bf3d84aba3150f7b4ccd58782} 
+Color Window::\+caption\+\_\+shadow}
+
+标题阴影颜色 \Hypertarget{struct_window_a2d3e9afda4fb9aff59c99d9ba76bdad1}\index{Window@{Window}!caption\_shadow\_x\_off@{caption\_shadow\_x\_off}}
+\index{caption\_shadow\_x\_off@{caption\_shadow\_x\_off}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{caption\_shadow\_x\_off}{caption\_shadow\_x\_off}}
+{\footnotesize\ttfamily \label{struct_window_a2d3e9afda4fb9aff59c99d9ba76bdad1} 
+char Window::\+caption\+\_\+shadow\+\_\+x\+\_\+off}
+
+标题阴影\+X偏移 \Hypertarget{struct_window_a358fc001bccff4c5b57beff52277c2c7}\index{Window@{Window}!caption\_shadow\_y\_off@{caption\_shadow\_y\_off}}
+\index{caption\_shadow\_y\_off@{caption\_shadow\_y\_off}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{caption\_shadow\_y\_off}{caption\_shadow\_y\_off}}
+{\footnotesize\ttfamily \label{struct_window_a358fc001bccff4c5b57beff52277c2c7} 
+char Window::\+caption\+\_\+shadow\+\_\+y\+\_\+off}
+
+标题阴影\+Y偏移 \Hypertarget{struct_window_ae45a24ada5aefa74793d516aaf5aee08}\index{Window@{Window}!children@{children}}
+\index{children@{children}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{children}{children}}
+{\footnotesize\ttfamily \label{struct_window_ae45a24ada5aefa74793d516aaf5aee08} 
+\doxymbox{\hyperlink{struct_ptr_array_window}{Ptr\+Array\+Window}} Window::\+children}
+
+子窗口数组 \Hypertarget{struct_window_ae7de4d37f6422c80824a98563aa8ab7b}\index{Window@{Window}!children\_order@{children\_order}}
+\index{children\_order@{children\_order}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{children\_order}{children\_order}}
+{\footnotesize\ttfamily \label{struct_window_ae7de4d37f6422c80824a98563aa8ab7b} 
+\doxymbox{\hyperlink{struct_ptr_array_window}{Ptr\+Array\+Window}} Window::\+children\+\_\+order}
+
+子窗口顺序数组 \Hypertarget{struct_window_ab6a2a41f6df3a98f97d597103599a2da}\index{Window@{Window}!client\_drag@{client\_drag}}
+\index{client\_drag@{client\_drag}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{client\_drag}{client\_drag}}
+{\footnotesize\ttfamily \label{struct_window_ab6a2a41f6df3a98f97d597103599a2da} 
+char Window::\+client\+\_\+drag}
+
+客户区拖动标志 \Hypertarget{struct_window_ad4d496ddfd4a59d3b8240ff2ce2f18e6}\index{Window@{Window}!client\_resize@{client\_resize}}
+\index{client\_resize@{client\_resize}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{client\_resize}{client\_resize}}
+{\footnotesize\ttfamily \label{struct_window_ad4d496ddfd4a59d3b8240ff2ce2f18e6} 
+char Window::\+client\+\_\+resize}
+
+客户区调整大小标志 \Hypertarget{struct_window_a9139c9bf9578236e0f9beda775c74ab5}\index{Window@{Window}!color\_bevel\_down@{color\_bevel\_down}}
+\index{color\_bevel\_down@{color\_bevel\_down}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{color\_bevel\_down}{color\_bevel\_down}}
+{\footnotesize\ttfamily \label{struct_window_a9139c9bf9578236e0f9beda775c74ab5} 
+Color Window::\+color\+\_\+bevel\+\_\+down}
+
+斜面下降颜色 \Hypertarget{struct_window_a8068b7ede99e59906cc1cfb38dc1b5af}\index{Window@{Window}!color\_bevel\_up@{color\_bevel\_up}}
+\index{color\_bevel\_up@{color\_bevel\_up}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{color\_bevel\_up}{color\_bevel\_up}}
+{\footnotesize\ttfamily \label{struct_window_a8068b7ede99e59906cc1cfb38dc1b5af} 
+Color Window::\+color\+\_\+bevel\+\_\+up}
+
+斜面上升颜色 \Hypertarget{struct_window_a4142d849f90328581c5c232fb901a49a}\index{Window@{Window}!cursor@{cursor}}
+\index{cursor@{cursor}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \label{struct_window_a4142d849f90328581c5c232fb901a49a} 
+\doxymbox{\hyperlink{struct_cursor}{Cursor}}\texorpdfstring{$\ast$}{*} Window::\+cursor}
+
+光标指针 \Hypertarget{struct_window_a8e25363025bd13ba6c7d11febed38cf1}\index{Window@{Window}!default\_focus@{default\_focus}}
+\index{default\_focus@{default\_focus}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{default\_focus}{default\_focus}}
+{\footnotesize\ttfamily \label{struct_window_a8e25363025bd13ba6c7d11febed38cf1} 
+\doxymbox{\hyperlink{struct_window}{Window}}\texorpdfstring{$\ast$}{*} Window::\+default\+\_\+focus}
+
+默认焦点窗口 \Hypertarget{struct_window_aa0f39396d037c411323af3b256fb72e6}\index{Window@{Window}!flags@{flags}}
+\index{flags@{flags}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{struct_window_aa0f39396d037c411323af3b256fb72e6} 
+int Window::\+flags}
+
+窗口标志 \Hypertarget{struct_window_a262d90498de3ce0b3b6d8ea1c8919b24}\index{Window@{Window}!id@{id}}
+\index{id@{id}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{struct_window_a262d90498de3ce0b3b6d8ea1c8919b24} 
+int Window::\+id}
+
+窗口\+ID \Hypertarget{struct_window_a6e4bf56b36015c6bd37fe00542535b76}\index{Window@{Window}!id\_string@{id\_string}}
+\index{id\_string@{id\_string}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{id\_string}{id\_string}}
+{\footnotesize\ttfamily \label{struct_window_a6e4bf56b36015c6bd37fe00542535b76} 
+\doxymbox{\hyperlink{struct_string}{String}} Window::\+id\+\_\+string}
+
+窗口\+ID字符串 \Hypertarget{struct_window_a05d9724c75a7827fc7ea579bc2f6a9bf}\index{Window@{Window}!ignoreStackConditions@{ignoreStackConditions}}
+\index{ignoreStackConditions@{ignoreStackConditions}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{ignoreStackConditions}{ignoreStackConditions}}
+{\footnotesize\ttfamily \label{struct_window_a05d9724c75a7827fc7ea579bc2f6a9bf} 
+bool Window::\+ignore\+Stack\+Conditions}
+
+是否忽略堆栈条件 \Hypertarget{struct_window_aaa90bc3dd69f4962c267fdd69fa874d8}\index{Window@{Window}!last\_mouse\_x@{last\_mouse\_x}}
+\index{last\_mouse\_x@{last\_mouse\_x}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{last\_mouse\_x}{last\_mouse\_x}}
+{\footnotesize\ttfamily \label{struct_window_aaa90bc3dd69f4962c267fdd69fa874d8} 
+\+\_\+\+\_\+int16 Window::\+last\+\_\+mouse\+\_\+x}
+
+最后鼠标\+X坐标 \Hypertarget{struct_window_a14845c29063a0870f832dabae35b8546}\index{Window@{Window}!last\_mouse\_y@{last\_mouse\_y}}
+\index{last\_mouse\_y@{last\_mouse\_y}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{last\_mouse\_y}{last\_mouse\_y}}
+{\footnotesize\ttfamily \label{struct_window_a14845c29063a0870f832dabae35b8546} 
+\+\_\+\+\_\+int16 Window::\+last\+\_\+mouse\+\_\+y}
+
+最后鼠标\+Y坐标 \Hypertarget{struct_window_a3b964a14d8710842c84b509144230cf7}\index{Window@{Window}!min\_xs@{min\_xs}}
+\index{min\_xs@{min\_xs}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{min\_xs}{min\_xs}}
+{\footnotesize\ttfamily \label{struct_window_a3b964a14d8710842c84b509144230cf7} 
+\+\_\+\+\_\+int16 Window::\+min\+\_\+xs}
+
+最小\+X大小 \Hypertarget{struct_window_aed9771513c1f89e616eaa79928ed7994}\index{Window@{Window}!min\_ys@{min\_ys}}
+\index{min\_ys@{min\_ys}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{min\_ys}{min\_ys}}
+{\footnotesize\ttfamily \label{struct_window_aed9771513c1f89e616eaa79928ed7994} 
+\+\_\+\+\_\+int16 Window::\+min\+\_\+ys}
+
+最小\+Y大小 \Hypertarget{struct_window_abe2659439cc4f0f8e1b3707cd2b62330}\index{Window@{Window}!nonclient\_color@{nonclient\_color}}
+\index{nonclient\_color@{nonclient\_color}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{nonclient\_color}{nonclient\_color}}
+{\footnotesize\ttfamily \label{struct_window_abe2659439cc4f0f8e1b3707cd2b62330} 
+Color Window::\+nonclient\+\_\+color}
+
+非客户区颜色 \Hypertarget{struct_window_a0f1448a6c1af880235963e00ad879939}\index{Window@{Window}!orig\_xs@{orig\_xs}}
+\index{orig\_xs@{orig\_xs}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{orig\_xs}{orig\_xs}}
+{\footnotesize\ttfamily \label{struct_window_a0f1448a6c1af880235963e00ad879939} 
+\+\_\+\+\_\+int16 Window::\+orig\+\_\+xs}
+
+原始\+X大小 \Hypertarget{struct_window_a7ead6bd673d6bcb34464bdbe2ce848cf}\index{Window@{Window}!orig\_ys@{orig\_ys}}
+\index{orig\_ys@{orig\_ys}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{orig\_ys}{orig\_ys}}
+{\footnotesize\ttfamily \label{struct_window_a7ead6bd673d6bcb34464bdbe2ce848cf} 
+\+\_\+\+\_\+int16 Window::\+orig\+\_\+ys}
+
+原始\+Y大小 \Hypertarget{struct_window_ab387d5eae6aebf8519f395d2a1c66b3b}\index{Window@{Window}!override\_on\_left\_click\_on\_combo\_boxes@{override\_on\_left\_click\_on\_combo\_boxes}}
+\index{override\_on\_left\_click\_on\_combo\_boxes@{override\_on\_left\_click\_on\_combo\_boxes}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{override\_on\_left\_click\_on\_combo\_boxes}{override\_on\_left\_click\_on\_combo\_boxes}}
+{\footnotesize\ttfamily \label{struct_window_ab387d5eae6aebf8519f395d2a1c66b3b} 
+bool Window::\+override\+\_\+on\+\_\+left\+\_\+click\+\_\+on\+\_\+combo\+\_\+boxes}
+
+是否在组合框上覆盖左键点击 \Hypertarget{struct_window_a2194476b8d1e938f195fafa9beee1b85}\index{Window@{Window}!parent@{parent}}
+\index{parent@{parent}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{struct_window_a2194476b8d1e938f195fafa9beee1b85} 
+\doxymbox{\hyperlink{struct_window}{Window}}\texorpdfstring{$\ast$}{*} Window::\+parent}
+
+父窗口指针 \Hypertarget{struct_window_a5c6b94c283776c502b678aaddffabe4a}\index{Window@{Window}!prev\_focus@{prev\_focus}}
+\index{prev\_focus@{prev\_focus}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{prev\_focus}{prev\_focus}}
+{\footnotesize\ttfamily \label{struct_window_a5c6b94c283776c502b678aaddffabe4a} 
+\doxymbox{\hyperlink{struct_window}{Window}}\texorpdfstring{$\ast$}{*} Window::\+prev\+\_\+focus}
+
+上一个焦点窗口 \Hypertarget{struct_window_afedcb0730d62d0e0399bc24bdb11927d}\index{Window@{Window}!rect\_client@{rect\_client}}
+\index{rect\_client@{rect\_client}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{rect\_client}{rect\_client}}
+{\footnotesize\ttfamily \label{struct_window_afedcb0730d62d0e0399bc24bdb11927d} 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} Window::\+rect\+\_\+client}
+
+客户区矩形 \Hypertarget{struct_window_a28cdedc5ed917b45b05fa63bb816fc5a}\index{Window@{Window}!rect\_clip@{rect\_clip}}
+\index{rect\_clip@{rect\_clip}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{rect\_clip}{rect\_clip}}
+{\footnotesize\ttfamily \label{struct_window_a28cdedc5ed917b45b05fa63bb816fc5a} 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} Window::\+rect\+\_\+clip}
+
+裁剪矩形 \Hypertarget{struct_window_a666e3d02c4c5212b11abb0f2f8128eeb}\index{Window@{Window}!rect\_nonclient@{rect\_nonclient}}
+\index{rect\_nonclient@{rect\_nonclient}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{rect\_nonclient}{rect\_nonclient}}
+{\footnotesize\ttfamily \label{struct_window_a666e3d02c4c5212b11abb0f2f8128eeb} 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} Window::\+rect\+\_\+nonclient}
+
+非客户区矩形 \Hypertarget{struct_window_ac86efbde8f802cb35489e73996e445d3}\index{Window@{Window}!rect\_screen\_clip@{rect\_screen\_clip}}
+\index{rect\_screen\_clip@{rect\_screen\_clip}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{rect\_screen\_clip}{rect\_screen\_clip}}
+{\footnotesize\ttfamily \label{struct_window_ac86efbde8f802cb35489e73996e445d3} 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} Window::\+rect\+\_\+screen\+\_\+clip}
+
+屏幕裁剪矩形 \Hypertarget{struct_window_a9c87a80e687e6beeac9bd38b9f9c3bc9}\index{Window@{Window}!spot\_passover\_id@{spot\_passover\_id}}
+\index{spot\_passover\_id@{spot\_passover\_id}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{spot\_passover\_id}{spot\_passover\_id}}
+{\footnotesize\ttfamily \label{struct_window_a9c87a80e687e6beeac9bd38b9f9c3bc9} 
+int Window::\+spot\+\_\+passover\+\_\+id}
+
+热点经过\+ID \Hypertarget{struct_window_ad51c3f1da127187ec18eaff49b18e86f}\index{Window@{Window}!spot\_passover\_rect@{spot\_passover\_rect}}
+\index{spot\_passover\_rect@{spot\_passover\_rect}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{spot\_passover\_rect}{spot\_passover\_rect}}
+{\footnotesize\ttfamily \label{struct_window_ad51c3f1da127187ec18eaff49b18e86f} 
+\doxymbox{\hyperlink{struct_rect_templateshort}{Rect\+Templateshort}} Window::\+spot\+\_\+passover\+\_\+rect}
+
+热点经过矩形区域 \Hypertarget{struct_window_a05c7cd1d08c4301111ad02f4783852a0}\index{Window@{Window}!spot\_passover\_type@{spot\_passover\_type}}
+\index{spot\_passover\_type@{spot\_passover\_type}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{spot\_passover\_type}{spot\_passover\_type}}
+{\footnotesize\ttfamily \label{struct_window_a05c7cd1d08c4301111ad02f4783852a0} 
+int Window::\+spot\+\_\+passover\+\_\+type}
+
+热点经过类型 \Hypertarget{struct_window_af7fa627188d3efe44a3eb2466dfa535b}\index{Window@{Window}!stock\_cursor@{stock\_cursor}}
+\index{stock\_cursor@{stock\_cursor}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{stock\_cursor}{stock\_cursor}}
+{\footnotesize\ttfamily \label{struct_window_af7fa627188d3efe44a3eb2466dfa535b} 
+int Window::\+stock\+\_\+cursor}
+
+库存光标索引 \Hypertarget{struct_window_ac1db4b348945175fd3534da9df275a8b}\index{Window@{Window}!style@{style}}
+\index{style@{style}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily \label{struct_window_ac1db4b348945175fd3534da9df275a8b} 
+int Window::\+style}
+
+窗口样式 \Hypertarget{struct_window_af457f1debaa825578e8cd6741c3b9761}\index{Window@{Window}!unk@{unk}}
+\index{unk@{unk}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{unk}{unk}}
+{\footnotesize\ttfamily \label{struct_window_af457f1debaa825578e8cd6741c3b9761} 
+int Window::\+unk}
+
+虚函数表指针 \Hypertarget{struct_window_aad315badca99e4c7211d47ba76574886}\index{Window@{Window}!unk1@{unk1}}
+\index{unk1@{unk1}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{unk1}{unk1}}
+{\footnotesize\ttfamily \label{struct_window_aad315badca99e4c7211d47ba76574886} 
+int Window::\+unk1\+[3]\+}
+
+条件堆栈向量 \Hypertarget{struct_window_a1e969af577b665a0cafe8da1cdbcd822}\index{Window@{Window}!unk2@{unk2}}
+\index{unk2@{unk2}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{unk2}{unk2}}
+{\footnotesize\ttfamily \label{struct_window_a1e969af577b665a0cafe8da1cdbcd822} 
+int Window::\+unk2\+[3]\+}
+
+点击区域向量 \Hypertarget{struct_window_a56358527a61a0fa17f39bfd575283c4d}\index{Window@{Window}!win\_spot@{win\_spot}}
+\index{win\_spot@{win\_spot}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{win\_spot}{win\_spot}}
+{\footnotesize\ttfamily \label{struct_window_a56358527a61a0fa17f39bfd575283c4d} 
+\doxymbox{\hyperlink{struct_spot}{Spot}} Window::\+win\+\_\+spot}
+
+窗口热点 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<map id="Texture" name="Texture">
+<area shape="rect" id="Node000001" title="纹理类（继承自ImageIO和TextureBase）" alt="" coords="85,203,149,229"/>
+<area shape="rect" id="Node000002" href="$struct_image_i_o.html" title="图像输入输出结构" alt="" coords="5,104,77,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,141,110,202,105,203,59,145"/>
+<area shape="rect" id="Node000003" href="$struct_texture_base.html" title="纹理基类" alt="" coords="191,104,286,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,141,177,181,141,204,139,200,174,177,214,143"/>
+<area shape="rect" id="Node000004" href="$struct_g_s_texture.html" title="图形系统纹理对象" alt="" coords="263,203,347,229"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="232,144,232,162,237,177,249,190,266,203,260,202,245,195,232,180,227,163,228,148"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="292,187,274,156,253,134,255,129,278,153,297,189"/>
+<area shape="rect" id="Node000005" href="$struct_g_s_object.html" title="图形系统对象基类" alt="" coords="355,104,434,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="387,144,366,180,333,205,331,200,362,177,382,146"/>
+<area shape="rect" id="Node000006" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="101,104,157,131"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="122,144,121,155,119,203,114,201,116,154,119,148"/>
+<area shape="rect" id="Node000007" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="87,5,171,32"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="130,45,132,104,126,103,128,50"/>
+</map>

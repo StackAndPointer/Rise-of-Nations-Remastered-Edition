@@ -1,0 +1,127 @@
+\doxysection{Grav\+Window结构体 参考}
+\hypertarget{struct_grav_window}{}\label{struct_grav_window}\index{GravWindow@{GravWindow}}
+
+
+界面窗口（继承自\+Graphic\+Win\+XML）  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Grav\+Window 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_grav_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Grav\+Window 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{struct_grav_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_grav_window_abb9c6873235f1485a90b99dfa060f744}{begin\+\_\+time}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_grav_window_adee148acac4b943a96f9b0f7ead2c499}{timing}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_a785833000495858b0482f0e2fd573ecf}{start\+\_\+x}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_a33c76380f16542dbb516d0c77a367232}{start\+\_\+y}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_a0bc1ec345386918a54e2ed1a0b78b9cd}{end\+\_\+x}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_accd00e3f7e3dd052a8d621e51df11254}{end\+\_\+y}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_a60339ebc32758bd70a1a2e263cb2024f}{vel\+\_\+x}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_af49cf1ddf46ba95f60ead8e9a4961048}{vel\+\_\+y}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_a56ccccc24234e3543700e2af8d3dbab6}{accel\+\_\+x}}
+\item 
+float \doxymbox{\hyperlink{struct_grav_window_aa438064bd4a22461e9287e8949e3d817}{accel\+\_\+y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+界面窗口（继承自\+Graphic\+Win\+XML） 
+
+重力窗口（继承自\+IFace\+Window，具有动画效果） 
+
+\label{doc-variable-members}
+\Hypertarget{struct_grav_window_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_grav_window_a56ccccc24234e3543700e2af8d3dbab6}\index{GravWindow@{GravWindow}!accel\_x@{accel\_x}}
+\index{accel\_x@{accel\_x}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{accel\_x}{accel\_x}}
+{\footnotesize\ttfamily \label{struct_grav_window_a56ccccc24234e3543700e2af8d3dbab6} 
+float Grav\+Window::\+accel\+\_\+x}
+
+X轴加速度 \Hypertarget{struct_grav_window_aa438064bd4a22461e9287e8949e3d817}\index{GravWindow@{GravWindow}!accel\_y@{accel\_y}}
+\index{accel\_y@{accel\_y}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{accel\_y}{accel\_y}}
+{\footnotesize\ttfamily \label{struct_grav_window_aa438064bd4a22461e9287e8949e3d817} 
+float Grav\+Window::\+accel\+\_\+y}
+
+Y轴加速度 \Hypertarget{struct_grav_window_abb9c6873235f1485a90b99dfa060f744}\index{GravWindow@{GravWindow}!begin\_time@{begin\_time}}
+\index{begin\_time@{begin\_time}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{begin\_time}{begin\_time}}
+{\footnotesize\ttfamily \label{struct_grav_window_abb9c6873235f1485a90b99dfa060f744} 
+unsigned int Grav\+Window::\+begin\+\_\+time}
+
+开始时间 \Hypertarget{struct_grav_window_a0bc1ec345386918a54e2ed1a0b78b9cd}\index{GravWindow@{GravWindow}!end\_x@{end\_x}}
+\index{end\_x@{end\_x}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{end\_x}{end\_x}}
+{\footnotesize\ttfamily \label{struct_grav_window_a0bc1ec345386918a54e2ed1a0b78b9cd} 
+float Grav\+Window::\+end\+\_\+x}
+
+结束\+X坐标 \Hypertarget{struct_grav_window_accd00e3f7e3dd052a8d621e51df11254}\index{GravWindow@{GravWindow}!end\_y@{end\_y}}
+\index{end\_y@{end\_y}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{end\_y}{end\_y}}
+{\footnotesize\ttfamily \label{struct_grav_window_accd00e3f7e3dd052a8d621e51df11254} 
+float Grav\+Window::\+end\+\_\+y}
+
+结束\+Y坐标 \Hypertarget{struct_grav_window_a785833000495858b0482f0e2fd573ecf}\index{GravWindow@{GravWindow}!start\_x@{start\_x}}
+\index{start\_x@{start\_x}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{start\_x}{start\_x}}
+{\footnotesize\ttfamily \label{struct_grav_window_a785833000495858b0482f0e2fd573ecf} 
+float Grav\+Window::\+start\+\_\+x}
+
+起始\+X坐标 \Hypertarget{struct_grav_window_a33c76380f16542dbb516d0c77a367232}\index{GravWindow@{GravWindow}!start\_y@{start\_y}}
+\index{start\_y@{start\_y}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{start\_y}{start\_y}}
+{\footnotesize\ttfamily \label{struct_grav_window_a33c76380f16542dbb516d0c77a367232} 
+float Grav\+Window::\+start\+\_\+y}
+
+起始\+Y坐标 \Hypertarget{struct_grav_window_adee148acac4b943a96f9b0f7ead2c499}\index{GravWindow@{GravWindow}!timing@{timing}}
+\index{timing@{timing}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{timing}{timing}}
+{\footnotesize\ttfamily \label{struct_grav_window_adee148acac4b943a96f9b0f7ead2c499} 
+unsigned int Grav\+Window::\+timing}
+
+计时 \Hypertarget{struct_grav_window_a60339ebc32758bd70a1a2e263cb2024f}\index{GravWindow@{GravWindow}!vel\_x@{vel\_x}}
+\index{vel\_x@{vel\_x}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{vel\_x}{vel\_x}}
+{\footnotesize\ttfamily \label{struct_grav_window_a60339ebc32758bd70a1a2e263cb2024f} 
+float Grav\+Window::\+vel\+\_\+x}
+
+X轴速度 \Hypertarget{struct_grav_window_af49cf1ddf46ba95f60ead8e9a4961048}\index{GravWindow@{GravWindow}!vel\_y@{vel\_y}}
+\index{vel\_y@{vel\_y}!GravWindow@{GravWindow}}
+\doxysubsubsection{\texorpdfstring{vel\_y}{vel\_y}}
+{\footnotesize\ttfamily \label{struct_grav_window_af49cf1ddf46ba95f60ead8e9a4961048} 
+float Grav\+Window::\+vel\+\_\+y}
+
+Y轴速度 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

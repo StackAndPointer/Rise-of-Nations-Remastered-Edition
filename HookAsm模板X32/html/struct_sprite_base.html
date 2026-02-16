@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rise-of-Nations-Remastered-Edition框架文档: SpriteBase结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Rise-of-Nations-Remastered-Edition框架文档<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">注释</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_sprite_base-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">SpriteBase结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>精灵基类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enums_8h_source.html">Enums.h</a>&gt;</code></p>
+<div class="dynheader">
+类 SpriteBase 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_sprite_base__inherit__graph.png" border="0" usemap="#a_sprite_base_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_sprite_base_inherit__map" id="a_sprite_base_inherit__map">
+<area shape="rect" title="精灵基类" alt="" coords="5,5,91,32"/>
+<area shape="rect" href="struct_sprite.html" title="精灵类（继承自ImageIO和SpriteBase）" alt="" coords="20,80,76,107"/>
+<area shape="poly" title=" " alt="" coords="50,46,51,80,45,79,46,50"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+SpriteBase 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_sprite_base__coll__graph.png" border="0" usemap="#a_sprite_base_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_sprite_base_coll__map" id="a_sprite_base_coll__map">
+<area shape="rect" title="精灵基类" alt="" coords="45,507,130,533"/>
+<area shape="rect" href="struct_g_s_sprite.html" title="图形系统精灵对象" alt="" coords="50,408,124,435"/>
+<area shape="poly" title=" " alt="" coords="89,449,90,507,85,506,85,452"/>
+<area shape="rect" href="struct_g_s_object.html" title="图形系统对象基类" alt="" coords="5,309,84,336"/>
+<area shape="poly" title=" " alt="" coords="57,348,84,407,79,408,55,353"/>
+<area shape="rect" href="struct_ptr_array_sprite_base.html" title="精灵指针数组" alt="" coords="107,309,241,336"/>
+<area shape="poly" title=" " alt="" coords="151,350,100,409,96,406,154,346"/>
+<area shape="rect" href="struct_array_sprite_base.html" title="精灵数组" alt="" coords="116,233,232,260"/>
+<area shape="poly" title=" " alt="" coords="175,273,176,310,171,308,173,278"/>
+<area shape="rect" href="struct_array_base_simple_copy_sprite_base.html" title="简单拷贝精灵数组基类" alt="" coords="65,157,283,184"/>
+<area shape="poly" title=" " alt="" coords="175,197,176,234,171,232,173,202"/>
+<area shape="rect" href="struct_array_base_sprite_base.html" title="精灵数组基类" alt="" coords="101,81,247,108"/>
+<area shape="poly" title=" " alt="" coords="174,120,176,157,171,156,173,126"/>
+<area shape="rect" title=" " alt="" coords="113,5,235,32"/>
+<area shape="poly" title=" " alt="" coords="174,44,176,81,171,81,173,50"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:abe5bd4e6feb78617f368729677dcd704" id="r_abe5bd4e6feb78617f368729677dcd704"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#abe5bd4e6feb78617f368729677dcd704">unk</a></td></tr>
+<tr class="memitem:a55341359727516ae171379259dbde80a" id="r_a55341359727516ae171379259dbde80a"><td class="memItemLeft"><a class="el" href="struct_g_s_sprite.html">GSSprite</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a55341359727516ae171379259dbde80a">gs_sprite</a></td></tr>
+<tr class="memitem:ae74a629278a762ddf5fefd2d198357b7" id="r_ae74a629278a762ddf5fefd2d198357b7"><td class="memItemLeft"><a class="el" href="_enums_8h.html#a060dbd7d809add7854b6bc513cdc3b0c">MemType</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae74a629278a762ddf5fefd2d198357b7">mem_type</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>精灵基类 </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a55341359727516ae171379259dbde80a" name="a55341359727516ae171379259dbde80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55341359727516ae171379259dbde80a">&#9670;&#160;</a></span>gs_sprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_s_sprite.html">GSSprite</a>* SpriteBase::gs_sprite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>图形系统精灵对象 </p>
+
+</div>
+</div>
+<a id="ae74a629278a762ddf5fefd2d198357b7" name="ae74a629278a762ddf5fefd2d198357b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74a629278a762ddf5fefd2d198357b7">&#9670;&#160;</a></span>mem_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#a060dbd7d809add7854b6bc513cdc3b0c">MemType</a> SpriteBase::mem_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>内存类型 </p>
+
+</div>
+</div>
+<a id="abe5bd4e6feb78617f368729677dcd704" name="abe5bd4e6feb78617f368729677dcd704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5bd4e6feb78617f368729677dcd704">&#9670;&#160;</a></span>unk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SpriteBase::unk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>虚函数表指针 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="_enums_8h_source.html">Enums.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

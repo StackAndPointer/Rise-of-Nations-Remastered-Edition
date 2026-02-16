@@ -1,0 +1,7 @@
+<map id="PullDownStruct" name="PullDownStruct">
+<area shape="rect" id="Node000001" title="下拉菜单项结构" alt="" coords="5,224,118,251"/>
+<area shape="rect" id="Node000002" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="34,104,89,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,145,64,224,59,223,59,148"/>
+<area shape="rect" id="Node000003" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="20,5,103,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="62,45,64,104,59,103,61,50"/>
+</map>

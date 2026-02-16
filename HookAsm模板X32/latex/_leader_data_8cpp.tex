@@ -1,0 +1,79 @@
+\doxysection{Leader\+Data.\+cpp 文件参考}
+\hypertarget{_leader_data_8cpp}{}\label{_leader_data_8cpp}\index{LeaderData.cpp@{LeaderData.cpp}}
+
+
+简介  
+
+
+{\ttfamily \+\#include "{}Hook\+Addr.\+h"{}}\newline
+{\ttfamily \+\#include "{}Enums.\+h"{}}\newline
+{\ttfamily \+\#include "{}Global\+Variable.\+h"{}}\newline
+Leader\+Data.\+cpp 的引用(Include)关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{_leader_data_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \+\_\+\+\_\+fastcall \doxymbox{\hyperlink{_leader_data_8cpp_ad0138565b3425a74dfdd2a694f86acf0}{Leader\+Data\+\_\+\+\_\+is\+\_\+team}} (\doxymbox{\hyperlink{struct_leader_data}{Leader\+Data}} \texorpdfstring{$\ast$}{*}leader\+Data, int placeholder, int whom, int strict)
+\begin{DoxyCompactList}\small\item\em 判断两个领导者是否在同一队伍中 \end{DoxyCompactList}\item 
+\Hypertarget{_leader_data_8cpp_a7d2e84f61803b0fbe10944c0f77af907}\label{_leader_data_8cpp_a7d2e84f61803b0fbe10944c0f77af907} 
+int \+\_\+\+\_\+fastcall {\bfseries Leader\+Data\+\_\+\+\_\+get\+\_\+player} (\doxymbox{\hyperlink{struct_leader_data}{Leader\+Data}} \texorpdfstring{$\ast$}{*}leader\+Data, int placeholder)
+\item 
+\Hypertarget{_leader_data_8cpp_adda429729362bde0b21844264eda77b4}\label{_leader_data_8cpp_adda429729362bde0b21844264eda77b4} 
+BOOL \+\_\+\+\_\+fastcall {\bfseries Leader\+Data\+\_\+\+\_\+is\+\_\+ally} (\doxymbox{\hyperlink{struct_leader_data}{Leader\+Data}} \texorpdfstring{$\ast$}{*}leader\+Data, int placeholder, int whom)
+\item 
+\Hypertarget{_leader_data_8cpp_ab23693a8f4e997997293b7a207b7ab0a}\label{_leader_data_8cpp_ab23693a8f4e997997293b7a207b7ab0a} 
+int \+\_\+\+\_\+fastcall {\bfseries Leader\+\_\+\+\_\+calc\+\_\+pop\+\_\+cap} (Leader \texorpdfstring{$\ast$}{*}leader, int placeholder)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+简介 
+
+细节 \begin{DoxyAuthor}{作者}
+作者 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{版本}
+版本号 
+\end{DoxyVersion}
+\begin{DoxyDate}{日期}
+年-\/月-\/日 
+\end{DoxyDate}
+\begin{DoxyCopyright}{版权所有}
+版权 
+\end{DoxyCopyright}
+
+
+\label{doc-func-members}
+\Hypertarget{_leader_data_8cpp_doc-func-members}
+\doxysubsection{函数说明}
+\Hypertarget{_leader_data_8cpp_ad0138565b3425a74dfdd2a694f86acf0}\index{LeaderData.cpp@{LeaderData.cpp}!LeaderData\_\_is\_team@{LeaderData\_\_is\_team}}
+\index{LeaderData\_\_is\_team@{LeaderData\_\_is\_team}!LeaderData.cpp@{LeaderData.cpp}}
+\doxysubsubsection{\texorpdfstring{LeaderData\_\_is\_team()}{LeaderData\_\_is\_team()}}
+{\footnotesize\ttfamily \label{_leader_data_8cpp_ad0138565b3425a74dfdd2a694f86acf0} 
+BOOL \+\_\+\+\_\+fastcall Leader\+Data\+\_\+\+\_\+is\+\_\+team (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_leader_data}{Leader\+Data}} \texorpdfstring{$\ast$}{*}}]{leader\+Data}{, }\item[{int}]{placeholder}{, }\item[{int}]{whom}{, }\item[{int}]{strict}{}\end{DoxyParamCaption})}
+
+
+
+判断两个领导者是否在同一队伍中 
+
+此函数用于检查游戏中的两个领导者是否属于同一队伍，支持多种队伍模式 和特殊规则。函数考虑了队伍样式、特殊标记、游戏帧数和严格模式等因素。
+
+
+\begin{DoxyParams}{参数}
+{\em leader\+Data} & 当前领导者对象 \\
+\hline
+{\em placeholder} & 占位符参数（可能是游戏索引或上下文标识） \\
+\hline
+{\em whom} & 要比较的领导者索引 \\
+\hline
+{\em strict} & 严格模式标志：0-\/宽松模式，1-\/严格模式 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+BOOL 返回\+TRUE表示在同一队伍，\+FALSE表示不在同一队伍 
+\end{DoxyReturn}

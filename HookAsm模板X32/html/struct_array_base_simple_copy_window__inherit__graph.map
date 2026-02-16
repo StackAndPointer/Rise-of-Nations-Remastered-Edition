@@ -1,0 +1,9 @@
+<map id="ArrayBaseSimpleCopyWindow" name="ArrayBaseSimpleCopyWindow">
+<area shape="rect" id="Node000001" title="窗口数组基类" alt="" coords="5,80,206,107"/>
+<area shape="rect" id="Node000003" href="$struct_array_window.html" title="窗口数组" alt="" coords="56,155,155,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,120,108,155,103,154,104,125"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="41,5,170,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,45,108,80,103,79,105,50"/>
+<area shape="rect" id="Node000004" href="$struct_ptr_array_window.html" title="窗口指针数组" alt="" coords="47,229,164,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="107,195,108,230,103,228,104,199"/>
+</map>

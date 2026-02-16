@@ -1,0 +1,5 @@
+<map id="SteamLeaderboards" name="SteamLeaderboards">
+<area shape="rect" id="Node000001" title="Steam排行榜管理结构体" alt="" coords="11,104,149,131"/>
+<area shape="rect" id="Node000002" href="$struct_i_leaderboards_listener.html" title="存储领导者AI行为脚本的文件路径" alt="" coords="5,5,155,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,46,83,104,77,103,78,49"/>
+</map>

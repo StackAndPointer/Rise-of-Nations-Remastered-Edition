@@ -1,0 +1,5 @@
+<map id="LeaderData" name="LeaderData">
+<area shape="rect" id="Node000001" title="领导者数据结构体 &#45; 存储玩家的游戏状态和统计数据" alt="" coords="29,80,117,107"/>
+<area shape="rect" id="Node000002" href="$struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,46,76,80,70,79,71,50"/>
+</map>

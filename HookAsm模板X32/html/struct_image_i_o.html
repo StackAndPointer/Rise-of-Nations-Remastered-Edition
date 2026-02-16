@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rise-of-Nations-Remastered-Edition框架文档: ImageIO结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Rise-of-Nations-Remastered-Edition框架文档<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">注释</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_image_i_o-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">ImageIO结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>图像输入输出结构  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enums_8h_source.html">Enums.h</a>&gt;</code></p>
+<div class="dynheader">
+类 ImageIO 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_image_i_o__inherit__graph.png" border="0" usemap="#a_image_i_o_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_image_i_o_inherit__map" id="a_image_i_o_inherit__map">
+<area shape="rect" title="图像输入输出结构" alt="" coords="316,5,388,32"/>
+<area shape="rect" href="struct_buffer.html" title="缓冲区类（继承自ImageIO和BufferBase）" alt="" coords="244,80,300,107"/>
+<area shape="poly" title=" " alt="" coords="329,41,287,82,284,78,325,44"/>
+<area shape="rect" href="struct_sprite.html" title="精灵类（继承自ImageIO和SpriteBase）" alt="" coords="324,80,380,107"/>
+<area shape="poly" title=" " alt="" coords="353,45,354,81,349,79,351,50"/>
+<area shape="rect" href="struct_texture.html" title="纹理类（继承自ImageIO和TextureBase）" alt="" coords="404,80,468,107"/>
+<area shape="poly" title=" " alt="" coords="378,40,424,80,419,80,378,45"/>
+<area shape="rect" href="struct_graphic_win.html" title="图形窗口（继承自Window和Buffer）" alt="" coords="227,155,317,181"/>
+<area shape="poly" title=" " alt="" coords="273,120,274,155,269,153,270,125"/>
+<area shape="rect" href="struct_base_pop.html" title="基础弹出窗口（继承自GraphicWin）" alt="" coords="5,229,80,256"/>
+<area shape="poly" title=" " alt="" coords="217,189,81,232,79,227,218,184"/>
+<area shape="rect" href="struct_button.html" title="按钮控件（继承自GraphicWin）" alt="" coords="104,229,163,256"/>
+<area shape="poly" title=" " alt="" coords="232,190,159,231,156,226,236,187"/>
+<area shape="rect" href="struct_dialog.html" title="对话框控件（继承自GraphicWin）" alt="" coords="187,229,245,256"/>
+<area shape="poly" title=" " alt="" coords="255,192,227,231,224,227,251,195"/>
+<area shape="rect" href="struct_graphic_win_x_m_l.html" title="XML图形窗口（继承自GraphicWin）" alt="" coords="270,229,386,256"/>
+<area shape="poly" title=" " alt="" coords="292,191,321,229,316,229,290,196"/>
+<area shape="rect" href="struct_help_box.html" title="帮助框（继承自GraphicWin和MiscAccess）" alt="" coords="410,229,481,256"/>
+<area shape="poly" title=" " alt="" coords="316,185,417,228,412,229,316,190"/>
+<area shape="rect" href="struct_string_box.html" title="字符串框控件（继承自GraphicWin）" alt="" coords="505,229,583,256"/>
+<area shape="poly" title=" " alt="" coords="332,182,507,230,502,232,331,188"/>
+<area shape="rect" href="struct_popup.html" title="弹出窗口（继承自BasePop和GameAccessConst）" alt="" coords="13,304,72,331"/>
+<area shape="poly" title=" " alt="" coords="45,270,45,304,40,303,40,274"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a60efc26796af349cf17fb5ff8fce752c" id="r_a60efc26796af349cf17fb5ff8fce752c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a60efc26796af349cf17fb5ff8fce752c">unk</a></td></tr>
+<tr class="memitem:a3ffe4490ee57f0a9eaa7ce3e21e25831" id="r_a3ffe4490ee57f0a9eaa7ce3e21e25831"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="#a3ffe4490ee57f0a9eaa7ce3e21e25831">tint_color</a></td></tr>
+<tr class="memitem:a406315e9338849b29e4db5d71f1ffbb3" id="r_a406315e9338849b29e4db5d71f1ffbb3"><td class="memItemLeft">unsigned __int8 *&#160;</td><td class="memItemRight"><a class="el" href="#a406315e9338849b29e4db5d71f1ffbb3">tint_color_wide</a></td></tr>
+<tr class="memitem:acdaa5fea9131e90b090f2935687d4650" id="r_acdaa5fea9131e90b090f2935687d4650"><td class="memItemLeft">unsigned __int8 *&#160;</td><td class="memItemRight"><a class="el" href="#acdaa5fea9131e90b090f2935687d4650">tint_color_wide_base</a></td></tr>
+<tr class="memitem:ac33ca91ebb919ebe5fe6459eece2c70b" id="r_ac33ca91ebb919ebe5fe6459eece2c70b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac33ca91ebb919ebe5fe6459eece2c70b">num_16_chunks</a></td></tr>
+<tr class="memitem:a90f5e6771b5c950d80000565b220f6ce" id="r_a90f5e6771b5c950d80000565b220f6ce"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a90f5e6771b5c950d80000565b220f6ce">num_8_chunks</a></td></tr>
+<tr class="memitem:a2be913b83925f401fdde61fe4e534aa6" id="r_a2be913b83925f401fdde61fe4e534aa6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2be913b83925f401fdde61fe4e534aa6">num_extra_16_pix</a></td></tr>
+<tr class="memitem:ac6de9dbc6ba1ce7622220f1784e47238" id="r_ac6de9dbc6ba1ce7622220f1784e47238"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac6de9dbc6ba1ce7622220f1784e47238">num_extra_8_pix</a></td></tr>
+<tr class="memitem:a9ff115acbf19814ad8fa91272f9da516" id="r_a9ff115acbf19814ad8fa91272f9da516"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9ff115acbf19814ad8fa91272f9da516">use_tint</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>图像输入输出结构 </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="ac33ca91ebb919ebe5fe6459eece2c70b" name="ac33ca91ebb919ebe5fe6459eece2c70b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33ca91ebb919ebe5fe6459eece2c70b">&#9670;&#160;</a></span>num_16_chunks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageIO::num_16_chunks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>16位色块数量 </p>
+
+</div>
+</div>
+<a id="a90f5e6771b5c950d80000565b220f6ce" name="a90f5e6771b5c950d80000565b220f6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f5e6771b5c950d80000565b220f6ce">&#9670;&#160;</a></span>num_8_chunks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageIO::num_8_chunks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>8位色块数量 </p>
+
+</div>
+</div>
+<a id="a2be913b83925f401fdde61fe4e534aa6" name="a2be913b83925f401fdde61fe4e534aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be913b83925f401fdde61fe4e534aa6">&#9670;&#160;</a></span>num_extra_16_pix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageIO::num_extra_16_pix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>额外16位像素数 </p>
+
+</div>
+</div>
+<a id="ac6de9dbc6ba1ce7622220f1784e47238" name="ac6de9dbc6ba1ce7622220f1784e47238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6de9dbc6ba1ce7622220f1784e47238">&#9670;&#160;</a></span>num_extra_8_pix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageIO::num_extra_8_pix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>额外8位像素数 </p>
+
+</div>
+</div>
+<a id="a3ffe4490ee57f0a9eaa7ce3e21e25831" name="a3ffe4490ee57f0a9eaa7ce3e21e25831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ffe4490ee57f0a9eaa7ce3e21e25831">&#9670;&#160;</a></span>tint_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color ImageIO::tint_color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>色调颜色 </p>
+
+</div>
+</div>
+<a id="a406315e9338849b29e4db5d71f1ffbb3" name="a406315e9338849b29e4db5d71f1ffbb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406315e9338849b29e4db5d71f1ffbb3">&#9670;&#160;</a></span>tint_color_wide</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned __int8* ImageIO::tint_color_wide</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>宽色调颜色指针 </p>
+
+</div>
+</div>
+<a id="acdaa5fea9131e90b090f2935687d4650" name="acdaa5fea9131e90b090f2935687d4650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdaa5fea9131e90b090f2935687d4650">&#9670;&#160;</a></span>tint_color_wide_base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned __int8* ImageIO::tint_color_wide_base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>宽色调颜色基指针 </p>
+
+</div>
+</div>
+<a id="a60efc26796af349cf17fb5ff8fce752c" name="a60efc26796af349cf17fb5ff8fce752c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60efc26796af349cf17fb5ff8fce752c">&#9670;&#160;</a></span>unk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageIO::unk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>虚函数表指针 </p>
+
+</div>
+</div>
+<a id="a9ff115acbf19814ad8fa91272f9da516" name="a9ff115acbf19814ad8fa91272f9da516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff115acbf19814ad8fa91272f9da516">&#9670;&#160;</a></span>use_tint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageIO::use_tint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>是否使用色调 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="_enums_8h_source.html">Enums.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

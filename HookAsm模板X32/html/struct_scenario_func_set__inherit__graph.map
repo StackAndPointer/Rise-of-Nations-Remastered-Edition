@@ -1,0 +1,7 @@
+<map id="ScenarioFuncSet" name="ScenarioFuncSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="60,80,181,107"/>
+<area shape="rect" id="Node000002" href="$struct_script_func_set.html" title=" " alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,42,112,79,107,80,77,46"/>
+<area shape="rect" id="Node000003" href="$struct_scenario_data.html" title=" " alt="" coords="134,5,234,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,43,133,82,130,77,160,45"/>
+</map>

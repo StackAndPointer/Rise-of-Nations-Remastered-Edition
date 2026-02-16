@@ -1,0 +1,13 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$struct_g_s_object.html" title="图形系统对象基类" alt="" coords="5,107,84,133"/>
+<area shape="rect" id="Node000001" href="$struct_g_s_buffer.html" title="图形系统缓冲区对象" alt="" coords="136,5,211,32"/>
+<area shape="poly" id="edge97_Node000000_Node000001" title=" " alt="" coords="69,94,130,42,150,31,147,34,133,46,73,98"/>
+<area shape="rect" id="Node000002" href="$struct_g_s_cursor.html" title="图形系统光标对象" alt="" coords="134,56,213,83"/>
+<area shape="poly" id="edge98_Node000000_Node000002" title=" " alt="" coords="93,98,139,81,135,85,96,103"/>
+<area shape="rect" id="Node000003" href="$struct_g_s_font.html" title="图形系统字体对象" alt="" coords="140,107,207,133"/>
+<area shape="poly" id="edge99_Node000000_Node000003" title=" " alt="" coords="98,117,142,119,138,121,100,123"/>
+<area shape="rect" id="Node000004" href="$struct_g_s_sprite.html" title="图形系统精灵对象" alt="" coords="136,157,211,184"/>
+<area shape="poly" id="edge100_Node000000_Node000004" title=" " alt="" coords="95,137,140,156,135,158,94,142"/>
+<area shape="rect" id="Node000005" href="$struct_g_s_texture.html" title="图形系统纹理对象" alt="" coords="132,208,215,235"/>
+<area shape="poly" id="edge101_Node000000_Node000005" title=" " alt="" coords="72,142,133,194,151,208,146,207,130,198,70,146"/>
+</map>

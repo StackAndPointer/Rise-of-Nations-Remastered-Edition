@@ -205,6 +205,7 @@
     <ClInclude Include="HookAsm\capstone\xcore.h" />
     <ClInclude Include="HookAsm\HookAsm.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="MyScriptFunc.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
@@ -273,10 +274,14 @@
     <ClCompile Include="LeaderData.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameString.cpp" />
+    <ClCompile Include="MyScriptFunc.cpp" />
     <ClCompile Include="ScenarioFuncSet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="HookAsm\capstone\capstone.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="riseofnations.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,224 @@
+\doxysection{Game\+Log结构体 参考}
+\hypertarget{struct_game_log}{}\label{struct_game_log}\index{GameLog@{GameLog}}
+
+
+游戏日志结构体，用于记录游戏运行时的各种信息  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Game\+Log 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{struct_game_log__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Game\+Log 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_game_log__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h_ab8507246f53c4bbefc76b43ff5bd8812}{\+\_\+\+BYTE}} \doxymbox{\hyperlink{struct_game_log_ae0a9d1ff41d937448e4d7730b41fb937}{gap40}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_ae9049b014504c2e8db1d9ec6bf9a8864}{Game\+Log\+Mode}} \doxymbox{\hyperlink{struct_game_log_afb60b084f54f920eacc2a6d6bddba7e8}{current\+\_\+mode}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_a02ab489f9b328d5480f8ef378a0aa9bc}{Game\+Log\+Type}} \doxymbox{\hyperlink{struct_game_log_a6864aff2fad0f34dab16425a19111f50}{current\+\_\+type}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_af6af68526eb4d468dce53c3fd43ab62b}{current\+\_\+detail}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_a6fc50f4af5f600611e4495bb23c95149}{detail\+\_\+override}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_a0b70ed8eaa483bde8237c718f0623273}{do\+\_\+dump\+\_\+all}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_ad28f59c5f71c28ee441650d96bcf0375}{last\+\_\+frame\+\_\+logged}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_a5e2c3193b38c47f2e8562aaf9d7b6253}{logging\+\_\+game\+\_\+frame}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_ad0f2711d79961fedea55f25121c12de1}{last\+\_\+frame\+\_\+logged\+\_\+aux}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_adea82b54f55c54be4b480fbbf3c8be80}{logging\+\_\+game\+\_\+frame\+\_\+aux}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_a933f2c1be91f2abd888e19e15e3b0b40}{checksum\+\_\+count}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_a02dd7422593c8e5259414d1976f9f325}{checksum\+\_\+dump}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_a7f37118a0e9e6319b41b83f491ddda57}{checksum\+\_\+break}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_abbe8d0d430ad7b1636e09751cdd7c1d5}{log\+\_\+start\+\_\+frame}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_af2e83262f58ecf83044ebb4d2e017a77}{log\+\_\+end\+\_\+frame}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_game_log_ab3a206f9cd62130fb34034373d5720c1}{file\+\_\+name}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_game_log_afd5213fb4aaac2485228748354849d04}{dump\+\_\+name}}
+\item 
+int \doxymbox{\hyperlink{struct_game_log_a3eef25deab17aab88735d483af085dcd}{random\+\_\+log\+\_\+pos}}
+\item 
+\doxymbox{\hyperlink{struct_object_array_random_log_entry}{Object\+Array\+Random\+Log\+Entry}} \doxymbox{\hyperlink{struct_game_log_ac550fe6c80f8a33211985b7366c5ca92}{random\+\_\+log\+\_\+entries}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_game_log_aae11fde34e8260f4f7f344ace1068b5d}{details}} \+[5]\+\+[36]\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性 继承自 \doxymbox{\hyperlink{struct_log}{Log}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_log_a156ece2e15f8c60f196af1c60b540d68}{unk}}
+\item 
+int \doxymbox{\hyperlink{struct_log_aaa2571341b7182f4f6afd86731de892a}{flags}}
+\item 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_log_aa6d9fdbf76ea4ea9e6dd06950ffeb528}{handle\+\_\+aux}}
+\item 
+\doxymbox{\hyperlink{struct_a__iobuf}{A\+\_\+iobuf}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_log_ad856f640df6a75bd186f239d3461e1b8}{handle}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_log_a5a6f6b73c546bddc14866010238cddd5}{file\+\_\+aux}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_log_aee75cf442caa8e5a3b0da88ac94ffcb4}{file}}
+\item 
+int \doxymbox{\hyperlink{struct_log_a37faca87a69124de7a25068955d65bf3}{indent}}
+\item 
+int \doxymbox{\hyperlink{struct_log_a8aec28f68e82d8e4bc7021d979c17beb}{indent\+\_\+aux}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+游戏日志结构体，用于记录游戏运行时的各种信息 
+
+\label{doc-variable-members}
+\Hypertarget{struct_game_log_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_game_log_a7f37118a0e9e6319b41b83f491ddda57}\index{GameLog@{GameLog}!checksum\_break@{checksum\_break}}
+\index{checksum\_break@{checksum\_break}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{checksum\_break}{checksum\_break}}
+{\footnotesize\ttfamily \label{struct_game_log_a7f37118a0e9e6319b41b83f491ddda57} 
+int Game\+Log::\+checksum\+\_\+break}
+
+校验和中断 \Hypertarget{struct_game_log_a933f2c1be91f2abd888e19e15e3b0b40}\index{GameLog@{GameLog}!checksum\_count@{checksum\_count}}
+\index{checksum\_count@{checksum\_count}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{checksum\_count}{checksum\_count}}
+{\footnotesize\ttfamily \label{struct_game_log_a933f2c1be91f2abd888e19e15e3b0b40} 
+int Game\+Log::\+checksum\+\_\+count}
+
+校验和计数 \Hypertarget{struct_game_log_a02dd7422593c8e5259414d1976f9f325}\index{GameLog@{GameLog}!checksum\_dump@{checksum\_dump}}
+\index{checksum\_dump@{checksum\_dump}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{checksum\_dump}{checksum\_dump}}
+{\footnotesize\ttfamily \label{struct_game_log_a02dd7422593c8e5259414d1976f9f325} 
+int Game\+Log::\+checksum\+\_\+dump}
+
+校验和转储 \Hypertarget{struct_game_log_af6af68526eb4d468dce53c3fd43ab62b}\index{GameLog@{GameLog}!current\_detail@{current\_detail}}
+\index{current\_detail@{current\_detail}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{current\_detail}{current\_detail}}
+{\footnotesize\ttfamily \label{struct_game_log_af6af68526eb4d468dce53c3fd43ab62b} 
+int Game\+Log::\+current\+\_\+detail}
+
+当前详细程度 \Hypertarget{struct_game_log_afb60b084f54f920eacc2a6d6bddba7e8}\index{GameLog@{GameLog}!current\_mode@{current\_mode}}
+\index{current\_mode@{current\_mode}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{current\_mode}{current\_mode}}
+{\footnotesize\ttfamily \label{struct_game_log_afb60b084f54f920eacc2a6d6bddba7e8} 
+\doxymbox{\hyperlink{_enums_8h_ae9049b014504c2e8db1d9ec6bf9a8864}{Game\+Log\+Mode}} Game\+Log::\+current\+\_\+mode}
+
+当前日志模式 \Hypertarget{struct_game_log_a6864aff2fad0f34dab16425a19111f50}\index{GameLog@{GameLog}!current\_type@{current\_type}}
+\index{current\_type@{current\_type}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{current\_type}{current\_type}}
+{\footnotesize\ttfamily \label{struct_game_log_a6864aff2fad0f34dab16425a19111f50} 
+\doxymbox{\hyperlink{_enums_8h_a02ab489f9b328d5480f8ef378a0aa9bc}{Game\+Log\+Type}} Game\+Log::\+current\+\_\+type}
+
+当前日志类型 \Hypertarget{struct_game_log_a6fc50f4af5f600611e4495bb23c95149}\index{GameLog@{GameLog}!detail\_override@{detail\_override}}
+\index{detail\_override@{detail\_override}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{detail\_override}{detail\_override}}
+{\footnotesize\ttfamily \label{struct_game_log_a6fc50f4af5f600611e4495bb23c95149} 
+int Game\+Log::\+detail\+\_\+override}
+
+详细程度覆盖 \Hypertarget{struct_game_log_aae11fde34e8260f4f7f344ace1068b5d}\index{GameLog@{GameLog}!details@{details}}
+\index{details@{details}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{details}{details}}
+{\footnotesize\ttfamily \label{struct_game_log_aae11fde34e8260f4f7f344ace1068b5d} 
+unsigned \+\_\+\+\_\+int8 Game\+Log::\+details\+[5]\+\+[36]\+}
+
+详细设置数组 \Hypertarget{struct_game_log_a0b70ed8eaa483bde8237c718f0623273}\index{GameLog@{GameLog}!do\_dump\_all@{do\_dump\_all}}
+\index{do\_dump\_all@{do\_dump\_all}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{do\_dump\_all}{do\_dump\_all}}
+{\footnotesize\ttfamily \label{struct_game_log_a0b70ed8eaa483bde8237c718f0623273} 
+int Game\+Log::\+do\+\_\+dump\+\_\+all}
+
+是否转储所有日志 \Hypertarget{struct_game_log_afd5213fb4aaac2485228748354849d04}\index{GameLog@{GameLog}!dump\_name@{dump\_name}}
+\index{dump\_name@{dump\_name}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{dump\_name}{dump\_name}}
+{\footnotesize\ttfamily \label{struct_game_log_afd5213fb4aaac2485228748354849d04} 
+\doxymbox{\hyperlink{struct_string}{String}} Game\+Log::\+dump\+\_\+name}
+
+转储文件名 \Hypertarget{struct_game_log_ab3a206f9cd62130fb34034373d5720c1}\index{GameLog@{GameLog}!file\_name@{file\_name}}
+\index{file\_name@{file\_name}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{file\_name}{file\_name}}
+{\footnotesize\ttfamily \label{struct_game_log_ab3a206f9cd62130fb34034373d5720c1} 
+\doxymbox{\hyperlink{struct_string}{String}} Game\+Log::\+file\+\_\+name}
+
+日志文件名 \Hypertarget{struct_game_log_ae0a9d1ff41d937448e4d7730b41fb937}\index{GameLog@{GameLog}!gap40@{gap40}}
+\index{gap40@{gap40}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{gap40}{gap40}}
+{\footnotesize\ttfamily \label{struct_game_log_ae0a9d1ff41d937448e4d7730b41fb937} 
+\doxymbox{\hyperlink{_enums_8h_ab8507246f53c4bbefc76b43ff5bd8812}{\+\_\+\+BYTE}} Game\+Log::\+gap40}
+
+对齐填充 \Hypertarget{struct_game_log_ad28f59c5f71c28ee441650d96bcf0375}\index{GameLog@{GameLog}!last\_frame\_logged@{last\_frame\_logged}}
+\index{last\_frame\_logged@{last\_frame\_logged}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{last\_frame\_logged}{last\_frame\_logged}}
+{\footnotesize\ttfamily \label{struct_game_log_ad28f59c5f71c28ee441650d96bcf0375} 
+int Game\+Log::\+last\+\_\+frame\+\_\+logged}
+
+最后记录的帧 \Hypertarget{struct_game_log_ad0f2711d79961fedea55f25121c12de1}\index{GameLog@{GameLog}!last\_frame\_logged\_aux@{last\_frame\_logged\_aux}}
+\index{last\_frame\_logged\_aux@{last\_frame\_logged\_aux}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{last\_frame\_logged\_aux}{last\_frame\_logged\_aux}}
+{\footnotesize\ttfamily \label{struct_game_log_ad0f2711d79961fedea55f25121c12de1} 
+int Game\+Log::\+last\+\_\+frame\+\_\+logged\+\_\+aux}
+
+辅助最后记录帧 \Hypertarget{struct_game_log_af2e83262f58ecf83044ebb4d2e017a77}\index{GameLog@{GameLog}!log\_end\_frame@{log\_end\_frame}}
+\index{log\_end\_frame@{log\_end\_frame}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{log\_end\_frame}{log\_end\_frame}}
+{\footnotesize\ttfamily \label{struct_game_log_af2e83262f58ecf83044ebb4d2e017a77} 
+int Game\+Log::\+log\+\_\+end\+\_\+frame}
+
+日志结束帧 \Hypertarget{struct_game_log_abbe8d0d430ad7b1636e09751cdd7c1d5}\index{GameLog@{GameLog}!log\_start\_frame@{log\_start\_frame}}
+\index{log\_start\_frame@{log\_start\_frame}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{log\_start\_frame}{log\_start\_frame}}
+{\footnotesize\ttfamily \label{struct_game_log_abbe8d0d430ad7b1636e09751cdd7c1d5} 
+int Game\+Log::\+log\+\_\+start\+\_\+frame}
+
+日志开始帧 \Hypertarget{struct_game_log_a5e2c3193b38c47f2e8562aaf9d7b6253}\index{GameLog@{GameLog}!logging\_game\_frame@{logging\_game\_frame}}
+\index{logging\_game\_frame@{logging\_game\_frame}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{logging\_game\_frame}{logging\_game\_frame}}
+{\footnotesize\ttfamily \label{struct_game_log_a5e2c3193b38c47f2e8562aaf9d7b6253} 
+int Game\+Log::\+logging\+\_\+game\+\_\+frame}
+
+正在记录的游戏帧 \Hypertarget{struct_game_log_adea82b54f55c54be4b480fbbf3c8be80}\index{GameLog@{GameLog}!logging\_game\_frame\_aux@{logging\_game\_frame\_aux}}
+\index{logging\_game\_frame\_aux@{logging\_game\_frame\_aux}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{logging\_game\_frame\_aux}{logging\_game\_frame\_aux}}
+{\footnotesize\ttfamily \label{struct_game_log_adea82b54f55c54be4b480fbbf3c8be80} 
+int Game\+Log::\+logging\+\_\+game\+\_\+frame\+\_\+aux}
+
+辅助记录游戏帧 \Hypertarget{struct_game_log_ac550fe6c80f8a33211985b7366c5ca92}\index{GameLog@{GameLog}!random\_log\_entries@{random\_log\_entries}}
+\index{random\_log\_entries@{random\_log\_entries}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{random\_log\_entries}{random\_log\_entries}}
+{\footnotesize\ttfamily \label{struct_game_log_ac550fe6c80f8a33211985b7366c5ca92} 
+\doxymbox{\hyperlink{struct_object_array_random_log_entry}{Object\+Array\+Random\+Log\+Entry}} Game\+Log::\+random\+\_\+log\+\_\+entries}
+
+随机日志条目 \Hypertarget{struct_game_log_a3eef25deab17aab88735d483af085dcd}\index{GameLog@{GameLog}!random\_log\_pos@{random\_log\_pos}}
+\index{random\_log\_pos@{random\_log\_pos}!GameLog@{GameLog}}
+\doxysubsubsection{\texorpdfstring{random\_log\_pos}{random\_log\_pos}}
+{\footnotesize\ttfamily \label{struct_game_log_a3eef25deab17aab88735d483af085dcd} 
+int Game\+Log::\+random\+\_\+log\+\_\+pos}
+
+随机日志位置 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

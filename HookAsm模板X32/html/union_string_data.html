@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rise-of-Nations-Remastered-Edition框架文档: StringData联合体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Rise-of-Nations-Remastered-Edition框架文档<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">注释</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="union_string_data-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">StringData联合体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>字符串数据联合体，可以指向动态字符串或常量字符串  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enums_8h_source.html">Enums.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a50c062a53796c867b04f2d105fc5ee50" id="r_a50c062a53796c867b04f2d105fc5ee50"><td class="memItemLeft">StringGuts *&#160;</td><td class="memItemRight"><a class="el" href="#a50c062a53796c867b04f2d105fc5ee50">data</a></td></tr>
+<tr class="memitem:a785e5dfe41854616732a3f473287ef11" id="r_a785e5dfe41854616732a3f473287ef11"><td class="memItemLeft">const wchar_t *&#160;</td><td class="memItemRight"><a class="el" href="#a785e5dfe41854616732a3f473287ef11">const_string</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>字符串数据联合体，可以指向动态字符串或常量字符串 </p>
+<p>重命名说明：原联合体名$E7A659CF24BC03FC8DBFE227C38B442E是编译器生成的随机名 重命名为StringData，明确表示这是字符串数据存储的联合体 </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a785e5dfe41854616732a3f473287ef11" name="a785e5dfe41854616732a3f473287ef11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785e5dfe41854616732a3f473287ef11">&#9670;&#160;</a></span>const_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t* StringData::const_string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>指向常量字符串的指针 </p>
+
+</div>
+</div>
+<a id="a50c062a53796c867b04f2d105fc5ee50" name="a50c062a53796c867b04f2d105fc5ee50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c062a53796c867b04f2d105fc5ee50">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StringGuts* StringData::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>指向动态字符串数据的指针 </p>
+
+</div>
+</div>
+<hr/>该联合体的文档由以下文件生成:<ul>
+<li><a class="el" href="_enums_8h_source.html">Enums.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

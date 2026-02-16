@@ -1,0 +1,11 @@
+<map id="SetupWinCustom" name="SetupWinCustom">
+<area shape="rect" id="Node000001" title="自定义设置窗口（继承自SetupWinChild）" alt="" coords="55,229,180,256"/>
+<area shape="rect" id="Node000002" href="$struct_setup_win_child.html" title="设置窗口子窗口（继承自GravWindow和GameAccess）" alt="" coords="63,155,172,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,195,120,230,115,228,115,199"/>
+<area shape="rect" id="Node000003" href="$struct_grav_window.html" title="界面窗口（继承自GraphicWinXML）" alt="" coords="8,80,104,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="77,116,109,154,104,155,76,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,107,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="56,45,59,80,53,79,56,50"/>
+<area shape="rect" id="Node000005" href="$struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="129,80,229,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="160,117,130,156,126,152,156,120"/>
+</map>

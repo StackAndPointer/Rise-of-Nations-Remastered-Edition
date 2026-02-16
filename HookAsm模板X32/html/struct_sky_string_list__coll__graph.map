@@ -1,0 +1,5 @@
+<map id="SkyStringList" name="SkyStringList">
+<area shape="rect" id="Node000001" title="字符串列表结构体 &#45; 管理字符串集合" alt="" coords="5,125,105,152"/>
+<area shape="rect" id="Node000002" href="$struct_sky_string.html" title="玩家数据结构体 &#45; 存储单个玩家的所有游戏数据" alt="" coords="16,5,94,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,47,58,125,52,125,53,49"/>
+</map>

@@ -1,0 +1,237 @@
+\doxysection{Type\+Data结构体 参考}
+\hypertarget{struct_type_data}{}\label{struct_type_data}\index{TypeData@{TypeData}}
+
+
+类型数据基类 -\/ 存储游戏对象类型的通用属性  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Type\+Data 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{struct_type_data__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Type\+Data 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{struct_type_data__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_type_data_ac06602449c5d06384def4483cea68e8a}{unk}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_a2bac8e2c34c497bb8d6ef7b38997a21d}{type}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_type_data_ad783a45474b6de61159f9d75b49ebec4}{job\+\_\+time}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_type_data_a5980286811705fdd26152e5f7865eec6}{res\+\_\+time}}
+\item 
+int \doxymbox{\hyperlink{struct_type_data_a7b9dc4c62418eefbb794c27a2ded00fd}{tribe\+\_\+mask}}
+\item 
+int \doxymbox{\hyperlink{struct_type_data_abf8fd599234055b48f1dc716c43e61b0}{cat}}
+\item 
+int \doxymbox{\hyperlink{struct_type_data_a56b2ecfb09fced2b53a6503177003b50}{costs}} \+[6]\+
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_a3dd5cccf351b914732405f48a18eb9f0}{preq}} \+[3]\+
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_ad88f973f40ded645db18a7b299a1fee1}{from}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_ae42c61fd190dd748c5564259fda3c6a0}{where}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_aa6b78e757c506057a55a7c32135d612c}{upgrade}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_ad9918bc7a123b65b9515f8bb0a67abdc}{jump}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_af9b01a7e28e6968ed184c2e6c881c6d9}{obs}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} \doxymbox{\hyperlink{struct_type_data_a889aca14cda08b6db8004ec3a7bcfa91}{show}} \+[2]\+
+\item 
+int \doxymbox{\hyperlink{struct_type_data_a3baf882452a7d3b3c8bdd94e7d34dd79}{modified}}
+\item 
+char \doxymbox{\hyperlink{struct_type_data_ad738bbb2cd381a870dabdeb363f3cb9a}{grid\+\_\+x}}
+\item 
+char \doxymbox{\hyperlink{struct_type_data_a867cf81652a1fa4057c1ef94b70ce134}{grid\+\_\+y}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_type_data_aa668c8b6200209670f730ed66a5d4a12}{name}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_type_data_ac6f4db4c0a2bd237a772e16a20ad5cb2}{display\+\_\+name}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_type_data_aa02acc9bfc00f95614d2f156e2425c82}{graph\+\_\+name}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_type_data_a393f02766e4e0a62ac2b0770a00ae389}{help\+\_\+name}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_type_data_a57154c3d847e380cfb62f1372bb4b54d}{type\+\_\+name}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_type_data_a139c5b8389b3fa6041855e41f0afd6df}{abbrev}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_type_data_a1a544d6ffe50ef7a532a51a9f5232323}{desc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+类型数据基类 -\/ 存储游戏对象类型的通用属性 
+
+\label{doc-variable-members}
+\Hypertarget{struct_type_data_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_type_data_a139c5b8389b3fa6041855e41f0afd6df}\index{TypeData@{TypeData}!abbrev@{abbrev}}
+\index{abbrev@{abbrev}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{abbrev}{abbrev}}
+{\footnotesize\ttfamily \label{struct_type_data_a139c5b8389b3fa6041855e41f0afd6df} 
+\doxymbox{\hyperlink{struct_string}{String}} Type\+Data::\+abbrev}
+
+缩写 \Hypertarget{struct_type_data_abf8fd599234055b48f1dc716c43e61b0}\index{TypeData@{TypeData}!cat@{cat}}
+\index{cat@{cat}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{cat}{cat}}
+{\footnotesize\ttfamily \label{struct_type_data_abf8fd599234055b48f1dc716c43e61b0} 
+int Type\+Data::\+cat}
+
+类别标识 \Hypertarget{struct_type_data_a56b2ecfb09fced2b53a6503177003b50}\index{TypeData@{TypeData}!costs@{costs}}
+\index{costs@{costs}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{costs}{costs}}
+{\footnotesize\ttfamily \label{struct_type_data_a56b2ecfb09fced2b53a6503177003b50} 
+int Type\+Data::\+costs\+[6]\+}
+
+6种资源成本数组 \Hypertarget{struct_type_data_a1a544d6ffe50ef7a532a51a9f5232323}\index{TypeData@{TypeData}!desc@{desc}}
+\index{desc@{desc}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily \label{struct_type_data_a1a544d6ffe50ef7a532a51a9f5232323} 
+\doxymbox{\hyperlink{struct_string}{String}} Type\+Data::\+desc}
+
+描述 \Hypertarget{struct_type_data_ac6f4db4c0a2bd237a772e16a20ad5cb2}\index{TypeData@{TypeData}!display\_name@{display\_name}}
+\index{display\_name@{display\_name}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{display\_name}{display\_name}}
+{\footnotesize\ttfamily \label{struct_type_data_ac6f4db4c0a2bd237a772e16a20ad5cb2} 
+\doxymbox{\hyperlink{struct_string}{String}} Type\+Data::\+display\+\_\+name}
+
+显示名称 \Hypertarget{struct_type_data_ad88f973f40ded645db18a7b299a1fee1}\index{TypeData@{TypeData}!from@{from}}
+\index{from@{from}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{from}{from}}
+{\footnotesize\ttfamily \label{struct_type_data_ad88f973f40ded645db18a7b299a1fee1} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+from}
+
+来源类型（升级来源） \Hypertarget{struct_type_data_aa02acc9bfc00f95614d2f156e2425c82}\index{TypeData@{TypeData}!graph\_name@{graph\_name}}
+\index{graph\_name@{graph\_name}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{graph\_name}{graph\_name}}
+{\footnotesize\ttfamily \label{struct_type_data_aa02acc9bfc00f95614d2f156e2425c82} 
+\doxymbox{\hyperlink{struct_string}{String}} Type\+Data::\+graph\+\_\+name}
+
+图形资源名称 \Hypertarget{struct_type_data_ad738bbb2cd381a870dabdeb363f3cb9a}\index{TypeData@{TypeData}!grid\_x@{grid\_x}}
+\index{grid\_x@{grid\_x}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{grid\_x}{grid\_x}}
+{\footnotesize\ttfamily \label{struct_type_data_ad738bbb2cd381a870dabdeb363f3cb9a} 
+char Type\+Data::\+grid\+\_\+x}
+
+网格\+X坐标 \Hypertarget{struct_type_data_a867cf81652a1fa4057c1ef94b70ce134}\index{TypeData@{TypeData}!grid\_y@{grid\_y}}
+\index{grid\_y@{grid\_y}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{grid\_y}{grid\_y}}
+{\footnotesize\ttfamily \label{struct_type_data_a867cf81652a1fa4057c1ef94b70ce134} 
+char Type\+Data::\+grid\+\_\+y}
+
+网格\+Y坐标 \Hypertarget{struct_type_data_a393f02766e4e0a62ac2b0770a00ae389}\index{TypeData@{TypeData}!help\_name@{help\_name}}
+\index{help\_name@{help\_name}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{help\_name}{help\_name}}
+{\footnotesize\ttfamily \label{struct_type_data_a393f02766e4e0a62ac2b0770a00ae389} 
+\doxymbox{\hyperlink{struct_string}{String}} Type\+Data::\+help\+\_\+name}
+
+帮助名称 \Hypertarget{struct_type_data_ad783a45474b6de61159f9d75b49ebec4}\index{TypeData@{TypeData}!job\_time@{job\_time}}
+\index{job\_time@{job\_time}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{job\_time}{job\_time}}
+{\footnotesize\ttfamily \label{struct_type_data_ad783a45474b6de61159f9d75b49ebec4} 
+unsigned int Type\+Data::\+job\+\_\+time}
+
+工作/\+建造时间 \Hypertarget{struct_type_data_ad9918bc7a123b65b9515f8bb0a67abdc}\index{TypeData@{TypeData}!jump@{jump}}
+\index{jump@{jump}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{jump}{jump}}
+{\footnotesize\ttfamily \label{struct_type_data_ad9918bc7a123b65b9515f8bb0a67abdc} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+jump}
+
+跳跃目标类型 \Hypertarget{struct_type_data_a3baf882452a7d3b3c8bdd94e7d34dd79}\index{TypeData@{TypeData}!modified@{modified}}
+\index{modified@{modified}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{modified}{modified}}
+{\footnotesize\ttfamily \label{struct_type_data_a3baf882452a7d3b3c8bdd94e7d34dd79} 
+int Type\+Data::\+modified}
+
+修改标志 \Hypertarget{struct_type_data_aa668c8b6200209670f730ed66a5d4a12}\index{TypeData@{TypeData}!name@{name}}
+\index{name@{name}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{struct_type_data_aa668c8b6200209670f730ed66a5d4a12} 
+\doxymbox{\hyperlink{struct_string}{String}} Type\+Data::\+name}
+
+内部名称 \Hypertarget{struct_type_data_af9b01a7e28e6968ed184c2e6c881c6d9}\index{TypeData@{TypeData}!obs@{obs}}
+\index{obs@{obs}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{obs}{obs}}
+{\footnotesize\ttfamily \label{struct_type_data_af9b01a7e28e6968ed184c2e6c881c6d9} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+obs}
+
+观察者类型 \Hypertarget{struct_type_data_a3dd5cccf351b914732405f48a18eb9f0}\index{TypeData@{TypeData}!preq@{preq}}
+\index{preq@{preq}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{preq}{preq}}
+{\footnotesize\ttfamily \label{struct_type_data_a3dd5cccf351b914732405f48a18eb9f0} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+preq\+[3]\+}
+
+前置条件类型索引数组 \Hypertarget{struct_type_data_a5980286811705fdd26152e5f7865eec6}\index{TypeData@{TypeData}!res\_time@{res\_time}}
+\index{res\_time@{res\_time}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{res\_time}{res\_time}}
+{\footnotesize\ttfamily \label{struct_type_data_a5980286811705fdd26152e5f7865eec6} 
+unsigned int Type\+Data::\+res\+\_\+time}
+
+研究时间 \Hypertarget{struct_type_data_a889aca14cda08b6db8004ec3a7bcfa91}\index{TypeData@{TypeData}!show@{show}}
+\index{show@{show}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{show}{show}}
+{\footnotesize\ttfamily \label{struct_type_data_a889aca14cda08b6db8004ec3a7bcfa91} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+show\+[2]\+}
+
+显示相关类型 \Hypertarget{struct_type_data_a7b9dc4c62418eefbb794c27a2ded00fd}\index{TypeData@{TypeData}!tribe\_mask@{tribe\_mask}}
+\index{tribe\_mask@{tribe\_mask}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{tribe\_mask}{tribe\_mask}}
+{\footnotesize\ttfamily \label{struct_type_data_a7b9dc4c62418eefbb794c27a2ded00fd} 
+int Type\+Data::\+tribe\+\_\+mask}
+
+部落掩码（哪些文明可用） \Hypertarget{struct_type_data_a2bac8e2c34c497bb8d6ef7b38997a21d}\index{TypeData@{TypeData}!type@{type}}
+\index{type@{type}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{struct_type_data_a2bac8e2c34c497bb8d6ef7b38997a21d} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+type}
+
+类型索引 \Hypertarget{struct_type_data_a57154c3d847e380cfb62f1372bb4b54d}\index{TypeData@{TypeData}!type\_name@{type\_name}}
+\index{type\_name@{type\_name}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{type\_name}{type\_name}}
+{\footnotesize\ttfamily \label{struct_type_data_a57154c3d847e380cfb62f1372bb4b54d} 
+\doxymbox{\hyperlink{struct_string}{String}} Type\+Data::\+type\+\_\+name}
+
+类型名称 \Hypertarget{struct_type_data_ac06602449c5d06384def4483cea68e8a}\index{TypeData@{TypeData}!unk@{unk}}
+\index{unk@{unk}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{unk}{unk}}
+{\footnotesize\ttfamily \label{struct_type_data_ac06602449c5d06384def4483cea68e8a} 
+int Type\+Data::\+unk}
+
+虚函数表指针 Type\+Data\+\_\+vtbl\texorpdfstring{$\ast$}{*} \+\_\+\+\_\+vftable \Hypertarget{struct_type_data_aa6b78e757c506057a55a7c32135d612c}\index{TypeData@{TypeData}!upgrade@{upgrade}}
+\index{upgrade@{upgrade}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{upgrade}{upgrade}}
+{\footnotesize\ttfamily \label{struct_type_data_aa6b78e757c506057a55a7c32135d612c} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+upgrade}
+
+升级目标类型 \Hypertarget{struct_type_data_ae42c61fd190dd748c5564259fda3c6a0}\index{TypeData@{TypeData}!where@{where}}
+\index{where@{where}!TypeData@{TypeData}}
+\doxysubsubsection{\texorpdfstring{where}{where}}
+{\footnotesize\ttfamily \label{struct_type_data_ae42c61fd190dd748c5564259fda3c6a0} 
+\doxymbox{\hyperlink{_enums_8h_aa5d9dbd3a7be5e70db5bc3ff50ff3d47}{Type\+Index}} Type\+Data::\+where}
+
+建造位置类型 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

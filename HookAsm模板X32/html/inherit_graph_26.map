@@ -1,0 +1,11 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,135,57"/>
+<area shape="rect" id="Node000001" href="$struct_array_base_simple_copy_window.html" title="窗口数组基类" alt="" coords="183,5,383,32"/>
+<area shape="poly" id="edge46_Node000000_Node000001" title=" " alt="" coords="149,32,185,30,179,31,150,37"/>
+<area shape="rect" id="Node000004" href="$struct_named_array_window.html" title="带名称的窗口数组" alt="" coords="212,56,354,83"/>
+<area shape="poly" id="edge49_Node000000_Node000004" title=" " alt="" coords="150,51,214,61,209,61,150,56"/>
+<area shape="rect" id="Node000002" href="$struct_array_window.html" title="窗口数组" alt="" coords="431,5,530,32"/>
+<area shape="poly" id="edge47_Node000001_Node000002" title=" " alt="" coords="399,16,433,18,428,19,399,21"/>
+<area shape="rect" id="Node000003" href="$struct_ptr_array_window.html" title="窗口指针数组" alt="" coords="578,5,695,32"/>
+<area shape="poly" id="edge48_Node000002_Node000003" title=" " alt="" coords="546,16,581,18,576,19,546,21"/>
+</map>

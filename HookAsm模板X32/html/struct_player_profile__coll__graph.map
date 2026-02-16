@@ -1,0 +1,35 @@
+<map id="PlayerProfile" name="PlayerProfile">
+<area shape="rect" id="Node000001" title="玩家档案结构体，包含游戏设置和个人偏好" alt="" coords="963,315,1059,341"/>
+<area shape="rect" id="Node000002" href="$struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="627,5,727,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="742,6,791,4,843,8,895,22,919,34,941,50,956,70,969,100,989,177,1003,257,1011,316,1006,313,998,257,984,178,964,102,951,73,937,54,917,39,893,27,843,13,791,9,744,11"/>
+<area shape="rect" id="Node000003" href="$struct_misc_access.html" title="组合框控件（继承自GraphicWin）" alt="" coords="631,56,724,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="738,54,787,48,840,50,893,61,918,72,941,87,965,112,983,142,996,174,1005,207,1013,270,1013,316,1008,313,1007,270,1000,208,991,176,978,144,961,115,938,91,916,77,892,66,840,55,787,54,740,59"/>
+<area shape="rect" id="Node000004" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="314,328,370,355"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="374,361,457,411,507,434,561,452,626,466,677,472,729,467,794,452,854,429,910,398,958,366,991,343,996,341,961,370,913,403,856,434,795,457,730,472,677,477,625,472,559,457,505,439,454,415,374,366"/>
+<area shape="rect" id="Node000011" href="$struct_named_object_array_string.html" title="重命名说明：原字段名___u0是编译器生成的随机名" alt="" coords="594,157,760,184"/>
+<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="371,316,453,259,505,228,559,200,614,183,610,186,561,205,507,232,456,263,374,321"/>
+<area shape="rect" id="Node000005" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="26,328,109,355"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="124,339,315,339,312,343,125,344"/>
+<area shape="rect" id="Node000006" href="$struct_object_array_string.html" title="字符串数组基类" alt="" coords="615,107,739,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="754,124,801,132,850,146,898,167,941,197,966,225,986,258,1008,315,1003,313,981,260,962,228,938,201,895,172,848,151,800,138,755,129"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="284,133,400,160"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="414,138,617,123,613,126,416,143"/>
+<area shape="poly" id="edge11_Node000011_Node000007" title=" " alt="" coords="415,149,596,163,592,166,416,154"/>
+<area shape="rect" id="Node000008" href="$struct_player_prefs.html" title="玩家偏好设置主结构体" alt="" coords="633,515,722,541"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="737,528,852,527,903,520,938,507,956,490,971,469,992,422,1002,376,1007,344,1011,340,1008,377,997,424,976,472,960,494,941,512,905,525,852,532,738,534"/>
+<area shape="rect" id="Node000009" href="$union_player_prefs_union.html" title="玩家偏好设置联合体" alt="" coords="280,515,404,541"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="419,525,635,527,630,529,419,531"/>
+<area shape="rect" id="Node000010" href="$struct_player_prefs_fields.html" title="玩家偏好设置字段结构体" alt="" coords="5,515,130,541"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="145,525,282,526,278,530,146,531"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="762,187,796,200,808,210,820,221,907,273,983,314,978,314,904,278,817,225,805,214,793,205,762,192"/>
+<area shape="rect" id="Node000012" href="$struct_simple_arrayint.html" title="简单整数数组结构体" alt="" coords="624,565,730,592"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="746,591,793,595,843,593,894,582,917,572,938,558,960,535,977,507,990,477,999,445,1007,385,1009,344,1012,340,1012,386,1004,446,995,478,982,510,964,538,941,562,919,577,895,587,844,599,792,600,746,596"/>
+<area shape="rect" id="Node000013" href="$struct_array_base_simple_copyint.html" title="简单复制整数数组基类" alt="" coords="258,565,426,592"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="441,576,626,578,621,579,441,581"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="19,565,116,592"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="131,576,260,577,256,581,132,581"/>
+<area shape="rect" id="Node000015" href="$struct_object_array_game_spy_buddy_request.html" title="GameSpy好友请求数组基类" alt="" coords="560,616,794,643"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="736,645,784,654,838,657,891,649,915,639,938,625,953,605,966,573,987,490,1000,404,1007,344,1010,340,1005,404,992,491,971,575,958,607,941,629,918,644,892,654,838,662,783,659,735,650"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="229,616,455,643"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="470,627,562,629,557,629,471,632"/>
+</map>

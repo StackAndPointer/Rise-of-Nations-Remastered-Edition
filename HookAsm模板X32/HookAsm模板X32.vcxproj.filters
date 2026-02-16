@@ -34,7 +34,7 @@
     <Filter Include="HookAsm\capstone">
       <UniqueIdentifier>{2c2f1c85-4952-42a6-972c-ef1387270c40}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\NewFilter">
+    <Filter Include="源文件\HookGame">
       <UniqueIdentifier>{630a3b53-1f3b-40c9-a41d-6129c0ae620f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -405,6 +405,9 @@
     <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MyScriptFunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -597,21 +600,29 @@
       <Filter>HookAsm\asmtk\asmjit\x86</Filter>
     </ClCompile>
     <ClCompile Include="LeaderData.cpp">
-      <Filter>源文件\NewFilter</Filter>
+      <Filter>源文件\HookGame</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
-      <Filter>源文件\NewFilter</Filter>
+      <Filter>源文件\HookGame</Filter>
     </ClCompile>
     <ClCompile Include="GameString.cpp">
-      <Filter>源文件\NewFilter</Filter>
+      <Filter>源文件\HookGame</Filter>
     </ClCompile>
     <ClCompile Include="ScenarioFuncSet.cpp">
-      <Filter>源文件\NewFilter</Filter>
+      <Filter>源文件\HookGame</Filter>
+    </ClCompile>
+    <ClCompile Include="MyScriptFunc.cpp">
+      <Filter>源文件\HookGame</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="HookAsm\capstone\capstone.lib">
       <Filter>HookAsm\capstone</Filter>
     </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="riseofnations.txt">
+      <Filter>头文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

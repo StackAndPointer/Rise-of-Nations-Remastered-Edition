@@ -1,0 +1,127 @@
+digraph "HelpBox"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="HelpBox",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="帮助框（继承自GraphicWin和MiscAccess）"];
+  Node2 -> Node1 [id="edge49_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GraphicWin",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_graphic_win.html",tooltip="图形窗口（继承自Window和Buffer）"];
+  Node3 -> Node2 [id="edge50_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Window",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_window.html",tooltip="窗口基类"];
+  Node4 -> Node3 [id="edge51_Node000003_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">caption</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">id_string</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node4 [id="Node000004",label="String",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_string.html",tooltip="字符串结构体，封装字符串的完整信息"];
+  Node5 -> Node4 [id="edge52_Node000004_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">content</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node5 [id="Node000005",label="StringData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_string_data.html",tooltip="字符串数据联合体，可以指向动态字符串或常量字符串"];
+  Node6 -> Node3 [id="edge53_Node000003_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">rect_client</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">rect_clip</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">rect_nonclient</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">rect_screen_clip</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">spot_passover_rect</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node6 [id="Node000006",label="RectTemplateshort",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_rect_templateshort.html",tooltip="矩形模板类（short类型）"];
+  Node7 -> Node6 [id="edge54_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="RectTemplateBaseshort",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_rect_template_baseshort.html",tooltip="矩形模板基类（short类型）"];
+  Node8 -> Node3 [id="edge55_Node000003_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">win_spot</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node8 [id="Node000008",label="Spot",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_spot.html",tooltip="热点窗口结构"];
+  Node3 -> Node8 [id="edge56_Node000008_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">window</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node9 -> Node8 [id="edge57_Node000008_Node000009",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">hot_spot</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node9 [id="Node000009",label="ObjectArrayHotSpot",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_object_array_hot_spot.html",tooltip="热点数组基类"];
+  Node10 -> Node9 [id="edge58_Node000009_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="ArrayBaseHotSpot",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node3 [id="edge59_Node000003_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">default_focus</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">parent</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">prev_focus</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node11 -> Node3 [id="edge60_Node000003_Node000011",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">children</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">children_order</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node11 [id="Node000011",label="PtrArrayWindow",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_ptr_array_window.html",tooltip="窗口指针数组"];
+  Node12 -> Node11 [id="edge61_Node000011_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="ArrayWindow",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_array_window.html",tooltip="窗口数组"];
+  Node13 -> Node12 [id="edge62_Node000012_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="ArrayBaseSimpleCopyWindow",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_array_base_simple_copy_window.html",tooltip="窗口数组基类"];
+  Node14 -> Node13 [id="edge63_Node000013_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="ArrayBaseWindow",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node3 [id="edge64_Node000003_Node000015",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">caption_font</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node15 [id="Node000015",label="Font",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_font.html",tooltip="字体类"];
+  Node16 -> Node15 [id="edge65_Node000015_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="FontBase",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_font_base.html",tooltip="字体基类"];
+  Node17 -> Node16 [id="edge66_Node000016_Node000017",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">gs_font</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node17 [id="Node000017",label="GSFont",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_g_s_font.html",tooltip="图形系统字体对象"];
+  Node18 -> Node17 [id="edge67_Node000017_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="GSObject",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_g_s_object.html",tooltip="图形系统对象基类"];
+  Node4 -> Node17 [id="edge68_Node000017_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">typeface</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node16 -> Node17 [id="edge69_Node000017_Node000016",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">font</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node19 -> Node3 [id="edge70_Node000003_Node000019",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">border_tile</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node19 [id="Node000019",label="Buffer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_buffer.html",tooltip="缓冲区类（继承自ImageIO和BufferBase）"];
+  Node20 -> Node19 [id="edge71_Node000019_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="ImageIO",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_image_i_o.html",tooltip="图像输入输出结构"];
+  Node21 -> Node19 [id="edge72_Node000019_Node000021",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="BufferBase",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_buffer_base.html",tooltip="缓冲区基类"];
+  Node22 -> Node21 [id="edge73_Node000021_Node000022",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">gs_buffer</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node22 [id="Node000022",label="GSBuffer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_g_s_buffer.html",tooltip="图形系统缓冲区对象"];
+  Node18 -> Node22 [id="edge74_Node000022_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 -> Node19 [id="edge75_Node000019_Node000015",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">font</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node23 -> Node3 [id="edge76_Node000003_Node000023",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">cursor</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node23 [id="Node000023",label="Cursor",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_cursor.html",tooltip="光标类"];
+  Node24 -> Node23 [id="edge77_Node000023_Node000024",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node24 [id="Node000024",label="CursorBase",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_cursor_base.html",tooltip="光标基类"];
+  Node25 -> Node24 [id="edge78_Node000024_Node000025",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">gs_cursor</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node25 [id="Node000025",label="GSCursor",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_g_s_cursor.html",tooltip="图形系统光标对象"];
+  Node18 -> Node25 [id="edge79_Node000025_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node24 -> Node25 [id="edge80_Node000025_Node000024",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">cursor</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node26 -> Node23 [id="edge81_Node000023_Node000026",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">texture</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node26 [id="Node000026",label="Texture",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_texture.html",tooltip="纹理类（继承自ImageIO和TextureBase）"];
+  Node20 -> Node26 [id="edge82_Node000026_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node27 -> Node26 [id="edge83_Node000026_Node000027",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node27 [id="Node000027",label="TextureBase",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_texture_base.html",tooltip="纹理基类"];
+  Node28 -> Node27 [id="edge84_Node000027_Node000028",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">gs_texture</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node28 [id="Node000028",label="GSTexture",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_g_s_texture.html",tooltip="图形系统纹理对象"];
+  Node18 -> Node28 [id="edge85_Node000028_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node27 -> Node28 [id="edge86_Node000028_Node000027",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">base</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node4 -> Node26 [id="edge87_Node000026_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">filename</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node19 -> Node2 [id="edge88_Node000002_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node29 -> Node1 [id="edge89_Node000001_Node000029",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node29 [id="Node000029",label="MiscAccess",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_misc_access.html",tooltip="组合框控件（继承自GraphicWin）"];
+  Node4 -> Node1 [id="edge90_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">base_key</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">curr_help_key</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">curr_help_key_2</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">curr_string</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node30 -> Node1 [id="edge91_Node000001_Node000030",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">string_list</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">string_list_2</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node30 [id="Node000030",label="StringList",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_string_list.html",tooltip="字符串列表"];
+  Node31 -> Node30 [id="edge92_Node000030_Node000031",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node31 [id="Node000031",label="PtrArrayStringListEntry",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_ptr_array_string_list_entry.html",tooltip="字符串列表条目指针数组"];
+  Node32 -> Node31 [id="edge93_Node000031_Node000032",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node32 [id="Node000032",label="ArrayStringListEntry",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_array_string_list_entry.html",tooltip="字符串列表条目数组"];
+  Node33 -> Node32 [id="edge94_Node000032_Node000033",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node33 [id="Node000033",label="ArrayBaseSimpleCopyString\lListEntry",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_array_base_simple_copy_string_list_entry.html",tooltip="字符串列表条目数组基类"];
+  Node34 -> Node33 [id="edge95_Node000033_Node000034",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node34 [id="Node000034",label="ArrayBaseStringListEntry",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [id="edge96_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">curr_rect</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+}

@@ -1,0 +1,9 @@
+digraph "类继承关系图"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="Site",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$struct_site.html",tooltip="站点位置结构体，表示游戏中的一个地点或站点"];
+}

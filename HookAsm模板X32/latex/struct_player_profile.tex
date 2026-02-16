@@ -1,0 +1,677 @@
+\doxysection{Player\+Profile结构体 参考}
+\hypertarget{struct_player_profile}{}\label{struct_player_profile}\index{PlayerProfile@{PlayerProfile}}
+
+
+玩家档案结构体，包含游戏设置和个人偏好  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+类 Player\+Profile 继承关系图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{struct_player_profile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Player\+Profile 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_player_profile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h_ab8507246f53c4bbefc76b43ff5bd8812}{\+\_\+\+BYTE}} \doxymbox{\hyperlink{struct_player_profile_a89f9793d089d35a58a6c29fe7faa4a6b}{gap0}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a75d498b57e6e1df4a8dd00c2cf6cc8af}{directory}}
+\item 
+\doxymbox{\hyperlink{struct_object_array_string}{Object\+Array\+String}} \doxymbox{\hyperlink{struct_player_profile_a521607538bb5c7083f74112eb0fc9a56}{player\+\_\+names}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a7375ac7e124ca2bf46343c5e2e85a5d4}{current\+\_\+name\+\_\+index}}
+\item 
+\doxymbox{\hyperlink{struct_player_prefs}{Player\+Prefs}} \doxymbox{\hyperlink{struct_player_profile_a815abbae3441b80c1216f852f443c0c8}{prefs}}
+\item 
+Bit\+Mask\+\_\+22 \doxymbox{\hyperlink{struct_player_profile_ac381ba1ed2f127b364eade103363e074}{notify\+\_\+flags}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a5ff2ee42e4a72139b906da558c187cfb}{main\+\_\+open}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a2dad94117c8a6ece12baf5b49d4b2166}{market\+\_\+open}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a54352d3b9976fd0b1604821b07d41918}{resource\+\_\+open}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_ae16f19d5e07625017395f7d8076de4bd}{infra\+\_\+open}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_abc3a7f5156ab0df10dcd0cd11af18d4e}{mini\+\_\+lib\+\_\+open}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_ad68990b08deaa20fb63a4e8e9742fd0b}{graphics\+\_\+states}} \+[25]\+
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a7bd93471bc730d4eafc294820998e68b}{graphics\+\_\+levels}} \+[25]\+
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_aa32d4ea19dd3616c169cb7084c96967e}{show\+\_\+tips}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_ac4417de68f54d65afec6ba27b336bc3e}{tip\+\_\+index}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a5cd0e318be9ccfec12f478f6c17cec3e}{played\+\_\+game}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_af6822505a07ced39426c03023515baf7}{last\+\_\+slots}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a75c71b77c6e8a46a71268d5ce3c38493}{last\+\_\+tribes}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_af1f29e35a107aac335e6014aca60666d}{last\+\_\+whos}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a18e4be5b3ab0f5c9ff552cbee5afe1e4}{last\+\_\+diffs}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_aef314600cebbcd67c29c772d0f079b19}{last\+\_\+teams}} \+[8]\+
+\item 
+unsigned int \doxymbox{\hyperlink{struct_player_profile_a82d5dd8d0a55695be25382a62301c94f}{host\+\_\+port}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_player_profile_a2d0972d37ad0fa79cbdfe839376ae521}{local\+\_\+port}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_ae167d1eda38708d8b54c9ba8e1623bd6}{ip\+\_\+override}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a1595fc73655dba9a03f56a7d7e138d69}{last\+\_\+ip\+\_\+address}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_ac0a074e92477d52ed86e2a2a0fe9c991}{last\+\_\+campaign\+\_\+won}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_aef2928bd2cd57eb1bd60a01600065c38}{last\+\_\+scenario\+\_\+won}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a6345929d8271a8be8f046b7c8a713a6c}{last\+\_\+scenario}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_aa0377b5e2b6a179da01d43c3ff1ab134}{last\+\_\+campaign}}
+\item 
+\doxymbox{\hyperlink{struct_named_object_array_string}{Named\+Object\+Array\+String}} \doxymbox{\hyperlink{struct_player_profile_a618c0d9a02ff110f8f0d265a79c2b8ae}{ctw\+\_\+continue\+\_\+files}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a97ce8ea1db9e5fb2b4977c3eccd4c22d}{gs\+\_\+email}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a30d3afcb5dcb16beec16be7b5f68b04d}{gs\+\_\+nick}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a76219282af049ad91461b2f4104c2039}{gs\+\_\+password}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_aee28e720f041a58ba462169f076b5b67}{gs\+\_\+save\+\_\+password}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a68fdc460da6c393ecb6f411197158288}{gs\+\_\+firewall}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a5e0610d0ca2894a6ad016b2ba6b64897}{gs\+\_\+last\+\_\+game\+\_\+name}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a47c126b58b26483a5a961aaaaecd7f85}{gs\+\_\+qm\+\_\+map\+\_\+style}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_adbf1d648d58b95a9e7be272e24693665}{gs\+\_\+qm\+\_\+team\+\_\+style}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_aabad007d2094ca5abec4d96cfd81533a}{gs\+\_\+qm\+\_\+game\+\_\+rules}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a9227a4a8ecc0fce389c6775a1b218cf1}{gs\+\_\+qm\+\_\+num\+\_\+players}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a6cf2c37fc0bbfac11fcec0a22af11d7f}{gs\+\_\+qm\+\_\+min\+\_\+rating}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_ac1f2a46fff7fb6588aa88e8fc4e37da7}{gs\+\_\+qm\+\_\+max\+\_\+rating}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a487adfd357429baaff3ee5356a2ac0d7}{gs\+\_\+qm\+\_\+tribe}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a8383564b8e51cbd88ef802c2bcd32f14}{gs\+\_\+qm\+\_\+strict}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a349b84da95593f6a9c31457f24d89108}{gs\+\_\+qm\+\_\+prevent\+\_\+hosting}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a107f1ee29a7dfe350f05107ebee229a6}{gs\+\_\+team\+\_\+style}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_aefcb417812f966e2f61fadda8817384b}{gs\+\_\+map\+\_\+style}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_aef097f3a4f210213130d3f1a9a038b3b}{gs\+\_\+map\+\_\+size}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_afa4d589f83cbf223448717a83be59f71}{gs\+\_\+max\+\_\+players}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a8a35055ad0f7eea5fe9902df2d89a992}{gs\+\_\+game\+\_\+rules}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a54d13e4dde8f99fb8476534f4b217527}{gs\+\_\+cannon\+\_\+times}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a6859a7d29723ad5cd227a31093a6be29}{gs\+\_\+game\+\_\+speed}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_afd93a1f41434fa3ecaa50407a196f969}{gs\+\_\+tournament\+\_\+play}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a22fe27c67b56617c1ca12b9c8048830f}{gs\+\_\+require\+\_\+random\+\_\+teams}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a3b520616706466209f158433528f17db}{gs\+\_\+require\+\_\+random\+\_\+nations}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a3ece6c9a2637a5ad30d5a724097f3c20}{gs\+\_\+turbo\+\_\+resources}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a5b08669ff47388495355cc7a9d8411b3}{gs\+\_\+free\+\_\+pause}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a46253c19754430290405d657184fc05a}{gs\+\_\+filter\+\_\+team\+\_\+styles\+\_\+any}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_ae0f52f02db841c3ff0cb5a8fc91a7657}{gs\+\_\+filter\+\_\+team\+\_\+styles}} \+[14]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a71d9f57f54f4ed2d718246bacc8c2129}{gs\+\_\+filter\+\_\+map\+\_\+styles\+\_\+any}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a9b8c762957469dcfe6bb018879678693}{gs\+\_\+filter\+\_\+map\+\_\+styles}} \+[23]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_adb154213b82e157849f8825ddaaf591d}{gs\+\_\+filter\+\_\+map\+\_\+sizes\+\_\+any}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_ab326a1059a35dbdb5a1de401dfe1bba8}{gs\+\_\+filter\+\_\+map\+\_\+sizes}} \+[7]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a3a3bcb7d6989f69d536c5da6ed2663ba}{gs\+\_\+filter\+\_\+cannon\+\_\+times\+\_\+any}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a2c09f66ca9ecef0bc6103b6f61162ea6}{gs\+\_\+filter\+\_\+cannon\+\_\+times}} \+[5]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a09a6f25dd46e5779afa6a22e3a82333a}{gs\+\_\+filter\+\_\+game\+\_\+rules\+\_\+any}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a835359de4a68f62552e9d8fade37ab34}{gs\+\_\+filter\+\_\+game\+\_\+rules}} \+[12]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_ae42b4725f9d8a0876008921df4b84005}{gs\+\_\+filter\+\_\+game\+\_\+speeds\+\_\+any}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_addc47552e71a317ca80e0d05963ae4c3}{gs\+\_\+filter\+\_\+game\+\_\+speeds}} \+[4]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_a101fb484a215488fe88d0c730ac6216d}{gs\+\_\+filter\+\_\+misc\+\_\+flags\+\_\+any}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_ab2dd338d2299ef03b5a836ebe9722b20}{gs\+\_\+filter\+\_\+misc\+\_\+flags}} \+[7]\+
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_player_profile_ac07b23ccf5e48fedf50d06c05d67d482}{gs\+\_\+filter\+\_\+any}}
+\item 
+\doxymbox{\hyperlink{struct_simple_arrayint}{Simple\+Arrayint}} \doxymbox{\hyperlink{struct_player_profile_a005f0fa89b92de08059819ea2b1611bc}{gs\+\_\+ignore\+\_\+id\+\_\+list}}
+\item 
+\doxymbox{\hyperlink{struct_object_array_string}{Object\+Array\+String}} \doxymbox{\hyperlink{struct_player_profile_abc3f1da6b8c8f7fc4c73465e41ec7871}{gs\+\_\+ignore\+\_\+nick\+\_\+list}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a79215671d226d278445479494a854343}{gs\+\_\+last\+\_\+group\+\_\+cat}}
+\item 
+int \doxymbox{\hyperlink{struct_player_profile_a5a7008c8b11b0c3cfc3793ca6d50946f}{gs\+\_\+last\+\_\+group\+\_\+index}}
+\item 
+\doxymbox{\hyperlink{struct_object_array_game_spy_buddy_request}{Object\+Array\+Game\+Spy\+Buddy\+Request}} \doxymbox{\hyperlink{struct_player_profile_ad6ada883339124ba84e9e2c55c75254c}{gs\+\_\+buddy\+\_\+requests}}
+\item 
+\doxymbox{\hyperlink{struct_string}{String}} \doxymbox{\hyperlink{struct_player_profile_a4230d76e572ab7c66a35034bf5d70f0f}{filename}}
+\item 
+\+\_\+\+RTL\+\_\+\+CRITICAL\+\_\+\+SECTION \doxymbox{\hyperlink{struct_player_profile_a17263f4434818b55be2eeaf69b089c53}{m\+\_\+critical\+Section}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+玩家档案结构体，包含游戏设置和个人偏好 
+
+\label{doc-variable-members}
+\Hypertarget{struct_player_profile_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_player_profile_a618c0d9a02ff110f8f0d265a79c2b8ae}\index{PlayerProfile@{PlayerProfile}!ctw\_continue\_files@{ctw\_continue\_files}}
+\index{ctw\_continue\_files@{ctw\_continue\_files}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{ctw\_continue\_files}{ctw\_continue\_files}}
+{\footnotesize\ttfamily \label{struct_player_profile_a618c0d9a02ff110f8f0d265a79c2b8ae} 
+\doxymbox{\hyperlink{struct_named_object_array_string}{Named\+Object\+Array\+String}} Player\+Profile::\+ctw\+\_\+continue\+\_\+files}
+
+继续游戏文件列表 \Hypertarget{struct_player_profile_a7375ac7e124ca2bf46343c5e2e85a5d4}\index{PlayerProfile@{PlayerProfile}!current\_name\_index@{current\_name\_index}}
+\index{current\_name\_index@{current\_name\_index}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{current\_name\_index}{current\_name\_index}}
+{\footnotesize\ttfamily \label{struct_player_profile_a7375ac7e124ca2bf46343c5e2e85a5d4} 
+int Player\+Profile::\+current\+\_\+name\+\_\+index}
+
+当前使用的名称索引 \Hypertarget{struct_player_profile_a75d498b57e6e1df4a8dd00c2cf6cc8af}\index{PlayerProfile@{PlayerProfile}!directory@{directory}}
+\index{directory@{directory}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{directory}{directory}}
+{\footnotesize\ttfamily \label{struct_player_profile_a75d498b57e6e1df4a8dd00c2cf6cc8af} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+directory}
+
+存档目录 \Hypertarget{struct_player_profile_a4230d76e572ab7c66a35034bf5d70f0f}\index{PlayerProfile@{PlayerProfile}!filename@{filename}}
+\index{filename@{filename}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{struct_player_profile_a4230d76e572ab7c66a35034bf5d70f0f} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+filename}
+
+文件名 \Hypertarget{struct_player_profile_a89f9793d089d35a58a6c29fe7faa4a6b}\index{PlayerProfile@{PlayerProfile}!gap0@{gap0}}
+\index{gap0@{gap0}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gap0}{gap0}}
+{\footnotesize\ttfamily \label{struct_player_profile_a89f9793d089d35a58a6c29fe7faa4a6b} 
+\doxymbox{\hyperlink{_enums_8h_ab8507246f53c4bbefc76b43ff5bd8812}{\+\_\+\+BYTE}} Player\+Profile::\+gap0}
+
+对齐填充 \Hypertarget{struct_player_profile_a7bd93471bc730d4eafc294820998e68b}\index{PlayerProfile@{PlayerProfile}!graphics\_levels@{graphics\_levels}}
+\index{graphics\_levels@{graphics\_levels}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{graphics\_levels}{graphics\_levels}}
+{\footnotesize\ttfamily \label{struct_player_profile_a7bd93471bc730d4eafc294820998e68b} 
+int Player\+Profile::\+graphics\+\_\+levels\+[25]\+}
+
+图形等级数组 \Hypertarget{struct_player_profile_ad68990b08deaa20fb63a4e8e9742fd0b}\index{PlayerProfile@{PlayerProfile}!graphics\_states@{graphics\_states}}
+\index{graphics\_states@{graphics\_states}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{graphics\_states}{graphics\_states}}
+{\footnotesize\ttfamily \label{struct_player_profile_ad68990b08deaa20fb63a4e8e9742fd0b} 
+int Player\+Profile::\+graphics\+\_\+states\+[25]\+}
+
+图形状态数组 \Hypertarget{struct_player_profile_ad6ada883339124ba84e9e2c55c75254c}\index{PlayerProfile@{PlayerProfile}!gs\_buddy\_requests@{gs\_buddy\_requests}}
+\index{gs\_buddy\_requests@{gs\_buddy\_requests}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_buddy\_requests}{gs\_buddy\_requests}}
+{\footnotesize\ttfamily \label{struct_player_profile_ad6ada883339124ba84e9e2c55c75254c} 
+\doxymbox{\hyperlink{struct_object_array_game_spy_buddy_request}{Object\+Array\+Game\+Spy\+Buddy\+Request}} Player\+Profile::\+gs\+\_\+buddy\+\_\+requests}
+
+好友请求列表 \Hypertarget{struct_player_profile_a54d13e4dde8f99fb8476534f4b217527}\index{PlayerProfile@{PlayerProfile}!gs\_cannon\_times@{gs\_cannon\_times}}
+\index{gs\_cannon\_times@{gs\_cannon\_times}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_cannon\_times}{gs\_cannon\_times}}
+{\footnotesize\ttfamily \label{struct_player_profile_a54d13e4dde8f99fb8476534f4b217527} 
+int Player\+Profile::\+gs\+\_\+cannon\+\_\+times}
+
+加农炮时间 \Hypertarget{struct_player_profile_a97ce8ea1db9e5fb2b4977c3eccd4c22d}\index{PlayerProfile@{PlayerProfile}!gs\_email@{gs\_email}}
+\index{gs\_email@{gs\_email}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_email}{gs\_email}}
+{\footnotesize\ttfamily \label{struct_player_profile_a97ce8ea1db9e5fb2b4977c3eccd4c22d} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+gs\+\_\+email}
+
+Game\+Spy邮箱 \Hypertarget{struct_player_profile_ac07b23ccf5e48fedf50d06c05d67d482}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_any@{gs\_filter\_any}}
+\index{gs\_filter\_any@{gs\_filter\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_any}{gs\_filter\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_ac07b23ccf5e48fedf50d06c05d67d482} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+any}
+
+任何过滤器 \Hypertarget{struct_player_profile_a2c09f66ca9ecef0bc6103b6f61162ea6}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_cannon\_times@{gs\_filter\_cannon\_times}}
+\index{gs\_filter\_cannon\_times@{gs\_filter\_cannon\_times}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_cannon\_times}{gs\_filter\_cannon\_times}}
+{\footnotesize\ttfamily \label{struct_player_profile_a2c09f66ca9ecef0bc6103b6f61162ea6} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+cannon\+\_\+times\+[5]\+}
+
+加农炮时间过滤器 \Hypertarget{struct_player_profile_a3a3bcb7d6989f69d536c5da6ed2663ba}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_cannon\_times\_any@{gs\_filter\_cannon\_times\_any}}
+\index{gs\_filter\_cannon\_times\_any@{gs\_filter\_cannon\_times\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_cannon\_times\_any}{gs\_filter\_cannon\_times\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_a3a3bcb7d6989f69d536c5da6ed2663ba} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+cannon\+\_\+times\+\_\+any}
+
+过滤任何加农炮时间 \Hypertarget{struct_player_profile_a835359de4a68f62552e9d8fade37ab34}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_game\_rules@{gs\_filter\_game\_rules}}
+\index{gs\_filter\_game\_rules@{gs\_filter\_game\_rules}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_game\_rules}{gs\_filter\_game\_rules}}
+{\footnotesize\ttfamily \label{struct_player_profile_a835359de4a68f62552e9d8fade37ab34} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+game\+\_\+rules\+[12]\+}
+
+游戏规则过滤器 \Hypertarget{struct_player_profile_a09a6f25dd46e5779afa6a22e3a82333a}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_game\_rules\_any@{gs\_filter\_game\_rules\_any}}
+\index{gs\_filter\_game\_rules\_any@{gs\_filter\_game\_rules\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_game\_rules\_any}{gs\_filter\_game\_rules\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_a09a6f25dd46e5779afa6a22e3a82333a} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+game\+\_\+rules\+\_\+any}
+
+过滤任何游戏规则 \Hypertarget{struct_player_profile_addc47552e71a317ca80e0d05963ae4c3}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_game\_speeds@{gs\_filter\_game\_speeds}}
+\index{gs\_filter\_game\_speeds@{gs\_filter\_game\_speeds}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_game\_speeds}{gs\_filter\_game\_speeds}}
+{\footnotesize\ttfamily \label{struct_player_profile_addc47552e71a317ca80e0d05963ae4c3} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+game\+\_\+speeds\+[4]\+}
+
+游戏速度过滤器 \Hypertarget{struct_player_profile_ae42b4725f9d8a0876008921df4b84005}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_game\_speeds\_any@{gs\_filter\_game\_speeds\_any}}
+\index{gs\_filter\_game\_speeds\_any@{gs\_filter\_game\_speeds\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_game\_speeds\_any}{gs\_filter\_game\_speeds\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_ae42b4725f9d8a0876008921df4b84005} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+game\+\_\+speeds\+\_\+any}
+
+过滤任何游戏速度 \Hypertarget{struct_player_profile_ab326a1059a35dbdb5a1de401dfe1bba8}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_map\_sizes@{gs\_filter\_map\_sizes}}
+\index{gs\_filter\_map\_sizes@{gs\_filter\_map\_sizes}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_map\_sizes}{gs\_filter\_map\_sizes}}
+{\footnotesize\ttfamily \label{struct_player_profile_ab326a1059a35dbdb5a1de401dfe1bba8} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+map\+\_\+sizes\+[7]\+}
+
+地图大小过滤器 \Hypertarget{struct_player_profile_adb154213b82e157849f8825ddaaf591d}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_map\_sizes\_any@{gs\_filter\_map\_sizes\_any}}
+\index{gs\_filter\_map\_sizes\_any@{gs\_filter\_map\_sizes\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_map\_sizes\_any}{gs\_filter\_map\_sizes\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_adb154213b82e157849f8825ddaaf591d} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+map\+\_\+sizes\+\_\+any}
+
+过滤任何地图大小 \Hypertarget{struct_player_profile_a9b8c762957469dcfe6bb018879678693}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_map\_styles@{gs\_filter\_map\_styles}}
+\index{gs\_filter\_map\_styles@{gs\_filter\_map\_styles}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_map\_styles}{gs\_filter\_map\_styles}}
+{\footnotesize\ttfamily \label{struct_player_profile_a9b8c762957469dcfe6bb018879678693} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+map\+\_\+styles\+[23]\+}
+
+地图风格过滤器 \Hypertarget{struct_player_profile_a71d9f57f54f4ed2d718246bacc8c2129}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_map\_styles\_any@{gs\_filter\_map\_styles\_any}}
+\index{gs\_filter\_map\_styles\_any@{gs\_filter\_map\_styles\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_map\_styles\_any}{gs\_filter\_map\_styles\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_a71d9f57f54f4ed2d718246bacc8c2129} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+map\+\_\+styles\+\_\+any}
+
+过滤任何地图风格 \Hypertarget{struct_player_profile_ab2dd338d2299ef03b5a836ebe9722b20}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_misc\_flags@{gs\_filter\_misc\_flags}}
+\index{gs\_filter\_misc\_flags@{gs\_filter\_misc\_flags}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_misc\_flags}{gs\_filter\_misc\_flags}}
+{\footnotesize\ttfamily \label{struct_player_profile_ab2dd338d2299ef03b5a836ebe9722b20} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+misc\+\_\+flags\+[7]\+}
+
+杂项标志过滤器 \Hypertarget{struct_player_profile_a101fb484a215488fe88d0c730ac6216d}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_misc\_flags\_any@{gs\_filter\_misc\_flags\_any}}
+\index{gs\_filter\_misc\_flags\_any@{gs\_filter\_misc\_flags\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_misc\_flags\_any}{gs\_filter\_misc\_flags\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_a101fb484a215488fe88d0c730ac6216d} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+misc\+\_\+flags\+\_\+any}
+
+过滤任何杂项标志 \Hypertarget{struct_player_profile_ae0f52f02db841c3ff0cb5a8fc91a7657}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_team\_styles@{gs\_filter\_team\_styles}}
+\index{gs\_filter\_team\_styles@{gs\_filter\_team\_styles}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_team\_styles}{gs\_filter\_team\_styles}}
+{\footnotesize\ttfamily \label{struct_player_profile_ae0f52f02db841c3ff0cb5a8fc91a7657} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+team\+\_\+styles\+[14]\+}
+
+队伍风格过滤器 \Hypertarget{struct_player_profile_a46253c19754430290405d657184fc05a}\index{PlayerProfile@{PlayerProfile}!gs\_filter\_team\_styles\_any@{gs\_filter\_team\_styles\_any}}
+\index{gs\_filter\_team\_styles\_any@{gs\_filter\_team\_styles\_any}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_filter\_team\_styles\_any}{gs\_filter\_team\_styles\_any}}
+{\footnotesize\ttfamily \label{struct_player_profile_a46253c19754430290405d657184fc05a} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+filter\+\_\+team\+\_\+styles\+\_\+any}
+
+过滤任何队伍风格 \Hypertarget{struct_player_profile_a68fdc460da6c393ecb6f411197158288}\index{PlayerProfile@{PlayerProfile}!gs\_firewall@{gs\_firewall}}
+\index{gs\_firewall@{gs\_firewall}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_firewall}{gs\_firewall}}
+{\footnotesize\ttfamily \label{struct_player_profile_a68fdc460da6c393ecb6f411197158288} 
+int Player\+Profile::\+gs\+\_\+firewall}
+
+防火墙设置 \Hypertarget{struct_player_profile_a5b08669ff47388495355cc7a9d8411b3}\index{PlayerProfile@{PlayerProfile}!gs\_free\_pause@{gs\_free\_pause}}
+\index{gs\_free\_pause@{gs\_free\_pause}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_free\_pause}{gs\_free\_pause}}
+{\footnotesize\ttfamily \label{struct_player_profile_a5b08669ff47388495355cc7a9d8411b3} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+free\+\_\+pause}
+
+自由暂停 \Hypertarget{struct_player_profile_a8a35055ad0f7eea5fe9902df2d89a992}\index{PlayerProfile@{PlayerProfile}!gs\_game\_rules@{gs\_game\_rules}}
+\index{gs\_game\_rules@{gs\_game\_rules}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_game\_rules}{gs\_game\_rules}}
+{\footnotesize\ttfamily \label{struct_player_profile_a8a35055ad0f7eea5fe9902df2d89a992} 
+int Player\+Profile::\+gs\+\_\+game\+\_\+rules}
+
+游戏规则 \Hypertarget{struct_player_profile_a6859a7d29723ad5cd227a31093a6be29}\index{PlayerProfile@{PlayerProfile}!gs\_game\_speed@{gs\_game\_speed}}
+\index{gs\_game\_speed@{gs\_game\_speed}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_game\_speed}{gs\_game\_speed}}
+{\footnotesize\ttfamily \label{struct_player_profile_a6859a7d29723ad5cd227a31093a6be29} 
+int Player\+Profile::\+gs\+\_\+game\+\_\+speed}
+
+游戏速度 \Hypertarget{struct_player_profile_a005f0fa89b92de08059819ea2b1611bc}\index{PlayerProfile@{PlayerProfile}!gs\_ignore\_id\_list@{gs\_ignore\_id\_list}}
+\index{gs\_ignore\_id\_list@{gs\_ignore\_id\_list}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_ignore\_id\_list}{gs\_ignore\_id\_list}}
+{\footnotesize\ttfamily \label{struct_player_profile_a005f0fa89b92de08059819ea2b1611bc} 
+\doxymbox{\hyperlink{struct_simple_arrayint}{Simple\+Arrayint}} Player\+Profile::\+gs\+\_\+ignore\+\_\+id\+\_\+list}
+
+忽略\+ID列表 \Hypertarget{struct_player_profile_abc3f1da6b8c8f7fc4c73465e41ec7871}\index{PlayerProfile@{PlayerProfile}!gs\_ignore\_nick\_list@{gs\_ignore\_nick\_list}}
+\index{gs\_ignore\_nick\_list@{gs\_ignore\_nick\_list}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_ignore\_nick\_list}{gs\_ignore\_nick\_list}}
+{\footnotesize\ttfamily \label{struct_player_profile_abc3f1da6b8c8f7fc4c73465e41ec7871} 
+\doxymbox{\hyperlink{struct_object_array_string}{Object\+Array\+String}} Player\+Profile::\+gs\+\_\+ignore\+\_\+nick\+\_\+list}
+
+忽略昵称列表 \Hypertarget{struct_player_profile_a5e0610d0ca2894a6ad016b2ba6b64897}\index{PlayerProfile@{PlayerProfile}!gs\_last\_game\_name@{gs\_last\_game\_name}}
+\index{gs\_last\_game\_name@{gs\_last\_game\_name}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_last\_game\_name}{gs\_last\_game\_name}}
+{\footnotesize\ttfamily \label{struct_player_profile_a5e0610d0ca2894a6ad016b2ba6b64897} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+gs\+\_\+last\+\_\+game\+\_\+name}
+
+最后游戏名称 \Hypertarget{struct_player_profile_a79215671d226d278445479494a854343}\index{PlayerProfile@{PlayerProfile}!gs\_last\_group\_cat@{gs\_last\_group\_cat}}
+\index{gs\_last\_group\_cat@{gs\_last\_group\_cat}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_last\_group\_cat}{gs\_last\_group\_cat}}
+{\footnotesize\ttfamily \label{struct_player_profile_a79215671d226d278445479494a854343} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+gs\+\_\+last\+\_\+group\+\_\+cat}
+
+最后分组类别 \Hypertarget{struct_player_profile_a5a7008c8b11b0c3cfc3793ca6d50946f}\index{PlayerProfile@{PlayerProfile}!gs\_last\_group\_index@{gs\_last\_group\_index}}
+\index{gs\_last\_group\_index@{gs\_last\_group\_index}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_last\_group\_index}{gs\_last\_group\_index}}
+{\footnotesize\ttfamily \label{struct_player_profile_a5a7008c8b11b0c3cfc3793ca6d50946f} 
+int Player\+Profile::\+gs\+\_\+last\+\_\+group\+\_\+index}
+
+最后分组索引 \Hypertarget{struct_player_profile_aef097f3a4f210213130d3f1a9a038b3b}\index{PlayerProfile@{PlayerProfile}!gs\_map\_size@{gs\_map\_size}}
+\index{gs\_map\_size@{gs\_map\_size}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_map\_size}{gs\_map\_size}}
+{\footnotesize\ttfamily \label{struct_player_profile_aef097f3a4f210213130d3f1a9a038b3b} 
+int Player\+Profile::\+gs\+\_\+map\+\_\+size}
+
+地图大小 \Hypertarget{struct_player_profile_aefcb417812f966e2f61fadda8817384b}\index{PlayerProfile@{PlayerProfile}!gs\_map\_style@{gs\_map\_style}}
+\index{gs\_map\_style@{gs\_map\_style}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_map\_style}{gs\_map\_style}}
+{\footnotesize\ttfamily \label{struct_player_profile_aefcb417812f966e2f61fadda8817384b} 
+int Player\+Profile::\+gs\+\_\+map\+\_\+style}
+
+地图风格 \Hypertarget{struct_player_profile_afa4d589f83cbf223448717a83be59f71}\index{PlayerProfile@{PlayerProfile}!gs\_max\_players@{gs\_max\_players}}
+\index{gs\_max\_players@{gs\_max\_players}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_max\_players}{gs\_max\_players}}
+{\footnotesize\ttfamily \label{struct_player_profile_afa4d589f83cbf223448717a83be59f71} 
+int Player\+Profile::\+gs\+\_\+max\+\_\+players}
+
+最大玩家数 \Hypertarget{struct_player_profile_a30d3afcb5dcb16beec16be7b5f68b04d}\index{PlayerProfile@{PlayerProfile}!gs\_nick@{gs\_nick}}
+\index{gs\_nick@{gs\_nick}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_nick}{gs\_nick}}
+{\footnotesize\ttfamily \label{struct_player_profile_a30d3afcb5dcb16beec16be7b5f68b04d} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+gs\+\_\+nick}
+
+Game\+Spy昵称 \Hypertarget{struct_player_profile_a76219282af049ad91461b2f4104c2039}\index{PlayerProfile@{PlayerProfile}!gs\_password@{gs\_password}}
+\index{gs\_password@{gs\_password}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_password}{gs\_password}}
+{\footnotesize\ttfamily \label{struct_player_profile_a76219282af049ad91461b2f4104c2039} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+gs\+\_\+password}
+
+Game\+Spy密码 \Hypertarget{struct_player_profile_aabad007d2094ca5abec4d96cfd81533a}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_game\_rules@{gs\_qm\_game\_rules}}
+\index{gs\_qm\_game\_rules@{gs\_qm\_game\_rules}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_game\_rules}{gs\_qm\_game\_rules}}
+{\footnotesize\ttfamily \label{struct_player_profile_aabad007d2094ca5abec4d96cfd81533a} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+game\+\_\+rules}
+
+快速比赛游戏规则 \Hypertarget{struct_player_profile_a47c126b58b26483a5a961aaaaecd7f85}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_map\_style@{gs\_qm\_map\_style}}
+\index{gs\_qm\_map\_style@{gs\_qm\_map\_style}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_map\_style}{gs\_qm\_map\_style}}
+{\footnotesize\ttfamily \label{struct_player_profile_a47c126b58b26483a5a961aaaaecd7f85} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+map\+\_\+style}
+
+快速比赛地图风格 \Hypertarget{struct_player_profile_ac1f2a46fff7fb6588aa88e8fc4e37da7}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_max\_rating@{gs\_qm\_max\_rating}}
+\index{gs\_qm\_max\_rating@{gs\_qm\_max\_rating}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_max\_rating}{gs\_qm\_max\_rating}}
+{\footnotesize\ttfamily \label{struct_player_profile_ac1f2a46fff7fb6588aa88e8fc4e37da7} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+max\+\_\+rating}
+
+快速比赛最高评分 \Hypertarget{struct_player_profile_a6cf2c37fc0bbfac11fcec0a22af11d7f}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_min\_rating@{gs\_qm\_min\_rating}}
+\index{gs\_qm\_min\_rating@{gs\_qm\_min\_rating}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_min\_rating}{gs\_qm\_min\_rating}}
+{\footnotesize\ttfamily \label{struct_player_profile_a6cf2c37fc0bbfac11fcec0a22af11d7f} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+min\+\_\+rating}
+
+快速比赛最低评分 \Hypertarget{struct_player_profile_a9227a4a8ecc0fce389c6775a1b218cf1}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_num\_players@{gs\_qm\_num\_players}}
+\index{gs\_qm\_num\_players@{gs\_qm\_num\_players}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_num\_players}{gs\_qm\_num\_players}}
+{\footnotesize\ttfamily \label{struct_player_profile_a9227a4a8ecc0fce389c6775a1b218cf1} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+num\+\_\+players}
+
+快速比赛玩家数量 \Hypertarget{struct_player_profile_a349b84da95593f6a9c31457f24d89108}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_prevent\_hosting@{gs\_qm\_prevent\_hosting}}
+\index{gs\_qm\_prevent\_hosting@{gs\_qm\_prevent\_hosting}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_prevent\_hosting}{gs\_qm\_prevent\_hosting}}
+{\footnotesize\ttfamily \label{struct_player_profile_a349b84da95593f6a9c31457f24d89108} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+prevent\+\_\+hosting}
+
+快速比赛防止托管 \Hypertarget{struct_player_profile_a8383564b8e51cbd88ef802c2bcd32f14}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_strict@{gs\_qm\_strict}}
+\index{gs\_qm\_strict@{gs\_qm\_strict}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_strict}{gs\_qm\_strict}}
+{\footnotesize\ttfamily \label{struct_player_profile_a8383564b8e51cbd88ef802c2bcd32f14} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+strict}
+
+快速比赛严格模式 \Hypertarget{struct_player_profile_adbf1d648d58b95a9e7be272e24693665}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_team\_style@{gs\_qm\_team\_style}}
+\index{gs\_qm\_team\_style@{gs\_qm\_team\_style}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_team\_style}{gs\_qm\_team\_style}}
+{\footnotesize\ttfamily \label{struct_player_profile_adbf1d648d58b95a9e7be272e24693665} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+team\+\_\+style}
+
+快速比赛队伍风格 \Hypertarget{struct_player_profile_a487adfd357429baaff3ee5356a2ac0d7}\index{PlayerProfile@{PlayerProfile}!gs\_qm\_tribe@{gs\_qm\_tribe}}
+\index{gs\_qm\_tribe@{gs\_qm\_tribe}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_qm\_tribe}{gs\_qm\_tribe}}
+{\footnotesize\ttfamily \label{struct_player_profile_a487adfd357429baaff3ee5356a2ac0d7} 
+int Player\+Profile::\+gs\+\_\+qm\+\_\+tribe}
+
+快速比赛部落 \Hypertarget{struct_player_profile_a3b520616706466209f158433528f17db}\index{PlayerProfile@{PlayerProfile}!gs\_require\_random\_nations@{gs\_require\_random\_nations}}
+\index{gs\_require\_random\_nations@{gs\_require\_random\_nations}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_require\_random\_nations}{gs\_require\_random\_nations}}
+{\footnotesize\ttfamily \label{struct_player_profile_a3b520616706466209f158433528f17db} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+require\+\_\+random\+\_\+nations}
+
+要求随机国家 \Hypertarget{struct_player_profile_a22fe27c67b56617c1ca12b9c8048830f}\index{PlayerProfile@{PlayerProfile}!gs\_require\_random\_teams@{gs\_require\_random\_teams}}
+\index{gs\_require\_random\_teams@{gs\_require\_random\_teams}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_require\_random\_teams}{gs\_require\_random\_teams}}
+{\footnotesize\ttfamily \label{struct_player_profile_a22fe27c67b56617c1ca12b9c8048830f} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+require\+\_\+random\+\_\+teams}
+
+要求随机队伍 \Hypertarget{struct_player_profile_aee28e720f041a58ba462169f076b5b67}\index{PlayerProfile@{PlayerProfile}!gs\_save\_password@{gs\_save\_password}}
+\index{gs\_save\_password@{gs\_save\_password}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_save\_password}{gs\_save\_password}}
+{\footnotesize\ttfamily \label{struct_player_profile_aee28e720f041a58ba462169f076b5b67} 
+int Player\+Profile::\+gs\+\_\+save\+\_\+password}
+
+是否保存密码 \Hypertarget{struct_player_profile_a107f1ee29a7dfe350f05107ebee229a6}\index{PlayerProfile@{PlayerProfile}!gs\_team\_style@{gs\_team\_style}}
+\index{gs\_team\_style@{gs\_team\_style}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_team\_style}{gs\_team\_style}}
+{\footnotesize\ttfamily \label{struct_player_profile_a107f1ee29a7dfe350f05107ebee229a6} 
+int Player\+Profile::\+gs\+\_\+team\+\_\+style}
+
+队伍风格 \Hypertarget{struct_player_profile_afd93a1f41434fa3ecaa50407a196f969}\index{PlayerProfile@{PlayerProfile}!gs\_tournament\_play@{gs\_tournament\_play}}
+\index{gs\_tournament\_play@{gs\_tournament\_play}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_tournament\_play}{gs\_tournament\_play}}
+{\footnotesize\ttfamily \label{struct_player_profile_afd93a1f41434fa3ecaa50407a196f969} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+tournament\+\_\+play}
+
+锦标赛模式 \Hypertarget{struct_player_profile_a3ece6c9a2637a5ad30d5a724097f3c20}\index{PlayerProfile@{PlayerProfile}!gs\_turbo\_resources@{gs\_turbo\_resources}}
+\index{gs\_turbo\_resources@{gs\_turbo\_resources}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{gs\_turbo\_resources}{gs\_turbo\_resources}}
+{\footnotesize\ttfamily \label{struct_player_profile_a3ece6c9a2637a5ad30d5a724097f3c20} 
+unsigned \+\_\+\+\_\+int8 Player\+Profile::\+gs\+\_\+turbo\+\_\+resources}
+
+加速资源 \Hypertarget{struct_player_profile_a82d5dd8d0a55695be25382a62301c94f}\index{PlayerProfile@{PlayerProfile}!host\_port@{host\_port}}
+\index{host\_port@{host\_port}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{host\_port}{host\_port}}
+{\footnotesize\ttfamily \label{struct_player_profile_a82d5dd8d0a55695be25382a62301c94f} 
+unsigned int Player\+Profile::\+host\+\_\+port}
+
+主机端口 \Hypertarget{struct_player_profile_ae16f19d5e07625017395f7d8076de4bd}\index{PlayerProfile@{PlayerProfile}!infra\_open@{infra\_open}}
+\index{infra\_open@{infra\_open}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{infra\_open}{infra\_open}}
+{\footnotesize\ttfamily \label{struct_player_profile_ae16f19d5e07625017395f7d8076de4bd} 
+int Player\+Profile::\+infra\+\_\+open}
+
+基础设施界面是否打开 \Hypertarget{struct_player_profile_ae167d1eda38708d8b54c9ba8e1623bd6}\index{PlayerProfile@{PlayerProfile}!ip\_override@{ip\_override}}
+\index{ip\_override@{ip\_override}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{ip\_override}{ip\_override}}
+{\footnotesize\ttfamily \label{struct_player_profile_ae167d1eda38708d8b54c9ba8e1623bd6} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+ip\+\_\+override}
+
+IP覆盖设置 \Hypertarget{struct_player_profile_aa0377b5e2b6a179da01d43c3ff1ab134}\index{PlayerProfile@{PlayerProfile}!last\_campaign@{last\_campaign}}
+\index{last\_campaign@{last\_campaign}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_campaign}{last\_campaign}}
+{\footnotesize\ttfamily \label{struct_player_profile_aa0377b5e2b6a179da01d43c3ff1ab134} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+last\+\_\+campaign}
+
+最后游玩的战役 \Hypertarget{struct_player_profile_ac0a074e92477d52ed86e2a2a0fe9c991}\index{PlayerProfile@{PlayerProfile}!last\_campaign\_won@{last\_campaign\_won}}
+\index{last\_campaign\_won@{last\_campaign\_won}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_campaign\_won}{last\_campaign\_won}}
+{\footnotesize\ttfamily \label{struct_player_profile_ac0a074e92477d52ed86e2a2a0fe9c991} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+last\+\_\+campaign\+\_\+won}
+
+最后赢得的战役 \Hypertarget{struct_player_profile_a18e4be5b3ab0f5c9ff552cbee5afe1e4}\index{PlayerProfile@{PlayerProfile}!last\_diffs@{last\_diffs}}
+\index{last\_diffs@{last\_diffs}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_diffs}{last\_diffs}}
+{\footnotesize\ttfamily \label{struct_player_profile_a18e4be5b3ab0f5c9ff552cbee5afe1e4} 
+int Player\+Profile::\+last\+\_\+diffs\+[8]\+}
+
+最后使用的难度 \Hypertarget{struct_player_profile_a1595fc73655dba9a03f56a7d7e138d69}\index{PlayerProfile@{PlayerProfile}!last\_ip\_address@{last\_ip\_address}}
+\index{last\_ip\_address@{last\_ip\_address}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_ip\_address}{last\_ip\_address}}
+{\footnotesize\ttfamily \label{struct_player_profile_a1595fc73655dba9a03f56a7d7e138d69} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+last\+\_\+ip\+\_\+address}
+
+最后连接的\+IP地址 \Hypertarget{struct_player_profile_a6345929d8271a8be8f046b7c8a713a6c}\index{PlayerProfile@{PlayerProfile}!last\_scenario@{last\_scenario}}
+\index{last\_scenario@{last\_scenario}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_scenario}{last\_scenario}}
+{\footnotesize\ttfamily \label{struct_player_profile_a6345929d8271a8be8f046b7c8a713a6c} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+last\+\_\+scenario}
+
+最后游玩的场景 \Hypertarget{struct_player_profile_aef2928bd2cd57eb1bd60a01600065c38}\index{PlayerProfile@{PlayerProfile}!last\_scenario\_won@{last\_scenario\_won}}
+\index{last\_scenario\_won@{last\_scenario\_won}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_scenario\_won}{last\_scenario\_won}}
+{\footnotesize\ttfamily \label{struct_player_profile_aef2928bd2cd57eb1bd60a01600065c38} 
+\doxymbox{\hyperlink{struct_string}{String}} Player\+Profile::\+last\+\_\+scenario\+\_\+won}
+
+最后赢得的场景 \Hypertarget{struct_player_profile_af6822505a07ced39426c03023515baf7}\index{PlayerProfile@{PlayerProfile}!last\_slots@{last\_slots}}
+\index{last\_slots@{last\_slots}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_slots}{last\_slots}}
+{\footnotesize\ttfamily \label{struct_player_profile_af6822505a07ced39426c03023515baf7} 
+int Player\+Profile::\+last\+\_\+slots\+[8]\+}
+
+最后使用的槽位 \Hypertarget{struct_player_profile_aef314600cebbcd67c29c772d0f079b19}\index{PlayerProfile@{PlayerProfile}!last\_teams@{last\_teams}}
+\index{last\_teams@{last\_teams}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_teams}{last\_teams}}
+{\footnotesize\ttfamily \label{struct_player_profile_aef314600cebbcd67c29c772d0f079b19} 
+int Player\+Profile::\+last\+\_\+teams\+[8]\+}
+
+最后使用的队伍 \Hypertarget{struct_player_profile_a75c71b77c6e8a46a71268d5ce3c38493}\index{PlayerProfile@{PlayerProfile}!last\_tribes@{last\_tribes}}
+\index{last\_tribes@{last\_tribes}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_tribes}{last\_tribes}}
+{\footnotesize\ttfamily \label{struct_player_profile_a75c71b77c6e8a46a71268d5ce3c38493} 
+int Player\+Profile::\+last\+\_\+tribes\+[8]\+}
+
+最后使用的部落 \Hypertarget{struct_player_profile_af1f29e35a107aac335e6014aca60666d}\index{PlayerProfile@{PlayerProfile}!last\_whos@{last\_whos}}
+\index{last\_whos@{last\_whos}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{last\_whos}{last\_whos}}
+{\footnotesize\ttfamily \label{struct_player_profile_af1f29e35a107aac335e6014aca60666d} 
+int Player\+Profile::\+last\+\_\+whos\+[8]\+}
+
+最后使用的角色 \Hypertarget{struct_player_profile_a2d0972d37ad0fa79cbdfe839376ae521}\index{PlayerProfile@{PlayerProfile}!local\_port@{local\_port}}
+\index{local\_port@{local\_port}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{local\_port}{local\_port}}
+{\footnotesize\ttfamily \label{struct_player_profile_a2d0972d37ad0fa79cbdfe839376ae521} 
+unsigned int Player\+Profile::\+local\+\_\+port}
+
+本地端口 \Hypertarget{struct_player_profile_a17263f4434818b55be2eeaf69b089c53}\index{PlayerProfile@{PlayerProfile}!m\_criticalSection@{m\_criticalSection}}
+\index{m\_criticalSection@{m\_criticalSection}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{m\_criticalSection}{m\_criticalSection}}
+{\footnotesize\ttfamily \label{struct_player_profile_a17263f4434818b55be2eeaf69b089c53} 
+\+\_\+\+RTL\+\_\+\+CRITICAL\+\_\+\+SECTION Player\+Profile::\+m\+\_\+critical\+Section}
+
+临界区用于线程安全 \Hypertarget{struct_player_profile_a5ff2ee42e4a72139b906da558c187cfb}\index{PlayerProfile@{PlayerProfile}!main\_open@{main\_open}}
+\index{main\_open@{main\_open}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{main\_open}{main\_open}}
+{\footnotesize\ttfamily \label{struct_player_profile_a5ff2ee42e4a72139b906da558c187cfb} 
+int Player\+Profile::\+main\+\_\+open}
+
+主菜单是否打开 \Hypertarget{struct_player_profile_a2dad94117c8a6ece12baf5b49d4b2166}\index{PlayerProfile@{PlayerProfile}!market\_open@{market\_open}}
+\index{market\_open@{market\_open}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{market\_open}{market\_open}}
+{\footnotesize\ttfamily \label{struct_player_profile_a2dad94117c8a6ece12baf5b49d4b2166} 
+int Player\+Profile::\+market\+\_\+open}
+
+市场是否打开 \Hypertarget{struct_player_profile_abc3a7f5156ab0df10dcd0cd11af18d4e}\index{PlayerProfile@{PlayerProfile}!mini\_lib\_open@{mini\_lib\_open}}
+\index{mini\_lib\_open@{mini\_lib\_open}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{mini\_lib\_open}{mini\_lib\_open}}
+{\footnotesize\ttfamily \label{struct_player_profile_abc3a7f5156ab0df10dcd0cd11af18d4e} 
+int Player\+Profile::\+mini\+\_\+lib\+\_\+open}
+
+迷你库是否打开 \Hypertarget{struct_player_profile_ac381ba1ed2f127b364eade103363e074}\index{PlayerProfile@{PlayerProfile}!notify\_flags@{notify\_flags}}
+\index{notify\_flags@{notify\_flags}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{notify\_flags}{notify\_flags}}
+{\footnotesize\ttfamily \label{struct_player_profile_ac381ba1ed2f127b364eade103363e074} 
+Bit\+Mask\+\_\+22 Player\+Profile::\+notify\+\_\+flags}
+
+通知标志位 \Hypertarget{struct_player_profile_a5cd0e318be9ccfec12f478f6c17cec3e}\index{PlayerProfile@{PlayerProfile}!played\_game@{played\_game}}
+\index{played\_game@{played\_game}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{played\_game}{played\_game}}
+{\footnotesize\ttfamily \label{struct_player_profile_a5cd0e318be9ccfec12f478f6c17cec3e} 
+int Player\+Profile::\+played\+\_\+game}
+
+是否玩过游戏 \Hypertarget{struct_player_profile_a521607538bb5c7083f74112eb0fc9a56}\index{PlayerProfile@{PlayerProfile}!player\_names@{player\_names}}
+\index{player\_names@{player\_names}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{player\_names}{player\_names}}
+{\footnotesize\ttfamily \label{struct_player_profile_a521607538bb5c7083f74112eb0fc9a56} 
+\doxymbox{\hyperlink{struct_object_array_string}{Object\+Array\+String}} Player\+Profile::\+player\+\_\+names}
+
+玩家名称列表 \Hypertarget{struct_player_profile_a815abbae3441b80c1216f852f443c0c8}\index{PlayerProfile@{PlayerProfile}!prefs@{prefs}}
+\index{prefs@{prefs}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{prefs}{prefs}}
+{\footnotesize\ttfamily \label{struct_player_profile_a815abbae3441b80c1216f852f443c0c8} 
+\doxymbox{\hyperlink{struct_player_prefs}{Player\+Prefs}} Player\+Profile::\+prefs}
+
+偏好设置 \Hypertarget{struct_player_profile_a54352d3b9976fd0b1604821b07d41918}\index{PlayerProfile@{PlayerProfile}!resource\_open@{resource\_open}}
+\index{resource\_open@{resource\_open}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{resource\_open}{resource\_open}}
+{\footnotesize\ttfamily \label{struct_player_profile_a54352d3b9976fd0b1604821b07d41918} 
+int Player\+Profile::\+resource\+\_\+open}
+
+资源界面是否打开 \Hypertarget{struct_player_profile_aa32d4ea19dd3616c169cb7084c96967e}\index{PlayerProfile@{PlayerProfile}!show\_tips@{show\_tips}}
+\index{show\_tips@{show\_tips}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{show\_tips}{show\_tips}}
+{\footnotesize\ttfamily \label{struct_player_profile_aa32d4ea19dd3616c169cb7084c96967e} 
+int Player\+Profile::\+show\+\_\+tips}
+
+是否显示提示 \Hypertarget{struct_player_profile_ac4417de68f54d65afec6ba27b336bc3e}\index{PlayerProfile@{PlayerProfile}!tip\_index@{tip\_index}}
+\index{tip\_index@{tip\_index}!PlayerProfile@{PlayerProfile}}
+\doxysubsubsection{\texorpdfstring{tip\_index}{tip\_index}}
+{\footnotesize\ttfamily \label{struct_player_profile_ac4417de68f54d65afec6ba27b336bc3e} 
+int Player\+Profile::\+tip\+\_\+index}
+
+当前提示索引 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

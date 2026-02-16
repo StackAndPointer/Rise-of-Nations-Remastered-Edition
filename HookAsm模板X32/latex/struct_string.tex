@@ -1,0 +1,100 @@
+\doxysection{String结构体 参考}
+\hypertarget{struct_string}{}\label{struct_string}\index{String@{String}}
+
+
+字符串结构体，封装字符串的完整信息  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+String 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{struct_string__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{union_string_data}{String\+Data}} \doxymbox{\hyperlink{struct_string_a9293ffa4f1c6a599ac642397b73c87f5}{content}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_string_a14d53a9a8dd3a2dc322bca09a6eec1f3}{const\+\_\+len}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_string_a367fd7878634cffd24640bbe6b08402e}{offset}}
+\item 
+unsigned \+\_\+\+\_\+int16 \doxymbox{\hyperlink{struct_string_a7fab86766e18c767e5b9270e96e91244}{curr\+\_\+len}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_string_ac2fe1c5cd028fd5a8851e97003962e23}{flags}}
+\item 
+unsigned \+\_\+\+\_\+int8 \doxymbox{\hyperlink{struct_string_aff1f660c65133ea34e87e1fe09e872e4}{module\+\_\+id}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_string_a8cbd6395f990c89b2b8182f242690885}{hash\+\_\+value}}
+\item 
+unsigned int \doxymbox{\hyperlink{struct_string_a076736665d0d8859caaa0f49d55a77d8}{hash\+\_\+value\+\_\+insensitive}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+字符串结构体，封装字符串的完整信息 
+
+\label{doc-variable-members}
+\Hypertarget{struct_string_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_string_a14d53a9a8dd3a2dc322bca09a6eec1f3}\index{String@{String}!const\_len@{const\_len}}
+\index{const\_len@{const\_len}!String@{String}}
+\doxysubsubsection{\texorpdfstring{const\_len}{const\_len}}
+{\footnotesize\ttfamily \label{struct_string_a14d53a9a8dd3a2dc322bca09a6eec1f3} 
+unsigned \+\_\+\+\_\+int16 String::\+const\+\_\+len}
+
+常量字符串的长度（如果为常量字符串） \Hypertarget{struct_string_a9293ffa4f1c6a599ac642397b73c87f5}\index{String@{String}!content@{content}}
+\index{content@{content}!String@{String}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily \label{struct_string_a9293ffa4f1c6a599ac642397b73c87f5} 
+\doxymbox{\hyperlink{union_string_data}{String\+Data}} String::\+content}
+
+字符串数据内容 \Hypertarget{struct_string_a7fab86766e18c767e5b9270e96e91244}\index{String@{String}!curr\_len@{curr\_len}}
+\index{curr\_len@{curr\_len}!String@{String}}
+\doxysubsubsection{\texorpdfstring{curr\_len}{curr\_len}}
+{\footnotesize\ttfamily \label{struct_string_a7fab86766e18c767e5b9270e96e91244} 
+unsigned \+\_\+\+\_\+int16 String::\+curr\+\_\+len}
+
+当前字符串长度 \Hypertarget{struct_string_ac2fe1c5cd028fd5a8851e97003962e23}\index{String@{String}!flags@{flags}}
+\index{flags@{flags}!String@{String}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{struct_string_ac2fe1c5cd028fd5a8851e97003962e23} 
+unsigned \+\_\+\+\_\+int8 String::\+flags}
+
+标志位 \Hypertarget{struct_string_a8cbd6395f990c89b2b8182f242690885}\index{String@{String}!hash\_value@{hash\_value}}
+\index{hash\_value@{hash\_value}!String@{String}}
+\doxysubsubsection{\texorpdfstring{hash\_value}{hash\_value}}
+{\footnotesize\ttfamily \label{struct_string_a8cbd6395f990c89b2b8182f242690885} 
+unsigned int String::\+hash\+\_\+value}
+
+字符串的哈希值 \Hypertarget{struct_string_a076736665d0d8859caaa0f49d55a77d8}\index{String@{String}!hash\_value\_insensitive@{hash\_value\_insensitive}}
+\index{hash\_value\_insensitive@{hash\_value\_insensitive}!String@{String}}
+\doxysubsubsection{\texorpdfstring{hash\_value\_insensitive}{hash\_value\_insensitive}}
+{\footnotesize\ttfamily \label{struct_string_a076736665d0d8859caaa0f49d55a77d8} 
+unsigned int String::\+hash\+\_\+value\+\_\+insensitive}
+
+不区分大小写的哈希值 \Hypertarget{struct_string_aff1f660c65133ea34e87e1fe09e872e4}\index{String@{String}!module\_id@{module\_id}}
+\index{module\_id@{module\_id}!String@{String}}
+\doxysubsubsection{\texorpdfstring{module\_id}{module\_id}}
+{\footnotesize\ttfamily \label{struct_string_aff1f660c65133ea34e87e1fe09e872e4} 
+unsigned \+\_\+\+\_\+int8 String::\+module\+\_\+id}
+
+模块\+ID，可能用于资源管理 \Hypertarget{struct_string_a367fd7878634cffd24640bbe6b08402e}\index{String@{String}!offset@{offset}}
+\index{offset@{offset}!String@{String}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{struct_string_a367fd7878634cffd24640bbe6b08402e} 
+unsigned \+\_\+\+\_\+int16 String::\+offset}
+
+偏移量，可能用于子字符串操作 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="String" name="String">
+<area shape="rect" id="Node000001" title="字符串结构体，封装字符串的完整信息" alt="" coords="19,104,75,131"/>
+<area shape="rect" id="Node000002" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="5,5,89,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,47,50,104,44,103,45,49"/>
+</map>

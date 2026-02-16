@@ -1,0 +1,9 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,122,57"/>
+<area shape="rect" id="Node000001" href="$struct_named_object_array_string.html" title="重命名说明：原字段名___u0是编译器生成的随机名" alt="" coords="170,5,336,32"/>
+<area shape="poly" id="edge36_Node000000_Node000001" title=" " alt="" coords="136,32,172,29,166,31,137,37"/>
+<area shape="rect" id="Node000002" href="$struct_object_array_string.html" title="字符串数组基类" alt="" coords="191,56,315,83"/>
+<area shape="poly" id="edge37_Node000000_Node000002" title=" " alt="" coords="137,51,193,61,188,61,137,56"/>
+<area shape="rect" id="Node000003" href="$struct_string_table.html" title="设置窗口（继承自HelpBoxWin、ILeaderboardsForELOListener和GameAccess）" alt="" coords="384,56,470,83"/>
+<area shape="poly" id="edge38_Node000002_Node000003" title=" " alt="" coords="331,67,386,69,381,69,331,72"/>
+</map>

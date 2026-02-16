@@ -1,0 +1,5 @@
+<map id="StringListEntry" name="StringListEntry">
+<area shape="rect" id="Node000001" title="字符串列表条目" alt="" coords="31,80,139,107"/>
+<area shape="rect" id="Node000002" href="$struct_recycler_string_list_entry.html" title="滚动条控件（继承自GraphicWin）" alt="" coords="5,5,165,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,46,87,81,83,79,83,50"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="GameSpyBuddyRequest" name="GameSpyBuddyRequest">
+<area shape="rect" id="Node000001" title="GameSpy好友请求结构体" alt="" coords="5,203,171,229"/>
+<area shape="rect" id="Node000002" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="60,104,116,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,145,91,203,85,202,86,148"/>
+<area shape="rect" id="Node000003" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="46,5,130,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,45,91,104,85,103,87,50"/>
+</map>

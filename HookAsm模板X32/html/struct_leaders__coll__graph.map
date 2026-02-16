@@ -1,0 +1,9 @@
+<map id="Leaders" name="Leaders">
+<area shape="rect" id="Node000001" title="领导者输出类 &#45; 继承自LeaderData，8字节对齐" alt="" coords="58,203,125,229"/>
+<area shape="rect" id="Node000002" href="$struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="5,104,106,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,143,90,202,84,203,64,147"/>
+<area shape="rect" id="Node000003" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="129,104,185,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,143,102,204,98,201,137,144"/>
+<area shape="rect" id="Node000004" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="115,5,199,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="158,46,159,104,154,103,155,50"/>
+</map>

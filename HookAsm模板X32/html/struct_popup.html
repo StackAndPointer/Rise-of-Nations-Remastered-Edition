@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rise-of-Nations-Remastered-Edition框架文档: Popup结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Rise-of-Nations-Remastered-Edition框架文档<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">注释</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_popup-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Popup结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>弹出窗口（继承自BasePop和GameAccessConst）  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enums_8h_source.html">Enums.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Popup 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_popup__inherit__graph.png" border="0" usemap="#a_popup_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_popup_inherit__map" id="a_popup_inherit__map">
+<area shape="rect" title="弹出窗口（继承自BasePop和GameAccessConst）" alt="" coords="117,304,175,331"/>
+<area shape="rect" href="struct_base_pop.html" title="基础弹出窗口（继承自GraphicWin）" alt="" coords="45,229,119,256"/>
+<area shape="poly" title=" " alt="" coords="105,266,138,303,132,304,102,270"/>
+<area shape="rect" href="struct_graphic_win.html" title="图形窗口（继承自Window和Buffer）" alt="" coords="38,155,127,181"/>
+<area shape="poly" title=" " alt="" coords="83,195,85,230,80,228,81,200"/>
+<area shape="rect" href="struct_window.html" title="窗口基类" alt="" coords="5,80,74,107"/>
+<area shape="poly" title=" " alt="" coords="55,118,77,154,72,155,55,123"/>
+<area shape="rect" href="struct_buffer.html" title="缓冲区类（继承自ImageIO和BufferBase）" alt="" coords="97,80,153,107"/>
+<area shape="poly" title=" " alt="" coords="108,123,92,156,87,153,111,118"/>
+<area shape="rect" href="struct_image_i_o.html" title="图像输入输出结构" alt="" coords="37,5,109,32"/>
+<area shape="poly" title=" " alt="" coords="91,42,118,79,113,80,91,47"/>
+<area shape="rect" href="struct_buffer_base.html" title="缓冲区基类" alt="" coords="133,5,218,32"/>
+<area shape="poly" title=" " alt="" coords="157,47,136,81,131,78,159,42"/>
+<area shape="rect" href="struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="144,229,279,256"/>
+<area shape="poly" title=" " alt="" coords="193,267,159,306,156,301,188,269"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Popup 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_popup__coll__graph.png" border="0" usemap="#a_popup_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_popup_coll__map" id="a_popup_coll__map">
+<area shape="rect" title="弹出窗口（继承自BasePop和GameAccessConst）" alt="" coords="2654,683,2713,709"/>
+<area shape="rect" href="struct_base_pop.html" title="基础弹出窗口（继承自GraphicWin）" alt="" coords="2500,683,2575,709"/>
+<area shape="poly" title=" " alt="" coords="2590,693,2657,696,2651,696,2590,699"/>
+<area shape="rect" href="struct_graphic_win.html" title="图形窗口（继承自Window和Buffer）" alt="" coords="2017,799,2106,825"/>
+<area shape="poly" title=" " alt="" coords="2122,815,2206,821,2301,823,2388,816,2421,807,2444,795,2455,779,2456,760,2457,740,2468,720,2482,708,2497,704,2502,703,2485,713,2472,723,2462,742,2461,761,2460,780,2447,799,2423,812,2389,821,2302,828,2206,827,2122,821"/>
+<area shape="poly" title=" " alt="" coords="2121,802,2230,784,2353,757,2497,710,2502,709,2354,763,2231,789,2122,807"/>
+<area shape="rect" href="struct_button.html" title="按钮控件（继承自GraphicWin）" alt="" coords="2276,127,2335,153"/>
+<area shape="poly" title=" " alt="" coords="2089,786,2104,768,2117,748,2130,713,2133,684,2135,654,2141,615,2182,472,2228,335,2296,156,2300,152,2233,337,2187,474,2146,617,2140,654,2139,684,2135,715,2122,751,2109,772,2092,790"/>
+<area shape="rect" href="struct_string_box.html" title="字符串框控件（继承自GraphicWin）" alt="" coords="2266,1068,2344,1095"/>
+<area shape="poly" title=" " alt="" coords="2075,837,2103,891,2122,919,2145,943,2168,957,2188,962,2210,967,2234,981,2256,1001,2274,1025,2299,1069,2295,1066,2270,1028,2252,1005,2231,985,2208,972,2187,967,2166,962,2142,947,2118,922,2098,894,2072,842"/>
+<area shape="rect" href="struct_dialog.html" title="对话框控件（继承自GraphicWin）" alt="" coords="2276,1123,2334,1149"/>
+<area shape="poly" title=" " alt="" coords="2074,838,2103,905,2123,942,2146,977,2168,1001,2190,1016,2212,1031,2235,1056,2243,1070,2247,1082,2250,1093,2259,1105,2278,1123,2273,1121,2255,1108,2246,1095,2242,1083,2238,1072,2231,1059,2208,1035,2187,1020,2165,1005,2142,980,2118,945,2098,907,2071,842"/>
+<area shape="rect" href="struct_window.html" title="窗口基类" alt="" coords="1769,629,1837,656"/>
+<area shape="poly" title=" " alt="" coords="1852,640,2107,647,2275,657,2446,675,2502,687,2497,687,2445,680,2275,663,2107,652,1853,645"/>
+<area shape="poly" title=" " alt="" coords="1838,662,2042,798,2037,798,1837,667"/>
+<area shape="poly" title=" " alt="" coords="1777,612,1786,605,1803,603,1819,605,1828,611,1831,621,1827,631,1823,627,1826,620,1824,614,1817,610,1803,608,1788,610,1779,616"/>
+<area shape="rect" href="struct_spot.html" title="热点窗口结构" alt="" coords="2038,552,2086,579"/>
+<area shape="poly" title=" " alt="" coords="1851,633,1913,621,1979,603,2035,580,2039,578,1981,608,1914,626,1853,638"/>
+<area shape="rect" href="struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="269,528,324,555"/>
+<area shape="poly" title=" " alt="" coords="336,520,410,480,492,431,504,421,517,412,570,394,614,387,716,387,1364,387,1462,391,1504,386,1554,368,1565,357,1578,346,1611,336,1639,335,1701,345,1891,379,1966,398,2035,419,2176,472,2355,546,2403,566,2447,594,2495,639,2529,683,2524,681,2491,643,2444,598,2401,570,2353,550,2174,477,2034,424,1965,403,1890,385,1701,351,1639,340,1612,341,1580,350,1569,361,1556,373,1505,391,1462,396,1363,392,716,392,615,392,572,399,519,417,507,425,496,435,413,485,340,524"/>
+<area shape="poly" title=" " alt="" coords="325,562,410,618,463,646,519,667,571,678,635,685,792,693,975,693,1169,686,1533,663,1771,645,1765,647,1533,669,1169,691,975,698,792,699,635,691,570,683,517,672,460,651,407,623,326,567"/>
+<area shape="rect" href="struct_g_s_font.html" title="图形系统字体对象" alt="" coords="550,957,616,984"/>
+<area shape="poly" title=" " alt="" coords="306,567,359,744,395,838,413,874,431,900,458,922,489,940,552,963,546,964,487,945,455,927,427,903,409,877,390,840,354,746,304,572"/>
+<area shape="rect" href="struct_texture.html" title="纹理类（继承自ImageIO和TextureBase）" alt="" coords="1182,589,1246,616"/>
+<area shape="poly" title=" " alt="" coords="339,541,987,573,1097,580,1184,596,1179,597,1096,585,987,579,340,546"/>
+<area shape="poly" title=" " alt="" coords="301,512,327,415,349,353,379,291,416,232,462,183,488,164,517,150,548,141,581,137,2063,137,2277,139,2272,141,2063,143,581,143,549,146,519,155,491,169,465,187,420,235,384,293,354,355,332,417,306,513"/>
+<area shape="rect" href="struct_sprite.html" title="精灵类（继承自ImageIO和SpriteBase）" alt="" coords="1775,917,1830,944"/>
+<area shape="poly" title=" " alt="" coords="316,564,372,631,453,717,501,762,555,804,612,841,672,871,721,888,763,898,801,903,837,903,914,899,1011,899,1405,915,1777,929,1772,930,1405,920,1011,904,914,904,837,908,800,908,762,904,719,893,670,876,610,846,552,808,498,766,449,721,368,635,316,570"/>
+<area shape="rect" href="struct_popup_wave.html" title="弹出窗口音效结构" alt="" coords="671,285,763,312"/>
+<area shape="poly" title=" " alt="" coords="321,516,404,445,459,404,517,368,597,332,673,309,669,312,598,337,519,373,462,409,408,449,325,519"/>
+<area shape="rect" href="union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="5,528,89,555"/>
+<area shape="poly" title=" " alt="" coords="103,539,270,539,266,543,106,544"/>
+<area shape="rect" href="struct_rect_templateshort.html" title="矩形模板类（short类型）" alt="" coords="1420,221,1552,248"/>
+<area shape="poly" title=" " alt="" coords="1566,231,1787,231,2063,236,2196,243,2311,253,2398,267,2428,276,2447,286,2470,316,2488,362,2503,418,2515,480,2531,600,2537,684,2533,681,2525,601,2509,481,2498,419,2483,364,2465,319,2444,290,2426,281,2397,272,2311,258,2196,248,2063,242,1787,236,1568,236"/>
+<area shape="poly" title=" " alt="" coords="1513,256,1537,284,1557,316,1567,346,1568,372,1570,396,1581,423,1608,454,1637,472,1668,488,1703,515,1756,576,1795,630,1789,628,1752,580,1699,519,1665,493,1634,477,1605,458,1577,425,1565,397,1563,372,1561,347,1553,318,1533,287,1512,262"/>
+<area shape="rect" href="struct_i_face_tex.html" title="界面纹理结构" alt="" coords="1904,168,1980,195"/>
+<area shape="poly" title=" " alt="" coords="1566,222,1579,220,1906,184,1901,186,1579,225,1568,227"/>
+<area shape="rect" href="struct_rect_template_baseshort.html" title="矩形模板基类（short类型）" alt="" coords="1133,221,1295,248"/>
+<area shape="poly" title=" " alt="" coords="1309,232,1422,234,1417,236,1311,237"/>
+<area shape="poly" title=" " alt="" coords="2101,563,2168,566,2256,575,2352,593,2401,607,2447,624,2491,651,2525,683,2520,682,2488,656,2444,629,2399,612,2351,598,2255,580,2168,571,2101,568"/>
+<area shape="poly" title=" " alt="" coords="2019,563,1966,567,1935,571,1905,578,1857,603,1820,631,1818,627,1855,599,1903,574,1934,566,1965,561,2025,562"/>
+<area shape="rect" href="struct_object_array_hot_spot.html" title="热点数组基类" alt="" coords="1734,484,1872,511"/>
+<area shape="poly" title=" " alt="" coords="1887,500,1934,507,1981,519,2013,533,2042,552,2037,551,2011,538,1979,524,1933,512,1888,505"/>
+<area shape="rect" title=" " alt="" coords="1421,489,1551,516"/>
+<area shape="poly" title=" " alt="" coords="1566,499,1736,498,1731,499,1567,504"/>
+<area shape="rect" href="struct_ptr_array_window.html" title="窗口指针数组" alt="" coords="1428,540,1544,567"/>
+<area shape="poly" title=" " alt="" coords="1559,561,1629,575,1702,595,1777,629,1772,629,1700,600,1628,580,1559,567"/>
+<area shape="rect" href="struct_array_window.html" title="窗口数组" alt="" coords="1164,427,1264,453"/>
+<area shape="poly" title=" " alt="" coords="1279,435,1338,443,1368,454,1394,470,1405,484,1408,499,1410,513,1419,526,1436,540,1431,539,1415,530,1405,515,1403,500,1400,486,1391,474,1366,459,1337,448,1280,440"/>
+<area shape="rect" href="struct_array_base_simple_copy_window.html" title="窗口数组基类" alt="" coords="787,427,987,453"/>
+<area shape="poly" title=" " alt="" coords="1002,437,1166,439,1161,441,1003,443"/>
+<area shape="rect" title=" " alt="" coords="518,427,647,453"/>
+<area shape="poly" title=" " alt="" coords="662,438,788,439,784,441,664,442"/>
+<area shape="rect" href="struct_font.html" title="字体类" alt="" coords="1190,985,1238,1012"/>
+<area shape="poly" title=" " alt="" coords="1253,1003,1358,1019,1421,1025,1485,1028,2306,1028,2336,1025,2359,1017,2377,1004,2392,988,2417,943,2443,887,2452,863,2454,842,2450,802,2448,762,2454,741,2468,720,2482,707,2497,703,2502,702,2485,712,2472,723,2459,744,2454,763,2455,801,2459,842,2457,865,2448,889,2422,945,2397,991,2381,1008,2361,1022,2337,1030,2307,1033,1484,1033,1420,1031,1357,1025,1253,1009"/>
+<area shape="poly" title=" " alt="" coords="1230,970,1259,926,1302,872,1355,816,1415,767,1454,744,1489,729,1553,712,1619,701,1700,679,1766,657,1771,655,1702,684,1620,706,1554,717,1491,734,1457,749,1418,772,1358,819,1306,875,1264,929,1233,974"/>
+<area shape="rect" href="struct_buffer.html" title="缓冲区类（继承自ImageIO和BufferBase）" alt="" coords="1458,781,1514,808"/>
+<area shape="poly" title=" " alt="" coords="1252,994,1321,982,1358,969,1391,950,1424,916,1449,876,1467,837,1479,810,1482,807,1472,839,1454,879,1428,919,1394,954,1360,974,1323,987,1253,1000"/>
+<area shape="poly" title=" " alt="" coords="1252,1016,1291,1033,1332,1047,1420,1064,1538,1079,1821,1105,2095,1123,2278,1135,2273,1135,2095,1128,1821,1110,1538,1084,1419,1069,1331,1052,1289,1038,1251,1021"/>
+<area shape="rect" href="struct_font_base.html" title="字体基类" alt="" coords="848,985,926,1012"/>
+<area shape="poly" title=" " alt="" coords="941,996,1193,998,1187,999,941,1001"/>
+<area shape="poly" title=" " alt="" coords="830,986,762,976,684,972,617,972,616,967,684,966,763,971,835,985"/>
+<area shape="poly" title=" " alt="" coords="631,985,672,995,766,1001,850,1001,845,1002,766,1007,671,1000,631,990"/>
+<area shape="rect" href="struct_g_s_object.html" title="图形系统对象基类" alt="" coords="257,879,336,905"/>
+<area shape="poly" title=" " alt="" coords="330,911,377,938,430,959,493,969,552,972,547,973,492,974,428,964,374,942,330,917"/>
+<area shape="rect" href="struct_g_s_buffer.html" title="图形系统缓冲区对象" alt="" coords="546,896,620,923"/>
+<area shape="poly" title=" " alt="" coords="351,893,547,906,543,909,352,898"/>
+<area shape="rect" href="struct_g_s_cursor.html" title="图形系统光标对象" alt="" coords="543,76,622,103"/>
+<area shape="poly" title=" " alt="" coords="306,863,384,652,491,354,576,106,578,101,497,356,389,654,311,865"/>
+<area shape="rect" href="struct_g_s_texture.html" title="图形系统纹理对象" alt="" coords="541,631,624,657"/>
+<area shape="poly" title=" " alt="" coords="323,866,567,656,564,660,327,870"/>
+<area shape="rect" href="struct_g_s_sprite.html" title="图形系统精灵对象" alt="" coords="1177,1109,1251,1136"/>
+<area shape="poly" title=" " alt="" coords="326,912,374,945,430,975,473,987,518,993,681,1021,808,1040,935,1060,1097,1091,1179,1113,1174,1113,1096,1096,934,1065,807,1045,680,1027,518,999,472,992,428,980,372,950,326,918"/>
+<area shape="poly" title=" " alt="" coords="1529,787,1832,753,2256,712,2502,698,2497,698,2257,717,1832,759,1530,792"/>
+<area shape="poly" title=" " alt="" coords="1529,796,1579,800,1826,808,2019,812,2014,812,1826,813,1579,805,1530,802"/>
+<area shape="poly" title=" " alt="" coords="1528,782,1700,740,1728,721,1753,697,1789,658,1794,655,1757,701,1731,725,1702,745,1530,787"/>
+<area shape="poly" title=" " alt="" coords="1513,816,1545,840,1580,862,1613,874,1639,880,1667,884,1702,892,1777,920,1772,920,1700,897,1666,889,1638,885,1611,879,1578,866,1542,845,1512,821"/>
+<area shape="rect" href="struct_image_i_o.html" title="图像输入输出结构" alt="" coords="851,731,923,757"/>
+<area shape="poly" title=" " alt="" coords="938,746,1460,791,1455,793,938,751"/>
+<area shape="poly" title=" " alt="" coords="937,735,1014,719,1055,706,1095,690,1125,672,1154,652,1197,618,1201,615,1157,656,1128,677,1098,694,1057,711,1015,724,939,740"/>
+<area shape="poly" title=" " alt="" coords="937,758,1051,795,1209,841,1391,886,1579,921,1687,929,1777,932,1772,932,1687,935,1579,927,1390,892,1207,846,1049,800,937,764"/>
+<area shape="rect" href="struct_buffer_base.html" title="缓冲区基类" alt="" coords="1011,839,1096,865"/>
+<area shape="poly" title=" " alt="" coords="1111,842,1461,797,1455,799,1112,847"/>
+<area shape="poly" title=" " alt="" coords="635,900,1013,856,1008,858,636,906"/>
+<area shape="rect" href="struct_cursor.html" title="光标类" alt="" coords="1456,591,1516,617"/>
+<area shape="poly" title=" " alt="" coords="1531,611,1579,619,1683,631,1771,640,1765,641,1682,636,1579,624,1532,616"/>
+<area shape="rect" href="struct_cursor_base.html" title="光标基类" alt="" coords="251,83,342,109"/>
+<area shape="poly" title=" " alt="" coords="307,122,354,239,389,310,431,378,469,429,489,446,519,463,571,483,614,490,716,488,1215,488,1249,490,1276,497,1320,519,1362,547,1418,576,1458,593,1453,594,1416,581,1359,552,1317,523,1274,502,1248,496,1215,493,716,493,613,495,569,488,517,468,486,450,465,432,427,382,385,313,349,241,307,127"/>
+<area shape="poly" title=" " alt="" coords="355,79,422,68,494,68,545,78,540,81,494,73,423,74,358,83"/>
+<area shape="poly" title=" " alt="" coords="525,95,494,97,344,99,341,94,494,92,530,92"/>
+<area shape="poly" title=" " alt="" coords="1261,600,1458,603,1453,605,1262,606"/>
+<area shape="rect" href="struct_texture_base.html" title="纹理基类" alt="" coords="840,588,934,615"/>
+<area shape="poly" title=" " alt="" coords="949,599,1184,602,1179,604,950,604"/>
+<area shape="poly" title=" " alt="" coords="846,624,809,643,763,657,727,662,690,662,626,655,624,650,690,657,726,657,762,652,807,638,851,621"/>
+<area shape="poly" title=" " alt="" coords="638,629,671,623,842,604,837,606,672,628,641,634"/>
+<area shape="poly" title=" " alt="" coords="2331,162,2379,205,2399,217,2416,225,2432,235,2448,253,2479,311,2503,374,2519,438,2530,501,2539,611,2539,684,2535,680,2534,611,2525,501,2514,439,2498,375,2474,313,2443,256,2429,239,2414,230,2396,222,2376,209,2330,167"/>
+<area shape="rect" href="struct_button_group.html" title="按钮组" alt="" coords="2490,91,2585,117"/>
+<area shape="poly" title=" " alt="" coords="2339,116,2377,100,2435,93,2492,97,2487,98,2436,98,2378,105,2341,121"/>
+<area shape="poly" title=" " alt="" coords="2473,121,2446,129,2336,141,2335,136,2445,124,2478,120"/>
+<area shape="poly" title=" " alt="" coords="1845,932,1919,937,2016,938,2124,933,2232,916,2299,903,2351,891,2375,881,2397,868,2420,849,2444,824,2452,811,2455,798,2455,773,2454,747,2459,733,2468,720,2482,708,2497,704,2502,702,2485,712,2472,723,2463,736,2460,748,2460,773,2460,799,2457,813,2448,827,2424,853,2400,872,2377,886,2353,896,2300,908,2233,921,2125,938,2016,943,1919,942,1846,937"/>
+<area shape="rect" href="struct_sprite_base.html" title="精灵基类" alt="" coords="1443,1119,1529,1145"/>
+<area shape="poly" title=" " alt="" coords="1520,1108,1777,945,1782,944,1522,1112"/>
+<area shape="poly" title=" " alt="" coords="1267,1122,1445,1130,1440,1131,1267,1127"/>
+<area shape="rect" href="struct_ptr_array_sprite_base.html" title="精灵指针数组" alt="" coords="820,1109,954,1136"/>
+<area shape="poly" title=" " alt="" coords="969,1120,1179,1122,1174,1123,969,1125"/>
+<area shape="rect" href="struct_array_sprite_base.html" title="精灵数组" alt="" coords="525,1109,641,1136"/>
+<area shape="poly" title=" " alt="" coords="656,1120,823,1122,817,1123,657,1125"/>
+<area shape="rect" href="struct_array_base_simple_copy_sprite_base.html" title="简单拷贝精灵数组基类" alt="" coords="188,1109,405,1136"/>
+<area shape="poly" title=" " alt="" coords="420,1120,527,1122,522,1123,421,1125"/>
+<area shape="rect" href="struct_arrayfloat.html" title="浮点数数组" alt="" coords="1447,1169,1525,1196"/>
+<area shape="poly" title=" " alt="" coords="1540,1170,1620,1145,1661,1125,1699,1099,1735,1061,1762,1017,1782,975,1795,946,1799,943,1787,977,1767,1019,1739,1064,1703,1103,1664,1130,1622,1150,1541,1176"/>
+<area shape="rect" href="struct_array_base_simple_copyfloat.html" title="浮点数数组基类" alt="" coords="1125,1167,1303,1193"/>
+<area shape="poly" title=" " alt="" coords="1318,1178,1449,1182,1444,1182,1319,1184"/>
+<area shape="rect" title=" " alt="" coords="833,1167,941,1193"/>
+<area shape="poly" title=" " alt="" coords="956,1177,1127,1180,1122,1180,956,1183"/>
+<area shape="poly" title=" " alt="" coords="2359,1091,2405,1090,2426,1084,2444,1071,2452,1060,2458,1044,2464,1004,2463,954,2458,900,2451,795,2455,752,2467,720,2482,707,2497,703,2502,701,2485,712,2472,723,2460,753,2457,795,2464,900,2468,954,2469,1004,2463,1046,2457,1062,2448,1075,2428,1089,2406,1096,2360,1096"/>
+<area shape="rect" href="struct_string_list.html" title="字符串列表" alt="" coords="2024,1213,2100,1240"/>
+<area shape="poly" title=" " alt="" coords="2115,1242,2167,1255,2227,1264,2291,1263,2323,1257,2353,1247,2386,1230,2409,1211,2427,1187,2443,1152,2453,1112,2455,1060,2448,934,2445,869,2445,809,2451,758,2458,737,2468,720,2482,707,2497,703,2502,701,2484,712,2472,723,2463,739,2457,759,2450,809,2450,869,2453,933,2460,1060,2458,1113,2448,1154,2431,1189,2413,1215,2389,1234,2355,1252,2324,1262,2292,1268,2227,1269,2166,1260,2114,1247"/>
+<area shape="poly" title=" " alt="" coords="2085,1200,2111,1175,2142,1151,2206,1117,2263,1095,2268,1094,2208,1121,2145,1156,2114,1179,2087,1204"/>
+<area shape="poly" title=" " alt="" coords="2116,1237,2144,1240,2174,1240,2204,1235,2231,1223,2241,1214,2244,1203,2247,1190,2255,1176,2282,1151,2287,1149,2259,1179,2252,1192,2249,1204,2245,1217,2234,1228,2206,1240,2175,1245,2144,1246,2115,1242"/>
+<area shape="rect" href="struct_ptr_array_string_list_entry.html" title="字符串列表条目指针数组" alt="" coords="1725,1217,1880,1244"/>
+<area shape="poly" title=" " alt="" coords="1896,1227,2026,1227,2020,1227,1896,1232"/>
+<area shape="rect" href="struct_array_string_list_entry.html" title="字符串列表条目数组" alt="" coords="1417,1220,1555,1247"/>
+<area shape="poly" title=" " alt="" coords="1570,1230,1727,1231,1722,1231,1570,1235"/>
+<area shape="rect" href="struct_array_base_simple_copy_string_list_entry.html" title="字符串列表条目数组基类" alt="" coords="1120,1217,1308,1260"/>
+<area shape="poly" title=" " alt="" coords="1323,1234,1419,1235,1414,1235,1323,1239"/>
+<area shape="rect" title=" " alt="" coords="803,1225,971,1252"/>
+<area shape="poly" title=" " alt="" coords="987,1236,1123,1239,1117,1239,987,1241"/>
+<area shape="poly" title=" " alt="" coords="2349,1143,2374,1145,2400,1143,2424,1136,2444,1122,2453,1108,2460,1091,2466,1044,2464,988,2459,926,2450,806,2453,756,2459,736,2468,720,2482,707,2497,703,2502,701,2484,712,2472,723,2464,738,2459,757,2455,806,2464,925,2469,987,2471,1044,2465,1092,2458,1111,2448,1126,2426,1141,2401,1148,2374,1150,2349,1148"/>
+<area shape="poly" title=" " alt="" coords="777,292,904,286,1052,283,1487,283,1583,279,1704,271,1841,263,1985,257,2126,257,2257,267,2315,277,2367,291,2411,309,2447,333,2468,359,2485,399,2499,448,2511,502,2529,608,2537,684,2532,681,2523,609,2506,503,2494,450,2480,401,2463,362,2444,337,2409,314,2365,296,2314,282,2256,272,2126,262,1985,262,1841,268,1704,277,1583,285,1487,288,1052,288,905,291,779,297"/>
+<area shape="rect" href="struct_game_access_const.html" title="游戏访问常量结构体，可能用作基类或占位符" alt="" coords="2470,733,2605,760"/>
+<area shape="poly" title=" " alt="" coords="2592,725,2652,707,2657,705,2593,730"/>
+<area shape="poly" title=" " alt="" coords="1963,154,2001,116,2053,75,2084,56,2117,41,2151,30,2187,27,2539,27,2563,30,2580,40,2594,56,2607,77,2629,131,2646,206,2659,295,2669,390,2681,568,2684,684,2680,680,2675,569,2664,390,2654,296,2641,207,2624,133,2603,80,2590,59,2577,44,2561,35,2538,32,2187,32,2152,36,2119,46,2086,61,2056,79,2004,120,1966,158"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac5d75468957771c04ebfd7a809a59bb0" id="r_ac5d75468957771c04ebfd7a809a59bb0"><td class="memItemLeft"><a class="el" href="_enums_8h.html#ab8507246f53c4bbefc76b43ff5bd8812">_BYTE</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac5d75468957771c04ebfd7a809a59bb0">gap18F4</a> [4]</td></tr>
+<tr class="memitem:a1831bde5cdad745770bd93767756fef3" id="r_a1831bde5cdad745770bd93767756fef3"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1831bde5cdad745770bd93767756fef3">popup_id</a></td></tr>
+<tr class="memitem:a263c817dfa7e1cd132c01d7eb2f37e9d" id="r_a263c817dfa7e1cd132c01d7eb2f37e9d"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="#a263c817dfa7e1cd132c01d7eb2f37e9d">extra_data</a></td></tr>
+<tr class="memitem:af12ca919117582be520e05ca073eb696" id="r_af12ca919117582be520e05ca073eb696"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="#af12ca919117582be520e05ca073eb696">extra_data2</a></td></tr>
+<tr class="memitem:a60b5b83cb3b20e008a9b800c710a7288" id="r_a60b5b83cb3b20e008a9b800c710a7288"><td class="memItemLeft"><a class="el" href="struct_i_face_tex.html">IFaceTex</a>&#160;</td><td class="memItemRight"><a class="el" href="#a60b5b83cb3b20e008a9b800c710a7288">texs</a> [3][3]</td></tr>
+<tr class="inherit_header pub_attribs_struct_base_pop"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_struct_base_pop')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="struct_base_pop.html">BasePop</a></td></tr>
+<tr class="memitem:ac0190d45bf13889865bf1376a069251a inherit pub_attribs_struct_base_pop" id="r_ac0190d45bf13889865bf1376a069251a"><td class="memItemLeft"><a class="el" href="struct_graphic_win.html">GraphicWin</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ac0190d45bf13889865bf1376a069251a">external_parent</a></td></tr>
+<tr class="memitem:af45e8848ff8e54a2989b84e50b81f291 inherit pub_attribs_struct_base_pop" id="r_af45e8848ff8e54a2989b84e50b81f291"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#af45e8848ff8e54a2989b84e50b81f291">external_x</a></td></tr>
+<tr class="memitem:aac26741adb5e186e1416a557da94847a inherit pub_attribs_struct_base_pop" id="r_aac26741adb5e186e1416a557da94847a"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aac26741adb5e186e1416a557da94847a">external_y</a></td></tr>
+<tr class="memitem:a9c59b758f2d95c0c39f606faf82346ca inherit pub_attribs_struct_base_pop" id="r_a9c59b758f2d95c0c39f606faf82346ca"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a9c59b758f2d95c0c39f606faf82346ca">external_xs</a></td></tr>
+<tr class="memitem:a6865b82576205959371457385d4c3a2b inherit pub_attribs_struct_base_pop" id="r_a6865b82576205959371457385d4c3a2b"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a6865b82576205959371457385d4c3a2b">external_ys</a></td></tr>
+<tr class="memitem:ab669c344368299ba1c8eea59880cea1a inherit pub_attribs_struct_base_pop" id="r_ab669c344368299ba1c8eea59880cea1a"><td class="memItemLeft"><a class="el" href="struct_graphic_win.html">GraphicWin</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ab669c344368299ba1c8eea59880cea1a">work</a></td></tr>
+<tr class="memitem:aa66c6392723721e51cbe1d188dd089e8 inherit pub_attribs_struct_base_pop" id="r_aa66c6392723721e51cbe1d188dd089e8"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aa66c6392723721e51cbe1d188dd089e8">result</a></td></tr>
+<tr class="memitem:ae95aa0bf434eb0c6e56b8dc25e863cc1 inherit pub_attribs_struct_base_pop" id="r_ae95aa0bf434eb0c6e56b8dc25e863cc1"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ae95aa0bf434eb0c6e56b8dc25e863cc1">def_or_len</a></td></tr>
+<tr class="memitem:a6b27cb1c6173c52dc16a991950c81f6d inherit pub_attribs_struct_base_pop" id="r_a6b27cb1c6173c52dc16a991950c81f6d"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a6b27cb1c6173c52dc16a991950c81f6d">caption</a></td></tr>
+<tr class="memitem:acf17dad82b5110450232e1e7dd64f964 inherit pub_attribs_struct_base_pop" id="r_acf17dad82b5110450232e1e7dd64f964"><td class="memItemLeft"><a class="el" href="struct_rect_templateshort.html">RectTemplateshort</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#acf17dad82b5110450232e1e7dd64f964">sprite_rect</a></td></tr>
+<tr class="memitem:aef2aac6556a978140b359e5ce7097b0a inherit pub_attribs_struct_base_pop" id="r_aef2aac6556a978140b359e5ce7097b0a"><td class="memItemLeft"><a class="el" href="struct_button.html">Button</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aef2aac6556a978140b359e5ce7097b0a">ok</a></td></tr>
+<tr class="memitem:a4b6f8619f06fa918d5e8e77abfa3bbb7 inherit pub_attribs_struct_base_pop" id="r_a4b6f8619f06fa918d5e8e77abfa3bbb7"><td class="memItemLeft"><a class="el" href="struct_button.html">Button</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a4b6f8619f06fa918d5e8e77abfa3bbb7">cancel</a></td></tr>
+<tr class="memitem:a76575f60a4e0809b1c83206912c36ef4 inherit pub_attribs_struct_base_pop" id="r_a76575f60a4e0809b1c83206912c36ef4"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a76575f60a4e0809b1c83206912c36ef4">num_buttons</a></td></tr>
+<tr class="memitem:a6a68e55a928409d7350421d7452980d3 inherit pub_attribs_struct_base_pop" id="r_a6a68e55a928409d7350421d7452980d3"><td class="memItemLeft"><a class="el" href="struct_button.html">Button</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a6a68e55a928409d7350421d7452980d3">buttons</a> [8]</td></tr>
+<tr class="memitem:a6468fa83b00605928d47aee0647897c9 inherit pub_attribs_struct_base_pop" id="r_a6468fa83b00605928d47aee0647897c9"><td class="memItemLeft"><a class="el" href="struct_sprite.html">Sprite</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a6468fa83b00605928d47aee0647897c9">sprite_internal</a></td></tr>
+<tr class="memitem:a1a24e4738376ae6acf0769b4dbbff8b5 inherit pub_attribs_struct_base_pop" id="r_a1a24e4738376ae6acf0769b4dbbff8b5"><td class="memItemLeft"><a class="el" href="struct_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a1a24e4738376ae6acf0769b4dbbff8b5">lone_sprite</a></td></tr>
+<tr class="memitem:a37e2f9fd90007bef4a13130590dba6ad inherit pub_attribs_struct_base_pop" id="r_a37e2f9fd90007bef4a13130590dba6ad"><td class="memItemLeft"><a class="el" href="struct_buffer.html">Buffer</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a37e2f9fd90007bef4a13130590dba6ad">back_tile_b</a></td></tr>
+<tr class="memitem:a471ad445bad0fc66aa4d477f888a8bcf inherit pub_attribs_struct_base_pop" id="r_a471ad445bad0fc66aa4d477f888a8bcf"><td class="memItemLeft"><a class="el" href="struct_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a471ad445bad0fc66aa4d477f888a8bcf">back_tile</a></td></tr>
+<tr class="memitem:a1f3aa8412890e621766bc0475c870a0f inherit pub_attribs_struct_base_pop" id="r_a1f3aa8412890e621766bc0475c870a0f"><td class="memItemLeft"><a class="el" href="struct_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a1f3aa8412890e621766bc0475c870a0f">center_sprite</a></td></tr>
+<tr class="memitem:adfa839e4076f720c5ebf84120d6f2216 inherit pub_attribs_struct_base_pop" id="r_adfa839e4076f720c5ebf84120d6f2216"><td class="memItemLeft"><a class="el" href="struct_string_box.html">StringBox</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#adfa839e4076f720c5ebf84120d6f2216">string_box</a></td></tr>
+<tr class="memitem:a5cf14a65eb446c4cc75169b074d6399d inherit pub_attribs_struct_base_pop" id="r_a5cf14a65eb446c4cc75169b074d6399d"><td class="memItemLeft"><a class="el" href="struct_string_list.html">StringList</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a5cf14a65eb446c4cc75169b074d6399d">buttonlist</a></td></tr>
+<tr class="memitem:a8ef317d7dab4c8029152b5c6d200fc80 inherit pub_attribs_struct_base_pop" id="r_a8ef317d7dab4c8029152b5c6d200fc80"><td class="memItemLeft"><a class="el" href="struct_string_list.html">StringList</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a8ef317d7dab4c8029152b5c6d200fc80">stringlist</a></td></tr>
+<tr class="memitem:a2825b54791374f3f134f9e6738a01ea2 inherit pub_attribs_struct_base_pop" id="r_a2825b54791374f3f134f9e6738a01ea2"><td class="memItemLeft"><a class="el" href="struct_string_list.html">StringList</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a2825b54791374f3f134f9e6738a01ea2">itemlist</a></td></tr>
+<tr class="memitem:a68e086e5cc16c844dbcbb8224f7eecdf inherit pub_attribs_struct_base_pop" id="r_a68e086e5cc16c844dbcbb8224f7eecdf"><td class="memItemLeft"><a class="el" href="struct_string_list.html">StringList</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a68e086e5cc16c844dbcbb8224f7eecdf">defaultlist</a></td></tr>
+<tr class="memitem:afcf13884ed30b129adb53af04118bbca inherit pub_attribs_struct_base_pop" id="r_afcf13884ed30b129adb53af04118bbca"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#afcf13884ed30b129adb53af04118bbca">left_padding</a></td></tr>
+<tr class="memitem:a52b9731d17e1ef6636d98d937c235c65 inherit pub_attribs_struct_base_pop" id="r_a52b9731d17e1ef6636d98d937c235c65"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a52b9731d17e1ef6636d98d937c235c65">right_padding</a></td></tr>
+<tr class="memitem:afa373c7f1427a722fbe647a77060be37 inherit pub_attribs_struct_base_pop" id="r_afa373c7f1427a722fbe647a77060be37"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#afa373c7f1427a722fbe647a77060be37">top_padding</a></td></tr>
+<tr class="memitem:abc4a9c80372bb3f46f8dc96b25d6eb05 inherit pub_attribs_struct_base_pop" id="r_abc4a9c80372bb3f46f8dc96b25d6eb05"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#abc4a9c80372bb3f46f8dc96b25d6eb05">bottom_padding</a></td></tr>
+<tr class="memitem:a4575b1f8014356b8e83e412689103e81 inherit pub_attribs_struct_base_pop" id="r_a4575b1f8014356b8e83e412689103e81"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a4575b1f8014356b8e83e412689103e81">margin_padding</a></td></tr>
+<tr class="memitem:a18e28563c6a7afcd60547f91c42dbe98 inherit pub_attribs_struct_base_pop" id="r_a18e28563c6a7afcd60547f91c42dbe98"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a18e28563c6a7afcd60547f91c42dbe98">object_padding</a></td></tr>
+<tr class="memitem:a2ec6e2981a79637df9883283501d6fc4 inherit pub_attribs_struct_base_pop" id="r_a2ec6e2981a79637df9883283501d6fc4"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a2ec6e2981a79637df9883283501d6fc4">text_indent</a></td></tr>
+<tr class="memitem:a7e5a145885bd1fb144a5e2dba7855345 inherit pub_attribs_struct_base_pop" id="r_a7e5a145885bd1fb144a5e2dba7855345"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a7e5a145885bd1fb144a5e2dba7855345">centre_string_text</a></td></tr>
+<tr class="memitem:aaea465099b5bc595c0f31da91de113d9 inherit pub_attribs_struct_base_pop" id="r_aaea465099b5bc595c0f31da91de113d9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a></td></tr>
+<tr class="memitem:af0a308520c5e9d74e7c1d0b10ca3b685 inherit pub_attribs_struct_base_pop" id="r_af0a308520c5e9d74e7c1d0b10ca3b685"><td class="memItemLeft"><a class="el" href="struct_rect_templateshort.html">RectTemplateshort</a> const <a class="el" href="struct_string.html">String</a> *<a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#af0a308520c5e9d74e7c1d0b10ca3b685">dialog_edit_default</a></td></tr>
+<tr class="memitem:a1fb75ccf56796e644d05adb21893ae53 inherit pub_attribs_struct_base_pop" id="r_a1fb75ccf56796e644d05adb21893ae53"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a1fb75ccf56796e644d05adb21893ae53">dialog_type</a></td></tr>
+<tr class="memitem:a41651d78f68f25d6c2952857f032f6c1 inherit pub_attribs_struct_base_pop" id="r_a41651d78f68f25d6c2952857f032f6c1"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a41651d78f68f25d6c2952857f032f6c1">dialog_state_flag</a></td></tr>
+<tr class="memitem:a71b9a35aa5af236a60cee08c4c0500ff inherit pub_attribs_struct_base_pop" id="r_a71b9a35aa5af236a60cee08c4c0500ff"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a71b9a35aa5af236a60cee08c4c0500ff">dialog_width</a></td></tr>
+<tr class="memitem:add5a74edb91a13ab6f6d0122fac4bc15 inherit pub_attribs_struct_base_pop" id="r_add5a74edb91a13ab6f6d0122fac4bc15"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#add5a74edb91a13ab6f6d0122fac4bc15">dialog_height</a></td></tr>
+<tr class="memitem:ab07d5cae73160353563b220f04b16d6c inherit pub_attribs_struct_base_pop" id="r_ab07d5cae73160353563b220f04b16d6c"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ab07d5cae73160353563b220f04b16d6c">dialog_indent</a></td></tr>
+<tr class="memitem:a6798e4b93dbac579522a77e86e420c59 inherit pub_attribs_struct_base_pop" id="r_a6798e4b93dbac579522a77e86e420c59"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a6798e4b93dbac579522a77e86e420c59">dialog_force_item_height</a></td></tr>
+<tr class="memitem:aed4227ab352543700e8a50269f41fcaf inherit pub_attribs_struct_base_pop" id="r_aed4227ab352543700e8a50269f41fcaf"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aed4227ab352543700e8a50269f41fcaf">dialog_rows</a></td></tr>
+<tr class="memitem:a87d985fcbde90e502d4229a28693fb5d inherit pub_attribs_struct_base_pop" id="r_a87d985fcbde90e502d4229a28693fb5d"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a87d985fcbde90e502d4229a28693fb5d">dialog_cols</a></td></tr>
+<tr class="memitem:afc99b488b0a74f884e1107cb8c040074 inherit pub_attribs_struct_base_pop" id="r_afc99b488b0a74f884e1107cb8c040074"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#afc99b488b0a74f884e1107cb8c040074">dialog_autosize</a></td></tr>
+<tr class="memitem:a5a101c29f93d1b966863cb91850e7a48 inherit pub_attribs_struct_base_pop" id="r_a5a101c29f93d1b966863cb91850e7a48"><td class="memItemLeft"><a class="el" href="struct_dialog.html">Dialog</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a5a101c29f93d1b966863cb91850e7a48">dialog</a></td></tr>
+<tr class="memitem:adc4e10f30832dd075805b63707c33a19 inherit pub_attribs_struct_base_pop" id="r_adc4e10f30832dd075805b63707c33a19"><td class="memItemLeft"><a class="el" href="struct_popup_wave.html">PopupWave</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#adc4e10f30832dd075805b63707c33a19">popup_wave</a> [2]</td></tr>
+<tr class="memitem:a5eb5b12ffe32da9d91cd09a8b5095171 inherit pub_attribs_struct_base_pop" id="r_a5eb5b12ffe32da9d91cd09a8b5095171"><td class="memItemLeft"><a class="el" href="struct_spot.html">Spot</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a5eb5b12ffe32da9d91cd09a8b5095171">spots</a></td></tr>
+<tr class="memitem:ab038afca8d763a5d0c949990d4bf8bc6 inherit pub_attribs_struct_base_pop" id="r_ab038afca8d763a5d0c949990d4bf8bc6"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ab038afca8d763a5d0c949990d4bf8bc6">window_style</a></td></tr>
+<tr class="memitem:a188f3856e44b2215fb00f3f17c468223 inherit pub_attribs_struct_base_pop" id="r_a188f3856e44b2215fb00f3f17c468223"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a188f3856e44b2215fb00f3f17c468223">popup_flags</a></td></tr>
+<tr class="memitem:af20008c085169f766ca307d86253031b inherit pub_attribs_struct_base_pop" id="r_af20008c085169f766ca307d86253031b"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#af20008c085169f766ca307d86253031b">extra_flags</a></td></tr>
+<tr class="memitem:aa29d4f09d1c0be2f01f1934a9e7b429b inherit pub_attribs_struct_base_pop" id="r_aa29d4f09d1c0be2f01f1934a9e7b429b"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aa29d4f09d1c0be2f01f1934a9e7b429b">calc_num_buttons</a></td></tr>
+<tr class="memitem:aeea9c4653bd3a80b6020d3cbfe4ac73b inherit pub_attribs_struct_base_pop" id="r_aeea9c4653bd3a80b6020d3cbfe4ac73b"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aeea9c4653bd3a80b6020d3cbfe4ac73b">calc_x</a></td></tr>
+<tr class="memitem:a15b6d522d8167f4e27850afe4ab6d4ed inherit pub_attribs_struct_base_pop" id="r_a15b6d522d8167f4e27850afe4ab6d4ed"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a15b6d522d8167f4e27850afe4ab6d4ed">calc_y</a></td></tr>
+<tr class="memitem:ae90c1389c538fe571ee9f0fbdc0ef99b inherit pub_attribs_struct_base_pop" id="r_ae90c1389c538fe571ee9f0fbdc0ef99b"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ae90c1389c538fe571ee9f0fbdc0ef99b">calc_width</a></td></tr>
+<tr class="memitem:ac7acf18c5191abbe3d3f3d2d5af6a179 inherit pub_attribs_struct_base_pop" id="r_ac7acf18c5191abbe3d3f3d2d5af6a179"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ac7acf18c5191abbe3d3f3d2d5af6a179">calc_height</a></td></tr>
+<tr class="memitem:ab4c970e59c8dd683246f5b61051636a3 inherit pub_attribs_struct_base_pop" id="r_ab4c970e59c8dd683246f5b61051636a3"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ab4c970e59c8dd683246f5b61051636a3">calc_box_height</a></td></tr>
+<tr class="memitem:a72a4ebb0f6175950b2e599e673564e68 inherit pub_attribs_struct_base_pop" id="r_a72a4ebb0f6175950b2e599e673564e68"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a72a4ebb0f6175950b2e599e673564e68">calc_item_height</a></td></tr>
+<tr class="memitem:a81b581a0c831d0bb3cf56690be216a88 inherit pub_attribs_struct_base_pop" id="r_a81b581a0c831d0bb3cf56690be216a88"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a81b581a0c831d0bb3cf56690be216a88">calc_button_width</a></td></tr>
+<tr class="memitem:aedea42db20e95647f6656aa316620367 inherit pub_attribs_struct_base_pop" id="r_aedea42db20e95647f6656aa316620367"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#aedea42db20e95647f6656aa316620367">calc_button_height</a></td></tr>
+<tr class="memitem:a565409e0df961f0bde52824879703411 inherit pub_attribs_struct_base_pop" id="r_a565409e0df961f0bde52824879703411"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a565409e0df961f0bde52824879703411">calc_string_height</a></td></tr>
+<tr class="memitem:a225e49ec7e36f6a06f6a58ef3b2341e3 inherit pub_attribs_struct_base_pop" id="r_a225e49ec7e36f6a06f6a58ef3b2341e3"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a225e49ec7e36f6a06f6a58ef3b2341e3">calc_sprite_width</a></td></tr>
+<tr class="memitem:ac03d83152a8fb2447678e41aed72975b inherit pub_attribs_struct_base_pop" id="r_ac03d83152a8fb2447678e41aed72975b"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ac03d83152a8fb2447678e41aed72975b">calc_sprite_height</a></td></tr>
+<tr class="memitem:ad12b0e9f03cec7db17caed08bdc48b1e inherit pub_attribs_struct_base_pop" id="r_ad12b0e9f03cec7db17caed08bdc48b1e"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ad12b0e9f03cec7db17caed08bdc48b1e">calc_margin_padding</a></td></tr>
+<tr class="memitem:a534a7b4240d2a24e6c1e50bc28caee05 inherit pub_attribs_struct_base_pop" id="r_a534a7b4240d2a24e6c1e50bc28caee05"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a534a7b4240d2a24e6c1e50bc28caee05">calc_object_padding</a></td></tr>
+<tr class="memitem:a37631a39ef7dfb56cfc1ccf6b2a6aaa5 inherit pub_attribs_struct_base_pop" id="r_a37631a39ef7dfb56cfc1ccf6b2a6aaa5"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a37631a39ef7dfb56cfc1ccf6b2a6aaa5">calc_top_padding</a></td></tr>
+<tr class="memitem:a9b615a44ae9affe9b18a7c402d32b8b3 inherit pub_attribs_struct_base_pop" id="r_a9b615a44ae9affe9b18a7c402d32b8b3"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a9b615a44ae9affe9b18a7c402d32b8b3">calc_bottom_padding</a></td></tr>
+<tr class="memitem:a1f4e4d7fc76a9732da0ed643fc703e2b inherit pub_attribs_struct_base_pop" id="r_a1f4e4d7fc76a9732da0ed643fc703e2b"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a1f4e4d7fc76a9732da0ed643fc703e2b">calc_left_padding</a></td></tr>
+<tr class="memitem:a224faef460461cac4ebbebb60ac491af inherit pub_attribs_struct_base_pop" id="r_a224faef460461cac4ebbebb60ac491af"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a224faef460461cac4ebbebb60ac491af">calc_right_padding</a></td></tr>
+<tr class="memitem:a09308a957925a69f2e18b2c307d252a8 inherit pub_attribs_struct_base_pop" id="r_a09308a957925a69f2e18b2c307d252a8"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a09308a957925a69f2e18b2c307d252a8">numeric_edit</a></td></tr>
+<tr class="memitem:acdfb1473a984797dfe05af150cbd3012 inherit pub_attribs_struct_base_pop" id="r_acdfb1473a984797dfe05af150cbd3012"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#acdfb1473a984797dfe05af150cbd3012">base_x</a></td></tr>
+<tr class="memitem:a5540a290484c83cda90888f52af40f39 inherit pub_attribs_struct_base_pop" id="r_a5540a290484c83cda90888f52af40f39"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a5540a290484c83cda90888f52af40f39">base_y</a></td></tr>
+<tr class="memitem:ab596c9b77d49b6bbda34af925f91365a inherit pub_attribs_struct_base_pop" id="r_ab596c9b77d49b6bbda34af925f91365a"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ab596c9b77d49b6bbda34af925f91365a">special</a></td></tr>
+<tr class="memitem:a4bad93a14cb102caf535c3f78a13cdb7 inherit pub_attribs_struct_base_pop" id="r_a4bad93a14cb102caf535c3f78a13cdb7"><td class="memItemLeft">unsigned <a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a4bad93a14cb102caf535c3f78a13cdb7">time_out</a></td></tr>
+<tr class="memitem:a5d50ec89165a586e380646364cfc7a9f inherit pub_attribs_struct_base_pop" id="r_a5d50ec89165a586e380646364cfc7a9f"><td class="memItemLeft">unsigned <a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a5d50ec89165a586e380646364cfc7a9f">time_out_start</a></td></tr>
+<tr class="memitem:ae16e9ed4af5a80d461cfd49b265aba18 inherit pub_attribs_struct_base_pop" id="r_ae16e9ed4af5a80d461cfd49b265aba18"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ae16e9ed4af5a80d461cfd49b265aba18">sprite_scale_num</a></td></tr>
+<tr class="memitem:a773660ad9303eb81ab16d7705a7e17cc inherit pub_attribs_struct_base_pop" id="r_a773660ad9303eb81ab16d7705a7e17cc"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a773660ad9303eb81ab16d7705a7e17cc">sprite_scale_den</a></td></tr>
+<tr class="memitem:a6e9a88b84f00bcb9c07cd18ef1548bb4 inherit pub_attribs_struct_base_pop" id="r_a6e9a88b84f00bcb9c07cd18ef1548bb4"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a6e9a88b84f00bcb9c07cd18ef1548bb4">back_color</a></td></tr>
+<tr class="memitem:a856eed298fabf90c94094ea0a90c983c inherit pub_attribs_struct_base_pop" id="r_a856eed298fabf90c94094ea0a90c983c"><td class="memItemLeft"><a class="el" href="struct_font.html">Font</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a856eed298fabf90c94094ea0a90c983c">string_font</a> [4]</td></tr>
+<tr class="memitem:a24101d27a25908237f2be7b15f170913 inherit pub_attribs_struct_base_pop" id="r_a24101d27a25908237f2be7b15f170913"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a24101d27a25908237f2be7b15f170913">string_color</a> [4]</td></tr>
+<tr class="memitem:a433be34f020d9e9b7a942979977a3623 inherit pub_attribs_struct_base_pop" id="r_a433be34f020d9e9b7a942979977a3623"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a433be34f020d9e9b7a942979977a3623">string_shadow</a> [4]</td></tr>
+<tr class="memitem:a857af9300adafae38a6e1a23d4cb8c82 inherit pub_attribs_struct_base_pop" id="r_a857af9300adafae38a6e1a23d4cb8c82"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a857af9300adafae38a6e1a23d4cb8c82">string_shadow_off_x</a> [4]</td></tr>
+<tr class="memitem:a07df7975bac64c18c2967d4d5569d8a4 inherit pub_attribs_struct_base_pop" id="r_a07df7975bac64c18c2967d4d5569d8a4"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a07df7975bac64c18c2967d4d5569d8a4">string_shadow_off_y</a> [4]</td></tr>
+<tr class="memitem:a7ce55ff687cbc2879c3d543f1a31998e inherit pub_attribs_struct_base_pop" id="r_a7ce55ff687cbc2879c3d543f1a31998e"><td class="memItemLeft"><a class="el" href="struct_font.html">Font</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a7ce55ff687cbc2879c3d543f1a31998e">button_font</a> [3]</td></tr>
+<tr class="memitem:a3bc248a8284ec2ace052549e1758d7be inherit pub_attribs_struct_base_pop" id="r_a3bc248a8284ec2ace052549e1758d7be"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a3bc248a8284ec2ace052549e1758d7be">button_color</a> [3]</td></tr>
+<tr class="memitem:a86282d0e7cfed7cd22886745435723d2 inherit pub_attribs_struct_base_pop" id="r_a86282d0e7cfed7cd22886745435723d2"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a86282d0e7cfed7cd22886745435723d2">button_shadow</a> [3]</td></tr>
+<tr class="memitem:ab3b481144ea2100376e9c3d21ed15f11 inherit pub_attribs_struct_base_pop" id="r_ab3b481144ea2100376e9c3d21ed15f11"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ab3b481144ea2100376e9c3d21ed15f11">button_shadow_off_x</a> [3]</td></tr>
+<tr class="memitem:a02e890b1776f71d5f83a75466d47b3bf inherit pub_attribs_struct_base_pop" id="r_a02e890b1776f71d5f83a75466d47b3bf"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a02e890b1776f71d5f83a75466d47b3bf">button_shadow_off_y</a> [3]</td></tr>
+<tr class="memitem:ab429b5e3674617bc5d2767e5c2f304e7 inherit pub_attribs_struct_base_pop" id="r_ab429b5e3674617bc5d2767e5c2f304e7"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ab429b5e3674617bc5d2767e5c2f304e7">button_back</a></td></tr>
+<tr class="memitem:af380749ce6755b324aa744eb2f8686f1 inherit pub_attribs_struct_base_pop" id="r_af380749ce6755b324aa744eb2f8686f1"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#af380749ce6755b324aa744eb2f8686f1">button_upper_bevel_color</a></td></tr>
+<tr class="memitem:ad3930690a82045188266894b9e43dc84 inherit pub_attribs_struct_base_pop" id="r_ad3930690a82045188266894b9e43dc84"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ad3930690a82045188266894b9e43dc84">button_lower_bevel_color</a></td></tr>
+<tr class="memitem:a6865d339ed1fa3a837091f1acfbf8ee5 inherit pub_attribs_struct_base_pop" id="r_a6865d339ed1fa3a837091f1acfbf8ee5"><td class="memItemLeft"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a6865d339ed1fa3a837091f1acfbf8ee5">button_bevel_thickness</a></td></tr>
+<tr class="memitem:a18dcbb01ede5facc90df80a814fd7123 inherit pub_attribs_struct_base_pop" id="r_a18dcbb01ede5facc90df80a814fd7123"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a18dcbb01ede5facc90df80a814fd7123">button_border_color</a></td></tr>
+<tr class="memitem:ae09eccf011a3e33a56a14506ab2b99e9 inherit pub_attribs_struct_base_pop" id="r_ae09eccf011a3e33a56a14506ab2b99e9"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ae09eccf011a3e33a56a14506ab2b99e9">button_focus_box_color</a></td></tr>
+<tr class="memitem:a9e259b767be9562666b3e699981839ba inherit pub_attribs_struct_base_pop" id="r_a9e259b767be9562666b3e699981839ba"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a9e259b767be9562666b3e699981839ba">ok_text</a></td></tr>
+<tr class="memitem:adf908abf864167a3e75b99e9a5a50831 inherit pub_attribs_struct_base_pop" id="r_adf908abf864167a3e75b99e9a5a50831"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#adf908abf864167a3e75b99e9a5a50831">cancel_text</a></td></tr>
+<tr class="memitem:a4d86c7e300e6e88e80aedea63e8d3ffd inherit pub_attribs_struct_base_pop" id="r_a4d86c7e300e6e88e80aedea63e8d3ffd"><td class="memItemLeft">const <a class="el" href="struct_window.html">Window</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#a4d86c7e300e6e88e80aedea63e8d3ffd">parent</a></td></tr>
+<tr class="inherit_header pub_attribs_struct_window"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_struct_window')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="struct_window.html">Window</a></td></tr>
+<tr class="memitem:af457f1debaa825578e8cd6741c3b9761 inherit pub_attribs_struct_window" id="r_af457f1debaa825578e8cd6741c3b9761"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#af457f1debaa825578e8cd6741c3b9761">unk</a></td></tr>
+<tr class="memitem:ac1db4b348945175fd3534da9df275a8b inherit pub_attribs_struct_window" id="r_ac1db4b348945175fd3534da9df275a8b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ac1db4b348945175fd3534da9df275a8b">style</a></td></tr>
+<tr class="memitem:aa0f39396d037c411323af3b256fb72e6 inherit pub_attribs_struct_window" id="r_aa0f39396d037c411323af3b256fb72e6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#aa0f39396d037c411323af3b256fb72e6">flags</a></td></tr>
+<tr class="memitem:a262d90498de3ce0b3b6d8ea1c8919b24 inherit pub_attribs_struct_window" id="r_a262d90498de3ce0b3b6d8ea1c8919b24"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a262d90498de3ce0b3b6d8ea1c8919b24">id</a></td></tr>
+<tr class="memitem:a6e4bf56b36015c6bd37fe00542535b76 inherit pub_attribs_struct_window" id="r_a6e4bf56b36015c6bd37fe00542535b76"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a6e4bf56b36015c6bd37fe00542535b76">id_string</a></td></tr>
+<tr class="memitem:aad315badca99e4c7211d47ba76574886 inherit pub_attribs_struct_window" id="r_aad315badca99e4c7211d47ba76574886"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#aad315badca99e4c7211d47ba76574886">unk1</a> [3]</td></tr>
+<tr class="memitem:a05d9724c75a7827fc7ea579bc2f6a9bf inherit pub_attribs_struct_window" id="r_a05d9724c75a7827fc7ea579bc2f6a9bf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a05d9724c75a7827fc7ea579bc2f6a9bf">ignoreStackConditions</a></td></tr>
+<tr class="memitem:a1e969af577b665a0cafe8da1cdbcd822 inherit pub_attribs_struct_window" id="r_a1e969af577b665a0cafe8da1cdbcd822"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a1e969af577b665a0cafe8da1cdbcd822">unk2</a> [3]</td></tr>
+<tr class="memitem:ab387d5eae6aebf8519f395d2a1c66b3b inherit pub_attribs_struct_window" id="r_ab387d5eae6aebf8519f395d2a1c66b3b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ab387d5eae6aebf8519f395d2a1c66b3b">override_on_left_click_on_combo_boxes</a></td></tr>
+<tr class="memitem:a0f1448a6c1af880235963e00ad879939 inherit pub_attribs_struct_window" id="r_a0f1448a6c1af880235963e00ad879939"><td class="memItemLeft">__int16&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a0f1448a6c1af880235963e00ad879939">orig_xs</a></td></tr>
+<tr class="memitem:a7ead6bd673d6bcb34464bdbe2ce848cf inherit pub_attribs_struct_window" id="r_a7ead6bd673d6bcb34464bdbe2ce848cf"><td class="memItemLeft">__int16&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a7ead6bd673d6bcb34464bdbe2ce848cf">orig_ys</a></td></tr>
+<tr class="memitem:a9c87a80e687e6beeac9bd38b9f9c3bc9 inherit pub_attribs_struct_window" id="r_a9c87a80e687e6beeac9bd38b9f9c3bc9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a9c87a80e687e6beeac9bd38b9f9c3bc9">spot_passover_id</a></td></tr>
+<tr class="memitem:a05c7cd1d08c4301111ad02f4783852a0 inherit pub_attribs_struct_window" id="r_a05c7cd1d08c4301111ad02f4783852a0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a05c7cd1d08c4301111ad02f4783852a0">spot_passover_type</a></td></tr>
+<tr class="memitem:ad51c3f1da127187ec18eaff49b18e86f inherit pub_attribs_struct_window" id="r_ad51c3f1da127187ec18eaff49b18e86f"><td class="memItemLeft"><a class="el" href="struct_rect_templateshort.html">RectTemplateshort</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ad51c3f1da127187ec18eaff49b18e86f">spot_passover_rect</a></td></tr>
+<tr class="memitem:a56358527a61a0fa17f39bfd575283c4d inherit pub_attribs_struct_window" id="r_a56358527a61a0fa17f39bfd575283c4d"><td class="memItemLeft"><a class="el" href="struct_spot.html">Spot</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a56358527a61a0fa17f39bfd575283c4d">win_spot</a></td></tr>
+<tr class="memitem:a2194476b8d1e938f195fafa9beee1b85 inherit pub_attribs_struct_window" id="r_a2194476b8d1e938f195fafa9beee1b85"><td class="memItemLeft"><a class="el" href="struct_window.html">Window</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a2194476b8d1e938f195fafa9beee1b85">parent</a></td></tr>
+<tr class="memitem:a5c6b94c283776c502b678aaddffabe4a inherit pub_attribs_struct_window" id="r_a5c6b94c283776c502b678aaddffabe4a"><td class="memItemLeft"><a class="el" href="struct_window.html">Window</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a5c6b94c283776c502b678aaddffabe4a">prev_focus</a></td></tr>
+<tr class="memitem:a8e25363025bd13ba6c7d11febed38cf1 inherit pub_attribs_struct_window" id="r_a8e25363025bd13ba6c7d11febed38cf1"><td class="memItemLeft"><a class="el" href="struct_window.html">Window</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a8e25363025bd13ba6c7d11febed38cf1">default_focus</a></td></tr>
+<tr class="memitem:ae7de4d37f6422c80824a98563aa8ab7b inherit pub_attribs_struct_window" id="r_ae7de4d37f6422c80824a98563aa8ab7b"><td class="memItemLeft"><a class="el" href="struct_ptr_array_window.html">PtrArrayWindow</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ae7de4d37f6422c80824a98563aa8ab7b">children_order</a></td></tr>
+<tr class="memitem:ae45a24ada5aefa74793d516aaf5aee08 inherit pub_attribs_struct_window" id="r_ae45a24ada5aefa74793d516aaf5aee08"><td class="memItemLeft"><a class="el" href="struct_ptr_array_window.html">PtrArrayWindow</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ae45a24ada5aefa74793d516aaf5aee08">children</a></td></tr>
+<tr class="memitem:a853231669e28e75c39251c1eba8fede0 inherit pub_attribs_struct_window" id="r_a853231669e28e75c39251c1eba8fede0"><td class="memItemLeft"><a class="el" href="struct_string.html">String</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a853231669e28e75c39251c1eba8fede0">caption</a></td></tr>
+<tr class="memitem:a654e85dac11e683316f49a9766ac16c0 inherit pub_attribs_struct_window" id="r_a654e85dac11e683316f49a9766ac16c0"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a654e85dac11e683316f49a9766ac16c0">back_color</a></td></tr>
+<tr class="memitem:a425992d92dee26dce69c5178f6835758 inherit pub_attribs_struct_window" id="r_a425992d92dee26dce69c5178f6835758"><td class="memItemLeft"><a class="el" href="struct_font.html">Font</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a425992d92dee26dce69c5178f6835758">caption_font</a></td></tr>
+<tr class="memitem:a5563a64a22e0a87e6a741804083d48fa inherit pub_attribs_struct_window" id="r_a5563a64a22e0a87e6a741804083d48fa"><td class="memItemLeft"><a class="el" href="struct_buffer.html">Buffer</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a5563a64a22e0a87e6a741804083d48fa">border_tile</a></td></tr>
+<tr class="memitem:abe2659439cc4f0f8e1b3707cd2b62330 inherit pub_attribs_struct_window" id="r_abe2659439cc4f0f8e1b3707cd2b62330"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#abe2659439cc4f0f8e1b3707cd2b62330">nonclient_color</a></td></tr>
+<tr class="memitem:a46a8a2da4d948a3ebb7f7acc68d855d7 inherit pub_attribs_struct_window" id="r_a46a8a2da4d948a3ebb7f7acc68d855d7"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a46a8a2da4d948a3ebb7f7acc68d855d7">caption_color</a></td></tr>
+<tr class="memitem:a0457a07bf3d84aba3150f7b4ccd58782 inherit pub_attribs_struct_window" id="r_a0457a07bf3d84aba3150f7b4ccd58782"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a0457a07bf3d84aba3150f7b4ccd58782">caption_shadow</a></td></tr>
+<tr class="memitem:a8068b7ede99e59906cc1cfb38dc1b5af inherit pub_attribs_struct_window" id="r_a8068b7ede99e59906cc1cfb38dc1b5af"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a8068b7ede99e59906cc1cfb38dc1b5af">color_bevel_up</a></td></tr>
+<tr class="memitem:a9139c9bf9578236e0f9beda775c74ab5 inherit pub_attribs_struct_window" id="r_a9139c9bf9578236e0f9beda775c74ab5"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a9139c9bf9578236e0f9beda775c74ab5">color_bevel_down</a></td></tr>
+<tr class="memitem:a2d3e9afda4fb9aff59c99d9ba76bdad1 inherit pub_attribs_struct_window" id="r_a2d3e9afda4fb9aff59c99d9ba76bdad1"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a2d3e9afda4fb9aff59c99d9ba76bdad1">caption_shadow_x_off</a></td></tr>
+<tr class="memitem:a358fc001bccff4c5b57beff52277c2c7 inherit pub_attribs_struct_window" id="r_a358fc001bccff4c5b57beff52277c2c7"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a358fc001bccff4c5b57beff52277c2c7">caption_shadow_y_off</a></td></tr>
+<tr class="memitem:a2cde6627b9c8803c32c2cd9944b3d51a inherit pub_attribs_struct_window" id="r_a2cde6627b9c8803c32c2cd9944b3d51a"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a2cde6627b9c8803c32c2cd9944b3d51a">caption_height</a></td></tr>
+<tr class="memitem:a7e0d2ef857117885b40e9a6498c13a6e inherit pub_attribs_struct_window" id="r_a7e0d2ef857117885b40e9a6498c13a6e"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a7e0d2ef857117885b40e9a6498c13a6e">border_thickness</a></td></tr>
+<tr class="memitem:addbe1cc929bde10a8e42602257f5fa9c inherit pub_attribs_struct_window" id="r_addbe1cc929bde10a8e42602257f5fa9c"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#addbe1cc929bde10a8e42602257f5fa9c">bottom_border_thickness</a></td></tr>
+<tr class="memitem:acac4078adcc68c9dfa19c547a4b367cb inherit pub_attribs_struct_window" id="r_acac4078adcc68c9dfa19c547a4b367cb"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#acac4078adcc68c9dfa19c547a4b367cb">bevel_thickness</a></td></tr>
+<tr class="memitem:a3b964a14d8710842c84b509144230cf7 inherit pub_attribs_struct_window" id="r_a3b964a14d8710842c84b509144230cf7"><td class="memItemLeft">__int16&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a3b964a14d8710842c84b509144230cf7">min_xs</a></td></tr>
+<tr class="memitem:aed9771513c1f89e616eaa79928ed7994 inherit pub_attribs_struct_window" id="r_aed9771513c1f89e616eaa79928ed7994"><td class="memItemLeft">__int16&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#aed9771513c1f89e616eaa79928ed7994">min_ys</a></td></tr>
+<tr class="memitem:afedcb0730d62d0e0399bc24bdb11927d inherit pub_attribs_struct_window" id="r_afedcb0730d62d0e0399bc24bdb11927d"><td class="memItemLeft"><a class="el" href="struct_rect_templateshort.html">RectTemplateshort</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#afedcb0730d62d0e0399bc24bdb11927d">rect_client</a></td></tr>
+<tr class="memitem:a666e3d02c4c5212b11abb0f2f8128eeb inherit pub_attribs_struct_window" id="r_a666e3d02c4c5212b11abb0f2f8128eeb"><td class="memItemLeft"><a class="el" href="struct_rect_templateshort.html">RectTemplateshort</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a666e3d02c4c5212b11abb0f2f8128eeb">rect_nonclient</a></td></tr>
+<tr class="memitem:a28cdedc5ed917b45b05fa63bb816fc5a inherit pub_attribs_struct_window" id="r_a28cdedc5ed917b45b05fa63bb816fc5a"><td class="memItemLeft"><a class="el" href="struct_rect_templateshort.html">RectTemplateshort</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a28cdedc5ed917b45b05fa63bb816fc5a">rect_clip</a></td></tr>
+<tr class="memitem:ac86efbde8f802cb35489e73996e445d3 inherit pub_attribs_struct_window" id="r_ac86efbde8f802cb35489e73996e445d3"><td class="memItemLeft"><a class="el" href="struct_rect_templateshort.html">RectTemplateshort</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ac86efbde8f802cb35489e73996e445d3">rect_screen_clip</a></td></tr>
+<tr class="memitem:ab6a2a41f6df3a98f97d597103599a2da inherit pub_attribs_struct_window" id="r_ab6a2a41f6df3a98f97d597103599a2da"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ab6a2a41f6df3a98f97d597103599a2da">client_drag</a></td></tr>
+<tr class="memitem:ad4d496ddfd4a59d3b8240ff2ce2f18e6 inherit pub_attribs_struct_window" id="r_ad4d496ddfd4a59d3b8240ff2ce2f18e6"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#ad4d496ddfd4a59d3b8240ff2ce2f18e6">client_resize</a></td></tr>
+<tr class="memitem:a4142d849f90328581c5c232fb901a49a inherit pub_attribs_struct_window" id="r_a4142d849f90328581c5c232fb901a49a"><td class="memItemLeft"><a class="el" href="struct_cursor.html">Cursor</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a4142d849f90328581c5c232fb901a49a">cursor</a></td></tr>
+<tr class="memitem:af7fa627188d3efe44a3eb2466dfa535b inherit pub_attribs_struct_window" id="r_af7fa627188d3efe44a3eb2466dfa535b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#af7fa627188d3efe44a3eb2466dfa535b">stock_cursor</a></td></tr>
+<tr class="memitem:aaa90bc3dd69f4962c267fdd69fa874d8 inherit pub_attribs_struct_window" id="r_aaa90bc3dd69f4962c267fdd69fa874d8"><td class="memItemLeft">__int16&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#aaa90bc3dd69f4962c267fdd69fa874d8">last_mouse_x</a></td></tr>
+<tr class="memitem:a14845c29063a0870f832dabae35b8546 inherit pub_attribs_struct_window" id="r_a14845c29063a0870f832dabae35b8546"><td class="memItemLeft">__int16&#160;</td><td class="memItemRight"><a class="el" href="struct_window.html#a14845c29063a0870f832dabae35b8546">last_mouse_y</a></td></tr>
+<tr class="inherit_header pub_attribs_struct_buffer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_struct_buffer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="struct_buffer.html">Buffer</a></td></tr>
+<tr class="memitem:aac6f621aa0834f0c449a8cf05eaf325e inherit pub_attribs_struct_buffer" id="r_aac6f621aa0834f0c449a8cf05eaf325e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#aac6f621aa0834f0c449a8cf05eaf325e">int</a></td></tr>
+<tr class="memitem:a0818fe061117da9a8b7ad282c536e9a5 inherit pub_attribs_struct_buffer" id="r_a0818fe061117da9a8b7ad282c536e9a5"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a0818fe061117da9a8b7ad282c536e9a5">wrap_indent_start</a></td></tr>
+<tr class="memitem:a79d6aacce872e5a7653cf9945f5b5609 inherit pub_attribs_struct_buffer" id="r_a79d6aacce872e5a7653cf9945f5b5609"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a79d6aacce872e5a7653cf9945f5b5609">wrap_indent</a></td></tr>
+<tr class="memitem:a737ba5d58ecb3381d8d67efce9943715 inherit pub_attribs_struct_buffer" id="r_a737ba5d58ecb3381d8d67efce9943715"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a737ba5d58ecb3381d8d67efce9943715">wrap_count</a></td></tr>
+<tr class="memitem:a22917da0755f45d379aa3b884d4bd62f inherit pub_attribs_struct_buffer" id="r_a22917da0755f45d379aa3b884d4bd62f"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a22917da0755f45d379aa3b884d4bd62f">internal_text_color</a></td></tr>
+<tr class="memitem:aafb5834d5d1706fd3d1c78ef5a7971e4 inherit pub_attribs_struct_buffer" id="r_aafb5834d5d1706fd3d1c78ef5a7971e4"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#aafb5834d5d1706fd3d1c78ef5a7971e4">text_mode_write</a></td></tr>
+<tr class="memitem:a773bb544e3dfad42dee33b8834b42a45 inherit pub_attribs_struct_buffer" id="r_a773bb544e3dfad42dee33b8834b42a45"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a773bb544e3dfad42dee33b8834b42a45">text_mode_break</a></td></tr>
+<tr class="memitem:a5fdc959bb19a7c3655d834b7859c3fd8 inherit pub_attribs_struct_buffer" id="r_a5fdc959bb19a7c3655d834b7859c3fd8"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a5fdc959bb19a7c3655d834b7859c3fd8">text_mode_width</a></td></tr>
+<tr class="memitem:a072ef3b7dced78781ad6a3b5cf172966 inherit pub_attribs_struct_buffer" id="r_a072ef3b7dced78781ad6a3b5cf172966"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a072ef3b7dced78781ad6a3b5cf172966">multi_font</a></td></tr>
+<tr class="memitem:aca655c96d89218ee05ce7d4d2e3af8be inherit pub_attribs_struct_buffer" id="r_aca655c96d89218ee05ce7d4d2e3af8be"><td class="memItemLeft"><a class="el" href="struct_buffer.html#aac6f621aa0834f0c449a8cf05eaf325e">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#aca655c96d89218ee05ce7d4d2e3af8be">temp_font_size</a> [5]</td></tr>
+<tr class="memitem:aa79befa6041b95faa02a43ee8b20f897 inherit pub_attribs_struct_buffer" id="r_aa79befa6041b95faa02a43ee8b20f897"><td class="memItemLeft"><a class="el" href="struct_buffer.html#aac6f621aa0834f0c449a8cf05eaf325e">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#aa79befa6041b95faa02a43ee8b20f897">temp_font_style</a> [5]</td></tr>
+<tr class="memitem:a6aec8102ada76f4bc5f1d13192a75e5b inherit pub_attribs_struct_buffer" id="r_a6aec8102ada76f4bc5f1d13192a75e5b"><td class="memItemLeft">const <a class="el" href="struct_font.html">Font</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a6aec8102ada76f4bc5f1d13192a75e5b">font</a> [5]</td></tr>
+<tr class="memitem:a2d9bf9a84df47d7dfa056aaf450057e9 inherit pub_attribs_struct_buffer" id="r_a2d9bf9a84df47d7dfa056aaf450057e9"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a2d9bf9a84df47d7dfa056aaf450057e9">text_color</a> [5]</td></tr>
+<tr class="memitem:aecf2fc88555b7eed107e535b7093447b inherit pub_attribs_struct_buffer" id="r_aecf2fc88555b7eed107e535b7093447b"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#aecf2fc88555b7eed107e535b7093447b">text_shadow</a> [5]</td></tr>
+<tr class="memitem:a6338e08c572f274e721cbb321b472cd7 inherit pub_attribs_struct_buffer" id="r_a6338e08c572f274e721cbb321b472cd7"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a6338e08c572f274e721cbb321b472cd7">shadow_x_off</a> [5]</td></tr>
+<tr class="memitem:abab1d53e8cac782cab9e192d6a0a60b6 inherit pub_attribs_struct_buffer" id="r_abab1d53e8cac782cab9e192d6a0a60b6"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#abab1d53e8cac782cab9e192d6a0a60b6">shadow_y_off</a> [5]</td></tr>
+<tr class="memitem:a836247f940ab0a36c90c86b7f2c65439 inherit pub_attribs_struct_buffer" id="r_a836247f940ab0a36c90c86b7f2c65439"><td class="memItemLeft"><a class="el" href="struct_buffer.html#aac6f621aa0834f0c449a8cf05eaf325e">int</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a836247f940ab0a36c90c86b7f2c65439">locked_for_reading</a></td></tr>
+<tr class="memitem:a364d62a710396a54fae792b372d35b22 inherit pub_attribs_struct_buffer" id="r_a364d62a710396a54fae792b372d35b22"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer.html#a364d62a710396a54fae792b372d35b22">read_buffer</a></td></tr>
+<tr class="inherit_header pub_attribs_struct_image_i_o"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_struct_image_i_o')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="struct_image_i_o.html">ImageIO</a></td></tr>
+<tr class="memitem:a60efc26796af349cf17fb5ff8fce752c inherit pub_attribs_struct_image_i_o" id="r_a60efc26796af349cf17fb5ff8fce752c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#a60efc26796af349cf17fb5ff8fce752c">unk</a></td></tr>
+<tr class="memitem:a3ffe4490ee57f0a9eaa7ce3e21e25831 inherit pub_attribs_struct_image_i_o" id="r_a3ffe4490ee57f0a9eaa7ce3e21e25831"><td class="memItemLeft">Color&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#a3ffe4490ee57f0a9eaa7ce3e21e25831">tint_color</a></td></tr>
+<tr class="memitem:a406315e9338849b29e4db5d71f1ffbb3 inherit pub_attribs_struct_image_i_o" id="r_a406315e9338849b29e4db5d71f1ffbb3"><td class="memItemLeft">unsigned __int8 *&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#a406315e9338849b29e4db5d71f1ffbb3">tint_color_wide</a></td></tr>
+<tr class="memitem:acdaa5fea9131e90b090f2935687d4650 inherit pub_attribs_struct_image_i_o" id="r_acdaa5fea9131e90b090f2935687d4650"><td class="memItemLeft">unsigned __int8 *&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#acdaa5fea9131e90b090f2935687d4650">tint_color_wide_base</a></td></tr>
+<tr class="memitem:ac33ca91ebb919ebe5fe6459eece2c70b inherit pub_attribs_struct_image_i_o" id="r_ac33ca91ebb919ebe5fe6459eece2c70b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#ac33ca91ebb919ebe5fe6459eece2c70b">num_16_chunks</a></td></tr>
+<tr class="memitem:a90f5e6771b5c950d80000565b220f6ce inherit pub_attribs_struct_image_i_o" id="r_a90f5e6771b5c950d80000565b220f6ce"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#a90f5e6771b5c950d80000565b220f6ce">num_8_chunks</a></td></tr>
+<tr class="memitem:a2be913b83925f401fdde61fe4e534aa6 inherit pub_attribs_struct_image_i_o" id="r_a2be913b83925f401fdde61fe4e534aa6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#a2be913b83925f401fdde61fe4e534aa6">num_extra_16_pix</a></td></tr>
+<tr class="memitem:ac6de9dbc6ba1ce7622220f1784e47238 inherit pub_attribs_struct_image_i_o" id="r_ac6de9dbc6ba1ce7622220f1784e47238"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#ac6de9dbc6ba1ce7622220f1784e47238">num_extra_8_pix</a></td></tr>
+<tr class="memitem:a9ff115acbf19814ad8fa91272f9da516 inherit pub_attribs_struct_image_i_o" id="r_a9ff115acbf19814ad8fa91272f9da516"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_image_i_o.html#a9ff115acbf19814ad8fa91272f9da516">use_tint</a></td></tr>
+<tr class="inherit_header pub_attribs_struct_buffer_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_struct_buffer_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="struct_buffer_base.html">BufferBase</a></td></tr>
+<tr class="memitem:aaadb191381477e1cf75db2c325f9d52d inherit pub_attribs_struct_buffer_base" id="r_aaadb191381477e1cf75db2c325f9d52d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer_base.html#aaadb191381477e1cf75db2c325f9d52d">unk</a></td></tr>
+<tr class="memitem:a8313143f2bc6d4c1adde21adcdd28b39 inherit pub_attribs_struct_buffer_base" id="r_a8313143f2bc6d4c1adde21adcdd28b39"><td class="memItemLeft"><a class="el" href="struct_g_s_buffer.html">GSBuffer</a> *&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer_base.html#a8313143f2bc6d4c1adde21adcdd28b39">gs_buffer</a></td></tr>
+<tr class="memitem:a557a3ac4524ed9878dbe510d6482b0ad inherit pub_attribs_struct_buffer_base" id="r_a557a3ac4524ed9878dbe510d6482b0ad"><td class="memItemLeft"><a class="el" href="_enums_8h.html#a060dbd7d809add7854b6bc513cdc3b0c">MemType</a>&#160;</td><td class="memItemRight"><a class="el" href="struct_buffer_base.html#a557a3ac4524ed9878dbe510d6482b0ad">mem_type</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_methods_struct_base_pop"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_struct_base_pop')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="struct_base_pop.html">BasePop</a></td></tr>
+<tr class="memitem:a636f02b3b7d87740d422996670663105 inherit pub_methods_struct_base_pop" id="r_a636f02b3b7d87740d422996670663105"><td class="memItemLeft">
+&#160;</td><td class="memItemRight"><b>void</b> (__cdecl *list_draw_func)(<a class="el" href="struct_graphic_win.html">GraphicWin</a> *</td></tr>
+<tr class="memitem:ae9731b2f30f558e44fbc093102eb82c9 inherit pub_methods_struct_base_pop" id="r_ae9731b2f30f558e44fbc093102eb82c9"><td class="memItemLeft">
+&#160;</td><td class="memItemRight"><b>int</b> (__cdecl *list_write_func)(<a class="el" href="struct_graphic_win.html">GraphicWin</a> *</td></tr>
+<tr class="memitem:a6a61b3a0670d49a9af53450656d590eb inherit pub_methods_struct_base_pop" id="r_a6a61b3a0670d49a9af53450656d590eb"><td class="memItemLeft">
+&#160;</td><td class="memItemRight"><b>void</b> (__cdecl *popwave_func)(<a class="el" href="struct_popup_wave.html">PopupWave</a> *</td></tr>
+<tr class="memitem:acf5fbfbd928ac7af41304d172785f976 inherit pub_methods_struct_base_pop" id="r_acf5fbfbd928ac7af41304d172785f976"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#acf5fbfbd928ac7af41304d172785f976">int</a> (__cdecl *sprite_click)(int)</td></tr>
+<tr class="memitem:ac4f71a41974f7a5d8f56227e92899dc1 inherit pub_methods_struct_base_pop" id="r_ac4f71a41974f7a5d8f56227e92899dc1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="struct_base_pop.html#ac4f71a41974f7a5d8f56227e92899dc1">int</a> (__cdecl *sprite_double_click)(int)</td></tr>
+<tr class="inherit_header pub_methods_struct_buffer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_struct_buffer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="struct_buffer.html">Buffer</a></td></tr>
+<tr class="memitem:a13519f9e437adcf0e3c301a587610f07 inherit pub_methods_struct_buffer" id="r_a13519f9e437adcf0e3c301a587610f07"><td class="memItemLeft">
+&#160;</td><td class="memItemRight"><b>int</b> (__cdecl *write_func)(const <a class="el" href="struct_string.html">String</a> *</td></tr>
+<tr class="memitem:ad7643f42ce90c94fcb1c9791c2127652 inherit pub_methods_struct_buffer" id="r_ad7643f42ce90c94fcb1c9791c2127652"><td class="memItemLeft">
+&#160;</td><td class="memItemRight"><b>void</b> (__cdecl *strings_func)(<a class="el" href="struct_buffer.html#aac6f621aa0834f0c449a8cf05eaf325e">int</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>弹出窗口（继承自BasePop和GameAccessConst） </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a263c817dfa7e1cd132c01d7eb2f37e9d" name="a263c817dfa7e1cd132c01d7eb2f37e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263c817dfa7e1cd132c01d7eb2f37e9d">&#9670;&#160;</a></span>extra_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a> Popup::extra_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>额外数据 </p>
+
+</div>
+</div>
+<a id="af12ca919117582be520e05ca073eb696" name="af12ca919117582be520e05ca073eb696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12ca919117582be520e05ca073eb696">&#9670;&#160;</a></span>extra_data2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a> Popup::extra_data2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>额外数据2 </p>
+
+</div>
+</div>
+<a id="ac5d75468957771c04ebfd7a809a59bb0" name="ac5d75468957771c04ebfd7a809a59bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d75468957771c04ebfd7a809a59bb0">&#9670;&#160;</a></span>gap18F4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_enums_8h.html#ab8507246f53c4bbefc76b43ff5bd8812">_BYTE</a> Popup::gap18F4[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>填充字节 </p>
+
+</div>
+</div>
+<a id="a1831bde5cdad745770bd93767756fef3" name="a1831bde5cdad745770bd93767756fef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1831bde5cdad745770bd93767756fef3">&#9670;&#160;</a></span>popup_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_base_pop.html#aaea465099b5bc595c0f31da91de113d9">int</a> Popup::popup_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>弹出窗口ID </p>
+
+</div>
+</div>
+<a id="a60b5b83cb3b20e008a9b800c710a7288" name="a60b5b83cb3b20e008a9b800c710a7288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b5b83cb3b20e008a9b800c710a7288">&#9670;&#160;</a></span>texs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i_face_tex.html">IFaceTex</a> Popup::texs[3][3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>界面纹理数组（3x3） </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="_enums_8h_source.html">Enums.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

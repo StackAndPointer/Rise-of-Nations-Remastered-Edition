@@ -1,0 +1,8 @@
+<map id="GSCursor" name="GSCursor">
+<area shape="rect" id="Node000001" title="图形系统光标对象" alt="" coords="21,81,100,108"/>
+<area shape="rect" id="Node000003" href="$struct_cursor_base.html" title="光标基类" alt="" coords="16,180,106,207"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="20,120,11,133,8,144,11,155,21,168,36,178,31,181,18,171,7,157,3,144,7,131,22,115"/>
+<area shape="rect" id="Node000002" href="$struct_g_s_object.html" title="图形系统对象基类" alt="" coords="22,5,100,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,45,63,81,58,81,60,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,165,77,156,77,133,68,111,70,106,82,131,82,156,78,168"/>
+</map>

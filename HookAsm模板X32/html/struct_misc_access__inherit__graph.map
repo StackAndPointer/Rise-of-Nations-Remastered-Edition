@@ -1,0 +1,9 @@
+<map id="MiscAccess" name="MiscAccess">
+<area shape="rect" id="Node000001" title="组合框控件（继承自GraphicWin）" alt="" coords="96,5,189,32"/>
+<area shape="rect" id="Node000002" href="$struct_game_log.html" title="游戏日志结构体，用于记录游戏运行时的各种信息" alt="" coords="5,80,83,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,42,62,82,59,77,111,41"/>
+<area shape="rect" id="Node000003" href="$struct_help_box.html" title="帮助框（继承自GraphicWin和MiscAccess）" alt="" coords="107,80,178,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,46,145,81,140,78,141,50"/>
+<area shape="rect" id="Node000004" href="$struct_player_profile.html" title="玩家档案结构体，包含游戏设置和个人偏好" alt="" coords="203,80,298,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,38,234,79,229,80,173,44"/>
+</map>

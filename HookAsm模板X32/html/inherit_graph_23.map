@@ -1,0 +1,11 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,174,40"/>
+<area shape="rect" id="Node000001" href="$struct_array_base_simple_copy_string_list_entry.html" title="字符串列表条目数组基类" alt="" coords="222,5,409,48"/>
+<area shape="poly" id="edge39_Node000000_Node000001" title=" " alt="" coords="189,24,224,26,218,27,189,29"/>
+<area shape="rect" id="Node000002" href="$struct_array_string_list_entry.html" title="字符串列表条目数组" alt="" coords="457,13,595,40"/>
+<area shape="poly" id="edge40_Node000001_Node000002" title=" " alt="" coords="424,24,459,27,454,27,425,29"/>
+<area shape="rect" id="Node000003" href="$struct_ptr_array_string_list_entry.html" title="字符串列表条目指针数组" alt="" coords="643,13,799,40"/>
+<area shape="poly" id="edge41_Node000002_Node000003" title=" " alt="" coords="611,24,646,27,640,27,611,29"/>
+<area shape="rect" id="Node000004" href="$struct_string_list.html" title="字符串列表" alt="" coords="847,13,923,40"/>
+<area shape="poly" id="edge42_Node000003_Node000004" title=" " alt="" coords="814,24,849,27,844,27,815,29"/>
+</map>

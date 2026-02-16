@@ -1,0 +1,100 @@
+\doxysection{Steam\+Leaderboards结构体 参考}
+\hypertarget{struct_steam_leaderboards}{}\label{struct_steam_leaderboards}\index{SteamLeaderboards@{SteamLeaderboards}}
+
+
+Steam排行榜管理结构体  
+
+
+
+
+{\ttfamily \+\#include $<$Enums.\+h$>$}
+
+
+
+Steam\+Leaderboards 的协作图:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{struct_steam_leaderboards__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \+\_\+\+\_\+int64 \doxymbox{\hyperlink{struct_steam_leaderboards_a78a369e447168db2897be32b1722b1de}{m\+\_\+current\+Leaderboard}}
+\item 
+\doxymbox{\hyperlink{_enums_8h_a306cf02cdbd926b879f475a894a10613}{Steam\+Leaderboards\+\_\+\+Leaderboard}} \doxymbox{\hyperlink{struct_steam_leaderboards_a7cd1e5df1a72453e9311aa7485fd82d6}{m\+\_\+current\+Leaderboard\+Type}}
+\item 
+bool \doxymbox{\hyperlink{struct_steam_leaderboards_a97b7c6230f55c4b0338a3e863520ef38}{m\+\_\+is\+Requesting\+Leaderboard}}
+\item 
+bool \doxymbox{\hyperlink{struct_steam_leaderboards_ac2c04856b6e5598a1c6e2cf0b36c923b}{m\+\_\+is\+Requesting\+Scores}}
+\item 
+\doxymbox{\hyperlink{struct_i_leaderboards_listener}{ILeaderboards\+Listener}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_steam_leaderboards_a60621979b20947c0c823ac60beb066e8}{m\+\_\+p\+Leaderboards\+Listener}}
+\item 
+int \doxymbox{\hyperlink{struct_steam_leaderboards_afd0087f3a9b2dd2a82b1d0919aff14d4}{unk}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_steam_leaderboards_a47eed06e59829444b63214aaa4b88aa0}{unk1}} \+[8]\+
+\item 
+int \doxymbox{\hyperlink{struct_steam_leaderboards_a172e80856787ae64c05c97206ebd8624}{unk2}} \+[8]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Steam排行榜管理结构体 
+
+\label{doc-variable-members}
+\Hypertarget{struct_steam_leaderboards_doc-variable-members}
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_steam_leaderboards_a78a369e447168db2897be32b1722b1de}\index{SteamLeaderboards@{SteamLeaderboards}!m\_currentLeaderboard@{m\_currentLeaderboard}}
+\index{m\_currentLeaderboard@{m\_currentLeaderboard}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{m\_currentLeaderboard}{m\_currentLeaderboard}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_a78a369e447168db2897be32b1722b1de} 
+unsigned \+\_\+\+\_\+int64 Steam\+Leaderboards::\+m\+\_\+current\+Leaderboard}
+
+当前排行榜\+ID \Hypertarget{struct_steam_leaderboards_a7cd1e5df1a72453e9311aa7485fd82d6}\index{SteamLeaderboards@{SteamLeaderboards}!m\_currentLeaderboardType@{m\_currentLeaderboardType}}
+\index{m\_currentLeaderboardType@{m\_currentLeaderboardType}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{m\_currentLeaderboardType}{m\_currentLeaderboardType}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_a7cd1e5df1a72453e9311aa7485fd82d6} 
+\doxymbox{\hyperlink{_enums_8h_a306cf02cdbd926b879f475a894a10613}{Steam\+Leaderboards\+\_\+\+Leaderboard}} Steam\+Leaderboards::\+m\+\_\+current\+Leaderboard\+Type}
+
+当前排行榜类型 \Hypertarget{struct_steam_leaderboards_a97b7c6230f55c4b0338a3e863520ef38}\index{SteamLeaderboards@{SteamLeaderboards}!m\_isRequestingLeaderboard@{m\_isRequestingLeaderboard}}
+\index{m\_isRequestingLeaderboard@{m\_isRequestingLeaderboard}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{m\_isRequestingLeaderboard}{m\_isRequestingLeaderboard}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_a97b7c6230f55c4b0338a3e863520ef38} 
+bool Steam\+Leaderboards::\+m\+\_\+is\+Requesting\+Leaderboard}
+
+是否正在请求排行榜 \Hypertarget{struct_steam_leaderboards_ac2c04856b6e5598a1c6e2cf0b36c923b}\index{SteamLeaderboards@{SteamLeaderboards}!m\_isRequestingScores@{m\_isRequestingScores}}
+\index{m\_isRequestingScores@{m\_isRequestingScores}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{m\_isRequestingScores}{m\_isRequestingScores}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_ac2c04856b6e5598a1c6e2cf0b36c923b} 
+bool Steam\+Leaderboards::\+m\+\_\+is\+Requesting\+Scores}
+
+是否正在请求分数 \Hypertarget{struct_steam_leaderboards_a60621979b20947c0c823ac60beb066e8}\index{SteamLeaderboards@{SteamLeaderboards}!m\_pLeaderboardsListener@{m\_pLeaderboardsListener}}
+\index{m\_pLeaderboardsListener@{m\_pLeaderboardsListener}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{m\_pLeaderboardsListener}{m\_pLeaderboardsListener}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_a60621979b20947c0c823ac60beb066e8} 
+\doxymbox{\hyperlink{struct_i_leaderboards_listener}{ILeaderboards\+Listener}}\texorpdfstring{$\ast$}{*} Steam\+Leaderboards::\+m\+\_\+p\+Leaderboards\+Listener}
+
+排行榜监听器 \Hypertarget{struct_steam_leaderboards_afd0087f3a9b2dd2a82b1d0919aff14d4}\index{SteamLeaderboards@{SteamLeaderboards}!unk@{unk}}
+\index{unk@{unk}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{unk}{unk}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_afd0087f3a9b2dd2a82b1d0919aff14d4} 
+int Steam\+Leaderboards::\+unk\+[8]\+}
+
+Steam回调结果：查找排行榜 CCall\+Result$<$\+Steam\+Leaderboards, Leaderboard\+Find\+Result\+\_\+t$>$ \Hypertarget{struct_steam_leaderboards_a47eed06e59829444b63214aaa4b88aa0}\index{SteamLeaderboards@{SteamLeaderboards}!unk1@{unk1}}
+\index{unk1@{unk1}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{unk1}{unk1}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_a47eed06e59829444b63214aaa4b88aa0} 
+int Steam\+Leaderboards::\+unk1\+[8]\+}
+
+Steam回调结果：上传分数 CCall\+Result$<$\+Steam\+Leaderboards, Leaderboard\+Score\+Uploaded\+\_\+t$>$ \Hypertarget{struct_steam_leaderboards_a172e80856787ae64c05c97206ebd8624}\index{SteamLeaderboards@{SteamLeaderboards}!unk2@{unk2}}
+\index{unk2@{unk2}!SteamLeaderboards@{SteamLeaderboards}}
+\doxysubsubsection{\texorpdfstring{unk2}{unk2}}
+{\footnotesize\ttfamily \label{struct_steam_leaderboards_a172e80856787ae64c05c97206ebd8624} 
+int Steam\+Leaderboards::\+unk2\+[8]\+}
+
+Steam回调结果：下载分数 CCall\+Result$<$\+Steam\+Leaderboards, Leaderboard\+Scores\+Downloaded\+\_\+t$>$ 
+
+该结构体的文档由以下文件生成:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enums_8h}{Enums.\+h}}\end{DoxyCompactItemize}

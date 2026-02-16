@@ -1,0 +1,5 @@
+<map id="Leaders" name="Leaders">
+<area shape="rect" id="Node000001" title="领导者输出类 &#45; 继承自LeaderData，8字节对齐" alt="" coords="22,80,89,107"/>
+<area shape="rect" id="Node000002" href="$struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="5,5,106,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,46,58,80,53,79,54,50"/>
+</map>
