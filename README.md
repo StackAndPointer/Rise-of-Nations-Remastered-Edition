@@ -79,7 +79,7 @@ Rise of Nations Remastered Edition) 是一个《国家的崛起：重制版》 �
 
 ## 许可证
 
-本项目基于 MIT 许可证开源。详见 [LICENSE.txt](LICENSE.txt) 文件。
+详见 [LICENSE.txt](LICENSE.txt) 文件。
 
 ## 免责声明
 
