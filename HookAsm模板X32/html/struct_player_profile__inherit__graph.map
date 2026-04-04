@@ -1,7 +1,0 @@
-<map id="PlayerProfile" name="PlayerProfile">
-<area shape="rect" id="Node000001" title="玩家档案结构体，包含游戏设置和个人偏好" alt="" coords="68,80,163,107"/>
-<area shape="rect" id="Node000002" href="$struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="5,5,106,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,42,108,79,103,80,74,46"/>
-<area shape="rect" id="Node000003" href="$struct_misc_access.html" title="组合框控件（继承自GraphicWin）" alt="" coords="130,5,224,32"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,43,128,82,124,78,154,45"/>
-</map>

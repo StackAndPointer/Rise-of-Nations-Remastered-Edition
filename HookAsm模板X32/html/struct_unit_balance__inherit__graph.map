@@ -1,5 +1,0 @@
-<map id="UnitBalance" name="UnitBalance">
-<area shape="rect" id="Node000001" title="单位平衡结构体 &#45; 管理单位数据平衡性" alt="" coords="9,80,102,107"/>
-<area shape="rect" id="Node000002" href="$struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="5,5,106,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,46,58,80,53,79,54,50"/>
-</map>

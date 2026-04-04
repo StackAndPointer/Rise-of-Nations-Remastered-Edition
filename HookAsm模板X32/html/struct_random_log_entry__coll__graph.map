@@ -1,7 +1,0 @@
-<map id="RandomLogEntry" name="RandomLogEntry">
-<area shape="rect" id="Node000001" title="随机日志条目结构体" alt="" coords="5,203,128,229"/>
-<area shape="rect" id="Node000002" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="39,104,94,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,145,69,203,64,202,64,148"/>
-<area shape="rect" id="Node000003" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="25,5,108,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,45,69,104,64,103,66,50"/>
-</map>

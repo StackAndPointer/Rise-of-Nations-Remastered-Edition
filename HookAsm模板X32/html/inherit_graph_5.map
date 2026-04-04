@@ -1,7 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,113,32"/>
-<area shape="rect" id="Node000001" href="$struct_array_base_simple_copyfloat.html" title="浮点数数组基类" alt="" coords="161,5,339,32"/>
-<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="128,16,163,18,157,19,129,21"/>
-<area shape="rect" id="Node000002" href="$struct_arrayfloat.html" title="浮点数数组" alt="" coords="387,5,464,32"/>
-<area shape="poly" id="edge8_Node000001_Node000002" title=" " alt="" coords="354,16,389,19,384,19,354,21"/>
-</map>

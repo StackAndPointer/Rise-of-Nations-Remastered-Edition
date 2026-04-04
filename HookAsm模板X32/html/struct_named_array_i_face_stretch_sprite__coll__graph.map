@@ -1,9 +1,0 @@
-<map id="NamedArrayIFaceStretchSprite" name="NamedArrayIFaceStretchSprite">
-<area shape="rect" id="Node000001" title="界面拉伸精灵数组基类" alt="" coords="21,203,224,229"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,197,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,144,122,203,117,202,105,148"/>
-<area shape="rect" id="Node000003" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="221,104,277,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,140,140,204,137,200,218,140"/>
-<area shape="rect" id="Node000004" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="207,5,291,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,46,251,105,247,103,247,50"/>
-</map>

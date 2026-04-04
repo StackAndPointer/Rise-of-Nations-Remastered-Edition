@@ -1,9 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,111,32"/>
-<area shape="rect" id="Node000001" href="$struct_array_base_simple_copy_site.html" title="站点数组基类，继承自ArrayBaseMaster，专门用于存储Site对象" alt="" coords="159,5,335,32"/>
-<area shape="poly" id="edge33_Node000000_Node000001" title=" " alt="" coords="126,16,161,18,156,19,127,21"/>
-<area shape="rect" id="Node000002" href="$struct_array_site.html" title="无额外成员，继承基类的所有功能" alt="" coords="383,5,458,32"/>
-<area shape="poly" id="edge34_Node000001_Node000002" title=" " alt="" coords="350,16,385,19,380,19,350,21"/>
-<area shape="rect" id="Node000003" href="$struct_sites.html" title="站点集合，继承自ArraySite，可能表示一组站点" alt="" coords="506,5,558,32"/>
-<area shape="poly" id="edge35_Node000002_Node000003" title=" " alt="" coords="474,16,509,19,503,19,474,21"/>
-</map>

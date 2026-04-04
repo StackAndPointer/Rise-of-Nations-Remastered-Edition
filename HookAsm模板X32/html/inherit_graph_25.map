@@ -1,7 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,147,48"/>
-<area shape="rect" id="Node000001" href="$struct_array_base_simple_copyunsigned____int64.html" title="无符号64位整数数组基类" alt="" coords="195,5,400,48"/>
-<area shape="poly" id="edge44_Node000000_Node000001" title=" " alt="" coords="162,24,197,26,192,27,162,29"/>
-<area shape="rect" id="Node000002" href="$struct_arrayunsigned____int64.html" title="无符号64位整数数组" alt="" coords="448,13,594,40"/>
-<area shape="poly" id="edge45_Node000001_Node000002" title=" " alt="" coords="415,24,451,27,445,27,415,29"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="TextureBase" name="TextureBase">
-<area shape="rect" id="Node000001" title="纹理基类" alt="" coords="5,5,100,32"/>
-<area shape="rect" id="Node000002" href="$struct_texture.html" title="纹理类（继承自ImageIO和TextureBase）" alt="" coords="20,80,85,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,46,55,80,50,79,51,50"/>
-</map>

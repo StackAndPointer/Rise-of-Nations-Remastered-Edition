@@ -1,5 +1,0 @@
-<map id="Log" name="Log">
-<area shape="rect" id="Node000001" title="日志结构 &#45; 用于游戏日志记录" alt="" coords="23,5,65,32"/>
-<area shape="rect" id="Node000002" href="$struct_game_log.html" title="游戏日志结构体，用于记录游戏运行时的各种信息" alt="" coords="5,80,83,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,46,47,80,41,79,42,50"/>
-</map>

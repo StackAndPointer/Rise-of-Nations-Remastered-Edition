@@ -1,5 +1,0 @@
-<map id="MakeObject" name="MakeObject">
-<area shape="rect" id="Node000001" title="基础资源类型" alt="" coords="5,125,97,152"/>
-<area shape="rect" id="Node000002" href="$struct_w_coord.html" title="世界坐标结构体，表示游戏世界中的一个坐标" alt="" coords="16,5,86,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,47,54,125,48,125,49,49"/>
-</map>

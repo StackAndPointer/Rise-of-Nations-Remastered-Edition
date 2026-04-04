@@ -1,5 +1,0 @@
-<map id="GravWindow" name="GravWindow">
-<area shape="rect" id="Node000001" title="界面窗口（继承自GraphicWinXML）" alt="" coords="8,80,104,107"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,107,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,46,59,80,53,79,54,50"/>
-</map>

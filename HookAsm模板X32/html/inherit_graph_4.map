@@ -1,7 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,184,40"/>
-<area shape="rect" id="Node000001" href="$struct_array_base_simple_copy_combo_box_entry.html" title="组合框条目数组基类" alt="" coords="232,5,427,48"/>
-<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="199,24,234,26,229,27,200,29"/>
-<area shape="rect" id="Node000002" href="$struct_array_combo_box_entry.html" title="组合框条目数组" alt="" coords="475,13,623,40"/>
-<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="442,24,477,27,472,27,443,29"/>
-</map>

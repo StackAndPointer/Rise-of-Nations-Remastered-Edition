@@ -1,5 +1,0 @@
-<map id="CursorBase" name="CursorBase">
-<area shape="rect" id="Node000001" title="光标基类" alt="" coords="5,5,96,32"/>
-<area shape="rect" id="Node000002" href="$struct_cursor.html" title="光标类" alt="" coords="20,80,81,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,46,53,80,48,79,49,50"/>
-</map>

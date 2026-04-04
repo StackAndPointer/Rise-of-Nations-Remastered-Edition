@@ -1,5 +1,0 @@
-<map id="GameSettingsUnion" name="GameSettingsUnion">
-<area shape="rect" id="Node000001" title="游戏设置联合体 &#45; 允许以结构体或字节数组方式访问设置数据" alt="" coords="6,104,144,131"/>
-<area shape="rect" id="Node000002" href="$struct_game_settings_fields.html" title="游戏设置结构体 &#45; 存储多人游戏的各种设置选项" alt="" coords="5,5,145,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,46,78,104,72,103,73,49"/>
-</map>

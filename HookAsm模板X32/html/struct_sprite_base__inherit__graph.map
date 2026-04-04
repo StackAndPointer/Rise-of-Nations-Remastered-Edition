@@ -1,5 +1,0 @@
-<map id="SpriteBase" name="SpriteBase">
-<area shape="rect" id="Node000001" title="精灵基类" alt="" coords="5,5,91,32"/>
-<area shape="rect" id="Node000002" href="$struct_sprite.html" title="精灵类（继承自ImageIO和SpriteBase）" alt="" coords="20,80,76,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,46,51,80,45,79,46,50"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="ArrayMakeObject" name="ArrayMakeObject">
-<area shape="rect" id="Node000001" title="无额外成员，继承基类的功能" alt="" coords="56,155,178,181"/>
-<area shape="rect" id="Node000004" href="$struct_make_list.html" title="制造列表结构" alt="" coords="80,229,154,256"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="119,195,119,230,115,228,115,199"/>
-<area shape="rect" id="Node000002" href="$struct_array_base_simple_copy_make_object.html" title="制造对象数组基类" alt="" coords="5,80,229,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,120,120,155,114,153,116,125"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="41,5,193,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,45,120,80,114,79,116,50"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="GameMod" name="GameMod">
-<area shape="rect" id="Node000001" title="游戏MOD结构体 &#45; 游戏中的MOD管理" alt="" coords="15,80,96,107"/>
-<area shape="rect" id="Node000002" href="$struct_game_access.html" title="无额外成员，直接使用ArrayMakeObject的功能" alt="" coords="5,5,106,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,46,58,80,53,79,54,50"/>
-</map>

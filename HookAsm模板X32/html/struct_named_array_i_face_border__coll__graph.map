@@ -1,9 +1,0 @@
-<map id="NamedArrayIFaceBorder" name="NamedArrayIFaceBorder">
-<area shape="rect" id="Node000001" title="界面边框数组基类" alt="" coords="42,203,207,229"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,159,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,143,122,202,117,202,92,147"/>
-<area shape="rect" id="Node000003" href="$struct_string.html" title="字符串结构体，封装字符串的完整信息" alt="" coords="182,104,238,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,142,137,204,134,200,186,143"/>
-<area shape="rect" id="Node000004" href="$union_string_data.html" title="字符串数据联合体，可以指向动态字符串或常量字符串" alt="" coords="168,5,252,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="212,46,212,105,208,103,208,50"/>
-</map>
